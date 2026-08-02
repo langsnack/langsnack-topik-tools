@@ -1,0 +1,3816 @@
+[
+  {
+    "id": "GRAM-0001",
+    "canonical": "-(으)ㄴ 것 같다",
+    "aliases": [
+      "(으)ㄴ 것 같다"
+    ],
+    "category": "beginner_core",
+    "meanings_en": [
+      "I think / feel"
+    ],
+    "langsnack_level": 1,
+    "topik_level_estimate": 1,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "(으)ㄴ 것 같다"
+    ],
+    "examples": [
+      {
+        "ko": "택시 비용이 좀 비싼 것 같아요 .",
+        "en": "I think the taxi's price is a bit expensive."
+      }
+    ],
+    "source_refs": [
+      {
+        "file": "TOPIK-I-Grammar.pdf",
+        "entry_number": 29
+      }
+    ],
+    "review_status": "imported_needs_review"
+  },
+  {
+    "id": "GRAM-0002",
+    "canonical": "-(으)ㄴ 적이 없다",
+    "aliases": [
+      "(으)ㄴ 적이 없다"
+    ],
+    "category": "beginner_core",
+    "meanings_en": [
+      "I have not"
+    ],
+    "langsnack_level": 1,
+    "topik_level_estimate": 1,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "(으)ㄴ 적이 없다"
+    ],
+    "examples": [
+      {
+        "ko": "저는 한국에 가본 적이 없어요 .",
+        "en": "I have not been to Korea."
+      }
+    ],
+    "source_refs": [
+      {
+        "file": "TOPIK-I-Grammar.pdf",
+        "entry_number": 32
+      }
+    ],
+    "review_status": "imported_needs_review"
+  },
+  {
+    "id": "GRAM-0003",
+    "canonical": "-(으)ㄴ 적이 있다",
+    "aliases": [
+      "(으)ㄴ 적이 있다"
+    ],
+    "category": "beginner_core",
+    "meanings_en": [
+      "I have"
+    ],
+    "langsnack_level": 1,
+    "topik_level_estimate": 1,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "(으)ㄴ 적이 있다"
+    ],
+    "examples": [
+      {
+        "ko": "이 가게에 와 본 적이 있어요 .",
+        "en": "I have been to this store."
+      }
+    ],
+    "source_refs": [
+      {
+        "file": "TOPIK-I-Grammar.pdf",
+        "entry_number": 31
+      }
+    ],
+    "review_status": "imported_needs_review"
+  },
+  {
+    "id": "GRAM-0004",
+    "canonical": "-(으)ㄴ 지",
+    "aliases": [
+      "(으)ㄴ 지"
+    ],
+    "category": "beginner_core",
+    "meanings_en": [
+      "How long since",
+      "since"
+    ],
+    "langsnack_level": 1,
+    "topik_level_estimate": 1,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "(으)ㄴ 지"
+    ],
+    "examples": [
+      {
+        "ko": "이 가게가 생긴 지 얼마나 됐어요 ?",
+        "en": "How long has it been since this store has opened?"
+      },
+      {
+        "ko": "한국에 온 지 3일이 지났습니다 .",
+        "en": "Three days have passed since I came to Korea."
+      }
+    ],
+    "source_refs": [
+      {
+        "file": "TOPIK-I-Grammar.pdf",
+        "entry_number": 33
+      },
+      {
+        "file": "TOPIK-I-Grammar.pdf",
+        "entry_number": 34
+      }
+    ],
+    "review_status": "imported_needs_review"
+  },
+  {
+    "id": "GRAM-0005",
+    "canonical": "-(으)ㄴ 후에",
+    "aliases": [
+      "(으)ㄴ 후에"
+    ],
+    "category": "beginner_core",
+    "meanings_en": [
+      "after"
+    ],
+    "langsnack_level": 1,
+    "topik_level_estimate": 1,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "(으)ㄴ 후에"
+    ],
+    "examples": [
+      {
+        "ko": "쇼핑한 후에 밥 먹었습니다 .",
+        "en": "I ate after shopping."
+      }
+    ],
+    "source_refs": [
+      {
+        "file": "TOPIK-I-Grammar.pdf",
+        "entry_number": 35
+      }
+    ],
+    "review_status": "imported_needs_review"
+  },
+  {
+    "id": "GRAM-0006",
+    "canonical": "-(으)ㄴ데 (요)",
+    "aliases": [
+      "(으)ㄴ데 (요)"
+    ],
+    "category": "beginner_core",
+    "meanings_en": [
+      "although",
+      "but"
+    ],
+    "langsnack_level": 1,
+    "topik_level_estimate": 1,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "(으)ㄴ데 (요)"
+    ],
+    "examples": [
+      {
+        "ko": "역에서 좀 먼데요 ,",
+        "en": "Although it is a little far from the station,"
+      },
+      {
+        "ko": "죄송한데요 , 길 좀 알려줄 수 있어요 ?",
+        "en": "Excuse me, but can you tell me the way?"
+      }
+    ],
+    "source_refs": [
+      {
+        "file": "TOPIK-I-Grammar.pdf",
+        "entry_number": 36
+      },
+      {
+        "file": "TOPIK-I-Grammar.pdf",
+        "entry_number": 37
+      }
+    ],
+    "review_status": "imported_needs_review"
+  },
+  {
+    "id": "GRAM-0007",
+    "canonical": "-(으)ㄹ 것 같다",
+    "aliases": [
+      "(으)ㄹ 것 같다"
+    ],
+    "category": "beginner_core",
+    "meanings_en": [
+      "I guess / assume"
+    ],
+    "langsnack_level": 1,
+    "topik_level_estimate": 1,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "(으)ㄹ 것 같다"
+    ],
+    "examples": [
+      {
+        "ko": "이 화장품은 인기가 많을 것 같아요 .",
+        "en": "I guess this cosmetic will be popular."
+      }
+    ],
+    "source_refs": [
+      {
+        "file": "TOPIK-I-Grammar.pdf",
+        "entry_number": 30
+      }
+    ],
+    "review_status": "imported_needs_review"
+  },
+  {
+    "id": "GRAM-0008",
+    "canonical": "-(으)ㄹ 것이다",
+    "aliases": [
+      "(으)ㄹ 것이다"
+    ],
+    "category": "beginner_core",
+    "meanings_en": [
+      "will be"
+    ],
+    "langsnack_level": 1,
+    "topik_level_estimate": 1,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "(으)ㄹ 것이다"
+    ],
+    "examples": [
+      {
+        "ko": "여기 식당은 맛있을 거예요 .",
+        "en": "The restaurant here will be delicious."
+      }
+    ],
+    "source_refs": [
+      {
+        "file": "TOPIK-I-Grammar.pdf",
+        "entry_number": 39
+      }
+    ],
+    "review_status": "imported_needs_review"
+  },
+  {
+    "id": "GRAM-0009",
+    "canonical": "-(으)ㄹ 때",
+    "aliases": [
+      "(으)ㄹ 때"
+    ],
+    "category": "beginner_core",
+    "meanings_en": [
+      "when"
+    ],
+    "langsnack_level": 1,
+    "topik_level_estimate": 1,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "(으)ㄹ 때"
+    ],
+    "examples": [
+      {
+        "ko": "내가 버스타고 있었을 때 잃어버렸어요 .",
+        "en": "I lost it when I was on the bus."
+      }
+    ],
+    "source_refs": [
+      {
+        "file": "TOPIK-I-Grammar.pdf",
+        "entry_number": 40
+      }
+    ],
+    "review_status": "imported_needs_review"
+  },
+  {
+    "id": "GRAM-0010",
+    "canonical": "-(으)ㄹ 수 없다",
+    "aliases": [
+      "(으)ㄹ 수 없다"
+    ],
+    "category": "beginner_core",
+    "meanings_en": [
+      "can not"
+    ],
+    "langsnack_level": 1,
+    "topik_level_estimate": 1,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "(으)ㄹ 수 없다"
+    ],
+    "examples": [
+      {
+        "ko": "여기서는 사진을 찍을 수 없어요 .",
+        "en": "You can't take a photo here."
+      }
+    ],
+    "source_refs": [
+      {
+        "file": "TOPIK-I-Grammar.pdf",
+        "entry_number": 42
+      }
+    ],
+    "review_status": "imported_needs_review"
+  },
+  {
+    "id": "GRAM-0011",
+    "canonical": "-(으)ㄹ 수 있다",
+    "aliases": [
+      "(으)ㄹ 수 있다"
+    ],
+    "category": "beginner_core",
+    "meanings_en": [
+      "can"
+    ],
+    "langsnack_level": 1,
+    "topik_level_estimate": 1,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "(으)ㄹ 수 있다"
+    ],
+    "examples": [
+      {
+        "ko": "저는 한국말 조금 할 수 있어요 .",
+        "en": "I can speak Korean a little bit."
+      }
+    ],
+    "source_refs": [
+      {
+        "file": "TOPIK-I-Grammar.pdf",
+        "entry_number": 41
+      }
+    ],
+    "review_status": "imported_needs_review"
+  },
+  {
+    "id": "GRAM-0012",
+    "canonical": "-(으)ㄹ게요",
+    "aliases": [
+      "(으)ㄹ게요"
+    ],
+    "category": "beginner_core",
+    "meanings_en": [
+      "will"
+    ],
+    "langsnack_level": 1,
+    "topik_level_estimate": 1,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "(으)ㄹ게요"
+    ],
+    "examples": [
+      {
+        "ko": "제가 할게요 .",
+        "en": "I will do it."
+      }
+    ],
+    "source_refs": [
+      {
+        "file": "TOPIK-I-Grammar.pdf",
+        "entry_number": 43
+      }
+    ],
+    "review_status": "imported_needs_review"
+  },
+  {
+    "id": "GRAM-0013",
+    "canonical": "-(으)ㄹ까 하다",
+    "aliases": [
+      "(으)ㄹ까 하다"
+    ],
+    "category": "beginner_core",
+    "meanings_en": [
+      "is / am thinking of"
+    ],
+    "langsnack_level": 1,
+    "topik_level_estimate": 1,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "(으)ㄹ까 하다"
+    ],
+    "examples": [
+      {
+        "ko": "명동에 갈까 해요 .",
+        "en": "I am thinking of going to Myeongdong ."
+      }
+    ],
+    "source_refs": [
+      {
+        "file": "TOPIK-I-Grammar.pdf",
+        "entry_number": 44
+      }
+    ],
+    "review_status": "imported_needs_review"
+  },
+  {
+    "id": "GRAM-0014",
+    "canonical": "-(으)ㄹ까요?",
+    "aliases": [
+      "(으)ㄹ까요?"
+    ],
+    "category": "beginner_core",
+    "meanings_en": [
+      "Should we"
+    ],
+    "langsnack_level": 1,
+    "topik_level_estimate": 1,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "(으)ㄹ까요?"
+    ],
+    "examples": [
+      {
+        "ko": "여기서 걸어갈까요 ?",
+        "en": "Should we walk from here?"
+      }
+    ],
+    "source_refs": [
+      {
+        "file": "TOPIK-I-Grammar.pdf",
+        "entry_number": 46
+      }
+    ],
+    "review_status": "imported_needs_review"
+  },
+  {
+    "id": "GRAM-0015",
+    "canonical": "-(으)ㄹ래요",
+    "aliases": [
+      "(으)ㄹ래요"
+    ],
+    "category": "beginner_core",
+    "meanings_en": [
+      "will"
+    ],
+    "langsnack_level": 1,
+    "topik_level_estimate": 1,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "(으)ㄹ래요"
+    ],
+    "examples": [
+      {
+        "ko": "저는 이걸로 할래요 .",
+        "en": "I will go with this one."
+      }
+    ],
+    "source_refs": [
+      {
+        "file": "TOPIK-I-Grammar.pdf",
+        "entry_number": 47
+      }
+    ],
+    "review_status": "imported_needs_review"
+  },
+  {
+    "id": "GRAM-0016",
+    "canonical": "-(으)ㄹ래요?",
+    "aliases": [
+      "(으)ㄹ래요?"
+    ],
+    "category": "beginner_core",
+    "meanings_en": [
+      "would you"
+    ],
+    "langsnack_level": 1,
+    "topik_level_estimate": 1,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "(으)ㄹ래요?"
+    ],
+    "examples": [
+      {
+        "ko": "이걸로 계산하실래요 ?",
+        "en": "Would you like to pay with this?"
+      }
+    ],
+    "source_refs": [
+      {
+        "file": "TOPIK-I-Grammar.pdf",
+        "entry_number": 48
+      }
+    ],
+    "review_status": "imported_needs_review"
+  },
+  {
+    "id": "GRAM-0017",
+    "canonical": "-(으)니까",
+    "aliases": [
+      "(으)니까"
+    ],
+    "category": "beginner_core",
+    "meanings_en": [
+      "because / since"
+    ],
+    "langsnack_level": 1,
+    "topik_level_estimate": 1,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "(으)니까"
+    ],
+    "examples": [
+      {
+        "ko": "달러 밖에 없으니까 환전해야 돼요 .",
+        "en": "I need to exchange money because I only have dollars."
+      }
+    ],
+    "source_refs": [
+      {
+        "file": "TOPIK-I-Grammar.pdf",
+        "entry_number": 38
+      }
+    ],
+    "review_status": "imported_needs_review"
+  },
+  {
+    "id": "GRAM-0018",
+    "canonical": "-(이)나",
+    "aliases": [
+      "(이)나"
+    ],
+    "category": "beginner_core",
+    "meanings_en": [
+      "rather",
+      "even"
+    ],
+    "langsnack_level": 1,
+    "topik_level_estimate": 1,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "(이)나"
+    ],
+    "examples": [
+      {
+        "ko": "밥이나 먹으러 가고 싶어요 .",
+        "en": "I want to rather go eat."
+      },
+      {
+        "ko": "쇼핑하는데 열 시간이나 걸렸어요 .",
+        "en": "It took even ten hours to shop."
+      }
+    ],
+    "source_refs": [
+      {
+        "file": "TOPIK-I-Grammar.pdf",
+        "entry_number": 21
+      },
+      {
+        "file": "TOPIK-I-Grammar.pdf",
+        "entry_number": 22
+      }
+    ],
+    "review_status": "imported_needs_review"
+  },
+  {
+    "id": "GRAM-0019",
+    "canonical": "-(이)랑",
+    "aliases": [
+      "(이)랑"
+    ],
+    "category": "beginner_core",
+    "meanings_en": [
+      "and",
+      "with"
+    ],
+    "langsnack_level": 1,
+    "topik_level_estimate": 1,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "(이)랑"
+    ],
+    "examples": [
+      {
+        "ko": "설렁탕이랑 김밥 주세요 .",
+        "en": "Please, give me seoulleongtang and kimbap."
+      },
+      {
+        "ko": "친구랑 같이 왔어요 .",
+        "en": "I came with a friend."
+      }
+    ],
+    "source_refs": [
+      {
+        "file": "TOPIK-I-Grammar.pdf",
+        "entry_number": 5
+      },
+      {
+        "file": "TOPIK-I-Grammar.pdf",
+        "entry_number": 6
+      }
+    ],
+    "review_status": "imported_needs_review"
+  },
+  {
+    "id": "GRAM-0020",
+    "canonical": "-마다",
+    "aliases": [
+      "마다"
+    ],
+    "category": "beginner_core",
+    "meanings_en": [
+      "whenever"
+    ],
+    "langsnack_level": 1,
+    "topik_level_estimate": 1,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "마다"
+    ],
+    "examples": [
+      {
+        "ko": "한국에 올 때마다 이 가게를 찾아요 .",
+        "en": "I visit this shop whenever I come to Korea."
+      }
+    ],
+    "source_refs": [
+      {
+        "file": "TOPIK-I-Grammar.pdf",
+        "entry_number": 25
+      }
+    ],
+    "review_status": "imported_needs_review"
+  },
+  {
+    "id": "GRAM-0021",
+    "canonical": "까지",
+    "aliases": [
+      "까지"
+    ],
+    "category": "beginner_core",
+    "meanings_en": [
+      "until"
+    ],
+    "langsnack_level": 1,
+    "topik_level_estimate": 1,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "까지"
+    ],
+    "examples": [
+      {
+        "ko": "강남까지 가고 싶어요 .",
+        "en": "I want to go until Gangnam ."
+      }
+    ],
+    "source_refs": [
+      {
+        "file": "TOPIK-I-Grammar.pdf",
+        "entry_number": 11
+      }
+    ],
+    "review_status": "imported_needs_review"
+  },
+  {
+    "id": "GRAM-0022",
+    "canonical": "께",
+    "aliases": [
+      "께"
+    ],
+    "category": "beginner_core",
+    "meanings_en": [
+      "to [polite form]"
+    ],
+    "langsnack_level": 1,
+    "topik_level_estimate": 1,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "께"
+    ],
+    "examples": [
+      {
+        "ko": "부모님께 드리고 싶어요 .",
+        "en": "I want to give it to my parents."
+      }
+    ],
+    "source_refs": [
+      {
+        "file": "TOPIK-I-Grammar.pdf",
+        "entry_number": 14
+      }
+    ],
+    "review_status": "imported_needs_review"
+  },
+  {
+    "id": "GRAM-0023",
+    "canonical": "도",
+    "aliases": [
+      "도"
+    ],
+    "category": "beginner_core",
+    "meanings_en": [
+      "also / as well"
+    ],
+    "langsnack_level": 1,
+    "topik_level_estimate": 1,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "도"
+    ],
+    "examples": [
+      {
+        "ko": "내일도 오늘도 비가 와요 .",
+        "en": "It is raining also today and tomorrow."
+      }
+    ],
+    "source_refs": [
+      {
+        "file": "TOPIK-I-Grammar.pdf",
+        "entry_number": 8
+      }
+    ],
+    "review_status": "imported_needs_review"
+  },
+  {
+    "id": "GRAM-0024",
+    "canonical": "만",
+    "aliases": [
+      "만"
+    ],
+    "category": "beginner_core",
+    "meanings_en": [
+      "only"
+    ],
+    "langsnack_level": 1,
+    "topik_level_estimate": 1,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "만"
+    ],
+    "examples": [
+      {
+        "ko": "지금 5000원만 있어요 .",
+        "en": "I have only 5000 won now."
+      }
+    ],
+    "source_refs": [
+      {
+        "file": "TOPIK-I-Grammar.pdf",
+        "entry_number": 23
+      }
+    ],
+    "review_status": "imported_needs_review"
+  },
+  {
+    "id": "GRAM-0025",
+    "canonical": "밖에",
+    "aliases": [
+      "밖에"
+    ],
+    "category": "beginner_core",
+    "meanings_en": [
+      "only"
+    ],
+    "langsnack_level": 1,
+    "topik_level_estimate": 1,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "밖에"
+    ],
+    "examples": [
+      {
+        "ko": "시간이 한 시간밖에 없어요 .",
+        "en": "There is only one hour of time."
+      }
+    ],
+    "source_refs": [
+      {
+        "file": "TOPIK-I-Grammar.pdf",
+        "entry_number": 26
+      }
+    ],
+    "review_status": "imported_needs_review"
+  },
+  {
+    "id": "GRAM-0026",
+    "canonical": "보다",
+    "aliases": [
+      "보다"
+    ],
+    "category": "beginner_core",
+    "meanings_en": [
+      "more / better than"
+    ],
+    "langsnack_level": 1,
+    "topik_level_estimate": 1,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "보다"
+    ],
+    "examples": [
+      {
+        "ko": "이것보다 이게 더 어울려요 .",
+        "en": "This goes better than this."
+      }
+    ],
+    "source_refs": [
+      {
+        "file": "TOPIK-I-Grammar.pdf",
+        "entry_number": 27
+      }
+    ],
+    "review_status": "imported_needs_review"
+  },
+  {
+    "id": "GRAM-0027",
+    "canonical": "부터",
+    "aliases": [
+      "부터"
+    ],
+    "category": "beginner_core",
+    "meanings_en": [
+      "from"
+    ],
+    "langsnack_level": 1,
+    "topik_level_estimate": 1,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "부터"
+    ],
+    "examples": [
+      {
+        "ko": "지하철은 아침 5시부터 운영해요 .",
+        "en": "The subway operates from 5 am in the morning."
+      }
+    ],
+    "source_refs": [
+      {
+        "file": "TOPIK-I-Grammar.pdf",
+        "entry_number": 12
+      }
+    ],
+    "review_status": "imported_needs_review"
+  },
+  {
+    "id": "GRAM-0028",
+    "canonical": "에",
+    "aliases": [
+      "에"
+    ],
+    "category": "beginner_core",
+    "meanings_en": [
+      "to"
+    ],
+    "langsnack_level": 1,
+    "topik_level_estimate": 1,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "에"
+    ],
+    "examples": [
+      {
+        "ko": "남대문 시장에 가고 싶어요 .",
+        "en": "I want to go to Namdaemun market."
+      }
+    ],
+    "source_refs": [
+      {
+        "file": "TOPIK-I-Grammar.pdf",
+        "entry_number": 9
+      }
+    ],
+    "review_status": "imported_needs_review"
+  },
+  {
+    "id": "GRAM-0029",
+    "canonical": "에게",
+    "aliases": [
+      "에게"
+    ],
+    "category": "beginner_core",
+    "meanings_en": [
+      "to"
+    ],
+    "langsnack_level": 1,
+    "topik_level_estimate": 1,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "에게"
+    ],
+    "examples": [
+      {
+        "ko": "우리 엄마에게 주고 싶어요 .",
+        "en": "I want to give it to my mother."
+      }
+    ],
+    "source_refs": [
+      {
+        "file": "TOPIK-I-Grammar.pdf",
+        "entry_number": 16
+      }
+    ],
+    "review_status": "imported_needs_review"
+  },
+  {
+    "id": "GRAM-0030",
+    "canonical": "에게서",
+    "aliases": [
+      "에게서"
+    ],
+    "category": "beginner_core",
+    "meanings_en": [
+      "from"
+    ],
+    "langsnack_level": 1,
+    "topik_level_estimate": 1,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "에게서"
+    ],
+    "examples": [
+      {
+        "ko": "호텔 직원에게서 받았어요 .",
+        "en": "I got it from the hotel staff."
+      }
+    ],
+    "source_refs": [
+      {
+        "file": "TOPIK-I-Grammar.pdf",
+        "entry_number": 17
+      }
+    ],
+    "review_status": "imported_needs_review"
+  },
+  {
+    "id": "GRAM-0031",
+    "canonical": "에서",
+    "aliases": [
+      "에서"
+    ],
+    "category": "beginner_core",
+    "meanings_en": [
+      "from"
+    ],
+    "langsnack_level": 1,
+    "topik_level_estimate": 1,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "에서"
+    ],
+    "examples": [
+      {
+        "ko": "공항에서 지하철 타고 왔어요 .",
+        "en": "I came by subway from the airport."
+      }
+    ],
+    "source_refs": [
+      {
+        "file": "TOPIK-I-Grammar.pdf",
+        "entry_number": 10
+      }
+    ],
+    "review_status": "imported_needs_review"
+  },
+  {
+    "id": "GRAM-0032",
+    "canonical": "와/과",
+    "aliases": [
+      "와/과"
+    ],
+    "category": "particle",
+    "meanings_en": [
+      "and / with"
+    ],
+    "langsnack_level": 1,
+    "topik_level_estimate": 1,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "와/과"
+    ],
+    "examples": [
+      {
+        "ko": "토미 씨와 친구예요.",
+        "en": ""
+      }
+    ],
+    "source_refs": [
+      {
+        "file": "TOPIK-I-Grammar.pdf",
+        "entry_number": null
+      }
+    ],
+    "review_status": "imported_needs_review"
+  },
+  {
+    "id": "GRAM-0033",
+    "canonical": "은/는",
+    "aliases": [
+      "은/는"
+    ],
+    "category": "particle",
+    "meanings_en": [
+      "topic particle"
+    ],
+    "langsnack_level": 1,
+    "topik_level_estimate": 1,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "은/는"
+    ],
+    "examples": [
+      {
+        "ko": "날씨가 좋아요.",
+        "en": ""
+      }
+    ],
+    "source_refs": [
+      {
+        "file": "TOPIK-I-Grammar.pdf",
+        "entry_number": null
+      }
+    ],
+    "review_status": "imported_needs_review"
+  },
+  {
+    "id": "GRAM-0034",
+    "canonical": "을/를",
+    "aliases": [
+      "을/를"
+    ],
+    "category": "particle",
+    "meanings_en": [
+      "object particle"
+    ],
+    "langsnack_level": 1,
+    "topik_level_estimate": 1,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "을/를"
+    ],
+    "examples": [
+      {
+        "ko": "책을 읽어요.",
+        "en": ""
+      }
+    ],
+    "source_refs": [
+      {
+        "file": "TOPIK-I-Grammar.pdf",
+        "entry_number": null
+      }
+    ],
+    "review_status": "imported_needs_review"
+  },
+  {
+    "id": "GRAM-0035",
+    "canonical": "이/가",
+    "aliases": [
+      "이/가"
+    ],
+    "category": "particle",
+    "meanings_en": [
+      "subject particle"
+    ],
+    "langsnack_level": 1,
+    "topik_level_estimate": 1,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "이/가"
+    ],
+    "examples": [
+      {
+        "ko": "이름이 뭐예요?",
+        "en": ""
+      }
+    ],
+    "source_refs": [
+      {
+        "file": "TOPIK-I-Grammar.pdf",
+        "entry_number": null
+      }
+    ],
+    "review_status": "imported_needs_review"
+  },
+  {
+    "id": "GRAM-0036",
+    "canonical": "처럼",
+    "aliases": [
+      "처럼"
+    ],
+    "category": "beginner_core",
+    "meanings_en": [
+      "like / similar to"
+    ],
+    "langsnack_level": 1,
+    "topik_level_estimate": 1,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "처럼"
+    ],
+    "examples": [
+      {
+        "ko": "배우처럼 생기셨네요 .",
+        "en": "You look like an actor."
+      }
+    ],
+    "source_refs": [
+      {
+        "file": "TOPIK-I-Grammar.pdf",
+        "entry_number": 28
+      }
+    ],
+    "review_status": "imported_needs_review"
+  },
+  {
+    "id": "GRAM-0037",
+    "canonical": "하고",
+    "aliases": [
+      "하고"
+    ],
+    "category": "beginner_core",
+    "meanings_en": [
+      "and"
+    ],
+    "langsnack_level": 1,
+    "topik_level_estimate": 1,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "하고"
+    ],
+    "examples": [
+      {
+        "ko": "양념 치킨하고 맥주 주세요 .",
+        "en": "Please, give me yangnyeom chicken and beer."
+      }
+    ],
+    "source_refs": [
+      {
+        "file": "TOPIK-I-Grammar.pdf",
+        "entry_number": 7
+      }
+    ],
+    "review_status": "imported_needs_review"
+  },
+  {
+    "id": "GRAM-0038",
+    "canonical": "한테",
+    "aliases": [
+      "한테"
+    ],
+    "category": "beginner_core",
+    "meanings_en": [
+      "to"
+    ],
+    "langsnack_level": 1,
+    "topik_level_estimate": 1,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "한테"
+    ],
+    "examples": [
+      {
+        "ko": "백화점 안내원한테 물어보세요 .",
+        "en": "Please ask it to the department store receptionist."
+      }
+    ],
+    "source_refs": [
+      {
+        "file": "TOPIK-I-Grammar.pdf",
+        "entry_number": 18
+      }
+    ],
+    "review_status": "imported_needs_review"
+  },
+  {
+    "id": "GRAM-0039",
+    "canonical": "한테서",
+    "aliases": [
+      "한테서"
+    ],
+    "category": "beginner_core",
+    "meanings_en": [
+      "from"
+    ],
+    "langsnack_level": 1,
+    "topik_level_estimate": 1,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "한테서"
+    ],
+    "examples": [
+      {
+        "ko": "이거는 친구한테서 선물로 받은 거예요 .",
+        "en": "I got this as a present from my friend."
+      }
+    ],
+    "source_refs": [
+      {
+        "file": "TOPIK-I-Grammar.pdf",
+        "entry_number": 19
+      }
+    ],
+    "review_status": "imported_needs_review"
+  },
+  {
+    "id": "GRAM-0040",
+    "canonical": "-(으)ㅂ시다",
+    "aliases": [
+      "(으)ㅂ시다"
+    ],
+    "category": "beginner_core",
+    "meanings_en": [
+      "Let's"
+    ],
+    "langsnack_level": 2,
+    "topik_level_estimate": 2,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "(으)ㅂ시다"
+    ],
+    "examples": [
+      {
+        "ko": "순두부를 주문해 봅시다 .",
+        "en": "Let's order sundubu ."
+      }
+    ],
+    "source_refs": [
+      {
+        "file": "TOPIK-I-Grammar.pdf",
+        "entry_number": 55
+      }
+    ],
+    "review_status": "imported_needs_review"
+  },
+  {
+    "id": "GRAM-0041",
+    "canonical": "-(으)러 가다",
+    "aliases": [
+      "(으)러 가다"
+    ],
+    "category": "beginner_core",
+    "meanings_en": [
+      "go (in order) to"
+    ],
+    "langsnack_level": 2,
+    "topik_level_estimate": 2,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "(으)러 가다"
+    ],
+    "examples": [
+      {
+        "ko": "한국에 관광하러 갈 거예요 .",
+        "en": "I will go to Korea to travel."
+      }
+    ],
+    "source_refs": [
+      {
+        "file": "TOPIK-I-Grammar.pdf",
+        "entry_number": 49
+      }
+    ],
+    "review_status": "imported_needs_review"
+  },
+  {
+    "id": "GRAM-0042",
+    "canonical": "-(으)러 오다",
+    "aliases": [
+      "(으)러 오다"
+    ],
+    "category": "beginner_core",
+    "meanings_en": [
+      "come (in order) to"
+    ],
+    "langsnack_level": 2,
+    "topik_level_estimate": 2,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "(으)러 오다"
+    ],
+    "examples": [
+      {
+        "ko": "여기에 예약하러 왔어요 .",
+        "en": "I came here to make a reservation."
+      }
+    ],
+    "source_refs": [
+      {
+        "file": "TOPIK-I-Grammar.pdf",
+        "entry_number": 50
+      }
+    ],
+    "review_status": "imported_needs_review"
+  },
+  {
+    "id": "GRAM-0043",
+    "canonical": "-(으)려고",
+    "aliases": [
+      "(으)려고"
+    ],
+    "category": "beginner_core",
+    "meanings_en": [
+      "going to"
+    ],
+    "langsnack_level": 2,
+    "topik_level_estimate": 2,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "(으)려고"
+    ],
+    "examples": [
+      {
+        "ko": "한국말을 공부하려고 해요 .",
+        "en": "I am going to study Korean."
+      }
+    ],
+    "source_refs": [
+      {
+        "file": "TOPIK-I-Grammar.pdf",
+        "entry_number": 51
+      }
+    ],
+    "review_status": "imported_needs_review"
+  },
+  {
+    "id": "GRAM-0044",
+    "canonical": "-(으)려고요",
+    "aliases": [
+      "(으)려고요"
+    ],
+    "category": "beginner_core",
+    "meanings_en": [
+      "going / planning to"
+    ],
+    "langsnack_level": 2,
+    "topik_level_estimate": 2,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "(으)려고요"
+    ],
+    "examples": [
+      {
+        "ko": "아이돌 콘서트에 가려고요 .",
+        "en": "I am going to go to a singer's concert."
+      }
+    ],
+    "source_refs": [
+      {
+        "file": "TOPIK-I-Grammar.pdf",
+        "entry_number": 52
+      }
+    ],
+    "review_status": "imported_needs_review"
+  },
+  {
+    "id": "GRAM-0045",
+    "canonical": "-(으)면",
+    "aliases": [
+      "(으)면"
+    ],
+    "category": "beginner_core",
+    "meanings_en": [
+      "if"
+    ],
+    "langsnack_level": 2,
+    "topik_level_estimate": 2,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "(으)면"
+    ],
+    "examples": [
+      {
+        "ko": "부산에 가면 뭘 볼 수 있을까요 ?",
+        "en": "What can I see if I go to Busan?"
+      }
+    ],
+    "source_refs": [
+      {
+        "file": "TOPIK-I-Grammar.pdf",
+        "entry_number": 53
+      }
+    ],
+    "review_status": "imported_needs_review"
+  },
+  {
+    "id": "GRAM-0046",
+    "canonical": "-(으)면서",
+    "aliases": [
+      "(으)면서"
+    ],
+    "category": "beginner_core",
+    "meanings_en": [
+      "while"
+    ],
+    "langsnack_level": 2,
+    "topik_level_estimate": 2,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "(으)면서"
+    ],
+    "examples": [
+      {
+        "ko": "핸드폰을 보면서 걷지 마세요 .",
+        "en": "Do not walk while watching your phone."
+      }
+    ],
+    "source_refs": [
+      {
+        "file": "TOPIK-I-Grammar.pdf",
+        "entry_number": 54
+      }
+    ],
+    "review_status": "imported_needs_review"
+  },
+  {
+    "id": "GRAM-0047",
+    "canonical": "-(으)세요",
+    "aliases": [
+      "(으)세요"
+    ],
+    "category": "beginner_core",
+    "meanings_en": [
+      "Please"
+    ],
+    "langsnack_level": 2,
+    "topik_level_estimate": 2,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "(으)세요"
+    ],
+    "examples": [
+      {
+        "ko": "삼겹살 2인분 주세요 .",
+        "en": "Please, give us 2 servings of samgyeopsal ."
+      }
+    ],
+    "source_refs": [
+      {
+        "file": "TOPIK-I-Grammar.pdf",
+        "entry_number": 56
+      }
+    ],
+    "review_status": "imported_needs_review"
+  },
+  {
+    "id": "GRAM-0048",
+    "canonical": "-(으)십시오",
+    "aliases": [
+      "(으)십시오"
+    ],
+    "category": "beginner_core",
+    "meanings_en": [
+      "Please"
+    ],
+    "langsnack_level": 2,
+    "topik_level_estimate": 2,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "(으)십시오"
+    ],
+    "examples": [
+      {
+        "ko": "또 놀러 오십시오 .",
+        "en": "Please, visit us again."
+      }
+    ],
+    "source_refs": [
+      {
+        "file": "TOPIK-I-Grammar.pdf",
+        "entry_number": 57
+      }
+    ],
+    "review_status": "imported_needs_review"
+  },
+  {
+    "id": "GRAM-0049",
+    "canonical": "-(이)지요?",
+    "aliases": [
+      "(이)지요?"
+    ],
+    "category": "beginner_core",
+    "meanings_en": [
+      "right?"
+    ],
+    "langsnack_level": 2,
+    "topik_level_estimate": 2,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "(이)지요?"
+    ],
+    "examples": [
+      {
+        "ko": "카드로 계산 되지요 ?",
+        "en": "I can pay with a credit card, right?"
+      }
+    ],
+    "source_refs": [
+      {
+        "file": "TOPIK-I-Grammar.pdf",
+        "entry_number": 58
+      }
+    ],
+    "review_status": "imported_needs_review"
+  },
+  {
+    "id": "GRAM-0050",
+    "canonical": "-ㅂ/습니다",
+    "aliases": [
+      "ㅂ/습니다"
+    ],
+    "category": "beginner_core",
+    "meanings_en": [
+      "formal polite style"
+    ],
+    "langsnack_level": 2,
+    "topik_level_estimate": 2,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "ㅂ/습니다"
+    ],
+    "examples": [
+      {
+        "ko": "내일 한국에 갑니다 .",
+        "en": "I am going to Korea tomorrow."
+      }
+    ],
+    "source_refs": [
+      {
+        "file": "TOPIK-I-Grammar.pdf",
+        "entry_number": 73
+      }
+    ],
+    "review_status": "imported_needs_review"
+  },
+  {
+    "id": "GRAM-0051",
+    "canonical": "-게 되다",
+    "aliases": [
+      "게 되다"
+    ],
+    "category": "beginner_core",
+    "meanings_en": [
+      "happen to"
+    ],
+    "langsnack_level": 2,
+    "topik_level_estimate": 2,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "게 되다"
+    ],
+    "examples": [
+      {
+        "ko": "한국에 오게 됐어요 .",
+        "en": "I happened to come to Korea."
+      }
+    ],
+    "source_refs": [
+      {
+        "file": "TOPIK-I-Grammar.pdf",
+        "entry_number": 61
+      }
+    ],
+    "review_status": "imported_needs_review"
+  },
+  {
+    "id": "GRAM-0052",
+    "canonical": "-고 싶다",
+    "aliases": [
+      "고 싶다"
+    ],
+    "category": "beginner_core",
+    "meanings_en": [
+      "want to"
+    ],
+    "langsnack_level": 2,
+    "topik_level_estimate": 2,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "고 싶다"
+    ],
+    "examples": [
+      {
+        "ko": "약국에 가고 싶어요 .",
+        "en": "I want to go to the pharmacy."
+      }
+    ],
+    "source_refs": [
+      {
+        "file": "TOPIK-I-Grammar.pdf",
+        "entry_number": 63
+      }
+    ],
+    "review_status": "imported_needs_review"
+  },
+  {
+    "id": "GRAM-0053",
+    "canonical": "-고 있다",
+    "aliases": [
+      "고 있다"
+    ],
+    "category": "beginner_core",
+    "meanings_en": [
+      "is / am [v]ing"
+    ],
+    "langsnack_level": 2,
+    "topik_level_estimate": 2,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "고 있다"
+    ],
+    "examples": [
+      {
+        "ko": "지금 무슨 말 할까 생각하고 있어요 .",
+        "en": "I am thinking about what to say right now."
+      }
+    ],
+    "source_refs": [
+      {
+        "file": "TOPIK-I-Grammar.pdf",
+        "entry_number": 64
+      }
+    ],
+    "review_status": "imported_needs_review"
+  },
+  {
+    "id": "GRAM-0054",
+    "canonical": "-군요",
+    "aliases": [
+      "군요"
+    ],
+    "category": "beginner_core",
+    "meanings_en": [
+      "right?"
+    ],
+    "langsnack_level": 2,
+    "topik_level_estimate": 2,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "군요"
+    ],
+    "examples": [
+      {
+        "ko": "병원에 가려면 여기 쭉 가면 되는군요 .",
+        "en": "I can go this way straight to go to the hospital, right?"
+      }
+    ],
+    "source_refs": [
+      {
+        "file": "TOPIK-I-Grammar.pdf",
+        "entry_number": 65
+      }
+    ],
+    "review_status": "imported_needs_review"
+  },
+  {
+    "id": "GRAM-0055",
+    "canonical": "-기 전에",
+    "aliases": [
+      "기 전에"
+    ],
+    "category": "beginner_core",
+    "meanings_en": [
+      "before"
+    ],
+    "langsnack_level": 2,
+    "topik_level_estimate": 2,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "기 전에"
+    ],
+    "examples": [
+      {
+        "ko": "결제하기 전에 확인하고 싶은 게 있는데요 .",
+        "en": "I want to check something before making the payment."
+      }
+    ],
+    "source_refs": [
+      {
+        "file": "TOPIK-I-Grammar.pdf",
+        "entry_number": 67
+      }
+    ],
+    "review_status": "imported_needs_review"
+  },
+  {
+    "id": "GRAM-0056",
+    "canonical": "-기로 하다",
+    "aliases": [
+      "기로 하다"
+    ],
+    "category": "beginner_core",
+    "meanings_en": [
+      "decided to"
+    ],
+    "langsnack_level": 2,
+    "topik_level_estimate": 2,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "기로 하다"
+    ],
+    "examples": [
+      {
+        "ko": "오늘은 쇼핑하기로 했어요 .",
+        "en": "I decided to go shopping today."
+      }
+    ],
+    "source_refs": [
+      {
+        "file": "TOPIK-I-Grammar.pdf",
+        "entry_number": 68
+      }
+    ],
+    "review_status": "imported_needs_review"
+  },
+  {
+    "id": "GRAM-0057",
+    "canonical": "-네요",
+    "aliases": [
+      "네요"
+    ],
+    "category": "beginner_core",
+    "meanings_en": [
+      "right?"
+    ],
+    "langsnack_level": 2,
+    "topik_level_estimate": 2,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "네요"
+    ],
+    "examples": [
+      {
+        "ko": "그럼 다 합쳐서 4000원이네요 .",
+        "en": "So, it is 4000won all together, right?"
+      }
+    ],
+    "source_refs": [
+      {
+        "file": "TOPIK-I-Grammar.pdf",
+        "entry_number": 69
+      }
+    ],
+    "review_status": "imported_needs_review"
+  },
+  {
+    "id": "GRAM-0058",
+    "canonical": "-는 게 좋겠다",
+    "aliases": [
+      "는 게 좋겠다"
+    ],
+    "category": "beginner_core",
+    "meanings_en": [
+      "better to"
+    ],
+    "langsnack_level": 2,
+    "topik_level_estimate": 2,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "는 게 좋겠다"
+    ],
+    "examples": [
+      {
+        "ko": "시간이 없으니까 빨리 가는 게 좋겠어요 .",
+        "en": "It is better to hurry since we don't have much time."
+      }
+    ],
+    "source_refs": [
+      {
+        "file": "TOPIK-I-Grammar.pdf",
+        "entry_number": 70
+      }
+    ],
+    "review_status": "imported_needs_review"
+  },
+  {
+    "id": "GRAM-0059",
+    "canonical": "-아/어/여 보다",
+    "aliases": [
+      "아/어/여 보다"
+    ],
+    "category": "beginner_core",
+    "meanings_en": [
+      "try"
+    ],
+    "langsnack_level": 2,
+    "topik_level_estimate": 2,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "아/어/여 보다"
+    ],
+    "examples": [
+      {
+        "ko": "이것도 시식해 보세요 .",
+        "en": "Please, try eating this as well."
+      }
+    ],
+    "source_refs": [
+      {
+        "file": "TOPIK-I-Grammar.pdf",
+        "entry_number": 74
+      }
+    ],
+    "review_status": "imported_needs_review"
+  },
+  {
+    "id": "GRAM-0060",
+    "canonical": "-아/어/여 주다 [v] (",
+    "aliases": [
+      "아/어/여 주다 [v] ("
+    ],
+    "category": "beginner_core",
+    "meanings_en": [
+      "for) me / us"
+    ],
+    "langsnack_level": 2,
+    "topik_level_estimate": 2,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "아/어/여 주다 [v] ("
+    ],
+    "examples": [
+      {
+        "ko": "알려줘서 고마워요 .",
+        "en": "Thank you for telling me."
+      }
+    ],
+    "source_refs": [
+      {
+        "file": "TOPIK-I-Grammar.pdf",
+        "entry_number": 75
+      }
+    ],
+    "review_status": "imported_needs_review"
+  },
+  {
+    "id": "GRAM-0061",
+    "canonical": "-아/어/여야 되다",
+    "aliases": [
+      "아/어/여야 되다"
+    ],
+    "category": "beginner_core",
+    "meanings_en": [
+      "need to / must"
+    ],
+    "langsnack_level": 2,
+    "topik_level_estimate": 2,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "아/어/여야 되다"
+    ],
+    "examples": [
+      {
+        "ko": "한국어를 공부해야 돼요 .",
+        "en": "I need to study Korean."
+      }
+    ],
+    "source_refs": [
+      {
+        "file": "TOPIK-I-Grammar.pdf",
+        "entry_number": 76
+      }
+    ],
+    "review_status": "imported_needs_review"
+  },
+  {
+    "id": "GRAM-0062",
+    "canonical": "-아/어/여야 하다",
+    "aliases": [
+      "아/어/여야 하다"
+    ],
+    "category": "beginner_core",
+    "meanings_en": [
+      "need to / must"
+    ],
+    "langsnack_level": 2,
+    "topik_level_estimate": 2,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "아/어/여야 하다"
+    ],
+    "examples": [
+      {
+        "ko": "차 타고 가야 해요 .",
+        "en": "I need to ride a car."
+      }
+    ],
+    "source_refs": [
+      {
+        "file": "TOPIK-I-Grammar.pdf",
+        "entry_number": 77
+      }
+    ],
+    "review_status": "imported_needs_review"
+  },
+  {
+    "id": "GRAM-0063",
+    "canonical": "-았/었/였으면 좋겠다",
+    "aliases": [
+      "았/었/였으면 좋겠다"
+    ],
+    "category": "beginner_core",
+    "meanings_en": [
+      "wish / hope"
+    ],
+    "langsnack_level": 2,
+    "topik_level_estimate": 2,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "았/었/였으면 좋겠다"
+    ],
+    "examples": [
+      {
+        "ko": "빨리 배달 왔으면 좋겠어요 .",
+        "en": "I hope the delivery arrives soon."
+      }
+    ],
+    "source_refs": [
+      {
+        "file": "TOPIK-I-Grammar.pdf",
+        "entry_number": 79
+      }
+    ],
+    "review_status": "imported_needs_review"
+  },
+  {
+    "id": "GRAM-0064",
+    "canonical": "-이/가 아니다",
+    "aliases": [
+      "이/가 아니다"
+    ],
+    "category": "beginner_core",
+    "meanings_en": [
+      "not"
+    ],
+    "langsnack_level": 2,
+    "topik_level_estimate": 2,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "이/가 아니다"
+    ],
+    "examples": [
+      {
+        "ko": "제 물건이 아니에요 .",
+        "en": "That is not mine."
+      }
+    ],
+    "source_refs": [
+      {
+        "file": "TOPIK-I-Grammar.pdf",
+        "entry_number": 84
+      }
+    ],
+    "review_status": "imported_needs_review"
+  },
+  {
+    "id": "GRAM-0065",
+    "canonical": "-지 말다",
+    "aliases": [
+      "지 말다"
+    ],
+    "category": "beginner_core",
+    "meanings_en": [
+      "do not"
+    ],
+    "langsnack_level": 2,
+    "topik_level_estimate": 2,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "지 말다"
+    ],
+    "examples": [
+      {
+        "ko": "담배 피우지 마세요 .",
+        "en": "Please, do not smoke."
+      }
+    ],
+    "source_refs": [
+      {
+        "file": "TOPIK-I-Grammar.pdf",
+        "entry_number": 80
+      }
+    ],
+    "review_status": "imported_needs_review"
+  },
+  {
+    "id": "GRAM-0066",
+    "canonical": "-지 못하다",
+    "aliases": [
+      "지 못하다"
+    ],
+    "category": "beginner_core",
+    "meanings_en": [
+      "can not"
+    ],
+    "langsnack_level": 2,
+    "topik_level_estimate": 2,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "지 못하다"
+    ],
+    "examples": [
+      {
+        "ko": "도와주지 못 해서 죄송해요 .",
+        "en": "I am sorry that I can't help much."
+      }
+    ],
+    "source_refs": [
+      {
+        "file": "TOPIK-I-Grammar.pdf",
+        "entry_number": 81
+      }
+    ],
+    "review_status": "imported_needs_review"
+  },
+  {
+    "id": "GRAM-0067",
+    "canonical": "-지 않다",
+    "aliases": [
+      "지 않다"
+    ],
+    "category": "beginner_core",
+    "meanings_en": [
+      "not"
+    ],
+    "langsnack_level": 2,
+    "topik_level_estimate": 2,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "지 않다"
+    ],
+    "examples": [
+      {
+        "ko": "지하철 타지 않고 걸어갈게요 .",
+        "en": "I will not take a subway and instead I will walk."
+      }
+    ],
+    "source_refs": [
+      {
+        "file": "TOPIK-I-Grammar.pdf",
+        "entry_number": 82
+      }
+    ],
+    "review_status": "imported_needs_review"
+  },
+  {
+    "id": "GRAM-0068",
+    "canonical": "게",
+    "aliases": [
+      "게"
+    ],
+    "category": "beginner_core",
+    "meanings_en": [
+      "make [adj]"
+    ],
+    "langsnack_level": 2,
+    "topik_level_estimate": 2,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "게"
+    ],
+    "examples": [
+      {
+        "ko": "싸게 해 주세요 .",
+        "en": "Please, make the price cheaper."
+      }
+    ],
+    "source_refs": [
+      {
+        "file": "TOPIK-I-Grammar.pdf",
+        "entry_number": 60
+      }
+    ],
+    "review_status": "imported_needs_review"
+  },
+  {
+    "id": "GRAM-0069",
+    "canonical": "고",
+    "aliases": [
+      "고"
+    ],
+    "category": "beginner_core",
+    "meanings_en": [
+      "and (then)"
+    ],
+    "langsnack_level": 2,
+    "topik_level_estimate": 2,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "고"
+    ],
+    "examples": [
+      {
+        "ko": "밥 먹고 자요 .",
+        "en": "I will eat food and sleep."
+      }
+    ],
+    "source_refs": [
+      {
+        "file": "TOPIK-I-Grammar.pdf",
+        "entry_number": 62
+      }
+    ],
+    "review_status": "imported_needs_review"
+  },
+  {
+    "id": "GRAM-0070",
+    "canonical": "지만",
+    "aliases": [
+      "지만"
+    ],
+    "category": "beginner_core",
+    "meanings_en": [
+      "but / however"
+    ],
+    "langsnack_level": 2,
+    "topik_level_estimate": 2,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "지만"
+    ],
+    "examples": [
+      {
+        "ko": "오래 전에 주문했지만 요리가 아직 안 왔어요 .",
+        "en": "We have ordered the dishes a while ago, but they are not here yet."
+      }
+    ],
+    "source_refs": [
+      {
+        "file": "TOPIK-I-Grammar.pdf",
+        "entry_number": 83
+      }
+    ],
+    "review_status": "imported_needs_review"
+  },
+  {
+    "id": "GRAM-0071",
+    "canonical": "-(으)ㄴ/는 모양이다",
+    "aliases": [
+      "(으)ㄴ/는 모양이다"
+    ],
+    "category": "guessing_assumption",
+    "meanings_en": [
+      "It looks like / It seems"
+    ],
+    "langsnack_level": 3,
+    "topik_level_estimate": 3,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "(으)ㄴ/는 모양이다"
+    ],
+    "examples": [
+      {
+        "ko": "문이 잠겨 있는 걸 보니 나간 모양이에요.",
+        "en": ""
+      }
+    ],
+    "source_refs": [
+      {
+        "file": "TOPIK level3-4 - 문법.pdf",
+        "entry_number": null
+      }
+    ],
+    "review_status": "imported_needs_review"
+  },
+  {
+    "id": "GRAM-0072",
+    "canonical": "-(으)ㄴ/는/(으)ㄹ 듯하다",
+    "aliases": [
+      "(으)ㄴ/는/(으)ㄹ 듯하다"
+    ],
+    "category": "guessing_assumption",
+    "meanings_en": [
+      "It appears that / seems like"
+    ],
+    "langsnack_level": 3,
+    "topik_level_estimate": 3,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "(으)ㄴ/는/(으)ㄹ 듯하다"
+    ],
+    "examples": [
+      {
+        "ko": "그는 떠난 듯했어요.",
+        "en": ""
+      }
+    ],
+    "source_refs": [
+      {
+        "file": "TOPIK level3-4 - 문법.pdf",
+        "entry_number": null
+      }
+    ],
+    "review_status": "imported_needs_review"
+  },
+  {
+    "id": "GRAM-0073",
+    "canonical": "-(으)로 인해(서)",
+    "aliases": [
+      "(으)로 인해(서)"
+    ],
+    "category": "cause_reason",
+    "meanings_en": [
+      "Due to (formal)"
+    ],
+    "langsnack_level": 3,
+    "topik_level_estimate": 3,
+    "formality": "formal_written",
+    "register": null,
+    "detection_patterns": [
+      "(으)로 인해(서)"
+    ],
+    "examples": [
+      {
+        "ko": "폭우로 인해 교통이 마비되었다.",
+        "en": ""
+      }
+    ],
+    "source_refs": [
+      {
+        "file": "TOPIK level3-4 - 문법.pdf",
+        "entry_number": null
+      }
+    ],
+    "review_status": "imported_needs_review"
+  },
+  {
+    "id": "GRAM-0074",
+    "canonical": "-ㄴ/는다면",
+    "aliases": [
+      "ㄴ/는다면"
+    ],
+    "category": "condition_hypothesis",
+    "meanings_en": [
+      "If (hypothetical)"
+    ],
+    "langsnack_level": 3,
+    "topik_level_estimate": 3,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "ㄴ/는다면"
+    ],
+    "examples": [
+      {
+        "ko": "내가 돈이 많다면 여행하고 싶어요.",
+        "en": ""
+      }
+    ],
+    "source_refs": [
+      {
+        "file": "TOPIK level3-4 - 문법.pdf",
+        "entry_number": null
+      }
+    ],
+    "review_status": "imported_needs_review"
+  },
+  {
+    "id": "GRAM-0075",
+    "canonical": "-거나",
+    "aliases": [
+      "거나"
+    ],
+    "category": "comparison_choice",
+    "meanings_en": [
+      "and/or",
+      "A or B"
+    ],
+    "langsnack_level": 3,
+    "topik_level_estimate": 3,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "거나"
+    ],
+    "examples": [
+      {
+        "ko": "시장에 가거나 카페에 가고 싶어요 .",
+        "en": "I want to go to a market or a café."
+      },
+      {
+        "ko": "커피나 차를 마셔요.",
+        "en": ""
+      }
+    ],
+    "source_refs": [
+      {
+        "file": "TOPIK-I-Grammar.pdf",
+        "entry_number": 59
+      },
+      {
+        "file": "TOPIK level3-4 - 문법.pdf",
+        "entry_number": null
+      }
+    ],
+    "review_status": "imported_needs_review"
+  },
+  {
+    "id": "GRAM-0076",
+    "canonical": "-거든",
+    "aliases": [
+      "거든"
+    ],
+    "category": "condition_hypothesis",
+    "meanings_en": [
+      "If / when (spoken/casual)"
+    ],
+    "langsnack_level": 3,
+    "topik_level_estimate": 3,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "거든"
+    ],
+    "examples": [
+      {
+        "ko": "비가 오거든 우산 가져가.",
+        "en": ""
+      }
+    ],
+    "source_refs": [
+      {
+        "file": "TOPIK level3-4 - 문법.pdf",
+        "entry_number": null
+      }
+    ],
+    "review_status": "imported_needs_review"
+  },
+  {
+    "id": "GRAM-0077",
+    "canonical": "-고 나서",
+    "aliases": [
+      "고 나서"
+    ],
+    "category": "sequence_order",
+    "meanings_en": [
+      "After doing"
+    ],
+    "langsnack_level": 3,
+    "topik_level_estimate": 3,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "고 나서"
+    ],
+    "examples": [
+      {
+        "ko": "숙제를 하고 나서 놀았어요.",
+        "en": ""
+      }
+    ],
+    "source_refs": [
+      {
+        "file": "TOPIK level3-4 - 문법.pdf",
+        "entry_number": null
+      }
+    ],
+    "review_status": "imported_needs_review"
+  },
+  {
+    "id": "GRAM-0078",
+    "canonical": "-고 말다",
+    "aliases": [
+      "고 말다"
+    ],
+    "category": "ending_completion",
+    "meanings_en": [
+      "Ended up doing"
+    ],
+    "langsnack_level": 3,
+    "topik_level_estimate": 3,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "고 말다"
+    ],
+    "examples": [
+      {
+        "ko": "결국 실수하고 말았어요.",
+        "en": ""
+      }
+    ],
+    "source_refs": [
+      {
+        "file": "TOPIK level3-4 - 문법.pdf",
+        "entry_number": null
+      }
+    ],
+    "review_status": "imported_needs_review"
+  },
+  {
+    "id": "GRAM-0079",
+    "canonical": "-고도",
+    "aliases": [
+      "고도"
+    ],
+    "category": "contrast_opposition",
+    "meanings_en": [
+      "Even though"
+    ],
+    "langsnack_level": 3,
+    "topik_level_estimate": 3,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "고도"
+    ],
+    "examples": [
+      {
+        "ko": "실수하고도 사과하지 않았다.",
+        "en": ""
+      }
+    ],
+    "source_refs": [
+      {
+        "file": "TOPIK level3-4 - 문법.pdf",
+        "entry_number": null
+      }
+    ],
+    "review_status": "imported_needs_review"
+  },
+  {
+    "id": "GRAM-0080",
+    "canonical": "-고서",
+    "aliases": [
+      "고서"
+    ],
+    "category": "sequence_order",
+    "meanings_en": [
+      "After (emphasizes full completion)"
+    ],
+    "langsnack_level": 3,
+    "topik_level_estimate": 3,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "고서"
+    ],
+    "examples": [
+      {
+        "ko": "밥을 먹고서 산책했어요.",
+        "en": ""
+      }
+    ],
+    "source_refs": [
+      {
+        "file": "TOPIK level3-4 - 문법.pdf",
+        "entry_number": null
+      }
+    ],
+    "review_status": "imported_needs_review"
+  },
+  {
+    "id": "GRAM-0081",
+    "canonical": "-곤 하다",
+    "aliases": [
+      "곤 하다"
+    ],
+    "category": "continuation_repetition",
+    "meanings_en": [
+      "Used to / usually"
+    ],
+    "langsnack_level": 3,
+    "topik_level_estimate": 3,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "곤 하다"
+    ],
+    "examples": [
+      {
+        "ko": "주말마다 산책을 하곤 했어요.",
+        "en": ""
+      }
+    ],
+    "source_refs": [
+      {
+        "file": "TOPIK level3-4 - 문법.pdf",
+        "entry_number": null
+      }
+    ],
+    "review_status": "imported_needs_review"
+  },
+  {
+    "id": "GRAM-0082",
+    "canonical": "-기 때문에",
+    "aliases": [
+      "기 때문에"
+    ],
+    "category": "cause_reason",
+    "meanings_en": [
+      "because of",
+      "Because"
+    ],
+    "langsnack_level": 3,
+    "topik_level_estimate": 3,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "기 때문에"
+    ],
+    "examples": [
+      {
+        "ko": "너무 많이 걸었기 때문에 다리가 아파요 .",
+        "en": "My leg hurts because of walking too much."
+      },
+      {
+        "ko": "피곤하기 때문에 일찍 잤어요.",
+        "en": ""
+      }
+    ],
+    "source_refs": [
+      {
+        "file": "TOPIK-I-Grammar.pdf",
+        "entry_number": 66
+      },
+      {
+        "file": "TOPIK level3-4 - 문법.pdf",
+        "entry_number": null
+      }
+    ],
+    "review_status": "imported_needs_review"
+  },
+  {
+    "id": "GRAM-0083",
+    "canonical": "-기 위해(서)",
+    "aliases": [
+      "기 위해(서)"
+    ],
+    "category": "purpose_intention",
+    "meanings_en": [
+      "In order to"
+    ],
+    "langsnack_level": 3,
+    "topik_level_estimate": 3,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "기 위해(서)"
+    ],
+    "examples": [
+      {
+        "ko": "한국어를 배우기 위해 한국에 왔어요.",
+        "en": ""
+      }
+    ],
+    "source_refs": [
+      {
+        "file": "TOPIK level3-4 - 문법.pdf",
+        "entry_number": null
+      }
+    ],
+    "review_status": "imported_needs_review"
+  },
+  {
+    "id": "GRAM-0084",
+    "canonical": "-기만 하다",
+    "aliases": [
+      "기만 하다"
+    ],
+    "category": "limitation_exception",
+    "meanings_en": [
+      "Only"
+    ],
+    "langsnack_level": 3,
+    "topik_level_estimate": 3,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "기만 하다"
+    ],
+    "examples": [
+      {
+        "ko": "놀기만 해요. 공부는 안 해요.",
+        "en": ""
+      }
+    ],
+    "source_refs": [
+      {
+        "file": "TOPIK level3-4 - 문법.pdf",
+        "entry_number": null
+      }
+    ],
+    "review_status": "imported_needs_review"
+  },
+  {
+    "id": "GRAM-0085",
+    "canonical": "-나 보다",
+    "aliases": [
+      "나 보다"
+    ],
+    "category": "guessing_assumption",
+    "meanings_en": [
+      "It seems / I guess"
+    ],
+    "langsnack_level": 3,
+    "topik_level_estimate": 3,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "나 보다"
+    ],
+    "examples": [
+      {
+        "ko": "피곤했나 봐요. 바로 잠들었어요.",
+        "en": ""
+      }
+    ],
+    "source_refs": [
+      {
+        "file": "TOPIK level3-4 - 문법.pdf",
+        "entry_number": null
+      }
+    ],
+    "review_status": "imported_needs_review"
+  },
+  {
+    "id": "GRAM-0086",
+    "canonical": "-느니",
+    "aliases": [
+      "느니"
+    ],
+    "category": "comparison_choice",
+    "meanings_en": [
+      "Rather than A"
+    ],
+    "langsnack_level": 3,
+    "topik_level_estimate": 3,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "느니"
+    ],
+    "examples": [
+      {
+        "ko": "기다리느니 그냥 가겠어요.",
+        "en": ""
+      }
+    ],
+    "source_refs": [
+      {
+        "file": "TOPIK level3-4 - 문법.pdf",
+        "entry_number": null
+      }
+    ],
+    "review_status": "imported_needs_review"
+  },
+  {
+    "id": "GRAM-0087",
+    "canonical": "-는 것 같다/-(으)ㄴ 것 같다",
+    "aliases": [
+      "는 것 같다/-(으)ㄴ 것 같다"
+    ],
+    "category": "guessing_assumption",
+    "meanings_en": [
+      "I think / It seems like"
+    ],
+    "langsnack_level": 3,
+    "topik_level_estimate": 3,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "는 것 같다/-(으)ㄴ 것 같다"
+    ],
+    "examples": [
+      {
+        "ko": "밖에 비가 오는 것 같아요.",
+        "en": ""
+      }
+    ],
+    "source_refs": [
+      {
+        "file": "TOPIK level3-4 - 문법.pdf",
+        "entry_number": null
+      }
+    ],
+    "review_status": "imported_needs_review"
+  },
+  {
+    "id": "GRAM-0088",
+    "canonical": "-는 길에",
+    "aliases": [
+      "는 길에"
+    ],
+    "category": "sequence_order",
+    "meanings_en": [
+      "On the way (to doing something)"
+    ],
+    "langsnack_level": 3,
+    "topik_level_estimate": 3,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "는 길에"
+    ],
+    "examples": [
+      {
+        "ko": "학교 가는 길에 친구를 만났어요.",
+        "en": ""
+      }
+    ],
+    "source_refs": [
+      {
+        "file": "TOPIK level3-4 - 문법.pdf",
+        "entry_number": null
+      }
+    ],
+    "review_status": "imported_needs_review"
+  },
+  {
+    "id": "GRAM-0089",
+    "canonical": "-는 도중에",
+    "aliases": [
+      "는 도중에"
+    ],
+    "category": "sequence_order",
+    "meanings_en": [
+      "While in the middle of"
+    ],
+    "langsnack_level": 3,
+    "topik_level_estimate": 3,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "는 도중에"
+    ],
+    "examples": [
+      {
+        "ko": "회의하는 도중에 전화가 왔어요.",
+        "en": ""
+      }
+    ],
+    "source_refs": [
+      {
+        "file": "TOPIK level3-4 - 문법.pdf",
+        "entry_number": null
+      }
+    ],
+    "review_status": "imported_needs_review"
+  },
+  {
+    "id": "GRAM-0090",
+    "canonical": "-는 듯이",
+    "aliases": [
+      "는 듯이"
+    ],
+    "category": "guessing_assumption",
+    "meanings_en": [
+      "As if / like"
+    ],
+    "langsnack_level": 3,
+    "topik_level_estimate": 3,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "는 듯이"
+    ],
+    "examples": [
+      {
+        "ko": "아무 일도 없었다는 듯이 웃었다.",
+        "en": ""
+      }
+    ],
+    "source_refs": [
+      {
+        "file": "TOPIK level3-4 - 문법.pdf",
+        "entry_number": null
+      }
+    ],
+    "review_status": "imported_needs_review"
+  },
+  {
+    "id": "GRAM-0091",
+    "canonical": "-는 바람에",
+    "aliases": [
+      "는 바람에"
+    ],
+    "category": "cause_reason",
+    "meanings_en": [
+      "Because of (unexpected & negative)"
+    ],
+    "langsnack_level": 3,
+    "topik_level_estimate": 3,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "는 바람에"
+    ],
+    "examples": [
+      {
+        "ko": "사고 나는 바람에 수업에 늦었어요.",
+        "en": ""
+      }
+    ],
+    "source_refs": [
+      {
+        "file": "TOPIK level3-4 - 문법.pdf",
+        "entry_number": null
+      }
+    ],
+    "review_status": "imported_needs_review"
+  },
+  {
+    "id": "GRAM-0092",
+    "canonical": "-는 통에",
+    "aliases": [
+      "는 통에"
+    ],
+    "category": "cause_reason",
+    "meanings_en": [
+      "Because of (negative, chaotic situation)"
+    ],
+    "langsnack_level": 3,
+    "topik_level_estimate": 3,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "는 통에"
+    ],
+    "examples": [
+      {
+        "ko": "아이가 우는 통에 잠을 못 잤어요.",
+        "en": ""
+      }
+    ],
+    "source_refs": [
+      {
+        "file": "TOPIK level3-4 - 문법.pdf",
+        "entry_number": null
+      }
+    ],
+    "review_status": "imported_needs_review"
+  },
+  {
+    "id": "GRAM-0093",
+    "canonical": "-는 한",
+    "aliases": [
+      "는 한"
+    ],
+    "category": "condition_hypothesis",
+    "meanings_en": [
+      "As long as"
+    ],
+    "langsnack_level": 3,
+    "topik_level_estimate": 3,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "는 한"
+    ],
+    "examples": [
+      {
+        "ko": "열심히 하는 한 좋은 결과가 있을 거예요.",
+        "en": ""
+      }
+    ],
+    "source_refs": [
+      {
+        "file": "TOPIK level3-4 - 문법.pdf",
+        "entry_number": null
+      }
+    ],
+    "review_status": "imported_needs_review"
+  },
+  {
+    "id": "GRAM-0094",
+    "canonical": "-는데",
+    "aliases": [
+      "는데"
+    ],
+    "category": "contrast_opposition",
+    "meanings_en": [
+      "for",
+      "But / and"
+    ],
+    "langsnack_level": 3,
+    "topik_level_estimate": 3,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "는데"
+    ],
+    "examples": [
+      {
+        "ko": "입국심사하는데 별로 많이 안 기다렸어요 .",
+        "en": "I didn't wait much for immigration."
+      },
+      {
+        "ko": "비가 오는데 사람은 많아요.",
+        "en": ""
+      }
+    ],
+    "source_refs": [
+      {
+        "file": "TOPIK-I-Grammar.pdf",
+        "entry_number": 71
+      },
+      {
+        "file": "TOPIK level3-4 - 문법.pdf",
+        "entry_number": null
+      }
+    ],
+    "review_status": "imported_needs_review"
+  },
+  {
+    "id": "GRAM-0095",
+    "canonical": "-덕분에",
+    "aliases": [
+      "덕분에"
+    ],
+    "category": "cause_reason",
+    "meanings_en": [
+      "Thanks to (positive)"
+    ],
+    "langsnack_level": 3,
+    "topik_level_estimate": 3,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "덕분에"
+    ],
+    "examples": [
+      {
+        "ko": "친구 덕분에 합격했어요.",
+        "en": ""
+      }
+    ],
+    "source_refs": [
+      {
+        "file": "TOPIK level3-4 - 문법.pdf",
+        "entry_number": null
+      }
+    ],
+    "review_status": "imported_needs_review"
+  },
+  {
+    "id": "GRAM-0096",
+    "canonical": "-든지",
+    "aliases": [
+      "든지"
+    ],
+    "category": "comparison_choice",
+    "meanings_en": [
+      "Either / any"
+    ],
+    "langsnack_level": 3,
+    "topik_level_estimate": 3,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "든지"
+    ],
+    "examples": [
+      {
+        "ko": "뭐든지 괜찮아요.",
+        "en": ""
+      }
+    ],
+    "source_refs": [
+      {
+        "file": "TOPIK level3-4 - 문법.pdf",
+        "entry_number": null
+      }
+    ],
+    "review_status": "imported_needs_review"
+  },
+  {
+    "id": "GRAM-0097",
+    "canonical": "-마저",
+    "aliases": [
+      "마저"
+    ],
+    "category": "addition_emphasis",
+    "meanings_en": [
+      "Even (last one)"
+    ],
+    "langsnack_level": 3,
+    "topik_level_estimate": 3,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "마저"
+    ],
+    "examples": [
+      {
+        "ko": "친구마저 나를 떠났어요.",
+        "en": ""
+      }
+    ],
+    "source_refs": [
+      {
+        "file": "TOPIK level3-4 - 문법.pdf",
+        "entry_number": null
+      }
+    ],
+    "review_status": "imported_needs_review"
+  },
+  {
+    "id": "GRAM-0098",
+    "canonical": "-만 하다",
+    "aliases": [
+      "만 하다"
+    ],
+    "category": "comparison_choice",
+    "meanings_en": [
+      "As ~ as"
+    ],
+    "langsnack_level": 3,
+    "topik_level_estimate": 3,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "만 하다"
+    ],
+    "examples": [
+      {
+        "ko": "이 가방은 내 가방만 해요.",
+        "en": ""
+      }
+    ],
+    "source_refs": [
+      {
+        "file": "TOPIK level3-4 - 문법.pdf",
+        "entry_number": null
+      }
+    ],
+    "review_status": "imported_needs_review"
+  },
+  {
+    "id": "GRAM-0099",
+    "canonical": "-면",
+    "aliases": [
+      "면"
+    ],
+    "category": "condition_hypothesis",
+    "meanings_en": [
+      "If"
+    ],
+    "langsnack_level": 3,
+    "topik_level_estimate": 3,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "면"
+    ],
+    "examples": [
+      {
+        "ko": "시간이 있으면 만나요.",
+        "en": ""
+      }
+    ],
+    "source_refs": [
+      {
+        "file": "TOPIK level3-4 - 문법.pdf",
+        "entry_number": null
+      }
+    ],
+    "review_status": "imported_needs_review"
+  },
+  {
+    "id": "GRAM-0100",
+    "canonical": "-밖에",
+    "aliases": [
+      "밖에"
+    ],
+    "category": "limitation_exception",
+    "meanings_en": [
+      "Nothing but"
+    ],
+    "langsnack_level": 3,
+    "topik_level_estimate": 3,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "밖에"
+    ],
+    "examples": [
+      {
+        "ko": "돈이 천 원밖에 없어요.",
+        "en": ""
+      }
+    ],
+    "source_refs": [
+      {
+        "file": "TOPIK level3-4 - 문법.pdf",
+        "entry_number": null
+      }
+    ],
+    "review_status": "imported_needs_review"
+  },
+  {
+    "id": "GRAM-0101",
+    "canonical": "-뿐만 아니라",
+    "aliases": [
+      "뿐만 아니라"
+    ],
+    "category": "limitation_exception",
+    "meanings_en": [
+      "Not only"
+    ],
+    "langsnack_level": 3,
+    "topik_level_estimate": 3,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "뿐만 아니라"
+    ],
+    "examples": [
+      {
+        "ko": "그는 학생일 뿐만 아니라 가수예요.",
+        "en": ""
+      }
+    ],
+    "source_refs": [
+      {
+        "file": "TOPIK level3-4 - 문법.pdf",
+        "entry_number": null
+      }
+    ],
+    "review_status": "imported_needs_review"
+  },
+  {
+    "id": "GRAM-0102",
+    "canonical": "-아/어 대다",
+    "aliases": [
+      "아/어 대다"
+    ],
+    "category": "continuation_repetition",
+    "meanings_en": [
+      "Repeatedly (often negative)"
+    ],
+    "langsnack_level": 3,
+    "topik_level_estimate": 3,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "아/어 대다"
+    ],
+    "examples": [
+      {
+        "ko": "아이가 계속 울어 대요.",
+        "en": ""
+      }
+    ],
+    "source_refs": [
+      {
+        "file": "TOPIK level3-4 - 문법.pdf",
+        "entry_number": null
+      }
+    ],
+    "review_status": "imported_needs_review"
+  },
+  {
+    "id": "GRAM-0103",
+    "canonical": "-아/어 버리다",
+    "aliases": [
+      "아/어 버리다"
+    ],
+    "category": "ending_completion",
+    "meanings_en": [
+      "Did it completely"
+    ],
+    "langsnack_level": 3,
+    "topik_level_estimate": 3,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "아/어 버리다"
+    ],
+    "examples": [
+      {
+        "ko": "숙제를 다 해 버렸어요.",
+        "en": ""
+      }
+    ],
+    "source_refs": [
+      {
+        "file": "TOPIK level3-4 - 문법.pdf",
+        "entry_number": null
+      }
+    ],
+    "review_status": "imported_needs_review"
+  },
+  {
+    "id": "GRAM-0104",
+    "canonical": "-아/어야",
+    "aliases": [
+      "아/어야"
+    ],
+    "category": "condition_hypothesis",
+    "meanings_en": [
+      "Only if"
+    ],
+    "langsnack_level": 3,
+    "topik_level_estimate": 3,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "아/어야"
+    ],
+    "examples": [
+      {
+        "ko": "연습해야 실력이 늘어요.",
+        "en": ""
+      }
+    ],
+    "source_refs": [
+      {
+        "file": "TOPIK level3-4 - 문법.pdf",
+        "entry_number": null
+      }
+    ],
+    "review_status": "imported_needs_review"
+  },
+  {
+    "id": "GRAM-0105",
+    "canonical": "-아서/어서",
+    "aliases": [
+      "아서/어서"
+    ],
+    "category": "cause_reason",
+    "meanings_en": [
+      "So / because"
+    ],
+    "langsnack_level": 3,
+    "topik_level_estimate": 3,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "아서/어서"
+    ],
+    "examples": [
+      {
+        "ko": "배고파서 라면을 끓였어요.",
+        "en": ""
+      }
+    ],
+    "source_refs": [
+      {
+        "file": "TOPIK level3-4 - 문법.pdf",
+        "entry_number": null
+      }
+    ],
+    "review_status": "imported_needs_review"
+  },
+  {
+    "id": "GRAM-0106",
+    "canonical": "-야말로",
+    "aliases": [
+      "야말로"
+    ],
+    "category": "addition_emphasis",
+    "meanings_en": [
+      "Exactly / indeed"
+    ],
+    "langsnack_level": 3,
+    "topik_level_estimate": 3,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "야말로"
+    ],
+    "examples": [
+      {
+        "ko": "지금이야말로 기회입니다.",
+        "en": ""
+      }
+    ],
+    "source_refs": [
+      {
+        "file": "TOPIK level3-4 - 문법.pdf",
+        "entry_number": null
+      }
+    ],
+    "review_status": "imported_needs_review"
+  },
+  {
+    "id": "GRAM-0107",
+    "canonical": "-은/는 데다가",
+    "aliases": [
+      "은/는 데다가"
+    ],
+    "category": "addition_emphasis",
+    "meanings_en": [
+      "In addition to"
+    ],
+    "langsnack_level": 3,
+    "topik_level_estimate": 3,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "은/는 데다가"
+    ],
+    "examples": [
+      {
+        "ko": "맛도 좋은 데다가 양도 많아요.",
+        "en": ""
+      }
+    ],
+    "source_refs": [
+      {
+        "file": "TOPIK level3-4 - 문법.pdf",
+        "entry_number": null
+      }
+    ],
+    "review_status": "imported_needs_review"
+  },
+  {
+    "id": "GRAM-0108",
+    "canonical": "-은/는 반면에",
+    "aliases": [
+      "은/는 반면에"
+    ],
+    "category": "contrast_opposition",
+    "meanings_en": [
+      "On the other hand"
+    ],
+    "langsnack_level": 3,
+    "topik_level_estimate": 3,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "은/는 반면에"
+    ],
+    "examples": [
+      {
+        "ko": "공부는 잘하는 반면에 운동은 못해요.",
+        "en": ""
+      }
+    ],
+    "source_refs": [
+      {
+        "file": "TOPIK level3-4 - 문법.pdf",
+        "entry_number": null
+      }
+    ],
+    "review_status": "imported_needs_review"
+  },
+  {
+    "id": "GRAM-0109",
+    "canonical": "-을 겸(해서)",
+    "aliases": [
+      "을 겸(해서)"
+    ],
+    "category": "purpose_intention",
+    "meanings_en": [
+      "For both reasons / multitask"
+    ],
+    "langsnack_level": 3,
+    "topik_level_estimate": 3,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "을 겸(해서)"
+    ],
+    "examples": [
+      {
+        "ko": "운동도 할 겸 산책 나왔어요.",
+        "en": ""
+      }
+    ],
+    "source_refs": [
+      {
+        "file": "TOPIK level3-4 - 문법.pdf",
+        "entry_number": null
+      }
+    ],
+    "review_status": "imported_needs_review"
+  },
+  {
+    "id": "GRAM-0110",
+    "canonical": "-을 뿐이다",
+    "aliases": [
+      "을 뿐이다"
+    ],
+    "category": "limitation_exception",
+    "meanings_en": [
+      "Just / only"
+    ],
+    "langsnack_level": 3,
+    "topik_level_estimate": 3,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "을 뿐이다"
+    ],
+    "examples": [
+      {
+        "ko": "그건 오해일 뿐이에요.",
+        "en": ""
+      }
+    ],
+    "source_refs": [
+      {
+        "file": "TOPIK level3-4 - 문법.pdf",
+        "entry_number": null
+      }
+    ],
+    "review_status": "imported_needs_review"
+  },
+  {
+    "id": "GRAM-0111",
+    "canonical": "-자(=자마다)",
+    "aliases": [
+      "자(=자마다)"
+    ],
+    "category": "sequence_order",
+    "meanings_en": [
+      "Right after (more formal/literary)"
+    ],
+    "langsnack_level": 3,
+    "topik_level_estimate": 3,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "자(=자마다)"
+    ],
+    "examples": [
+      {
+        "ko": "비가 그치자 무지개가 떴다.",
+        "en": ""
+      }
+    ],
+    "source_refs": [
+      {
+        "file": "TOPIK level3-4 - 문법.pdf",
+        "entry_number": null
+      }
+    ],
+    "review_status": "imported_needs_review"
+  },
+  {
+    "id": "GRAM-0112",
+    "canonical": "-자마자",
+    "aliases": [
+      "자마자"
+    ],
+    "category": "sequence_order",
+    "meanings_en": [
+      "As soon as"
+    ],
+    "langsnack_level": 3,
+    "topik_level_estimate": 3,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "자마자"
+    ],
+    "examples": [
+      {
+        "ko": "집에 들어오자마자 씻었어요.",
+        "en": ""
+      }
+    ],
+    "source_refs": [
+      {
+        "file": "TOPIK level3-4 - 문법.pdf",
+        "entry_number": null
+      }
+    ],
+    "review_status": "imported_needs_review"
+  },
+  {
+    "id": "GRAM-0113",
+    "canonical": "-조차",
+    "aliases": [
+      "조차"
+    ],
+    "category": "addition_emphasis",
+    "meanings_en": [
+      "Even (unexpected)"
+    ],
+    "langsnack_level": 3,
+    "topik_level_estimate": 3,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "조차"
+    ],
+    "examples": [
+      {
+        "ko": "물 한 잔조차 못 마셨어요.",
+        "en": ""
+      }
+    ],
+    "source_refs": [
+      {
+        "file": "TOPIK level3-4 - 문법.pdf",
+        "entry_number": null
+      }
+    ],
+    "review_status": "imported_needs_review"
+  },
+  {
+    "id": "GRAM-0114",
+    "canonical": "-지만",
+    "aliases": [
+      "지만"
+    ],
+    "category": "contrast_opposition",
+    "meanings_en": [
+      "But"
+    ],
+    "langsnack_level": 3,
+    "topik_level_estimate": 3,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "지만"
+    ],
+    "examples": [
+      {
+        "ko": "춥지만 재미있어요.",
+        "en": ""
+      }
+    ],
+    "source_refs": [
+      {
+        "file": "TOPIK level3-4 - 문법.pdf",
+        "entry_number": null
+      }
+    ],
+    "review_status": "imported_needs_review"
+  },
+  {
+    "id": "GRAM-0115",
+    "canonical": "-탓에",
+    "aliases": [
+      "탓에"
+    ],
+    "category": "cause_reason",
+    "meanings_en": [
+      "Because of (blame/negative)"
+    ],
+    "langsnack_level": 3,
+    "topik_level_estimate": 3,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "탓에"
+    ],
+    "examples": [
+      {
+        "ko": "실수한 탓에 혼났어요.",
+        "en": ""
+      }
+    ],
+    "source_refs": [
+      {
+        "file": "TOPIK level3-4 - 문법.pdf",
+        "entry_number": null
+      }
+    ],
+    "review_status": "imported_needs_review"
+  },
+  {
+    "id": "GRAM-0116",
+    "canonical": "-하도 ~아/어서",
+    "aliases": [
+      "하도 ~아/어서"
+    ],
+    "category": "cause_reason",
+    "meanings_en": [
+      "So much that"
+    ],
+    "langsnack_level": 3,
+    "topik_level_estimate": 3,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "하도 ~아/어서"
+    ],
+    "examples": [
+      {
+        "ko": "하도 웃어서 배가 아팠어요.",
+        "en": ""
+      }
+    ],
+    "source_refs": [
+      {
+        "file": "TOPIK level3-4 - 문법.pdf",
+        "entry_number": null
+      }
+    ],
+    "review_status": "imported_needs_review"
+  },
+  {
+    "id": "GRAM-0117",
+    "canonical": "-건만",
+    "aliases": [
+      "건만"
+    ],
+    "category": "contrast_opposition",
+    "meanings_en": [
+      "Although / but (formal)"
+    ],
+    "langsnack_level": 4,
+    "topik_level_estimate": 4,
+    "formality": "formal_written",
+    "register": null,
+    "detection_patterns": [
+      "건만"
+    ],
+    "examples": [
+      {
+        "ko": "열심히 했건만 결과가 좋지 않았다.",
+        "en": ""
+      }
+    ],
+    "source_refs": [
+      {
+        "file": "TOPIK level3-4 - 문법.pdf",
+        "entry_number": null
+      }
+    ],
+    "review_status": "imported_needs_review"
+  },
+  {
+    "id": "GRAM-0118",
+    "canonical": "-고자",
+    "aliases": [
+      "고자"
+    ],
+    "category": "purpose_intention",
+    "meanings_en": [
+      "In order to (formal/written)"
+    ],
+    "langsnack_level": 4,
+    "topik_level_estimate": 4,
+    "formality": "formal_written",
+    "register": null,
+    "detection_patterns": [
+      "고자"
+    ],
+    "examples": [
+      {
+        "ko": "성공하고자 열심히 노력했다.",
+        "en": ""
+      }
+    ],
+    "source_refs": [
+      {
+        "file": "TOPIK level3-4 - 문법.pdf",
+        "entry_number": null
+      }
+    ],
+    "review_status": "imported_needs_review"
+  },
+  {
+    "id": "GRAM-0119",
+    "canonical": "-기 일쑤이다",
+    "aliases": [
+      "기 일쑤이다"
+    ],
+    "category": "continuation_repetition",
+    "meanings_en": [
+      "Something happens often (negative)"
+    ],
+    "langsnack_level": 4,
+    "topik_level_estimate": 4,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "기 일쑤이다"
+    ],
+    "examples": [
+      {
+        "ko": "그는 늦기 일쑤예요.",
+        "en": ""
+      }
+    ],
+    "source_refs": [
+      {
+        "file": "TOPIK level3-4 - 문법.pdf",
+        "entry_number": null
+      }
+    ],
+    "review_status": "imported_needs_review"
+  },
+  {
+    "id": "GRAM-0120",
+    "canonical": "-기에",
+    "aliases": [
+      "기에"
+    ],
+    "category": "cause_reason",
+    "meanings_en": [
+      "Since / because"
+    ],
+    "langsnack_level": 4,
+    "topik_level_estimate": 4,
+    "formality": "formal_written",
+    "register": null,
+    "detection_patterns": [
+      "기에"
+    ],
+    "examples": [
+      {
+        "ko": "학생이 많기에 교실이 부족하다.",
+        "en": ""
+      }
+    ],
+    "source_refs": [
+      {
+        "file": "TOPIK level3-4 - 문법.pdf",
+        "entry_number": null
+      }
+    ],
+    "review_status": "imported_needs_review"
+  },
+  {
+    "id": "GRAM-0121",
+    "canonical": "-다기보다는",
+    "aliases": [
+      "다기보다는"
+    ],
+    "category": "comparison_choice",
+    "meanings_en": [
+      "Rather than saying A"
+    ],
+    "langsnack_level": 4,
+    "topik_level_estimate": 4,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "다기보다는"
+    ],
+    "examples": [
+      {
+        "ko": "실패라기보다는 경험이에요.",
+        "en": ""
+      }
+    ],
+    "source_refs": [
+      {
+        "file": "TOPIK level3-4 - 문법.pdf",
+        "entry_number": null
+      }
+    ],
+    "review_status": "imported_needs_review"
+  }
+]

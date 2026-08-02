@@ -1,0 +1,51 @@
+[
+  {
+    "file": "TOPIK-I-1671.pdf",
+    "type": "vocabulary",
+    "level": "TOPIK I",
+    "text_layer": "good",
+    "status": "imported_v1"
+  },
+  {
+    "file": "TOPIK-I-Grammar.pdf",
+    "type": "grammar",
+    "level": "TOPIK I",
+    "text_layer": "good",
+    "status": "imported_v1"
+  },
+  {
+    "file": "TOPIK level3-4 - 문법.pdf",
+    "type": "grammar",
+    "level": "TOPIK 3–4",
+    "text_layer": "good",
+    "status": "imported_v1"
+  },
+  {
+    "file": "토픽3,4급 문법 포인트_ocr.pdf",
+    "type": "grammar_and_passages",
+    "level": "TOPIK 3–4",
+    "text_layer": "partial_ocr",
+    "status": "queued_for_cross_reference"
+  },
+  {
+    "file": "쏙쏙 한국어 TOPIK 어휘 초급 40 Days (김미정).pdf",
+    "type": "vocabulary",
+    "level": "Beginner",
+    "text_layer": "scanned",
+    "status": "queued_for_review"
+  },
+  {
+    "file": "쏙쏙 한국어 TOPIK 어휘 중급 50 Days (김미정).pdf",
+    "type": "vocabulary",
+    "level": "Intermediate",
+    "text_layer": "scanned",
+    "status": "queued_for_review"
+  },
+  {
+    "file": "쏙쏙 한국어 TOPIK 어휘 고급 50 Days by 김미정.pdf",
+    "type": "vocabulary",
+    "level": "Advanced",
+    "text_layer": "scanned",
+    "status": "queued_for_review"
+  }
+]

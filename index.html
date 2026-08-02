@@ -4,98 +4,303 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#173826">
-<title>TOPIK Study Tools</title>
+<title>LangSnack Admin</title>
 <style>
-:root{--green:#173826;--green2:#214b35;--olive:#dfe3b4;--cream:#f4f0e7;--paper:#fbfaf6;--white:#fff;--ink:#22231f;--muted:#6e6b63;--line:#ded8cc;--blue:#29485f;--danger:#a7473e;--shadow:0 14px 38px rgba(27,38,31,.10)}
-*{box-sizing:border-box}body{margin:0;min-height:100vh;background:var(--cream);color:var(--ink);font-family:Inter,Pretendard,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}button,textarea,select{font:inherit}button{cursor:pointer}
-.topbar{background:var(--green);color:#fff;padding:18px 26px;display:flex;align-items:center;justify-content:space-between;gap:18px;position:sticky;top:0;z-index:10;box-shadow:0 8px 24px rgba(0,0,0,.1)}
-.topbar h1{margin:0;font-size:1.2rem}.topbar p{margin:4px 0 0;font-size:.82rem;color:rgba(255,255,255,.72)}select{border:1px solid rgba(255,255,255,.22);color:#fff;background:rgba(255,255,255,.08);border-radius:999px;padding:9px 13px}
-.workspace{width:min(1180px,calc(100% - 28px));margin:auto;padding:26px 0 42px}
-.tabs{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:18px;background:#e7e1d6;padding:8px;border:1px solid var(--line);border-radius:18px}
-.tab{border:0;border-radius:13px;padding:14px 16px;background:transparent;color:var(--muted);font-weight:800}.tab.active{background:#fff;color:var(--green);box-shadow:0 5px 16px rgba(45,51,44,.1)}
-.panel{display:none;background:#fff;border:1px solid var(--line);border-radius:22px;box-shadow:var(--shadow);overflow:hidden}.panel.active{display:block}
-.head{padding:24px 26px 20px;border-bottom:1px solid var(--line);background:linear-gradient(#fff,#fbfaf6);display:flex;justify-content:space-between;gap:20px}.head h2{margin:0;font-size:clamp(1.6rem,4vw,2.4rem);color:var(--blue)}.head p{margin:8px 0 0;color:var(--muted)}.badge{background:var(--olive);color:var(--green);border-radius:999px;padding:8px 12px;font-size:.78rem;font-weight:900;height:max-content}
-.body{padding:24px 26px 28px}.countergrid,.readergrid,.timergrid{display:grid;gap:20px}.countergrid{grid-template-columns:minmax(270px,.75fr) minmax(0,1.25fr)}.readergrid{grid-template-columns:1fr 340px}.timergrid{grid-template-columns:310px 1fr}
-.card{border:1px solid var(--line);border-radius:18px;background:var(--paper);padding:18px}
-.switch{display:grid;grid-template-columns:1fr 1fr;gap:7px;background:#e9e4da;padding:5px;border-radius:13px;margin-bottom:15px}.switch button{border:0;border-radius:10px;padding:10px;background:transparent;font-weight:850;color:var(--muted)}.switch button.active{background:#fff;color:var(--green)}
-label{display:block;margin-bottom:8px;font-size:.82rem;font-weight:900}textarea{width:100%;border:1px solid var(--line);border-radius:14px;padding:15px;min-height:260px;resize:vertical;outline:none;line-height:1.75;background:#fff}textarea:focus{border-color:var(--green2);box-shadow:0 0 0 4px rgba(23,56,38,.1)}
-.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:12px}.stat{background:#e9e4da;border-radius:12px;padding:12px 8px;text-align:center}.stat strong{display:block;font-size:1.3rem;color:var(--green)}.stat span{font-size:.72rem;color:var(--muted)}
-.progress{height:9px;border-radius:999px;background:#ded8cc;overflow:hidden;margin-top:12px}.progress span{display:block;height:100%;width:0;background:var(--green2)}
-.helper,.tip{margin-top:12px;font-size:.8rem;color:var(--muted);line-height:1.55}.tip{background:#e9e4da;border-radius:14px;padding:13px 15px}
-.paperwrap{border:1px solid var(--line);border-radius:18px;padding:14px;overflow:auto;max-height:620px;background:#ebe6dd}.paper{display:grid;grid-template-columns:repeat(20,32px);grid-auto-rows:32px;width:max-content;background:#fff;border-top:1px solid #c98f85;border-left:1px solid #c98f85}.cell{border-right:1px solid #c98f85;border-bottom:1px solid #c98f85;display:grid;place-items:center;font-family:"Noto Serif KR",serif;font-size:17px}.empty{color:transparent}
-.actions,.controls{display:flex;gap:10px;justify-content:flex-end;margin-top:12px}.controls{justify-content:center}.primary,.secondary,.danger{border:0;border-radius:13px;padding:12px 17px;font-weight:850}.primary{background:var(--green);color:#fff}.secondary{background:#e9e4da}.danger{background:var(--danger);color:#fff}
-.result{min-height:100%;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;background:linear-gradient(#f9f8f2,#eff0d2)}.result small{font-weight:900;color:var(--muted);letter-spacing:.1em}.circle{width:150px;height:150px;margin:16px;border-radius:50%;display:grid;place-items:center;background:var(--green);color:#fff}.circle span{display:block;font-size:.8rem;color:rgba(255,255,255,.7)}.circle strong{font-size:3.4rem}.levelname{font-size:1.1rem;font-weight:850;color:var(--blue)}.levelnote{margin-top:8px;color:var(--muted);font-size:.88rem;line-height:1.55}
-.sections{display:grid;gap:8px;margin-top:16px}.section{border:1px solid var(--line);border-radius:13px;background:#fff;padding:13px;display:flex;justify-content:space-between}.section.active{background:var(--olive);color:var(--green)}
-.timer{min-height:420px;display:flex;flex-direction:column;justify-content:center;align-items:center}.meta{color:var(--muted);font-weight:800}.clock{font-size:clamp(5rem,13vw,9rem);letter-spacing:-.07em;font-weight:900;color:var(--green);font-variant-numeric:tabular-nums;margin:24px 0}
-@media(max-width:850px){.countergrid,.readergrid,.timergrid{grid-template-columns:1fr}.result{min-height:300px}}@media(max-width:620px){.topbar{padding:15px 16px}.topbar p{display:none}.workspace{width:calc(100% - 16px);padding-top:14px}.tabs{grid-template-columns:1fr}.tab{text-align:left}.head{padding:20px;display:block}.badge{display:inline-block;margin-top:12px}.body{padding:16px}.stats{grid-template-columns:1fr 1fr}.stats .stat:last-child{grid-column:1/-1}.paper{grid-template-columns:repeat(20,28px);grid-auto-rows:28px}.clock{font-size:4.6rem}}
+:root{
+  --green:#173826;--green2:#214b35;--olive:#dfe3b4;--cream:#f4f0e7;
+  --paper:#fbfaf6;--white:#fff;--ink:#22231f;--muted:#6e6b63;
+  --line:#ded8cc;--blue:#29485f;--danger:#a7473e;--warn:#a26a1b;
+  --shadow:0 14px 38px rgba(27,38,31,.10)
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:Inter,Pretendard,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+button,input,select,textarea{font:inherit}button{cursor:pointer}
+.app{min-height:100vh;display:grid;grid-template-columns:250px 1fr}
+.sidebar{background:var(--green);color:white;padding:22px 16px;position:sticky;top:0;height:100vh}
+.brand{padding:0 8px 18px;border-bottom:1px solid rgba(255,255,255,.14)}
+.brand h1{font-size:1.15rem;margin:0}.brand p{font-size:.78rem;color:rgba(255,255,255,.65);margin:5px 0 0}
+.nav{display:grid;gap:6px;margin-top:18px}.nav button{border:0;background:transparent;color:rgba(255,255,255,.72);padding:12px 13px;border-radius:12px;text-align:left;font-weight:750}.nav button.active,.nav button:hover{background:rgba(255,255,255,.12);color:#fff}
+.sidebar-note{position:absolute;bottom:18px;left:16px;right:16px;font-size:.75rem;line-height:1.45;color:rgba(255,255,255,.58)}
+.main{min-width:0}
+.topbar{height:72px;background:rgba(244,240,231,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:0 24px;position:sticky;top:0;z-index:10}
+.topbar h2{margin:0;font-size:1.15rem}.status{display:flex;align-items:center;gap:10px;color:var(--muted);font-size:.82rem}.dot{width:9px;height:9px;border-radius:50%;background:#6b9b5b}
+.content{padding:24px}
+.view{display:none}.view.active{display:block}
+.hero{display:flex;justify-content:space-between;align-items:flex-start;gap:20px;margin-bottom:20px}.hero h3{font-size:clamp(1.7rem,4vw,2.6rem);margin:0;color:var(--blue)}.hero p{color:var(--muted);margin:7px 0 0}
+.actions{display:flex;gap:9px;flex-wrap:wrap}.btn{border:0;border-radius:12px;padding:11px 15px;font-weight:800}.primary{background:var(--green);color:white}.secondary{background:#e7e1d6;color:var(--ink)}.danger{background:var(--danger);color:white}.outline{background:white;border:1px solid var(--line)}
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.card{background:white;border:1px solid var(--line);border-radius:18px;padding:18px;box-shadow:var(--shadow)}.metric{font-size:2rem;font-weight:900;color:var(--green)}.label{font-size:.8rem;color:var(--muted);margin-top:5px}
+.panel{background:white;border:1px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:var(--shadow)}
+.toolbar{padding:14px;border-bottom:1px solid var(--line);display:grid;grid-template-columns:minmax(220px,1fr) 180px 180px auto;gap:10px;background:var(--paper)}
+input,select,textarea{width:100%;border:1px solid var(--line);border-radius:11px;padding:10px 12px;background:white;outline:none}input:focus,select:focus,textarea:focus{border-color:var(--green2);box-shadow:0 0 0 4px rgba(23,56,38,.09)}
+.table-wrap{overflow:auto;max-height:calc(100vh - 230px)}
+table{width:100%;border-collapse:collapse;min-width:900px}th,td{text-align:left;padding:12px 14px;border-bottom:1px solid #ece7de;font-size:.84rem;vertical-align:top}th{position:sticky;top:0;background:#f7f4ed;z-index:2;color:var(--muted);font-size:.75rem;text-transform:uppercase;letter-spacing:.06em}tr:hover td{background:#fbfaf6}
+.pill{display:inline-block;padding:5px 8px;border-radius:999px;background:var(--olive);color:var(--green);font-size:.72rem;font-weight:850}.review{background:#f4e5c8;color:#7a541d}
+.row-actions{display:flex;gap:6px}.iconbtn{border:1px solid var(--line);background:white;border-radius:9px;padding:7px 9px}
+.empty{padding:46px;text-align:center;color:var(--muted)}
+.modal{position:fixed;inset:0;background:rgba(20,25,21,.48);display:none;align-items:center;justify-content:center;padding:18px;z-index:100}.modal.open{display:flex}
+.dialog{width:min(760px,100%);max-height:92vh;overflow:auto;background:white;border-radius:20px;box-shadow:0 30px 90px rgba(0,0,0,.25)}
+.dialog-head{padding:18px 20px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center}.dialog-head h4{margin:0;font-size:1.2rem}.dialog-body{padding:20px;display:grid;grid-template-columns:1fr 1fr;gap:14px}.field.full{grid-column:1/-1}.field label{display:block;font-size:.78rem;font-weight:850;margin-bottom:7px}.dialog-foot{padding:15px 20px;border-top:1px solid var(--line);display:flex;justify-content:flex-end;gap:9px}
+textarea{min-height:110px;resize:vertical}
+.notice{background:#fff7e8;border:1px solid #ead7ad;color:#78551d;padding:14px 16px;border-radius:14px;margin-bottom:18px;font-size:.84rem;line-height:1.55}
+.import-box{padding:24px}.import-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.drop{border:2px dashed var(--line);border-radius:16px;padding:28px;text-align:center;background:var(--paper)}.drop input{margin-top:12px}
+.log{margin-top:16px;background:#202720;color:#dce6da;border-radius:14px;padding:14px;min-height:150px;white-space:pre-wrap;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.78rem}
+@media(max-width:900px){.app{grid-template-columns:1fr}.sidebar{height:auto;position:static}.sidebar-note{display:none}.nav{grid-template-columns:repeat(4,1fr)}.nav button{text-align:center}.cards{grid-template-columns:1fr 1fr}.toolbar{grid-template-columns:1fr 1fr}.toolbar input{grid-column:1/-1}.main{min-width:0}}
+@media(max-width:600px){.content{padding:14px}.topbar{padding:0 14px}.hero{display:block}.actions{margin-top:14px}.cards{grid-template-columns:1fr}.nav{grid-template-columns:1fr 1fr}.toolbar{grid-template-columns:1fr}.toolbar input{grid-column:auto}.dialog-body{grid-template-columns:1fr}.field.full{grid-column:auto}.import-grid{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
+<div class="app">
+<aside class="sidebar">
+  <div class="brand"><h1>LangSnack Admin</h1><p>Private language database manager</p></div>
+  <nav class="nav">
+    <button class="active" data-view="dashboard">Dashboard</button>
+    <button data-view="grammar">Grammar</button>
+    <button data-view="vocabulary">Vocabulary</button>
+    <button data-view="importExport">Import & Export</button>
+  </nav>
+  <div class="sidebar-note">This static admin saves edits in your browser. Export JSON before clearing browser data or moving devices.</div>
+</aside>
+
+<section class="main">
 <header class="topbar">
-<div><h1 data-t="appTitle">TOPIK Study Tools</h1><p data-t="subtitle">Simple tools for focused practice.</p></div>
-<select id="lang"><option value="en">English</option><option value="ko">한국어</option><option value="zh-CN">简体中文</option><option value="zh-TW">繁體中文</option><option value="id">Bahasa Indonesia</option><option value="ms">Bahasa Melayu</option><option value="es">Español</option><option value="de">Deutsch</option><option value="ru">Русский</option><option value="tl">Tagalog</option><option value="ta">தமிழ்</option><option value="hi">हिन्दी</option><option value="fr">Français</option></select>
+  <h2 id="pageTitle">Dashboard</h2>
+  <div class="status"><span class="dot"></span><span id="saveStatus">Saved locally</span></div>
 </header>
 
-<main class="workspace">
-<nav class="tabs">
-<button class="tab active" data-panel="counter">▦ <span data-t="tabCounter">Character Counter</span></button>
-<button class="tab" data-panel="reading">◫ <span data-t="tabReading">Reading Difficulty</span></button>
-<button class="tab" data-panel="timer">◷ <span data-t="tabTimer">Mock Exam Timer</span></button>
-</nav>
+<div class="content">
+<section class="view active" id="dashboard">
+  <div class="hero"><div><h3>Database overview</h3><p>Review, improve and export the shared data used by your LangSnack tools.</p></div></div>
+  <div class="notice"><strong>Private beta:</strong> there is no login protection in this static version. Keep the repository private or use it only on your own computer.</div>
+  <div class="cards">
+    <div class="card"><div class="metric" id="grammarCount">0</div><div class="label">Grammar entries</div></div>
+    <div class="card"><div class="metric" id="vocabCount">0</div><div class="label">Vocabulary entries</div></div>
+    <div class="card"><div class="metric" id="reviewCount">0</div><div class="label">Items needing review</div></div>
+    <div class="card"><div class="metric" id="levelCount">6</div><div class="label">LangSnack levels</div></div>
+  </div>
+</section>
 
-<section class="panel active" id="counter">
-<div class="head"><div><h2 data-t="counterTitle">Character Counter</h2><p data-t="counterIntro">Write while your text fills Korean manuscript paper in real time.</p></div><span class="badge" data-t="writing">Writing</span></div>
-<div class="body"><div class="countergrid">
-<div class="card">
-<div class="switch"><button class="active" data-limit="300">300자</button><button data-limit="700">700자</button></div>
-<label data-t="yourWriting">Your writing</label><textarea id="writing" placeholder="여기에 글을 써 보세요..."></textarea>
-<div class="stats"><div class="stat"><strong id="chars">0</strong><span data-t="characters">Characters</span></div><div class="stat"><strong id="remain">300</strong><span data-t="remaining">Remaining</span></div><div class="stat"><strong id="spaces">0</strong><span data-t="spaces">Spaces</span></div></div>
-<div class="progress"><span id="bar"></span></div><div class="helper" data-t="counterHelp">Spaces and punctuation use one square. A line break begins on the next row.</div>
+<section class="view" id="grammar">
+  <div class="hero">
+    <div><h3>Grammar</h3><p>Search, review and edit canonical grammar entries.</p></div>
+    <div class="actions"><button class="btn primary" id="addGrammar">+ Add grammar</button></div>
+  </div>
+  <div class="panel">
+    <div class="toolbar">
+      <input id="grammarSearch" placeholder="Search grammar or meaning">
+      <select id="grammarLevel"><option value="">All levels</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option></select>
+      <select id="grammarStatus"><option value="">All statuses</option><option value="imported_needs_review">Needs review</option><option value="approved">Approved</option></select>
+      <button class="btn secondary" id="clearGrammarFilters">Clear</button>
+    </div>
+    <div class="table-wrap"><table><thead><tr><th>ID</th><th>Grammar</th><th>Level</th><th>Category</th><th>Meaning</th><th>Status</th><th></th></tr></thead><tbody id="grammarRows"></tbody></table></div>
+  </div>
+</section>
+
+<section class="view" id="vocabulary">
+  <div class="hero">
+    <div><h3>Vocabulary</h3><p>Manage words, levels, meanings and review status.</p></div>
+    <div class="actions"><button class="btn primary" id="addVocab">+ Add word</button></div>
+  </div>
+  <div class="panel">
+    <div class="toolbar">
+      <input id="vocabSearch" placeholder="Search Korean word or English meaning">
+      <select id="vocabLevel"><option value="">All levels</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option></select>
+      <select id="vocabStatus"><option value="">All statuses</option><option value="imported_needs_review">Needs review</option><option value="approved">Approved</option></select>
+      <button class="btn secondary" id="clearVocabFilters">Clear</button>
+    </div>
+    <div class="table-wrap"><table><thead><tr><th>ID</th><th>Word</th><th>Level</th><th>TOPIK</th><th>Meaning</th><th>Status</th><th></th></tr></thead><tbody id="vocabRows"></tbody></table></div>
+  </div>
+</section>
+
+<section class="view" id="importExport">
+  <div class="hero"><div><h3>Import & export</h3><p>Bring in reviewed JSON files or export the current browser database.</p></div></div>
+  <div class="panel import-box">
+    <div class="import-grid">
+      <div class="drop"><h4>Import grammar JSON</h4><p>Replaces the grammar data currently stored in this browser.</p><input type="file" id="importGrammar" accept=".json"></div>
+      <div class="drop"><h4>Import vocabulary JSON</h4><p>Replaces the vocabulary data currently stored in this browser.</p><input type="file" id="importVocab" accept=".json"></div>
+    </div>
+    <div class="actions" style="margin-top:18px">
+      <button class="btn primary" id="exportGrammar">Export grammar.json</button>
+      <button class="btn primary" id="exportVocab">Export vocabulary.json</button>
+      <button class="btn outline" id="resetSeed">Reset to bundled seed</button>
+      <button class="btn danger" id="clearLocal">Clear local edits</button>
+    </div>
+    <div class="log" id="log">Ready.</div>
+  </div>
+</section>
 </div>
-<div class="paperwrap"><div class="paper" id="paper"></div></div>
-</div></div>
 </section>
+</div>
 
-<section class="panel" id="reading">
-<div class="head"><div><h2 data-t="readingTitle">TOPIK Reading Difficulty</h2><p data-t="readingIntro">Paste a Korean passage and get a simple estimated level from 1 to 6.</p></div><span class="badge" data-t="reading">Reading</span></div>
-<div class="body"><div class="readergrid">
-<div class="card"><label data-t="passage">Korean passage</label><textarea id="readingText" placeholder="분석할 한국어 글을 여기에 붙여 넣으세요..."></textarea><div class="actions"><button class="secondary" id="clear" data-t="clear">Clear</button><button class="primary" id="analyse" data-t="analyse">Analyse</button></div><div class="tip" data-t="readingTip">This is a practice estimate, not an official TOPIK score.</div></div>
-<div class="card result"><small data-t="estimated">ESTIMATED TOPIK LEVEL</small><div class="circle"><div><span data-t="level">Level</span><strong id="levelNum">–</strong></div></div><div class="levelname" id="levelName" data-t="pasteFirst">Paste a passage to begin</div><div class="levelnote" id="levelNote"></div></div>
-</div></div>
-</section>
-
-<section class="panel" id="timer">
-<div class="head"><div><h2 data-t="timerTitle">Mock Exam Timer</h2><p data-t="timerIntro">Choose a TOPIK paper and practise without distractions.</p></div><span class="badge" data-t="exam">Exam practice</span></div>
-<div class="body"><div class="timergrid">
-<div class="card"><div class="switch"><button class="active" data-exam="I">TOPIK I</button><button data-exam="II">TOPIK II</button></div><div class="sections" id="sections"></div><div class="tip" data-t="timerTip">Keep this tab open while the timer is running.</div></div>
-<div class="card timer"><div class="meta" id="timerLabel">Listening · 듣기</div><div class="clock" id="clock">40:00</div><div class="controls"><button class="primary" id="start" data-t="start">Start</button><button class="secondary" id="pause" data-t="pause">Pause</button><button class="danger" id="reset" data-t="reset">Reset</button></div></div>
-</div></div>
-</section>
-</main>
+<div class="modal" id="editorModal">
+  <div class="dialog">
+    <div class="dialog-head"><h4 id="editorTitle">Edit entry</h4><button class="iconbtn" id="closeModal">✕</button></div>
+    <form id="editorForm">
+      <div class="dialog-body" id="editorFields"></div>
+      <div class="dialog-foot"><button type="button" class="btn secondary" id="cancelModal">Cancel</button><button type="submit" class="btn primary">Save changes</button></div>
+    </form>
+  </div>
+</div>
 
 <script>
-const T={"en":{"appTitle":"TOPIK Study Tools","subtitle":"Simple tools for focused practice.","tabCounter":"Character Counter","tabReading":"Reading Difficulty","tabTimer":"Mock Exam Timer","counterTitle":"Character Counter","counterIntro":"Write while your text fills Korean manuscript paper in real time.","writing":"Writing","yourWriting":"Your writing","characters":"Characters","remaining":"Remaining","spaces":"Spaces","counterHelp":"Spaces and punctuation use one square. A line break begins on the next row.","readingTitle":"TOPIK Reading Difficulty","readingIntro":"Paste a Korean passage and get a simple estimated level from 1 to 6.","reading":"Reading","passage":"Korean passage","clear":"Clear","analyse":"Analyse","readingTip":"This is a practice estimate, not an official TOPIK score.","estimated":"ESTIMATED TOPIK LEVEL","level":"Level","pasteFirst":"Paste a passage to begin","timerTitle":"Mock Exam Timer","timerIntro":"Choose a TOPIK paper and practise without distractions.","exam":"Exam practice","timerTip":"Keep this tab open while the timer is running.","start":"Start","pause":"Pause","reset":"Reset","listening":"Listening","readingSkill":"Reading","writingSkill":"Writing","min":"min","names":["","Beginner foundation","Beginner","High beginner","Intermediate","High intermediate","Advanced"],"notes":["","Very short sentences and basic everyday vocabulary.","Mostly familiar beginner grammar and common vocabulary.","Longer sentences with more connected ideas.","More abstract vocabulary and intermediate grammar patterns.","Dense sentences and formal vocabulary.","Advanced vocabulary and complex sentence patterns."]},"ko":{"appTitle":"TOPIK 학습 도구","subtitle":"집중해서 연습할 수 있는 간단한 도구예요.","tabCounter":"글자 수 세기","tabReading":"읽기 난이도","tabTimer":"모의고사 타이머","counterTitle":"글자 수 세기","counterIntro":"글을 입력하면 원고지에 실시간으로 표시돼요.","writing":"쓰기","yourWriting":"내 글","characters":"글자 수","remaining":"남은 칸","spaces":"띄어쓰기","counterHelp":"띄어쓰기와 문장 부호도 한 칸을 사용해요. 줄 바꿈은 다음 줄에서 시작해요.","readingTitle":"TOPIK 읽기 난이도","readingIntro":"한국어 글을 붙여 넣으면 1급부터 6급까지 예상 난이도를 보여 줘요.","reading":"읽기","passage":"한국어 글","clear":"지우기","analyse":"분석하기","readingTip":"연습용 예상치이며 공식 TOPIK 점수가 아니에요.","estimated":"예상 TOPIK 급수","level":"급","pasteFirst":"글을 붙여 넣어 주세요","timerTitle":"모의고사 타이머","timerIntro":"시험 영역을 선택하고 방해 없이 연습해 보세요.","exam":"시험 연습","timerTip":"타이머가 작동하는 동안 이 탭을 닫지 마세요.","start":"시작","pause":"일시 정지","reset":"초기화","listening":"듣기","readingSkill":"읽기","writingSkill":"쓰기","min":"분","names":["","기초 초급","초급","상초급","중급","중고급","고급"],"notes":["","아주 짧은 문장과 기본적인 일상 어휘가 중심이에요.","익숙한 초급 문법과 자주 쓰는 어휘가 많아요.","문장이 길어지고 연결된 내용이 더 많아요.","추상적인 어휘와 중급 문법이 나타나요.","문장이 조밀하고 격식 있는 어휘가 다양해요.","고급 어휘와 복잡한 문장 구조가 많이 사용돼요."]},"zh-CN":{"appTitle":"TOPIK 学习工具","subtitle":"简单实用的专注练习工具。","tabCounter":"字数统计","tabReading":"阅读难度","tabTimer":"模拟考试计时器","counterTitle":"字数统计","counterIntro":"输入内容时，文字会实时显示在韩文稿纸上。","writing":"写作","yourWriting":"你的文章","characters":"字数","remaining":"剩余格数","spaces":"空格","counterHelp":"空格和标点符号各占一格。换行后从稿纸下一行开始。","readingTitle":"TOPIK 阅读难度","readingIntro":"粘贴一段韩文，即可查看 1 至 6 级的预估难度。","reading":"阅读","passage":"韩文文章","clear":"清空","analyse":"分析","readingTip":"此结果仅供练习参考，并非 TOPIK 官方成绩。","estimated":"预估 TOPIK 等级","level":"等级","pasteFirst":"请先粘贴一段文章","timerTitle":"模拟考试计时器","timerIntro":"选择 TOPIK 考试科目，在无干扰的环境下进行限时练习。","exam":"考试练习","timerTip":"计时过程中请保持此页面开启。","start":"开始","pause":"暂停","reset":"重置","listening":"听力","readingSkill":"阅读","writingSkill":"写作","min":"分钟","names":["","入门基础","初级","初中级","中级","中高级","高级"],"notes":["","以很短的句子和基础日常词汇为主。","主要使用常见的初级语法和词汇。","句子更长，内容之间的衔接也更多。","开始出现抽象词汇和中级语法。","句子较密集，并使用较多正式词汇。","包含高级词汇和复杂句型。"]},"zh-TW":{"appTitle":"TOPIK 學習工具","subtitle":"簡單實用的專注練習工具。","tabCounter":"字數統計","tabReading":"閱讀難度","tabTimer":"模擬考試計時器","counterTitle":"字數統計","counterIntro":"輸入內容時，文字會即時顯示在韓文稿紙上。","writing":"寫作","yourWriting":"你的文章","characters":"字數","remaining":"剩餘格數","spaces":"空格","counterHelp":"空格和標點符號各佔一格。換行後會從稿紙下一行開始。","readingTitle":"TOPIK 閱讀難度","readingIntro":"貼上一段韓文，即可查看 1 至 6 級的預估難度。","reading":"閱讀","passage":"韓文文章","clear":"清除","analyse":"分析","readingTip":"此結果僅供練習參考，並非 TOPIK 官方成績。","estimated":"預估 TOPIK 等級","level":"等級","pasteFirst":"請先貼上一段文章","timerTitle":"模擬考試計時器","timerIntro":"選擇 TOPIK 考試科目，在不受干擾的情況下進行限時練習。","exam":"考試練習","timerTip":"計時期間請保持此頁面開啟。","start":"開始","pause":"暫停","reset":"重設","listening":"聽力","readingSkill":"閱讀","writingSkill":"寫作","min":"分鐘","names":["","入門基礎","初級","初中級","中級","中高級","高級"],"notes":["","以很短的句子和基礎日常詞彙為主。","主要使用常見的初級文法和詞彙。","句子較長，內容之間的連結也更多。","開始出現抽象詞彙和中級文法。","句子較密集，並使用較多正式詞彙。","包含高級詞彙和複雜句型。"]},"id":{"appTitle":"Alat Belajar TOPIK","subtitle":"Alat sederhana untuk latihan yang lebih fokus.","tabCounter":"Penghitung Karakter","tabReading":"Tingkat Kesulitan Bacaan","tabTimer":"Timer Simulasi Ujian","counterTitle":"Penghitung Karakter","counterIntro":"Tulis teks dan lihat hasilnya langsung pada kertas manuskrip Korea.","writing":"Menulis","yourWriting":"Tulisan Anda","characters":"Karakter","remaining":"Sisa kotak","spaces":"Spasi","counterHelp":"Spasi dan tanda baca masing-masing memakai satu kotak. Baris baru dimulai pada baris berikutnya.","readingTitle":"Tingkat Kesulitan Bacaan TOPIK","readingIntro":"Tempelkan teks bahasa Korea untuk melihat perkiraan tingkat 1 hingga 6.","reading":"Membaca","passage":"Teks bahasa Korea","clear":"Hapus","analyse":"Analisis","readingTip":"Hasil ini hanya perkiraan untuk latihan, bukan nilai resmi TOPIK.","estimated":"PERKIRAAN TINGKAT TOPIK","level":"Tingkat","pasteFirst":"Tempelkan teks untuk memulai","timerTitle":"Timer Simulasi Ujian","timerIntro":"Pilih bagian ujian TOPIK dan berlatih tanpa gangguan.","exam":"Latihan ujian","timerTip":"Biarkan tab ini tetap terbuka selama timer berjalan.","start":"Mulai","pause":"Jeda","reset":"Atur ulang","listening":"Menyimak","readingSkill":"Membaca","writingSkill":"Menulis","min":"menit","names":["","Dasar pemula","Pemula","Pemula tingkat lanjut","Menengah","Menengah tingkat lanjut","Mahir"],"notes":["","Kalimat sangat pendek dengan kosakata sehari-hari yang dasar.","Sebagian besar menggunakan tata bahasa pemula dan kosakata umum.","Kalimat lebih panjang dengan gagasan yang lebih saling terhubung.","Mulai menggunakan kosakata abstrak dan tata bahasa tingkat menengah.","Kalimat lebih padat dengan kosakata formal yang lebih beragam.","Menggunakan kosakata tingkat lanjut dan struktur kalimat yang kompleks."]},"ms":{"appTitle":"Alat Pembelajaran TOPIK","subtitle":"Alat ringkas untuk latihan yang lebih fokus.","tabCounter":"Pengira Aksara","tabReading":"Tahap Kesukaran Bacaan","tabTimer":"Pemasa Ujian Percubaan","counterTitle":"Pengira Aksara","counterIntro":"Tulis teks dan lihat teks tersebut dipaparkan pada kertas manuskrip Korea secara langsung.","writing":"Penulisan","yourWriting":"Tulisan anda","characters":"Aksara","remaining":"Baki petak","spaces":"Ruang","counterHelp":"Ruang dan tanda baca masing-masing menggunakan satu petak. Baris baharu bermula pada baris seterusnya.","readingTitle":"Tahap Kesukaran Bacaan TOPIK","readingIntro":"Tampalkan teks bahasa Korea untuk melihat anggaran tahap 1 hingga 6.","reading":"Bacaan","passage":"Teks bahasa Korea","clear":"Kosongkan","analyse":"Analisis","readingTip":"Keputusan ini hanyalah anggaran untuk latihan, bukan keputusan rasmi TOPIK.","estimated":"ANGGARAN TAHAP TOPIK","level":"Tahap","pasteFirst":"Tampalkan teks untuk bermula","timerTitle":"Pemasa Ujian Percubaan","timerIntro":"Pilih bahagian ujian TOPIK dan berlatih tanpa gangguan.","exam":"Latihan peperiksaan","timerTip":"Pastikan tab ini kekal terbuka semasa pemasa berjalan.","start":"Mula","pause":"Jeda","reset":"Tetapkan semula","listening":"Mendengar","readingSkill":"Membaca","writingSkill":"Menulis","min":"minit","names":["","Asas pemula","Pemula","Pemula lanjutan","Pertengahan","Pertengahan lanjutan","Mahir"],"notes":["","Ayat yang sangat pendek dengan kosa kata harian asas.","Kebanyakannya menggunakan tatabahasa pemula dan kosa kata umum.","Ayat lebih panjang dengan idea yang lebih berkaitan.","Mula menggunakan kosa kata abstrak dan tatabahasa pertengahan.","Ayat lebih padat dengan pelbagai kosa kata formal.","Menggunakan kosa kata lanjutan dan struktur ayat yang kompleks."]},"es":{"appTitle":"Herramientas de estudio para el TOPIK","subtitle":"Herramientas sencillas para practicar con concentración.","tabCounter":"Contador de caracteres","tabReading":"Dificultad de lectura","tabTimer":"Temporizador de simulacro","counterTitle":"Contador de caracteres","counterIntro":"Escribe y observa cómo el texto aparece en tiempo real en el papel pautado coreano.","writing":"Escritura","yourWriting":"Tu texto","characters":"Caracteres","remaining":"Casillas restantes","spaces":"Espacios","counterHelp":"Los espacios y los signos de puntuación ocupan una casilla cada uno. Los saltos de línea empiezan en la fila siguiente.","readingTitle":"Dificultad de lectura del TOPIK","readingIntro":"Pega un texto en coreano para obtener una estimación del nivel 1 al 6.","reading":"Lectura","passage":"Texto en coreano","clear":"Borrar","analyse":"Analizar","readingTip":"Esta es solo una estimación para practicar, no una calificación oficial del TOPIK.","estimated":"NIVEL TOPIK ESTIMADO","level":"Nivel","pasteFirst":"Pega un texto para empezar","timerTitle":"Temporizador de simulacro","timerIntro":"Elige una sección del TOPIK y practica sin distracciones.","exam":"Práctica de examen","timerTip":"Mantén esta pestaña abierta mientras el temporizador esté en marcha.","start":"Iniciar","pause":"Pausar","reset":"Reiniciar","listening":"Comprensión auditiva","readingSkill":"Lectura","writingSkill":"Escritura","min":"min","names":["","Nivel inicial","Principiante","Principiante alto","Intermedio","Intermedio alto","Avanzado"],"notes":["","Frases muy cortas y vocabulario cotidiano básico.","Predominan la gramática de nivel principiante y el vocabulario frecuente.","Frases más largas con ideas más conectadas.","Aparecen vocabulario abstracto y estructuras de nivel intermedio.","Frases más densas y un repertorio más amplio de vocabulario formal.","Vocabulario avanzado y estructuras oracionales complejas."]},"de":{"appTitle":"TOPIK-Lerntools","subtitle":"Einfache Tools für konzentriertes Üben.","tabCounter":"Zeichenzähler","tabReading":"Leseschwierigkeit","tabTimer":"Prüfungstimer","counterTitle":"Zeichenzähler","counterIntro":"Schreibe deinen Text und sieh in Echtzeit, wie er auf koreanischem Manuskriptpapier erscheint.","writing":"Schreiben","yourWriting":"Dein Text","characters":"Zeichen","remaining":"Verbleibende Felder","spaces":"Leerzeichen","counterHelp":"Leerzeichen und Satzzeichen belegen jeweils ein Feld. Ein Zeilenumbruch beginnt in der nächsten Zeile.","readingTitle":"TOPIK-Leseschwierigkeit","readingIntro":"Füge einen koreanischen Text ein und erhalte eine Schätzung von Stufe 1 bis 6.","reading":"Lesen","passage":"Koreanischer Text","clear":"Leeren","analyse":"Analysieren","readingTip":"Dies ist nur eine Übungsschätzung und kein offizielles TOPIK-Ergebnis.","estimated":"GESCHÄTZTE TOPIK-STUFE","level":"Stufe","pasteFirst":"Füge zuerst einen Text ein","timerTitle":"TOPIK-Prüfungstimer","timerIntro":"Wähle einen Prüfungsteil und übe ohne Ablenkung.","exam":"Prüfungstraining","timerTip":"Lass diesen Tab geöffnet, solange der Timer läuft.","start":"Starten","pause":"Pausieren","reset":"Zurücksetzen","listening":"Hörverstehen","readingSkill":"Lesen","writingSkill":"Schreiben","min":"Min.","names":["","Grundstufe","Anfänger","Fortgeschrittene Anfänger","Mittelstufe","Fortgeschrittene Mittelstufe","Fortgeschritten"],"notes":["","Sehr kurze Sätze und grundlegender Alltagswortschatz.","Überwiegend vertraute Anfängergrammatik und häufiger Wortschatz.","Längere Sätze mit stärker verknüpften Gedanken.","Mehr abstrakter Wortschatz und Grammatik der Mittelstufe.","Dichte Sätze und ein breiterer formeller Wortschatz.","Fortgeschrittener Wortschatz und komplexe Satzstrukturen."]},"ru":{"appTitle":"Инструменты для подготовки к TOPIK","subtitle":"Простые инструменты для сосредоточенной практики.","tabCounter":"Подсчёт символов","tabReading":"Сложность текста","tabTimer":"Таймер пробного экзамена","counterTitle":"Подсчёт символов","counterIntro":"Пишите текст и сразу смотрите, как он размещается на корейской разлинованной бумаге.","writing":"Письмо","yourWriting":"Ваш текст","characters":"Символы","remaining":"Осталось клеток","spaces":"Пробелы","counterHelp":"Пробелы и знаки препинания занимают по одной клетке. Новая строка начинается со следующего ряда.","readingTitle":"Сложность чтения TOPIK","readingIntro":"Вставьте корейский текст, чтобы получить примерную оценку от 1 до 6 уровня.","reading":"Чтение","passage":"Текст на корейском","clear":"Очистить","analyse":"Проанализировать","readingTip":"Это приблизительная оценка для практики, а не официальный результат TOPIK.","estimated":"ПРИМЕРНЫЙ УРОВЕНЬ TOPIK","level":"Уровень","pasteFirst":"Вставьте текст, чтобы начать","timerTitle":"Таймер пробного экзамена","timerIntro":"Выберите раздел TOPIK и тренируйтесь без отвлекающих факторов.","exam":"Подготовка к экзамену","timerTip":"Не закрывайте эту вкладку, пока работает таймер.","start":"Начать","pause":"Пауза","reset":"Сбросить","listening":"Аудирование","readingSkill":"Чтение","writingSkill":"Письмо","min":"мин","names":["","Базовый начальный","Начальный","Выше начального","Средний","Выше среднего","Продвинутый"],"notes":["","Очень короткие предложения и базовая повседневная лексика.","В основном знакомая начальная грамматика и частотная лексика.","Более длинные предложения и больше связанных идей.","Появляются абстрактная лексика и грамматика среднего уровня.","Плотные предложения и более широкий формальный словарь.","Продвинутая лексика и сложные синтаксические конструкции."]},"tl":{"appTitle":"Mga Tool sa Pag-aaral para sa TOPIK","subtitle":"Mga simpleng tool para sa mas pokus na pagsasanay.","tabCounter":"Bilang ng Character","tabReading":"Antas ng Hirap sa Pagbasa","tabTimer":"Timer ng Mock Exam","counterTitle":"Bilang ng Character","counterIntro":"Magsulat at makita agad kung paano pumupuno ang teksto sa Korean manuscript paper.","writing":"Pagsulat","yourWriting":"Iyong sinulat","characters":"Mga character","remaining":"Natitirang kahon","spaces":"Mga espasyo","counterHelp":"Isang kahon ang gamit ng bawat espasyo at bantas. Ang line break ay magsisimula sa susunod na linya.","readingTitle":"Antas ng Hirap sa Pagbasa ng TOPIK","readingIntro":"I-paste ang tekstong Korean para makita ang tinatayang antas mula 1 hanggang 6.","reading":"Pagbasa","passage":"Tekstong Korean","clear":"I-clear","analyse":"Suriin","readingTip":"Tantiya lamang ito para sa pagsasanay at hindi opisyal na marka ng TOPIK.","estimated":"TINATAYANG ANTAS NG TOPIK","level":"Antas","pasteFirst":"Mag-paste ng teksto para magsimula","timerTitle":"Timer ng Mock Exam","timerIntro":"Pumili ng bahagi ng TOPIK at magsanay nang walang istorbo.","exam":"Pagsasanay sa exam","timerTip":"Panatilihing bukas ang tab na ito habang tumatakbo ang timer.","start":"Simulan","pause":"I-pause","reset":"I-reset","listening":"Pakikinig","readingSkill":"Pagbasa","writingSkill":"Pagsulat","min":"min","names":["","Panimulang batayan","Baguhan","Mataas na baguhan","Katamtaman","Mataas na katamtaman","Advanced"],"notes":["","Napakaikling pangungusap at pangunahing bokabularyo sa araw-araw.","Karamihan ay karaniwang grammar para sa baguhan at madalas gamiting bokabularyo.","Mas mahahabang pangungusap at mas magkakaugnay na ideya.","May mas abstraktong bokabularyo at intermediate na grammar.","Mas siksik na pangungusap at mas malawak na pormal na bokabularyo.","Advanced na bokabularyo at mas komplikadong estruktura ng pangungusap."]},"ta":{"appTitle":"TOPIK பயிற்சி கருவிகள்","subtitle":"கவனமாகப் பயிற்சி செய்ய எளிய கருவிகள்.","tabCounter":"எழுத்து எண்ணி","tabReading":"வாசிப்பு சிரம நிலை","tabTimer":"மாதிரி தேர்வு நேரக்கட்டி","counterTitle":"எழுத்து எண்ணி","counterIntro":"எழுதும் போது உங்கள் உரை கொரிய கையெழுத்துத் தாளில் உடனுக்குடன் நிரம்புவதைப் பாருங்கள்.","writing":"எழுத்துப் பயிற்சி","yourWriting":"உங்கள் உரை","characters":"எழுத்துகள்","remaining":"மீதமுள்ள கட்டங்கள்","spaces":"இடைவெளிகள்","counterHelp":"இடைவெளி மற்றும் நிறுத்தக் குறிகள் ஒவ்வொன்றும் ஒரு கட்டத்தைப் பயன்படுத்தும். புதிய வரி அடுத்த வரிசையில் தொடங்கும்.","readingTitle":"TOPIK வாசிப்பு சிரம நிலை","readingIntro":"கொரிய உரையை ஒட்டி, நிலை 1 முதல் 6 வரை மதிப்பிடப்பட்ட சிரமத்தைப் பாருங்கள்.","reading":"வாசிப்பு","passage":"கொரிய உரை","clear":"அழி","analyse":"பகுப்பாய்வு செய்","readingTip":"இது பயிற்சிக்கான மதிப்பீடு மட்டுமே; அதிகாரப்பூர்வ TOPIK மதிப்பெண் அல்ல.","estimated":"மதிப்பிடப்பட்ட TOPIK நிலை","level":"நிலை","pasteFirst":"தொடங்க ஒரு உரையை ஒட்டுங்கள்","timerTitle":"மாதிரி தேர்வு நேரக்கட்டி","timerIntro":"TOPIK பகுதியைத் தேர்ந்தெடுத்து கவனச்சிதறல் இல்லாமல் பயிற்சி செய்யுங்கள்.","exam":"தேர்வு பயிற்சி","timerTip":"நேரக்கட்டி இயங்கும் போது இந்தத் தாவலை திறந்தே வைத்திருங்கள்.","start":"தொடங்கு","pause":"இடைநிறுத்து","reset":"மீட்டமை","listening":"கேட்டல்","readingSkill":"வாசிப்பு","writingSkill":"எழுத்து","min":"நிமி","names":["","அடிப்படை தொடக்கநிலை","தொடக்கநிலை","மேம்பட்ட தொடக்கநிலை","இடைநிலை","மேம்பட்ட இடைநிலை","உயர்நிலை"],"notes":["","மிகக் குறுகிய வாக்கியங்களும் அடிப்படை அன்றாடச் சொற்களும் உள்ளன.","பொதுவான தொடக்கநிலை இலக்கணமும் அடிக்கடி பயன்படும் சொற்களும் அதிகம்.","நீளமான வாக்கியங்களும் அதிகமாக இணைந்த கருத்துகளும் உள்ளன.","கருத்தியல் சொற்களும் இடைநிலை இலக்கண வடிவங்களும் தோன்றுகின்றன.","அடர்த்தியான வாக்கியங்களும் விரிவான முறையான சொற்களும் உள்ளன.","உயர்நிலைச் சொற்களும் சிக்கலான வாக்கிய அமைப்புகளும் உள்ளன."]},"hi":{"appTitle":"TOPIK अध्ययन उपकरण","subtitle":"एकाग्र अभ्यास के लिए सरल उपकरण।","tabCounter":"अक्षर गणना","tabReading":"पठन कठिनाई","tabTimer":"मॉक परीक्षा टाइमर","counterTitle":"अक्षर गणना","counterIntro":"लिखते समय अपने पाठ को कोरियाई पांडुलिपि कागज़ पर तुरंत भरते हुए देखें।","writing":"लेखन","yourWriting":"आपका लेख","characters":"अक्षर","remaining":"बचे हुए खाने","spaces":"रिक्त स्थान","counterHelp":"हर रिक्त स्थान और विराम चिह्न एक खाना लेता है। नई पंक्ति अगली कतार से शुरू होती है।","readingTitle":"TOPIK पठन कठिनाई","readingIntro":"कोरियाई पाठ चिपकाएँ और स्तर 1 से 6 तक अनुमानित कठिनाई देखें।","reading":"पठन","passage":"कोरियाई पाठ","clear":"साफ़ करें","analyse":"विश्लेषण करें","readingTip":"यह केवल अभ्यास के लिए अनुमान है, आधिकारिक TOPIK अंक नहीं।","estimated":"अनुमानित TOPIK स्तर","level":"स्तर","pasteFirst":"शुरू करने के लिए पाठ चिपकाएँ","timerTitle":"मॉक परीक्षा टाइमर","timerIntro":"TOPIK का एक भाग चुनें और बिना ध्यान भटके अभ्यास करें।","exam":"परीक्षा अभ्यास","timerTip":"टाइमर चलते समय इस टैब को खुला रखें।","start":"शुरू करें","pause":"रोकें","reset":"रीसेट करें","listening":"श्रवण","readingSkill":"पठन","writingSkill":"लेखन","min":"मिनट","names":["","प्रारंभिक आधार","शुरुआती","उच्च शुरुआती","मध्यम","उच्च मध्यम","उन्नत"],"notes":["","बहुत छोटे वाक्य और बुनियादी रोज़मर्रा की शब्दावली।","मुख्यतः शुरुआती व्याकरण और सामान्य शब्दावली।","लंबे वाक्य और अधिक जुड़े हुए विचार।","अमूर्त शब्दावली और मध्यम स्तर की व्याकरण संरचनाएँ।","घने वाक्य और अधिक औपचारिक शब्दावली।","उन्नत शब्दावली और जटिल वाक्य संरचनाएँ।"]},"fr":{"appTitle":"Outils d’étude pour le TOPIK","subtitle":"Des outils simples pour s’entraîner efficacement.","tabCounter":"Compteur de caractères","tabReading":"Difficulté de lecture","tabTimer":"Chronomètre d’examen blanc","counterTitle":"Compteur de caractères","counterIntro":"Écrivez et voyez votre texte remplir en temps réel le papier quadrillé coréen.","writing":"Écriture","yourWriting":"Votre texte","characters":"Caractères","remaining":"Cases restantes","spaces":"Espaces","counterHelp":"Les espaces et les signes de ponctuation occupent chacun une case. Un saut de ligne commence à la ligne suivante.","readingTitle":"Difficulté de lecture TOPIK","readingIntro":"Collez un texte coréen pour obtenir une estimation du niveau 1 à 6.","reading":"Lecture","passage":"Texte coréen","clear":"Effacer","analyse":"Analyser","readingTip":"Il s’agit d’une estimation pour l’entraînement, et non d’un résultat officiel du TOPIK.","estimated":"NIVEAU TOPIK ESTIMÉ","level":"Niveau","pasteFirst":"Collez un texte pour commencer","timerTitle":"Chronomètre d’examen blanc","timerIntro":"Choisissez une épreuve du TOPIK et entraînez-vous sans distraction.","exam":"Entraînement à l’examen","timerTip":"Gardez cet onglet ouvert pendant que le chronomètre fonctionne.","start":"Démarrer","pause":"Pause","reset":"Réinitialiser","listening":"Compréhension orale","readingSkill":"Lecture","writingSkill":"Écriture","min":"min","names":["","Base débutant","Débutant","Débutant avancé","Intermédiaire","Intermédiaire avancé","Avancé"],"notes":["","Phrases très courtes et vocabulaire quotidien de base.","Principalement une grammaire de niveau débutant et du vocabulaire fréquent.","Des phrases plus longues avec des idées davantage reliées.","Un vocabulaire plus abstrait et des structures de niveau intermédiaire.","Des phrases plus denses et un vocabulaire formel plus varié.","Un vocabulaire avancé et des structures de phrase complexes."]}};
-let lang="en",currentLevel=0;
-document.getElementById("lang").onchange=e=>{lang=e.target.value;document.querySelectorAll("[data-t]").forEach(x=>x.textContent=T[lang][x.dataset.t]);if(currentLevel){levelName.textContent=T[lang].names[currentLevel];levelNote.textContent=T[lang].notes[currentLevel]}renderSections()};
-document.querySelectorAll(".tab").forEach(b=>b.onclick=()=>{document.querySelectorAll(".tab").forEach(x=>x.classList.toggle("active",x===b));document.querySelectorAll(".panel").forEach(x=>x.classList.toggle("active",x.id===b.dataset.panel))});
+const state={grammar:[],vocabulary:[],editingType:null,editingId:null};
+const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
+const log=m=>{$("#log").textContent=`${new Date().toLocaleTimeString()}  ${m}\n`+$("#log").textContent};
+const saveStatus=m=>{$("#saveStatus").textContent=m;setTimeout(()=>$("#saveStatus").textContent="Saved locally",1200)};
 
-let limit=300;const writing=document.getElementById("writing"),paper=document.getElementById("paper");
-function cells(text){let a=[],c=0;for(const ch of Array.from(text)){if(ch==="\n"){if(c)while(c<20){a.push("");c++}c=0;continue}a.push(ch);c=(c+1)%20}return a}
-function renderPaper(){const a=cells(writing.value),n=Math.max(limit,Math.ceil(Math.max(a.length,1)/20)*20);paper.innerHTML="";for(let i=0;i<n;i++){const d=document.createElement("div");d.className="cell"+(a[i]?"":" empty");d.textContent=a[i]||"·";paper.appendChild(d)}const raw=Array.from(writing.value).filter(x=>x!=="\n");chars.textContent=raw.length;remain.textContent=Math.max(0,limit-raw.length);spaces.textContent=raw.filter(x=>x===" ").length;bar.style.width=Math.min(100,raw.length/limit*100)+"%"}
-writing.oninput=renderPaper;document.querySelectorAll("[data-limit]").forEach(b=>b.onclick=()=>{limit=+b.dataset.limit;document.querySelectorAll("[data-limit]").forEach(x=>x.classList.toggle("active",x===b));renderPaper()});renderPaper();
+async function loadSeed(force=false){
+  const localG=localStorage.getItem("ls-admin-grammar");
+  const localV=localStorage.getItem("ls-admin-vocabulary");
+  if(!force && localG && localV){
+    state.grammar=JSON.parse(localG);state.vocabulary=JSON.parse(localV);renderAll();return;
+  }
+  try{
+    const [g,v]=await Promise.all([fetch("./data/grammar.json"),fetch("./data/vocabulary.json")]);
+    state.grammar=await g.json();state.vocabulary=await v.json();
+    persist();renderAll();log("Bundled seed loaded.");
+  }catch(e){
+    state.grammar=[];state.vocabulary=[];renderAll();
+    log("Could not fetch bundled JSON. Serve this folder through GitHub Pages or a local web server.");
+  }
+}
+function persist(){
+  localStorage.setItem("ls-admin-grammar",JSON.stringify(state.grammar));
+  localStorage.setItem("ls-admin-vocabulary",JSON.stringify(state.vocabulary));
+  saveStatus("Saving…");
+}
+function renderAll(){renderDashboard();renderGrammar();renderVocab()}
+function renderDashboard(){
+  $("#grammarCount").textContent=state.grammar.length.toLocaleString();
+  $("#vocabCount").textContent=state.vocabulary.length.toLocaleString();
+  $("#reviewCount").textContent=[...state.grammar,...state.vocabulary].filter(x=>x.review_status!=="approved").length.toLocaleString();
+}
+function esc(v=""){return String(v).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"}[c]))}
+function statusPill(s){return `<span class="pill ${s==="approved"?"":"review"}">${s==="approved"?"Approved":"Needs review"}</span>`}
 
-const grammar=["지만","기 때문에","게 되다","는 것 같다","는 반면","도록","더라도","을 뿐만 아니라","기 마련이다","는 한","을 리가 없다","기에","고자","지 않을 수 없다","을지언정"];
-const advanced=["증가","감소","현상","영향","사회","환경","경제","정책","제도","문제점","해결","발전","변화","필요성","중요성","효과","결과","원인","목적","관점","측면","따라서","그러나","게다가","한편"];
-function estimate(text){text=text.trim();if(!text)return 0;const chars=Array.from(text).filter(c=>! /\s/.test(c)).length,sent=text.split(/[.!?。！？\n]+/).filter(Boolean),avg=chars/Math.max(1,sent.length);let s=0;if(chars>80)s++;if(chars>180)s++;if(chars>350)s++;if(avg>18)s++;if(avg>30)s++;if(avg>45)s++;s+=Math.min(5,grammar.filter(x=>text.includes(x)).length);s+=Math.min(3,Math.floor(advanced.filter(x=>text.includes(x)).length/3));if((text.match(/습니다|ㅂ니다|이다|한다|된다/g)||[]).length>3)s++;return s>=12?6:s>=9?5:s>=6?4:s>=4?3:s>=2?2:1}
-function showLevel(l){currentLevel=l;levelNum.textContent=l||"–";levelName.textContent=l?T[lang].names[l]:T[lang].pasteFirst;levelNote.textContent=l?T[lang].notes[l]:""}
-analyse.onclick=()=>showLevel(estimate(readingText.value));clear.onclick=()=>{readingText.value="";showLevel(0)};
+function renderGrammar(){
+  const q=$("#grammarSearch").value.trim().toLowerCase(), level=$("#grammarLevel").value, status=$("#grammarStatus").value;
+  const rows=state.grammar.filter(x=>{
+    const hay=[x.canonical,(x.meanings_en||[]).join(" "),x.category].join(" ").toLowerCase();
+    return (!q||hay.includes(q))&&(!level||String(x.langsnack_level)===level)&&(!status||x.review_status===status);
+  });
+  $("#grammarRows").innerHTML=rows.length?rows.slice(0,1000).map(x=>`<tr>
+    <td>${esc(x.id)}</td><td><strong>${esc(x.canonical)}</strong></td><td><span class="pill">${esc(x.langsnack_level)}</span></td>
+    <td>${esc(x.category||"")}</td><td>${esc((x.meanings_en||[]).join(" / "))}</td><td>${statusPill(x.review_status)}</td>
+    <td><div class="row-actions"><button class="iconbtn" onclick="editEntry('grammar','${esc(x.id)}')">Edit</button><button class="iconbtn" onclick="deleteEntry('grammar','${esc(x.id)}')">Delete</button></div></td>
+  </tr>`).join(""):`<tr><td colspan="7" class="empty">No grammar entries found.</td></tr>`;
+}
+function renderVocab(){
+  const q=$("#vocabSearch").value.trim().toLowerCase(), level=$("#vocabLevel").value, status=$("#vocabStatus").value;
+  const rows=state.vocabulary.filter(x=>{
+    const hay=[x.word,x.gloss_en,x.part_of_speech].join(" ").toLowerCase();
+    return (!q||hay.includes(q))&&(!level||String(x.langsnack_level)===level)&&(!status||x.review_status===status);
+  });
+  $("#vocabRows").innerHTML=rows.length?rows.slice(0,1500).map(x=>`<tr>
+    <td>${esc(x.id)}</td><td><strong>${esc(x.word)}</strong></td><td><span class="pill">${esc(x.langsnack_level)}</span></td>
+    <td>${esc(x.topik_level_estimate||"")}</td><td>${esc(x.gloss_en||"")}</td><td>${statusPill(x.review_status)}</td>
+    <td><div class="row-actions"><button class="iconbtn" onclick="editEntry('vocabulary','${esc(x.id)}')">Edit</button><button class="iconbtn" onclick="deleteEntry('vocabulary','${esc(x.id)}')">Delete</button></div></td>
+  </tr>`).join(""):`<tr><td colspan="7" class="empty">No vocabulary entries found.</td></tr>`;
+}
 
-const exams={I:[["listening","듣기",40],["readingSkill","읽기",60]],II:[["listening","듣기",60],["writingSkill","쓰기",50],["readingSkill","읽기",70]]};let exam="I",idx=0,left=2400,timerId=null;
-const fmt=s=>String(Math.floor(s/60)).padStart(2,"0")+":"+String(s%60).padStart(2,"0");
-function renderSections(){sections.innerHTML="";exams[exam].forEach((s,i)=>{const b=document.createElement("button");b.className="section"+(i===idx?" active":"");b.innerHTML="<strong>"+T[lang][s[0]]+" · "+s[1]+"</strong><span>"+s[2]+" "+T[lang].min+"</span>";b.onclick=()=>select(i);sections.appendChild(b)});const s=exams[exam][idx];timerLabel.textContent=T[lang][s[0]]+" · "+s[1];clock.textContent=fmt(left)}
-function select(i){clearInterval(timerId);timerId=null;idx=i;left=exams[exam][i][2]*60;renderSections()}
-document.querySelectorAll("[data-exam]").forEach(b=>b.onclick=()=>{exam=b.dataset.exam;document.querySelectorAll("[data-exam]").forEach(x=>x.classList.toggle("active",x===b));select(0)});
-start.onclick=()=>{if(timerId||left<=0)return;timerId=setInterval(()=>{left--;clock.textContent=fmt(left);if(left<=0){clearInterval(timerId);timerId=null;alert(lang==="ko"?"시간이 끝났어요.":"Time is up.")}},1000)};pause.onclick=()=>{clearInterval(timerId);timerId=null};reset.onclick=()=>select(idx);renderSections();
+function grammarFields(x={}){
+ return `
+ <div class="field"><label>ID</label><input name="id" value="${esc(x.id||nextId("grammar"))}" required></div>
+ <div class="field"><label>Canonical grammar</label><input name="canonical" value="${esc(x.canonical||"")}" placeholder="-(으)려고 하다" required></div>
+ <div class="field"><label>LangSnack level</label><select name="langsnack_level">${[1,2,3,4,5,6].map(n=>`<option ${n==x.langsnack_level?"selected":""}>${n}</option>`).join("")}</select></div>
+ <div class="field"><label>TOPIK level estimate</label><select name="topik_level_estimate">${[1,2,3,4,5,6].map(n=>`<option ${n==x.topik_level_estimate?"selected":""}>${n}</option>`).join("")}</select></div>
+ <div class="field full"><label>Category</label><input name="category" value="${esc(x.category||"")}" placeholder="purpose_intention"></div>
+ <div class="field full"><label>English meanings, one per line</label><textarea name="meanings_en">${esc((x.meanings_en||[]).join("\n"))}</textarea></div>
+ <div class="field full"><label>Detection patterns, one per line</label><textarea name="detection_patterns">${esc((x.detection_patterns||[]).join("\n"))}</textarea></div>
+ <div class="field"><label>Formality</label><input name="formality" value="${esc(x.formality||"")}"></div>
+ <div class="field"><label>Status</label><select name="review_status"><option value="imported_needs_review" ${x.review_status!=="approved"?"selected":""}>Needs review</option><option value="approved" ${x.review_status==="approved"?"selected":""}>Approved</option></select></div>`;
+}
+function vocabFields(x={}){
+ return `
+ <div class="field"><label>ID</label><input name="id" value="${esc(x.id||nextId("vocabulary"))}" required></div>
+ <div class="field"><label>Korean word</label><input name="word" value="${esc(x.word||"")}" required></div>
+ <div class="field"><label>LangSnack level</label><select name="langsnack_level">${[1,2,3,4,5,6].map(n=>`<option ${n==x.langsnack_level?"selected":""}>${n}</option>`).join("")}</select></div>
+ <div class="field"><label>TOPIK level estimate</label><select name="topik_level_estimate">${[1,2,3,4,5,6].map(n=>`<option ${n==x.topik_level_estimate?"selected":""}>${n}</option>`).join("")}</select></div>
+ <div class="field full"><label>English meaning</label><input name="gloss_en" value="${esc(x.gloss_en||"")}"></div>
+ <div class="field"><label>Part of speech</label><input name="part_of_speech" value="${esc(x.part_of_speech||"")}" placeholder="noun"></div>
+ <div class="field"><label>Frequency score</label><input name="frequency_score" type="number" min="1" max="10" value="${esc(x.frequency_score||"")}"></div>
+ <div class="field full"><label>Aliases, one per line</label><textarea name="aliases">${esc((x.aliases||[]).join("\n"))}</textarea></div>
+ <div class="field"><label>Status</label><select name="review_status"><option value="imported_needs_review" ${x.review_status!=="approved"?"selected":""}>Needs review</option><option value="approved" ${x.review_status==="approved"?"selected":""}>Approved</option></select></div>`;
+}
+function nextId(type){
+ const prefix=type==="grammar"?"GRAM":"VOC", arr=type==="grammar"?state.grammar:state.vocabulary;
+ const max=Math.max(0,...arr.map(x=>Number((x.id||"").match(/\d+/)?.[0]||0)));
+ return `${prefix}-${String(max+1).padStart(type==="grammar"?4:5,"0")}`;
+}
+window.editEntry=(type,id)=>{
+ state.editingType=type;state.editingId=id;
+ const arr=type==="grammar"?state.grammar:state.vocabulary, x=arr.find(e=>e.id===id);
+ $("#editorTitle").textContent=`Edit ${type==="grammar"?"grammar":"vocabulary"}`;
+ $("#editorFields").innerHTML=type==="grammar"?grammarFields(x):vocabFields(x);
+ $("#editorModal").classList.add("open");
+};
+function addEntry(type){
+ state.editingType=type;state.editingId=null;
+ $("#editorTitle").textContent=`Add ${type==="grammar"?"grammar":"vocabulary"}`;
+ $("#editorFields").innerHTML=type==="grammar"?grammarFields():vocabFields();
+ $("#editorModal").classList.add("open");
+}
+window.deleteEntry=(type,id)=>{
+ if(!confirm(`Delete ${id}?`))return;
+ const key=type==="grammar"?"grammar":"vocabulary";
+ state[key]=state[key].filter(x=>x.id!==id);persist();renderAll();
+};
+function closeModal(){ $("#editorModal").classList.remove("open") }
+$("#editorForm").onsubmit=e=>{
+ e.preventDefault();const fd=new FormData(e.target), obj=Object.fromEntries(fd.entries()), type=state.editingType;
+ obj.langsnack_level=Number(obj.langsnack_level);obj.topik_level_estimate=Number(obj.topik_level_estimate);
+ if(type==="grammar"){
+   obj.meanings_en=obj.meanings_en.split("\n").map(s=>s.trim()).filter(Boolean);
+   obj.detection_patterns=obj.detection_patterns.split("\n").map(s=>s.trim()).filter(Boolean);
+   const existing=state.grammar.find(x=>x.id===state.editingId)||{};
+   Object.assign(obj,{aliases:existing.aliases||[],examples:existing.examples||[],source_refs:existing.source_refs||[],register:existing.register||null});
+ }else{
+   obj.aliases=obj.aliases.split("\n").map(s=>s.trim()).filter(Boolean);
+   obj.frequency_score=obj.frequency_score?Number(obj.frequency_score):null;
+   const existing=state.vocabulary.find(x=>x.id===state.editingId)||{};
+   Object.assign(obj,{topics:existing.topics||[],source_refs:existing.source_refs||[],topik_band:existing.topik_band||null});
+ }
+ const arr=type==="grammar"?state.grammar:state.vocabulary;
+ const idx=arr.findIndex(x=>x.id===state.editingId);
+ if(idx>=0)arr[idx]=obj;else arr.unshift(obj);
+ persist();renderAll();closeModal();
+};
+
+function download(name,data){
+ const blob=new Blob([JSON.stringify(data,null,2)],{type:"application/json"});
+ const a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download=name;a.click();URL.revokeObjectURL(a.href);
+ log(`${name} exported.`);
+}
+async function importFile(file,type){
+ try{
+   const data=JSON.parse(await file.text());if(!Array.isArray(data))throw new Error("JSON must contain an array.");
+   state[type]=data;persist();renderAll();log(`${data.length.toLocaleString()} ${type} entries imported.`);
+ }catch(e){alert(e.message);log(`Import failed: ${e.message}`)}
+}
+
+$$(".nav button").forEach(b=>b.onclick=()=>{
+ $$(".nav button").forEach(x=>x.classList.toggle("active",x===b));
+ $$(".view").forEach(x=>x.classList.toggle("active",x.id===b.dataset.view));
+ $("#pageTitle").textContent=b.textContent;
+});
+["grammarSearch","grammarLevel","grammarStatus"].forEach(id=>$("#"+id).addEventListener("input",renderGrammar));
+["vocabSearch","vocabLevel","vocabStatus"].forEach(id=>$("#"+id).addEventListener("input",renderVocab));
+$("#clearGrammarFilters").onclick=()=>{$("#grammarSearch").value="";$("#grammarLevel").value="";$("#grammarStatus").value="";renderGrammar()};
+$("#clearVocabFilters").onclick=()=>{$("#vocabSearch").value="";$("#vocabLevel").value="";$("#vocabStatus").value="";renderVocab()};
+$("#addGrammar").onclick=()=>addEntry("grammar");$("#addVocab").onclick=()=>addEntry("vocabulary");
+$("#closeModal").onclick=$("#cancelModal").onclick=closeModal;
+$("#editorModal").onclick=e=>{if(e.target===$("#editorModal"))closeModal()};
+$("#exportGrammar").onclick=()=>download("grammar.json",state.grammar);
+$("#exportVocab").onclick=()=>download("vocabulary.json",state.vocabulary);
+$("#importGrammar").onchange=e=>e.target.files[0]&&importFile(e.target.files[0],"grammar");
+$("#importVocab").onchange=e=>e.target.files[0]&&importFile(e.target.files[0],"vocabulary");
+$("#resetSeed").onclick=()=>{if(confirm("Replace local edits with the bundled seed?"))loadSeed(true)};
+$("#clearLocal").onclick=()=>{if(confirm("Clear all locally saved edits?")){localStorage.removeItem("ls-admin-grammar");localStorage.removeItem("ls-admin-vocabulary");location.reload()}};
+
+loadSeed();
 </script>
 </body>
 </html>

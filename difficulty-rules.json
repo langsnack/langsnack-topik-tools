@@ -1,0 +1,28 @@
+{
+  "version": "0.1.0",
+  "minimum_korean_words": 30,
+  "confidence_thresholds": {
+    "low": [
+      30,
+      59
+    ],
+    "medium": [
+      60,
+      99
+    ],
+    "high": [
+      100,
+      null
+    ]
+  },
+  "weights": {
+    "vocabulary": 0.45,
+    "grammar": 0.25,
+    "sentence_complexity": 0.2,
+    "formality": 0.1
+  },
+  "notes": [
+    "These weights are provisional and must be calibrated against graded passages.",
+    "Vocabulary entries marked imported_needs_review should not yet be treated as final six-level assignments."
+  ]
+}

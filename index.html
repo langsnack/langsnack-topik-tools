@@ -107,7 +107,6 @@ const uiText={
  fr:{confidence:"Fiabilité",words:"Mots analysés",grammar:"Grammaire détectée",coverage:"Vocabulaire reconnu",high:"Élevée",medium:"Moyenne",low:"Faible",short:"Ajoutez davantage de texte coréen pour obtenir une estimation plus fiable.",ready:"Base de données prête",failed:"Impossible de charger la base de données"}
 };
 
-let currentLevel=0;
 let languageDB={grammar:[],vocabulary:[],vocabMap:new Map(),ready:false};
 
 const PARTICLES=[
@@ -213,9 +212,9 @@ function grammarPatternToRegex(pattern){
     .replace(/\\\(이\\\)/g,"(?:이)?")
     .replace(/\\\(으\\\)ㄴ/g,"(?:은|ㄴ)")
     .replace(/\\\(으\\\)ㄹ/g,"(?:을|ㄹ)")
-    .replace(/은\\/는/g,"(?:은|는)")
-    .replace(/아\\/어/g,"(?:아|어)")
-    .replace(/ㄴ\\/는/g,"(?:ㄴ|는)")
+    .replaceAll("은\\/는","(?:은|는)")
+    .replaceAll("아\\/어","(?:아|어)")
+    .replaceAll("ㄴ\\/는","(?:ㄴ|는)")
     .replace(/\s+/g,"\\s*");
  try{return new RegExp(p,"g")}catch{return null}
 }

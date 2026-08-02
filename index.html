@@ -1,0 +1,1159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>한글 타자 연습 · langsnack</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg: #FAF8E6;
+    --surface: #FFFFFF;
+    --surface-2: #E9E5CE;
+    --border: #DBD6B8;
+    --text: #1E3A52;
+    --text-dim: #6C8194;
+    --text-dimmer: #ABB9BF;
+    --teal: #1F5C3B;
+    --teal-dim: #16442B;
+    --red: #C1443A;
+    --gold: #A6862A;
+    --key-base: #EFEBD3;
+    --key-shadow: #D9D2AE;
+    --flash-ok-bg: #CBE6D3;
+    --flash-err-bg: #F3D2CD;
+    --chip-active-text: #FAF8E6;
+    --nav-green: #1B3627;
+    --nav-green-text: #FAF8E6;
+  }
+  :root[data-theme="dark"]{
+    --bg: #1E3A52;
+    --surface: #234763;
+    --surface-2: #2C5473;
+    --border: #3A6485;
+    --text: #F5F1DC;
+    --text-dim: #A9BFC9;
+    --text-dimmer: #6F8B9B;
+    --teal: #4FBE86;
+    --teal-dim: #35916A;
+    --red: #E8776B;
+    --gold: #E0C468;
+    --key-base: #1A3348;
+    --key-shadow: #10222F;
+    --flash-ok-bg: #2A5B45;
+    --flash-err-bg: #5A2E29;
+    --chip-active-text: #12281C;
+  }
+  *{ box-sizing: border-box; }
+  html,body{
+    margin:0; padding:0; background:var(--bg); color:var(--text);
+    font-family:'Nanum Gothic', sans-serif;
+    min-height:100vh;
+  }
+  body{
+    display:flex; justify-content:center; padding:48px 20px 64px;
+  }
+  #app{ width:100%; max-width:920px; }
+
+  .mode-bar{
+    display:flex; margin-bottom:18px;
+  }
+  .mode-bar .chip-group .chip{
+    padding:9px 20px; font-family:'Nanum Gothic'; font-weight:500;
+  }
+
+  .nav-strip{
+    display:flex; align-items:baseline; gap:10px;
+    background:var(--nav-green); color:var(--nav-green-text);
+    padding:14px 22px; border-radius:12px; margin-bottom:22px;
+  }
+  .nav-mark{
+    font-family:'Nanum Gothic', sans-serif; font-size:18px; font-weight:500;
+    letter-spacing:2.5px; text-transform:uppercase; color:var(--nav-green-text);
+  }
+  .nav-sub{
+    font-size:11px; letter-spacing:2px; text-transform:uppercase;
+    color:var(--nav-green-text); opacity:0.65;
+  }
+
+  .mode-bar{
+    display:flex; margin-bottom:18px;
+  }
+  .mode-bar .chip-group .chip{
+    padding:9px 20px; font-family:'Nanum Gothic'; font-weight:500;
+  }
+
+  header.top{
+    display:flex; align-items:baseline; justify-content:space-between;
+    flex-wrap:wrap; gap:12px; margin-bottom:36px;
+  }
+  h1{
+    font-family:'Nanum Gothic', sans-serif; font-weight:800;
+    font-size:28px; margin:0; color:var(--text);
+  }
+  h1 .en{
+    display:block; font-family:'Nanum Gothic'; font-weight:500; font-size:13px;
+    color:var(--text-dim); letter-spacing:1.5px; text-transform:uppercase; margin-top:4px;
+  }
+
+  .controls{
+    display:flex; align-items:center; gap:8px; flex-wrap:wrap;
+  }
+  .chip-group{
+    display:flex; background:var(--surface); border:1px solid var(--border);
+    border-radius:8px; overflow:hidden;
+  }
+  .chip{
+    padding:8px 14px; font-family:'IBM Plex Mono'; font-size:13px; color:var(--text-dim);
+    background:transparent; border:none; cursor:pointer; border-right:1px solid var(--border);
+    transition:background .15s, color .15s;
+  }
+  .chip:last-child{ border-right:none; }
+  .chip:hover{ color:var(--text); }
+  .chip.active{ background:var(--teal); color:var(--chip-active-text); font-weight:600; }
+
+  .icon-btn{
+    display:flex; align-items:center; justify-content:center;
+    width:38px; height:38px; border-radius:8px; background:var(--surface);
+    border:1px solid var(--border); color:var(--text-dim); cursor:pointer;
+    transition:color .15s, border-color .15s, transform .15s;
+  }
+  .icon-btn:hover{ color:var(--gold); border-color:var(--gold); }
+  .icon-btn:active{ transform:scale(0.92); }
+  .icon-btn svg{ width:18px; height:18px; }
+  .icon-btn.on{ color:var(--teal); border-color:var(--teal-dim); }
+
+  #stats-bar{
+    display:flex; gap:28px; font-family:'IBM Plex Mono'; font-size:14px;
+    color:var(--text-dim); margin-bottom:18px; padding-left:2px;
+  }
+  #stats-bar b{ color:var(--gold); font-weight:600; font-size:15px; }
+  #stats-bar .stat-label{ color:var(--text-dimmer); margin-right:6px; }
+
+  #type-area{
+    background:var(--surface); border:1px solid var(--border); border-radius:14px;
+    padding:32px 36px; margin-bottom:28px; position:relative; min-height:170px;
+  }
+  #words-container{
+    display:flex; flex-direction:column; gap:4px; max-height:320px; overflow-y:auto;
+    font-family:'Nanum Gothic', sans-serif; font-size:30px; line-height:1.5;
+  }
+  .word-row{
+    display:flex; align-items:flex-start; gap:16px; padding:8px 10px; border-radius:8px;
+    transition:background .15s;
+  }
+  .word-row.current-row{ background:var(--surface-2); }
+  .row-num{
+    font-family:'IBM Plex Mono'; font-size:12px; color:var(--text-dimmer); width:22px;
+    flex-shrink:0; text-align:right; padding-top:8px;
+  }
+  .row-main{
+    display:flex; flex-direction:column; gap:3px; flex:1; min-width:0;
+  }
+  .word{
+    display:flex; flex-wrap:wrap; position:relative; opacity:0.42; transition:opacity .2s;
+  }
+  .word-row.current-row .word{ opacity:1; }
+  .word-en{
+    font-family:'Nanum Gothic'; font-size:12.5px;
+    color:var(--text-dimmer); letter-spacing:0.3px;
+  }
+  .syl{ color:var(--text-dimmer); position:relative; transition:color .1s; white-space:pre; }
+  .syl.active{ color:var(--text); }
+  .syl.active::after{
+    content:''; position:absolute; left:-2px; top:2px; bottom:2px; width:2px;
+    background:var(--gold); animation:blink 1s step-end infinite;
+  }
+  .syl.done{ color:var(--teal); }
+  .syl.err{ color:var(--red); animation:shake .18s; }
+  @keyframes blink{ 50%{ opacity:0; } }
+  @keyframes shake{
+    0%,100%{ transform:translateX(0); } 25%{ transform:translateX(-3px); } 75%{ transform:translateX(3px); }
+  }
+
+  #hint{
+    font-family:'IBM Plex Mono'; font-size:12.5px; color:var(--text-dimmer);
+    margin-top:8px; letter-spacing:0.2px;
+  }
+  #hint b{ color:var(--text-dim); }
+
+  #done-banner{
+    display:none; text-align:center; padding:20px 0 4px;
+  }
+  #done-banner.show{ display:block; }
+  #done-banner .big{
+    font-family:'IBM Plex Mono'; font-size:34px; color:var(--gold); font-weight:600;
+  }
+  #done-banner .sub{ font-size:13px; color:var(--text-dim); margin-top:6px; }
+
+  /* keyboard */
+  #keyboard-wrap{
+    background:var(--surface); border:1px solid var(--border); border-radius:14px;
+    padding:22px 20px 20px; transition:max-height .25s ease, opacity .2s ease, padding .25s;
+    overflow:hidden;
+  }
+  #keyboard-wrap.hidden{
+    max-height:0; padding-top:0; padding-bottom:0; opacity:0; border-width:0; margin-top:0;
+  }
+  #keyboard{
+    display:flex; flex-direction:column; align-items:stretch; gap:7px;
+    width:100%; max-width:820px; margin:0 auto;
+  }
+  .krow{ display:flex; gap:7px; width:100%; }
+  .key{
+    position:relative; flex:1 1 0; min-width:0; height:56px; border-radius:9px;
+    background:linear-gradient(180deg, var(--surface-2), var(--key-base));
+    border:1px solid var(--border); box-shadow:0 2px 0 var(--key-shadow), inset 0 1px 0 rgba(255,255,255,0.03);
+    display:flex; align-items:center; justify-content:center; cursor:pointer;
+    transition:transform .06s, box-shadow .06s, border-color .15s;
+    user-select:none;
+  }
+  .key:active, .key.pressed{
+    transform:translateY(2px); box-shadow:0 0 0 var(--key-shadow), inset 0 1px 0 rgba(255,255,255,0.03);
+  }
+  .key .rom{
+    position:absolute; top:4px; left:6px; font-family:'IBM Plex Mono'; font-size:clamp(7px, 1.8vw, 9px);
+    color:var(--text-dimmer);
+  }
+  .key .jamo{
+    font-family:'Nanum Gothic', sans-serif; font-size:clamp(13px, 4.2vw, 20px); color:var(--text-dim);
+  }
+  .key .jamo-shift{
+    position:absolute; top:4px; right:6px; font-family:'Nanum Gothic', sans-serif;
+    font-size:clamp(8px, 2vw, 11px); color:var(--text-dimmer);
+  }
+  .key.wide{ flex:1.8 1 0; }
+  .key.enter{ flex:4.2 1 0; }
+  .key.next{
+    border-color:var(--gold); box-shadow:0 0 0 3px rgba(232,185,75,0.18), 0 2px 0 var(--key-shadow);
+  }
+  .key.next .jamo{ color:var(--gold); }
+  .key.next-shift{
+    border-color:rgba(232,185,75,0.55);
+  }
+  .key.flash-ok{ border-color:var(--teal); background:linear-gradient(180deg,var(--flash-ok-bg),var(--key-base)); }
+  .key.flash-err{ border-color:var(--red); background:linear-gradient(180deg,var(--flash-err-bg),var(--key-base)); }
+  .key.shift-toggle.active{ border-color:var(--gold); color:var(--gold); }
+  .key.shift-toggle .jamo{ font-family:'IBM Plex Mono'; font-size:12px; }
+
+  #kb-note{
+    text-align:center; font-size:11.5px; color:var(--text-dimmer); margin-top:14px;
+    font-family:'IBM Plex Mono';
+  }
+  #kb-note b{ color:var(--text-dim); }
+
+  footer.foot{
+    text-align:center; margin-top:30px; font-size:11.5px; color:var(--text-dimmer);
+    font-family:'IBM Plex Mono';
+  }
+  footer.foot a{ color:var(--text-dim); }
+
+  @media (max-width: 640px){
+    #type-area{ padding:18px 14px; }
+    #words-container{ font-size:22px; }
+    .key{ height:46px; border-radius:7px; }
+    #keyboard{ gap:5px; }
+    .krow{ gap:4px; }
+  }
+
+  /* Mobile: use the phone's own Korean keyboard */
+  #mobile-input-wrap{
+    display:none;
+  }
+
+  @media (max-width: 640px){
+    body{
+      padding:20px 12px 40px;
+    }
+    #app{
+      max-width:100%;
+    }
+    .nav-strip{
+      margin-bottom:16px;
+      padding:12px 16px;
+    }
+    header.top{
+      margin-bottom:22px;
+    }
+    h1{
+      font-size:24px;
+    }
+    #stats-bar{
+      gap:12px;
+      flex-wrap:wrap;
+      font-size:12px;
+    }
+    #type-area{
+      padding:18px 14px;
+      min-height:150px;
+      margin-bottom:14px;
+    }
+    #words-container{
+      font-size:22px;
+      max-height:260px;
+    }
+
+    #keyboard-wrap,
+    #kb-toggle{
+      display:none !important;
+    }
+
+    #hint{
+      display:none;
+    }
+
+    #mobile-input-wrap{
+      display:block;
+      margin-top:16px;
+    }
+
+    #mobile-input{
+      width:100%;
+      min-height:54px;
+      border:2px solid var(--border);
+      border-radius:10px;
+      background:var(--bg);
+      color:var(--text);
+      padding:12px 14px;
+      font-family:'Nanum Gothic', sans-serif;
+      font-size:20px;
+      line-height:1.4;
+      outline:none;
+      -webkit-appearance:none;
+      appearance:none;
+    }
+
+    #mobile-input:focus{
+      border-color:var(--gold);
+      box-shadow:0 0 0 3px rgba(166,134,42,0.15);
+    }
+
+    #mobile-input.correct{
+      border-color:var(--teal);
+      background:var(--flash-ok-bg);
+    }
+
+    #mobile-input.incorrect{
+      border-color:var(--red);
+      background:var(--flash-err-bg);
+    }
+
+    #mobile-input-note{
+      margin:8px 2px 0;
+      font-size:12px;
+      line-height:1.5;
+      color:var(--text-dim);
+    }
+
+    #mobile-input-note.error{
+      color:var(--red);
+      font-weight:700;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    .syl.active::after{ animation:none; opacity:1; }
+    .syl.err{ animation:none; }
+    #keyboard-wrap{ transition:none; }
+  }
+</style>
+</head>
+<body>
+<div id="app">
+
+  <div class="nav-strip">
+    <span class="nav-mark">langsnack</span>
+    <span class="nav-sub">keyboard drills</span>
+  </div>
+
+  <div class="mode-bar">
+    <div class="chip-group" id="mode-group">
+      <button class="chip active" data-mode="words">Words</button>
+      <button class="chip" data-mode="sentences">Sentences</button>
+    </div>
+  </div>
+
+  <header class="top">
+    <h1>한글 타자 연습<span class="en">Hangul Typing Practice</span></h1>
+    <div class="controls">
+      <div class="chip-group" id="count-group">
+        <button class="chip" data-count="10">10</button>
+        <button class="chip active" data-count="25">25</button>
+        <button class="chip" data-count="50">50</button>
+      </div>
+      <button class="icon-btn" id="theme-toggle" title="Toggle light/dark theme">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="4.5"/><path d="M12 2.5v2.5M12 19v2.5M4.2 4.2l1.8 1.8M18 18l1.8 1.8M2.5 12H5M19 12h2.5M4.2 19.8L6 18M18 6l1.8-1.8"/></svg>
+      </button>
+      <button class="icon-btn on" id="kb-toggle" title="Toggle on-screen keyboard">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M6 10h.01M9 10h.01M12 10h.01M15 10h.01M18 10h.01M6 14h8"/></svg>
+      </button>
+      <button class="icon-btn" id="restart-btn" title="Restart">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 12a9 9 0 1 1-2.6-6.4"/><path d="M21 3v6h-6"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <div id="stats-bar">
+      <div><span class="stat-label">time</span><b id="stat-time">0.0s</b></div>
+      <div><span class="stat-label">타수</span><b id="stat-cpm">0</b></div>
+      <div><span class="stat-label">accuracy</span><b id="stat-acc">100%</b></div>
+      <div><span class="stat-label">word</span><b id="stat-word">0/0</b></div>
+    </div>
+
+    <div id="type-area">
+      <div id="words-container"></div>
+      <div id="hint">Type on your physical keyboard using the <b>roman letter</b> shown on each key below — press the key at that position and the matching jamo appears. Press <b>enter</b> to move to the next row. Or just click the on-screen keys.</div>
+
+      <div id="mobile-input-wrap">
+        <input
+          id="mobile-input"
+          type="text"
+          lang="ko"
+          inputmode="text"
+          autocomplete="off"
+          autocorrect="off"
+          autocapitalize="off"
+          spellcheck="false"
+          enterkeyhint="next"
+          aria-label="Type the Korean word or sentence"
+          placeholder="한국어 키보드로 입력하세요"
+        >
+        <div id="mobile-input-note">휴대폰의 한국어 키보드로 입력해 주세요. 입력을 마치면 Enter 또는 다음을 눌러 주세요.</div>
+      </div>
+      <div id="done-banner">
+        <div class="big" id="done-cpm">0 타수/분</div>
+        <div class="sub" id="done-sub"></div>
+      </div>
+    </div>
+
+    <div id="keyboard-wrap">
+      <div id="keyboard"></div>
+      <div id="kb-note">click <b>Shift</b> once, then click a key, to type the small jamo shown in the corner</div>
+    </div>
+  </main>
+
+  <footer class="foot">2-beolsik (두벌식) layout · built for langsnack.com</footer>
+</div>
+
+<script>
+(function(){
+
+  // ---------- Hangul decomposition ----------
+  const CHO = ['ㄱ','ㄲ','ㄴ','ㄷ','ㄸ','ㄹ','ㅁ','ㅂ','ㅃ','ㅅ','ㅆ','ㅇ','ㅈ','ㅉ','ㅊ','ㅋ','ㅌ','ㅍ','ㅎ'];
+  const JUNG = ['ㅏ','ㅐ','ㅑ','ㅒ','ㅓ','ㅔ','ㅕ','ㅖ','ㅗ','ㅘ','ㅙ','ㅚ','ㅛ','ㅜ','ㅝ','ㅞ','ㅟ','ㅠ','ㅡ','ㅢ','ㅣ'];
+  const JONG = ['','ㄱ','ㄲ','ㄳ','ㄴ','ㄵ','ㄶ','ㄷ','ㄹ','ㄺ','ㄻ','ㄼ','ㄽ','ㄾ','ㄿ','ㅀ','ㅁ','ㅂ','ㅄ','ㅅ','ㅆ','ㅇ','ㅈ','ㅊ','ㅋ','ㅌ','ㅍ','ㅎ'];
+
+  const JUNG_SPLIT = { 'ㅘ':['ㅗ','ㅏ'], 'ㅙ':['ㅗ','ㅐ'], 'ㅚ':['ㅗ','ㅣ'], 'ㅝ':['ㅜ','ㅓ'], 'ㅞ':['ㅜ','ㅔ'], 'ㅟ':['ㅜ','ㅣ'], 'ㅢ':['ㅡ','ㅣ'] };
+  const JONG_SPLIT = { 'ㄳ':['ㄱ','ㅅ'], 'ㄵ':['ㄴ','ㅈ'], 'ㄶ':['ㄴ','ㅎ'], 'ㄺ':['ㄹ','ㄱ'], 'ㄻ':['ㄹ','ㅁ'], 'ㄼ':['ㄹ','ㅂ'], 'ㄽ':['ㄹ','ㅅ'], 'ㄾ':['ㄹ','ㅌ'], 'ㄿ':['ㄹ','ㅍ'], 'ㅀ':['ㄹ','ㅎ'], 'ㅄ':['ㅂ','ㅅ'] };
+
+  const KEYMAP = {
+    'ㅂ':{key:'q'}, 'ㅈ':{key:'w'}, 'ㄷ':{key:'e'}, 'ㄱ':{key:'r'}, 'ㅅ':{key:'t'},
+    'ㅛ':{key:'y'}, 'ㅕ':{key:'u'}, 'ㅑ':{key:'i'}, 'ㅐ':{key:'o'}, 'ㅔ':{key:'p'},
+    'ㅁ':{key:'a'}, 'ㄴ':{key:'s'}, 'ㅇ':{key:'d'}, 'ㄹ':{key:'f'}, 'ㅎ':{key:'g'},
+    'ㅗ':{key:'h'}, 'ㅓ':{key:'j'}, 'ㅏ':{key:'k'}, 'ㅣ':{key:'l'},
+    'ㅋ':{key:'z'}, 'ㅌ':{key:'x'}, 'ㅊ':{key:'c'}, 'ㅍ':{key:'v'}, 'ㅠ':{key:'b'}, 'ㅜ':{key:'n'}, 'ㅡ':{key:'m'},
+    'ㅃ':{key:'q',shift:true}, 'ㅉ':{key:'w',shift:true}, 'ㄸ':{key:'e',shift:true}, 'ㄲ':{key:'r',shift:true}, 'ㅆ':{key:'t',shift:true},
+    'ㅒ':{key:'o',shift:true}, 'ㅖ':{key:'p',shift:true}
+  };
+
+  // Punctuation and space sit on the same physical keys as an English QWERTY
+  // keyboard in 2-beolsik — only the letter keys are relabeled for jamo.
+  const PUNCT_KEYMAP = {
+    ' ': { key: ' ' },
+    ',': { key: ',' },
+    '.': { key: '.' },
+    '?': { key: '/', shift: true },
+    '!': { key: '1', shift: true }
+  };
+
+  // Maps a physical key + shift state to the character it actually produces,
+  // used to match against real keydown events (e.key already reflects shift).
+  const SHIFT_SYMBOL_CHAR = { '1':'!', '2':'@', '3':'#', '4':'$', '5':'%', '6':'^', '7':'&', '8':'*', '9':'(', '0':')', '/':'?' };
+  function keyToChar(key, shift){
+    if (!shift) return key;
+    if (/^[a-z]$/.test(key)) return key.toUpperCase();
+    return SHIFT_SYMBOL_CHAR[key] || key;
+  }
+
+  function jamosForSyllable(ch){
+    const code = ch.codePointAt(0) - 0xAC00;
+    if (code < 0 || code > 11171) return null; // not a hangul syllable
+    const choIdx = Math.floor(code / 588);
+    const jungIdx = Math.floor((code % 588) / 28);
+    const jongIdx = code % 28;
+    const choJ = CHO[choIdx];
+    const jungBase = JUNG[jungIdx];
+    const jungParts = JUNG_SPLIT[jungBase] || [jungBase];
+    let jongParts = [];
+    if (jongIdx > 0){
+      const jongBase = JONG[jongIdx];
+      jongParts = JONG_SPLIT[jongBase] || [jongBase];
+    }
+    return [choJ, ...jungParts, ...jongParts];
+  }
+
+  function keystrokesForWord(word){
+    // returns array of {syl, key, shift} — one entry per physical keypress needed.
+    // Works for single vocab words AND full sentences (spaces/punctuation included).
+    const out = [];
+    for (let s = 0; s < word.length; s++){
+      const ch = word[s];
+      const jamos = jamosForSyllable(ch);
+      if (jamos){
+        for (const j of jamos){
+          const km = KEYMAP[j];
+          if (!km) continue;
+          out.push({ syl: s, key: km.key, shift: !!km.shift });
+        }
+        continue;
+      }
+      const pm = PUNCT_KEYMAP[ch];
+      if (pm){
+        out.push({ syl: s, key: pm.key, shift: !!pm.shift });
+        continue;
+      }
+      // generic fallback for any other single printable character (digits, stray latin, etc.)
+      if (/^[a-zA-Z0-9]$/.test(ch)){
+        out.push({ syl: s, key: ch.toLowerCase(), shift: ch !== ch.toLowerCase() });
+      }
+      // anything else (unsupported symbol) is skipped — it will display but needs no keystroke
+    }
+    return out;
+  }
+
+  // ---------- word & sentence banks ----------
+  // ============================================================
+  // WORD LIST — single vocabulary words. Add a line anywhere, e.g.:
+  //   ['서울','Seoul'],
+  // ============================================================
+  const WORDS = [
+    ['안녕','hello'], ['감사','thanks'], ['사랑','love'], ['학교','school'], ['친구','friend'],
+    ['음식','food'], ['사람','person'], ['시간','time'], ['가족','family'], ['행복','happiness'],
+    ['공부','study'], ['날씨','weather'], ['여행','travel'], ['음악','music'], ['운동','exercise'],
+    ['한국','Korea'], ['언어','language'], ['편지','letter'], ['그림','picture'], ['바다','sea'],
+    ['하늘','sky'], ['나무','tree'], ['고양이','cat'], ['강아지','puppy'], ['사과','apple'],
+    ['바나나','banana'], ['커피','coffee'], ['아침','morning'], ['저녁','evening'], ['오늘','today'],
+    ['내일','tomorrow'], ['어제','yesterday'], ['질문','question'], ['대답','answer'], ['선생님','teacher'],
+    ['학생','student'], ['회사','company'], ['병원','hospital'], ['지하철','subway'], ['버스','bus'],
+    ['자동차','car'], ['비행기','airplane'], ['우산','umbrella'], ['겨울','winter'], ['여름','summer'],
+    ['가을','fall'], ['바람','wind'], ['꽃','flower'], ['나비','butterfly'], ['거북이','turtle'],
+    ['호랑이','tiger'], ['사자','lion'], ['코끼리','elephant'], ['원숭이','monkey'], ['토끼','rabbit'],
+    ['여우','fox'], ['독서','reading'], ['영화','movie'], ['과일','fruit'], ['채소','vegetable'],
+    ['고기','meat'], ['생선','fish'], ['쌀','rice'], ['빵','bread'], ['우유','milk'],
+    ['계란','egg'], ['설탕','sugar'], ['소금','salt'], ['김치','kimchi'], ['비빔밥','bibimbap'],
+    ['불고기','bulgogi'], ['떡볶이','tteokbokki'], ['찌개','stew'], ['국수','noodles'], ['젓가락','chopsticks'],
+    ['숟가락','spoon'], ['그릇','bowl'], ['접시','plate'], ['의자','chair'], ['책상','desk'],
+    ['침대','bed'], ['창문','window'], ['거울','mirror'], ['시계','clock'], ['전화','phone'],
+    ['컴퓨터','computer'], ['신문','newspaper'], ['사전','dictionary'], ['연필','pencil'], ['지우개','eraser'],
+    ['가방','bag'], ['지갑','wallet'], ['안경','glasses'], ['모자','hat'], ['신발','shoes'],
+    ['양말','socks'], ['바지','pants'], ['치마','skirt'], ['장갑','gloves'], ['목도리','scarf'],
+    ['값','price'], ['닭','chicken'], ['돼지','pig'], ['쥐','mouse'],
+    ['문','door'], ['방','room'], ['화장실','bathroom'], ['주방','kitchen'], ['냉장고','refrigerator'],
+    ['텔레비전','television'], ['리모컨','remote control'], ['열쇠','key'], ['휴대폰','mobile phone'], ['충전기','charger'],
+    ['물','water'], ['차','tea'], ['주스','juice'], ['컵','cup'], ['휴지','tissue'],
+    ['약','medicine'], ['약국','pharmacy'], ['공항','airport'], ['시장','market'], ['마트','supermarket']
+  ];
+
+  // ============================================================
+  // SENTENCE LIST — full sentences with spaces and punctuation
+  // (. , ? !). Add a line anywhere, e.g.:
+  //   ['이거 얼마예요?','How much is this?'],
+  // No other code needs to change for either list — keystroke
+  // decomposition happens automatically for any Hangul syllable,
+  // space, or . , ? !
+  // ============================================================
+  const SENTENCES = [
+    ['안녕하세요.','Hello.'],
+    ['만나서 반가워요.','Nice to meet you.'],
+    ['이름이 뭐예요?','What is your name?'],
+    ['저는 학생이에요.','I am a student.'],
+    ['오늘 날씨가 좋아요.','The weather is nice today.'],
+    ['이거 얼마예요?','How much is this?'],
+    ['정말 재미있어요!','That is really fun!'],
+    ['한국어를 배우고 있어요.','I am learning Korean.'],
+    ['잘 지내요?','How are you doing?'],
+    ['저는 미국 사람이에요.','I am American.'],
+    ['몇 시예요?','What time is it?'],
+    ['화장실이 어디예요?','Where is the bathroom?'],
+    ['조금만 기다려 주세요.','Please wait a moment.'],
+    ['도와주세요!','Please help me!'],
+    ['배가 고파요.','I am hungry.'],
+    ['저는 커피를 좋아해요.','I like coffee.'],
+    ['오늘은 월요일이에요.','Today is Monday.'],
+    ['내일 만나요.','See you tomorrow.'],
+    ['정말 감사합니다.','Thank you very much.'],
+    ['죄송합니다.','I am sorry.'],
+    ['이거 뭐예요?','What is this?'],
+    ['저는 한국에 가고 싶어요.','I want to go to Korea.'],
+    ['사진 찍어도 돼요?','Can I take a picture?'],
+    ['다시 한번 말해 주세요.','Please say it again.'],
+    ['천천히 말해 주세요.','Please speak slowly.'],
+    ['여기 앉아도 돼요?','Can I sit here?'],
+    ['저는 매일 운동해요.','I exercise every day.'],
+    ['주말에 뭐 해요?','What do you do on weekends?'],
+    ['생일 축하해요!','Happy birthday!'],
+    ['사랑해요.','I love you.'],
+    ['오늘은 날씨가 정말 좋아요.','The weather is really nice today.'],
+    ['아침에 커피를 한 잔 마셨어요.','I had a cup of coffee this morning.'],
+    ['점심은 뭐 먹을 거예요?','What are you going to eat for lunch?'],
+    ['저는 매일 한국어를 공부해요.','I study Korean every day.'],
+    ['버스를 놓쳐서 조금 늦었어요.','I missed the bus, so I was a little late.'],
+    ['주말에는 집에서 푹 쉬고 싶어요.','I want to relax at home on weekends.'],
+    ['이 근처에 편의점이 있어요?','Is there a convenience store nearby?'],
+    ['오늘 해야 할 일이 정말 많아요.','I have a lot to do today.'],
+    ['비가 올 것 같으니까 우산을 가져가세요.','It looks like it will rain, so take an umbrella.'],
+    ['저녁을 먹고 산책을 했어요.','I took a walk after dinner.'],
+    ['한국 음식 중에서 뭐를 제일 좋아해요?','What Korean food do you like the most?'],
+    ['새로운 취미를 시작해 보고 싶어요.','I want to try starting a new hobby.'],
+    ['내일은 조금 일찍 일어나야 해요.','I have to wake up a little early tomorrow.'],
+    ['친구를 기다리는 동안 책을 읽었어요.','I read a book while waiting for my friend.'],
+    ['여행을 가면 사진을 많이 찍는 편이에요.','I usually take a lot of photos when I travel.'],
+    ['이 문제는 생각보다 어려운 것 같아요.','This problem seems harder than I expected.'],
+    ['시간이 있으면 같이 영화 보러 갈까요?','If you have time, shall we go watch a movie together?'],
+    ['휴대폰 배터리가 거의 다 떨어졌어요.','My phone battery is almost dead.'],
+    ['오늘은 일찍 자고 내일 다시 할게요.','I will go to bed early today and continue tomorrow.'],
+    ['작은 습관이 큰 변화를 만들 수 있어요.','Small habits can create big changes.']
+  ];
+
+  // ---------- keyboard layout for rendering ----------
+  const ROWS = [
+    ['1','2','3','4','5','6','7','8','9','0'],
+    ['q','w','e','r','t','y','u','i','o','p'],
+    ['a','s','d','f','g','h','j','k','l'],
+    ['z','x','c','v','b','n','m',',','.','/']
+  ];
+  // labels for the punctuation/number keys (they aren't jamo, so not in KEYMAP)
+  const PUNCT_LABEL = {
+    ',': { base: ',' },
+    '.': { base: '.' },
+    '/': { base: '/', shift: '?' },
+    '1': { base: '1', shift: '!' },
+    '2': { base: '2', shift: '@' },
+    '3': { base: '3', shift: '#' },
+    '4': { base: '4', shift: '$' },
+    '5': { base: '5', shift: '%' },
+    '6': { base: '6', shift: '^' },
+    '7': { base: '7', shift: '&' },
+    '8': { base: '8', shift: '*' },
+    '9': { base: '9', shift: '(' },
+    '0': { base: '0', shift: ')' }
+  };
+  const BASE_JAMO_FOR_KEY = {};
+  const SHIFT_JAMO_FOR_KEY = {};
+  Object.entries(KEYMAP).forEach(([jamo, m]) => {
+    if (m.shift) SHIFT_JAMO_FOR_KEY[m.key] = jamo;
+    else BASE_JAMO_FOR_KEY[m.key] = jamo;
+  });
+
+  // ---------- state ----------
+  let currentWords = [];      // [{kr, en, keystrokes}]
+  let curWordIdx = 0;
+  let curKeyIdx = 0;
+  let shiftHeld = false;      // virtual shift toggle for on-screen keyboard
+  let startTime = null;
+  let correctCount = 0;
+  let attemptCount = 0;
+  let finished = false;
+  let wordCount = 25;
+  let mode = 'words'; // 'words' | 'sentences'
+  let timerInterval = null;
+  let isComposing = false;
+  const isMobile = window.matchMedia('(max-width: 640px)').matches;
+
+  const wordsContainer = document.getElementById('words-container');
+  const keyboardEl = document.getElementById('keyboard');
+  const statTime = document.getElementById('stat-time');
+  const statCpm = document.getElementById('stat-cpm');
+  const statAcc = document.getElementById('stat-acc');
+  const statWord = document.getElementById('stat-word');
+  const doneBanner = document.getElementById('done-banner');
+  const doneCpm = document.getElementById('done-cpm');
+  const doneSub = document.getElementById('done-sub');
+  const typeArea = document.getElementById('type-area');
+  const mobileInput = document.getElementById('mobile-input');
+  const mobileInputNote = document.getElementById('mobile-input-note');
+
+  function pickWords(n){
+    const source = mode === 'sentences' ? SENTENCES : WORDS;
+    const pool = source.slice();
+    const chosen = [];
+    for (let i = 0; i < n; i++){
+      const idx = Math.floor(Math.random() * pool.length);
+      chosen.push(pool[idx]);
+      pool.splice(idx, 1);
+      if (pool.length === 0) pool.push(...source);
+    }
+    return chosen.map(([kr, en]) => ({ kr, en, keystrokes: keystrokesForWord(kr) }));
+  }
+
+  function buildKeyboard(){
+    keyboardEl.innerHTML = '';
+    ROWS.forEach(row => {
+      const rowEl = document.createElement('div');
+      rowEl.className = 'krow';
+      row.forEach(k => {
+        const keyEl = document.createElement('div');
+        keyEl.className = 'key';
+        keyEl.dataset.key = k;
+        if (PUNCT_LABEL[k]){
+          const p = PUNCT_LABEL[k];
+          const shiftSpan = p.shift ? `<span class="jamo-shift">${p.shift}</span>` : '';
+          keyEl.innerHTML = `<span class="jamo" style="font-family:'IBM Plex Mono'">${p.base}</span>${shiftSpan}`;
+        } else {
+          const base = BASE_JAMO_FOR_KEY[k] || '';
+          const shiftJ = SHIFT_JAMO_FOR_KEY[k] || '';
+          keyEl.innerHTML = `<span class="rom">${k}</span><span class="jamo">${base}</span>${shiftJ ? `<span class="jamo-shift">${shiftJ}</span>` : ''}`;
+        }
+        keyEl.addEventListener('click', () => handleVirtualKey(k));
+        rowEl.appendChild(keyEl);
+      });
+      keyboardEl.appendChild(rowEl);
+    });
+
+    const bottomRow = document.createElement('div');
+    bottomRow.className = 'krow';
+    const shiftKey = document.createElement('div');
+    shiftKey.className = 'key wide shift-toggle';
+    shiftKey.id = 'shift-key';
+    shiftKey.innerHTML = `<span class="jamo">Shift</span>`;
+    shiftKey.addEventListener('click', () => {
+      shiftHeld = !shiftHeld;
+      shiftKey.classList.toggle('active', shiftHeld);
+      renderNextKeyHighlight();
+    });
+    const spaceKey = document.createElement('div');
+    spaceKey.className = 'key space';
+    spaceKey.dataset.key = ' ';
+    spaceKey.innerHTML = `<span class="jamo" style="font-size:12px;font-family:'IBM Plex Mono'">space</span>`;
+    spaceKey.addEventListener('click', () => handleVirtualKey(' '));
+    const enterKey = document.createElement('div');
+    enterKey.className = 'key enter';
+    enterKey.innerHTML = `<span class="jamo" style="font-size:12px;font-family:'IBM Plex Mono'">enter ↵</span>`;
+    enterKey.addEventListener('click', () => tryAdvanceWord());
+    bottomRow.appendChild(shiftKey);
+    bottomRow.appendChild(spaceKey);
+    bottomRow.appendChild(enterKey);
+    keyboardEl.appendChild(bottomRow);
+  }
+
+  function renderWords(){
+    wordsContainer.innerHTML = '';
+    currentWords.forEach((w, wi) => {
+      const rowEl = document.createElement('div');
+      rowEl.className = 'word-row' + (wi === curWordIdx ? ' current-row' : '');
+      rowEl.dataset.idx = wi;
+
+      const numEl = document.createElement('div');
+      numEl.className = 'row-num';
+      numEl.textContent = wi + 1;
+      rowEl.appendChild(numEl);
+
+      const rowMain = document.createElement('div');
+      rowMain.className = 'row-main';
+
+      const wordEl = document.createElement('div');
+      wordEl.className = 'word';
+      wordEl.dataset.idx = wi;
+      const nSyl = w.kr.length;
+      for (let s = 0; s < nSyl; s++){
+        const sylEl = document.createElement('span');
+        sylEl.className = 'syl';
+        sylEl.textContent = w.kr[s] === ' ' ? '\u00A0' : w.kr[s];
+        sylEl.dataset.syl = s;
+        wordEl.appendChild(sylEl);
+      }
+      rowMain.appendChild(wordEl);
+
+      const enEl = document.createElement('div');
+      enEl.className = 'word-en';
+      enEl.textContent = w.en;
+      rowMain.appendChild(enEl);
+
+      rowEl.appendChild(rowMain);
+
+      wordsContainer.appendChild(rowEl);
+    });
+    updateSylStates();
+  }
+
+  function updateSylStates(){
+    const rowEls = wordsContainer.querySelectorAll('.word-row');
+    rowEls.forEach((rowEl, wi) => {
+      rowEl.classList.toggle('current-row', wi === curWordIdx && !finished);
+      const wordEl = rowEl.querySelector('.word');
+      const w = currentWords[wi];
+      const sylEls = wordEl.querySelectorAll('.syl');
+      const ks = w.keystrokes;
+      let activeSyl = -1;
+      if (wi === curWordIdx && !finished && curKeyIdx < ks.length){
+        activeSyl = ks[curKeyIdx].syl;
+      }
+      sylEls.forEach((sylEl, si) => {
+        sylEl.classList.remove('done','active','err');
+        let isDone;
+        if (wi < curWordIdx) isDone = true;
+        else if (wi > curWordIdx) isDone = false;
+        else {
+          // done if every keystroke belonging to this syllable has already been typed
+          const sylKeystrokes = ks.filter(k => k.syl === si);
+          isDone = sylKeystrokes.length > 0 && ks.indexOf(sylKeystrokes[sylKeystrokes.length - 1]) < curKeyIdx;
+        }
+        if (isDone) sylEl.classList.add('done');
+        else if (si === activeSyl) sylEl.classList.add('active');
+      });
+    });
+  }
+
+  function scrollCurrentRowIntoView(){
+    const rowEl = wordsContainer.querySelector(`.word-row[data-idx="${curWordIdx}"]`);
+    if (rowEl) rowEl.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+  }
+
+  function renderNextKeyHighlight(){
+    document.querySelectorAll('.key.next, .key.next-shift').forEach(k => k.classList.remove('next','next-shift'));
+    if (finished) return;
+    const w = currentWords[curWordIdx];
+    if (!w) return;
+    const ks = w.keystrokes;
+    let expected;
+    if (curKeyIdx < ks.length) expected = ks[curKeyIdx];
+    else expected = null; // word complete, waiting for enter
+    if (expected){
+      const keyEl = keyboardEl.querySelector(`.key[data-key="${expected.key}"]`);
+      if (keyEl) keyEl.classList.add('next');
+      if (expected.shift){
+        const shiftKeyEl = document.getElementById('shift-key');
+        if (shiftKeyEl) shiftKeyEl.classList.add('next-shift');
+      }
+    } else {
+      const enterEl = keyboardEl.querySelector('.key.enter');
+      if (enterEl) enterEl.classList.add('next');
+    }
+  }
+
+  function flashKey(keyEl, ok){
+    if (!keyEl) return;
+    keyEl.classList.add(ok ? 'flash-ok' : 'flash-err');
+    setTimeout(() => keyEl.classList.remove('flash-ok','flash-err'), 140);
+  }
+
+  function updateStats(){
+    const elapsed = startTime ? (Date.now() - startTime) / 1000 : 0;
+    statTime.textContent = elapsed.toFixed(1) + 's';
+    const cpm = elapsed > 0 ? Math.round((correctCount / elapsed) * 60) : 0;
+    statCpm.textContent = cpm;
+    const acc = attemptCount > 0 ? Math.round((correctCount / attemptCount) * 100) : 100;
+    statAcc.textContent = acc + '%';
+    statWord.textContent = Math.min(curWordIdx, currentWords.length) + '/' + currentWords.length;
+  }
+
+
+  function normalizeText(text){
+    return text.normalize('NFC').replace(/\s+/g, ' ').trim();
+  }
+
+  function currentTargetText(){
+    const w = currentWords[curWordIdx];
+    return w ? w.kr : '';
+  }
+
+  function containsLatin(text){
+    return /[A-Za-z]/.test(text);
+  }
+
+  function setMobileNote(message, isError){
+    if (!mobileInputNote) return;
+    mobileInputNote.textContent = message;
+    mobileInputNote.classList.toggle('error', !!isError);
+  }
+
+  function markCurrentMobileProgress(){
+    if (!isMobile || !mobileInput || finished) return;
+
+    const typed = normalizeText(mobileInput.value);
+    const target = normalizeText(currentTargetText());
+    const wordEl = wordsContainer.querySelector(`.word[data-idx="${curWordIdx}"]`);
+    if (!wordEl) return;
+
+    const sylEls = wordEl.querySelectorAll('.syl');
+    sylEls.forEach(el => el.classList.remove('done','active','err'));
+
+    for (let i = 0; i < sylEls.length; i++){
+      if (i < typed.length){
+        if (typed[i] === target[i]) sylEls[i].classList.add('done');
+        else sylEls[i].classList.add('err');
+      } else if (i === typed.length){
+        sylEls[i].classList.add('active');
+      }
+    }
+
+    mobileInput.classList.remove('correct','incorrect');
+
+    if (containsLatin(mobileInput.value)){
+      mobileInput.classList.add('incorrect');
+      setMobileNote('한국어 키보드로 바꿔 주세요. 영어 알파벳은 입력할 수 없어요.', true);
+      return;
+    }
+
+    if (typed && !target.startsWith(typed)){
+      mobileInput.classList.add('incorrect');
+      setMobileNote('문장을 다시 확인해 주세요.', true);
+    } else {
+      setMobileNote('휴대폰의 한국어 키보드로 입력해 주세요. 입력을 마치면 Enter 또는 다음을 눌러 주세요.', false);
+    }
+  }
+
+  function submitMobileAnswer(){
+    if (!isMobile || !mobileInput || finished) return;
+
+    const typed = normalizeText(mobileInput.value);
+    const target = normalizeText(currentTargetText());
+
+    if (!typed) return;
+
+    if (containsLatin(mobileInput.value)){
+      mobileInput.classList.add('incorrect');
+      setMobileNote('한국어 키보드로 바꿔 주세요. 영어 알파벳은 입력할 수 없어요.', true);
+      return;
+    }
+
+    if (!startTime){
+      startTime = Date.now();
+      timerInterval = setInterval(updateStats, 100);
+    }
+
+    attemptCount += Math.max(target.length, typed.length);
+
+    if (typed === target){
+      correctCount += target.length;
+      mobileInput.classList.remove('incorrect');
+      mobileInput.classList.add('correct');
+
+      setTimeout(() => {
+        mobileInput.classList.remove('correct');
+        mobileInput.value = '';
+        curWordIdx++;
+        curKeyIdx = 0;
+
+        if (curWordIdx >= currentWords.length){
+          finishTest();
+          mobileInput.blur();
+        } else {
+          updateSylStates();
+          updateStats();
+          scrollCurrentRowIntoView();
+          mobileInput.focus();
+        }
+      }, 140);
+    } else {
+      let matching = 0;
+      const max = Math.min(target.length, typed.length);
+      for (let i = 0; i < max; i++){
+        if (typed[i] === target[i]) matching++;
+      }
+      correctCount += matching;
+      mobileInput.classList.add('incorrect');
+      setMobileNote('아직 정답과 같지 않아요. 다시 확인한 후 Enter를 눌러 주세요.', true);
+      markCurrentMobileProgress();
+      updateStats();
+    }
+  }
+
+  function tryAdvanceWord(){
+    const w = currentWords[curWordIdx];
+    if (!w || finished) return;
+    if (curKeyIdx >= w.keystrokes.length){
+      curWordIdx++;
+      curKeyIdx = 0;
+      if (curWordIdx >= currentWords.length){
+        finishTest();
+      } else {
+        updateSylStates();
+        renderNextKeyHighlight();
+        updateStats();
+        scrollCurrentRowIntoView();
+      }
+    }
+  }
+
+  function finishTest(){
+    finished = true;
+    if (timerInterval) clearInterval(timerInterval);
+    updateStats();
+    const elapsed = startTime ? (Date.now() - startTime) / 1000 : 0;
+    const cpm = elapsed > 0 ? Math.round((correctCount / elapsed) * 60) : 0;
+    const acc = attemptCount > 0 ? Math.round((correctCount / attemptCount) * 100) : 100;
+    doneCpm.textContent = cpm + ' 타수/분';
+    doneSub.textContent = `${currentWords.length} ${mode === 'sentences' ? 'sentences' : 'words'} · ${elapsed.toFixed(1)}s · ${acc}% accuracy — press restart to try again`;
+    doneBanner.classList.add('show');
+    document.querySelectorAll('.key.next, .key.next-shift').forEach(k => k.classList.remove('next','next-shift'));
+  }
+
+  function processKeystroke(typedChar){
+    if (finished) return;
+    const w = currentWords[curWordIdx];
+    if (!w) return;
+    if (curKeyIdx >= w.keystrokes.length) return; // waiting for enter
+    if (!startTime){
+      startTime = Date.now();
+      timerInterval = setInterval(updateStats, 100);
+    }
+    const expected = w.keystrokes[curKeyIdx];
+    const expectedChar = keyToChar(expected.key, expected.shift);
+    const keyEl = keyboardEl.querySelector(`.key[data-key="${expected.key}"]`);
+    attemptCount++;
+    if (typedChar === expectedChar){
+      correctCount++;
+      curKeyIdx++;
+      flashKey(keyEl, true);
+      if (curKeyIdx >= w.keystrokes.length){
+        // word done, wait for enter
+      }
+    } else {
+      flashKey(keyEl, false);
+      const wordEl = wordsContainer.querySelector(`.word[data-idx="${curWordIdx}"]`);
+      if (wordEl){
+        const sylEl = wordEl.querySelector(`.syl[data-syl="${expected.syl}"]`);
+        if (sylEl){
+          sylEl.classList.add('err');
+          setTimeout(() => sylEl.classList.remove('err'), 180);
+        }
+      }
+    }
+    updateSylStates();
+    renderNextKeyHighlight();
+    updateStats();
+  }
+
+  function handleVirtualKey(key){
+    processKeystroke(keyToChar(key, shiftHeld));
+    if (shiftHeld){
+      shiftHeld = false;
+      const shiftKeyEl = document.getElementById('shift-key');
+      if (shiftKeyEl) shiftKeyEl.classList.remove('active');
+    }
+  }
+
+  function newTest(){
+    if (timerInterval) clearInterval(timerInterval);
+    currentWords = pickWords(wordCount);
+    curWordIdx = 0;
+    curKeyIdx = 0;
+    startTime = null;
+    correctCount = 0;
+    attemptCount = 0;
+    finished = false;
+    shiftHeld = false;
+    const shiftKeyEl = document.getElementById('shift-key');
+    if (shiftKeyEl) shiftKeyEl.classList.remove('active');
+    doneBanner.classList.remove('show');
+    if (mobileInput){
+      mobileInput.value = '';
+      mobileInput.classList.remove('correct','incorrect');
+      setMobileNote('휴대폰의 한국어 키보드로 입력해 주세요. 입력을 마치면 Enter 또는 다음을 눌러 주세요.', false);
+    }
+    renderWords();
+    renderNextKeyHighlight();
+    updateStats();
+    if (isMobile && mobileInput){
+      setTimeout(() => mobileInput.focus(), 100);
+    }
+  }
+
+  // ---------- physical keyboard listener ----------
+  document.addEventListener('keydown', (e) => {
+    if (isMobile || e.target === mobileInput) return;
+    if (e.metaKey || e.ctrlKey || e.altKey) return;
+    if (e.key === 'Enter'){
+      e.preventDefault();
+      tryAdvanceWord();
+      return;
+    }
+    if (e.key.length === 1){
+      e.preventDefault();
+      processKeystroke(e.key);
+    }
+  });
+
+  if (mobileInput){
+    mobileInput.addEventListener('compositionstart', () => {
+      isComposing = true;
+    });
+
+    mobileInput.addEventListener('compositionend', () => {
+      isComposing = false;
+      markCurrentMobileProgress();
+    });
+
+    mobileInput.addEventListener('input', () => {
+      if (isComposing) return;
+      markCurrentMobileProgress();
+    });
+
+    mobileInput.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter'){
+        e.preventDefault();
+        submitMobileAnswer();
+      }
+    });
+  }
+
+  // ---------- controls ----------
+  document.getElementById('mode-group').addEventListener('click', (e) => {
+    const btn = e.target.closest('.chip');
+    if (!btn) return;
+    document.querySelectorAll('#mode-group .chip').forEach(c => c.classList.remove('active'));
+    btn.classList.add('active');
+    mode = btn.dataset.mode;
+    newTest();
+  });
+
+  document.getElementById('count-group').addEventListener('click', (e) => {
+    const btn = e.target.closest('.chip');
+    if (!btn) return;
+    document.querySelectorAll('#count-group .chip').forEach(c => c.classList.remove('active'));
+    btn.classList.add('active');
+    wordCount = parseInt(btn.dataset.count, 10);
+    newTest();
+  });
+
+  document.getElementById('restart-btn').addEventListener('click', newTest);
+
+  const kbWrap = document.getElementById('keyboard-wrap');
+  const kbToggle = document.getElementById('kb-toggle');
+  kbToggle.addEventListener('click', () => {
+    const hidden = kbWrap.classList.toggle('hidden');
+    kbToggle.classList.toggle('on', !hidden);
+  });
+
+  // ---------- theme ----------
+  function applyTheme(theme){
+    if (theme === 'dark'){
+      document.documentElement.setAttribute('data-theme', 'dark');
+    } else {
+      document.documentElement.removeAttribute('data-theme');
+    }
+    const btn = document.getElementById('theme-toggle');
+    if (btn) btn.classList.toggle('on', theme === 'dark');
+  }
+  let savedTheme = 'light';
+  try { savedTheme = localStorage.getItem('langsnack-hangul-theme') || 'light'; } catch(e){}
+  applyTheme(savedTheme);
+  document.getElementById('theme-toggle').addEventListener('click', () => {
+    const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+    const next = isDark ? 'light' : 'dark';
+    applyTheme(next);
+    try { localStorage.setItem('langsnack-hangul-theme', next); } catch(e){}
+  });
+
+  // ---------- init ----------
+  buildKeyboard();
+  newTest();
+
+})();
+</script>
+</body>
+</html>

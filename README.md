@@ -1,37 +1,41 @@
-# LangSnack Admin v1
+# LangSnack TOPIK Tools v3
 
-A private, static database manager for the LangSnack grammar and vocabulary seed.
+Public, learner-facing TOPIK tools.
 
-## What it does
-- Loads the bundled grammar and vocabulary JSON files
-- Searches and filters entries
-- Adds, edits and deletes entries
-- Marks entries as reviewed/approved
-- Saves edits in browser localStorage
-- Imports and exports clean JSON files
+## Included
+- Character counter with 300자 and 700자 원고지
+- Database-backed TOPIK reading difficulty estimator
+- TOPIK I and TOPIK II mock exam timer
+- 13 interface languages
 
-## Important limitation
-This is a static private-beta admin. It does not write directly back to GitHub and it does not include login protection.
+## Reading analyser
+The analyser now loads:
 
-Use it in one of these ways:
-1. Open through GitHub Pages in a private/testing repository.
-2. Run locally with a simple local web server.
-3. Export JSON after editing and replace the files in your repository manually.
+- `docs/data/vocabulary.json`
+- `docs/data/grammar.json`
 
-Opening `index.html` directly with `file://` may block JSON loading in some browsers.
+It combines:
 
-## Local server
-From this folder, run:
+- Vocabulary database coverage
+- Basic Korean particle and ending normalization
+- Graded grammar detection
+- Sentence and clause complexity
+- Formal and academic language signals
+- Text-length and confidence checks
 
-    python3 -m http.server 8000
+The result remains an estimate, not an official TOPIK score.
 
-Then open:
+## GitHub Pages
+Set GitHub Pages to:
 
-    http://localhost:8000
+- Branch: `main`
+- Folder: `/docs`
 
-## GitHub Pages structure
-- index.html
-- data/grammar.json
-- data/vocabulary.json
-- data/difficulty-rules.json
-- data/source-manifest.json
+The included `CNAME` contains:
+
+    topiktools.langsnack.com
+
+Enter the same hostname in GitHub Pages without `https://` and without a trailing slash.
+
+## Important data limitation
+The bundled vocabulary seed currently has strong TOPIK I coverage. Intermediate and advanced vocabulary extraction is still incomplete because several source PDFs are image-based. The engine architecture is ready for those larger data files when reviewed entries are added.

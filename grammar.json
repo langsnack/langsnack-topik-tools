@@ -34,7 +34,10 @@
     "id": "GRAM-0002",
     "canonical": "-(으)ㄴ 적이 없다",
     "aliases": [
-      "(으)ㄴ 적이 없다"
+      "(으)ㄴ 적이 없다",
+      "적이 없어요",
+      "적이 없다",
+      "본 적이 없다"
     ],
     "category": "beginner_core",
     "meanings_en": [
@@ -59,13 +62,18 @@
         "entry_number": 32
       }
     ],
-    "review_status": "imported_needs_review"
+    "review_status": "editorially_adjusted_needs_source_verification",
+    "usage_note_en": "Use to say you have never had a particular experience."
   },
   {
     "id": "GRAM-0003",
     "canonical": "-(으)ㄴ 적이 있다",
     "aliases": [
-      "(으)ㄴ 적이 있다"
+      "(으)ㄴ 적이 있다",
+      "적이 있어요",
+      "적이 있다",
+      "본 적이 있다",
+      "가 본 적이 있다"
     ],
     "category": "beginner_core",
     "meanings_en": [
@@ -90,7 +98,8 @@
         "entry_number": 31
       }
     ],
-    "review_status": "imported_needs_review"
+    "review_status": "editorially_adjusted_needs_source_verification",
+    "usage_note_en": "Use with a past modifier to describe having experienced something."
   },
   {
     "id": "GRAM-0004",
@@ -325,7 +334,7 @@
         "entry_number": 42
       }
     ],
-    "review_status": "imported_needs_review"
+    "review_status": "editorially_adjusted_needs_source_verification"
   },
   {
     "id": "GRAM-0011",
@@ -356,7 +365,8 @@
         "entry_number": 41
       }
     ],
-    "review_status": "imported_needs_review"
+    "review_status": "editorially_adjusted_needs_source_verification",
+    "usage_note_en": "Express ability or possibility."
   },
   {
     "id": "GRAM-0012",
@@ -1565,7 +1575,7 @@
       "formal polite style"
     ],
     "langsnack_level": 2,
-    "topik_level_estimate": 2,
+    "topik_level_estimate": 1,
     "formality": null,
     "register": null,
     "detection_patterns": [
@@ -1583,7 +1593,7 @@
         "entry_number": 73
       }
     ],
-    "review_status": "imported_needs_review"
+    "review_status": "editorially_adjusted_needs_source_verification"
   },
   {
     "id": "GRAM-0051",
@@ -1620,7 +1630,9 @@
     "id": "GRAM-0052",
     "canonical": "-고 싶다",
     "aliases": [
-      "고 싶다"
+      "고 싶다",
+      "고 싶어요",
+      "고 싶습니다"
     ],
     "category": "beginner_core",
     "meanings_en": [
@@ -1635,8 +1647,8 @@
     ],
     "examples": [
       {
-        "ko": "약국에 가고 싶어요.",
-        "en": "I want to go to the pharmacy."
+        "ko": "주말에 친구를 만나고 싶어요.",
+        "en": "I want to meet my friend this weekend."
       }
     ],
     "source_refs": [
@@ -1645,7 +1657,8 @@
         "entry_number": 63
       }
     ],
-    "review_status": "imported_needs_review"
+    "review_status": "editorially_adjusted_needs_source_verification",
+    "usage_note_en": "Attach -고 싶다 to a verb stem to express a desire."
   },
   {
     "id": "GRAM-0053",
@@ -1686,7 +1699,7 @@
     ],
     "category": "beginner_core",
     "meanings_en": [
-      "realization or discovery"
+      "Oh, I see! (realization / surprise)"
     ],
     "langsnack_level": 2,
     "topik_level_estimate": 2,
@@ -1697,8 +1710,8 @@
     ],
     "examples": [
       {
-        "ko": "생각보다 사람이 많군요.",
-        "en": "Oh, there are more people than I expected."
+        "ko": "오늘 날씨가 정말 좋군요.",
+        "en": "Oh, the weather is really nice today."
       }
     ],
     "source_refs": [
@@ -1779,7 +1792,7 @@
     ],
     "category": "beginner_core",
     "meanings_en": [
-      "realization or surprise"
+      "Oh! / I notice that… (spontaneous realization)"
     ],
     "langsnack_level": 2,
     "topik_level_estimate": 2,
@@ -1790,8 +1803,8 @@
     ],
     "examples": [
       {
-        "ko": "오늘 날씨가 정말 좋네요.",
-        "en": "The weather is really nice today!"
+        "ko": "생각보다 사람이 많네요.",
+        "en": "There are more people than I expected."
       }
     ],
     "source_refs": [
@@ -1868,7 +1881,10 @@
     "id": "GRAM-0060",
     "canonical": "-아/어 주다",
     "aliases": [
-      "-아/어/여 주다"
+      "-아/어/여 주다",
+      "주세요",
+      "해 주세요",
+      "줘요"
     ],
     "category": "beginner_core",
     "meanings_en": [
@@ -1999,7 +2015,7 @@
       "not"
     ],
     "langsnack_level": 2,
-    "topik_level_estimate": 2,
+    "topik_level_estimate": 1,
     "formality": null,
     "register": null,
     "detection_patterns": [
@@ -2017,7 +2033,7 @@
         "entry_number": 84
       }
     ],
-    "review_status": "imported_needs_review"
+    "review_status": "editorially_adjusted_needs_source_verification"
   },
   {
     "id": "GRAM-0065",
@@ -2110,7 +2126,7 @@
         "entry_number": 82
       }
     ],
-    "review_status": "imported_needs_review"
+    "review_status": "editorially_adjusted_needs_source_verification"
   },
   {
     "id": "GRAM-0068",
@@ -2296,7 +2312,8 @@
         "entry_number": null
       }
     ],
-    "review_status": "imported_needs_review"
+    "review_status": "imported_needs_review",
+    "usage_note_en": "A formal written expression meaning “due to” or “as a result of”."
   },
   {
     "id": "GRAM-0074",
@@ -2333,7 +2350,9 @@
     "id": "GRAM-0075",
     "canonical": "-거나",
     "aliases": [
-      "거나"
+      "거나",
+      "하거나",
+      "먹거나"
     ],
     "category": "comparison_choice",
     "meanings_en": [
@@ -2348,8 +2367,8 @@
     ],
     "examples": [
       {
-        "ko": "주말에는 집에서 쉬거나 친구를 만나요.",
-        "en": "On weekends I rest at home or meet friends."
+        "ko": "주말에는 집에서 쉬거나 영화를 봐요.",
+        "en": "On weekends, I rest at home or watch a movie."
       }
     ],
     "source_refs": [
@@ -2362,7 +2381,8 @@
         "entry_number": null
       }
     ],
-    "review_status": "editorially_adjusted_needs_source_verification"
+    "review_status": "editorially_adjusted_needs_source_verification",
+    "usage_note_en": "Connect alternatives, usually between verb or adjective stems."
   },
   {
     "id": "GRAM-0076",
@@ -2391,6 +2411,11 @@
       {
         "file": "TOPIK level3-4 - 문법.pdf",
         "entry_number": null
+      },
+      {
+        "file": "TOPIK 한국어 문법 중급편 — 종합 문법 목차 (photographed index)",
+        "page": 3,
+        "reference_type": "index_only"
       }
     ],
     "review_status": "imported_needs_review"
@@ -2422,9 +2447,15 @@
       {
         "file": "TOPIK level3-4 - 문법.pdf",
         "entry_number": null
+      },
+      {
+        "file": "TOPIK 한국어 문법 중급편 — 종합 문법 목차 (photographed index)",
+        "page": 318,
+        "reference_type": "index_only"
       }
     ],
-    "review_status": "imported_needs_review"
+    "review_status": "editorially_adjusted_needs_source_verification",
+    "usage_note_en": "The second action happens after the first is completed."
   },
   {
     "id": "GRAM-0078",
@@ -2453,6 +2484,16 @@
       {
         "file": "TOPIK level3-4 - 문법.pdf",
         "entry_number": null
+      },
+      {
+        "file": "TOPIK 한국어 문법 중급편 — 종합 문법 목차 (photographed index)",
+        "page": 10,
+        "reference_type": "index_only"
+      },
+      {
+        "file": "TOPIK 한국어 문법 중급편 — 종합 문법 목차 (photographed index)",
+        "page": 13,
+        "reference_type": "index_only"
       }
     ],
     "review_status": "imported_needs_review"
@@ -2484,6 +2525,11 @@
       {
         "file": "TOPIK level3-4 - 문법.pdf",
         "entry_number": null
+      },
+      {
+        "file": "TOPIK 한국어 문법 중급편 — 종합 문법 목차 (photographed index)",
+        "page": 19,
+        "reference_type": "index_only"
       }
     ],
     "review_status": "imported_needs_review"
@@ -2515,6 +2561,11 @@
       {
         "file": "TOPIK level3-4 - 문법.pdf",
         "entry_number": null
+      },
+      {
+        "file": "TOPIK 한국어 문법 중급편 — 종합 문법 목차 (photographed index)",
+        "page": 12,
+        "reference_type": "index_only"
       }
     ],
     "review_status": "imported_needs_review"
@@ -2546,6 +2597,11 @@
       {
         "file": "TOPIK level3-4 - 문법.pdf",
         "entry_number": null
+      },
+      {
+        "file": "TOPIK 한국어 문법 중급편 — 종합 문법 목차 (photographed index)",
+        "page": 20,
+        "reference_type": "index_only"
       }
     ],
     "review_status": "imported_needs_review"
@@ -2554,7 +2610,9 @@
     "id": "GRAM-0082",
     "canonical": "-기 때문에",
     "aliases": [
-      "기 때문에"
+      "기 때문에",
+      "때문에",
+      "했기 때문에"
     ],
     "category": "cause_reason",
     "meanings_en": [
@@ -2569,8 +2627,8 @@
     ],
     "examples": [
       {
-        "ko": "비가 많이 오기 때문에 집에 있을 거예요.",
-        "en": "I will stay home because it is raining heavily."
+        "ko": "비가 오기 때문에 우산을 가져가세요.",
+        "en": "Take an umbrella because it is raining."
       }
     ],
     "source_refs": [
@@ -2583,7 +2641,8 @@
         "entry_number": null
       }
     ],
-    "review_status": "editorially_adjusted_needs_source_verification"
+    "review_status": "editorially_adjusted_needs_source_verification",
+    "usage_note_en": "Attach to a verb or adjective stem to explain a cause or reason."
   },
   {
     "id": "GRAM-0083",
@@ -2612,9 +2671,14 @@
       {
         "file": "TOPIK level3-4 - 문법.pdf",
         "entry_number": null
+      },
+      {
+        "file": "TOPIK 한국어 문법 중급편 — 종합 문법 목차 (photographed index)",
+        "page": 349,
+        "reference_type": "index_only"
       }
     ],
-    "review_status": "imported_needs_review"
+    "review_status": "editorially_adjusted_needs_source_verification"
   },
   {
     "id": "GRAM-0084",
@@ -2643,6 +2707,11 @@
       {
         "file": "TOPIK level3-4 - 문법.pdf",
         "entry_number": null
+      },
+      {
+        "file": "TOPIK 한국어 문법 중급편 — 종합 문법 목차 (photographed index)",
+        "page": 38,
+        "reference_type": "index_only"
       }
     ],
     "review_status": "imported_needs_review"
@@ -2674,6 +2743,11 @@
       {
         "file": "TOPIK level3-4 - 문법.pdf",
         "entry_number": null
+      },
+      {
+        "file": "TOPIK 한국어 문법 중급편 — 종합 문법 목차 (photographed index)",
+        "page": 240,
+        "reference_type": "index_only"
       }
     ],
     "review_status": "imported_needs_review"
@@ -2705,6 +2779,11 @@
       {
         "file": "TOPIK level3-4 - 문법.pdf",
         "entry_number": null
+      },
+      {
+        "file": "TOPIK 한국어 문법 중급편 — 종합 문법 목차 (photographed index)",
+        "page": 349,
+        "reference_type": "index_only"
       }
     ],
     "review_status": "imported_needs_review"
@@ -2713,7 +2792,9 @@
     "id": "GRAM-0087",
     "canonical": "-는 것 같다/-(으)ㄴ 것 같다",
     "aliases": [
-      "는 것 같다/-(으)ㄴ 것 같다"
+      "는 것 같다/-(으)ㄴ 것 같다",
+      "-는 것 같다",
+      "-는 것 같아요"
     ],
     "category": "guessing_assumption",
     "meanings_en": [
@@ -2738,7 +2819,8 @@
         "entry_number": null
       }
     ],
-    "review_status": "editorially_adjusted_needs_source_verification"
+    "review_status": "editorially_adjusted_needs_source_verification",
+    "usage_note_en": "Express an impression or uncertain judgment; the modifier changes with tense and word class."
   },
   {
     "id": "GRAM-0088",
@@ -2829,6 +2911,11 @@
       {
         "file": "TOPIK level3-4 - 문법.pdf",
         "entry_number": null
+      },
+      {
+        "file": "TOPIK 한국어 문법 중급편 — 종합 문법 목차 (photographed index)",
+        "page": 499,
+        "reference_type": "index_only"
       }
     ],
     "review_status": "imported_needs_review"
@@ -2860,6 +2947,11 @@
       {
         "file": "TOPIK level3-4 - 문법.pdf",
         "entry_number": null
+      },
+      {
+        "file": "TOPIK 한국어 문법 중급편 — 종합 문법 목차 (photographed index)",
+        "page": 67,
+        "reference_type": "index_only"
       }
     ],
     "review_status": "imported_needs_review"
@@ -2891,6 +2983,11 @@
       {
         "file": "TOPIK level3-4 - 문법.pdf",
         "entry_number": null
+      },
+      {
+        "file": "TOPIK 한국어 문법 중급편 — 종합 문법 목차 (photographed index)",
+        "page": 80,
+        "reference_type": "index_only"
       }
     ],
     "review_status": "imported_needs_review"
@@ -2922,6 +3019,11 @@
       {
         "file": "TOPIK level3-4 - 문법.pdf",
         "entry_number": null
+      },
+      {
+        "file": "TOPIK 한국어 문법 중급편 — 종합 문법 목차 (photographed index)",
+        "page": 399,
+        "reference_type": "index_only"
       }
     ],
     "review_status": "imported_needs_review"
@@ -2962,6 +3064,11 @@
       {
         "file": "TOPIK level3-4 - 문법.pdf",
         "entry_number": null
+      },
+      {
+        "file": "TOPIK 한국어 문법 중급편 — 종합 문법 목차 (photographed index)",
+        "page": 61,
+        "reference_type": "index_only"
       }
     ],
     "review_status": "imported_needs_review"
@@ -3706,6 +3813,11 @@
       {
         "file": "TOPIK level3-4 - 문법.pdf",
         "entry_number": null
+      },
+      {
+        "file": "TOPIK 한국어 문법 중급편 — 종합 문법 목차 (photographed index)",
+        "page": 328,
+        "reference_type": "index_only"
       }
     ],
     "review_status": "imported_needs_review"
@@ -3737,6 +3849,11 @@
       {
         "file": "TOPIK level3-4 - 문법.pdf",
         "entry_number": null
+      },
+      {
+        "file": "TOPIK 한국어 문법 중급편 — 종합 문법 목차 (photographed index)",
+        "page": 465,
+        "reference_type": "index_only"
       }
     ],
     "review_status": "imported_needs_review"
@@ -3768,6 +3885,11 @@
       {
         "file": "TOPIK level3-4 - 문법.pdf",
         "entry_number": null
+      },
+      {
+        "file": "TOPIK 한국어 문법 중급편 — 종합 문법 목차 (photographed index)",
+        "page": 37,
+        "reference_type": "index_only"
       }
     ],
     "review_status": "imported_needs_review"
@@ -3799,6 +3921,11 @@
       {
         "file": "TOPIK level3-4 - 문법.pdf",
         "entry_number": null
+      },
+      {
+        "file": "TOPIK 한국어 문법 중급편 — 종합 문법 목차 (photographed index)",
+        "page": 84,
+        "reference_type": "index_only"
       }
     ],
     "review_status": "imported_needs_review"
@@ -4056,7 +4183,13 @@
         "en": ""
       }
     ],
-    "source_refs": [],
+    "source_refs": [
+      {
+        "file": "TOPIK 한국어 문법 중급편 — 종합 문법 목차 (photographed index)",
+        "page": 50,
+        "reference_type": "index_only"
+      }
+    ],
     "review_status": "editorial_estimate_not_textbook_verified"
   },
   {
@@ -4176,7 +4309,13 @@
         "en": ""
       }
     ],
-    "source_refs": [],
+    "source_refs": [
+      {
+        "file": "TOPIK 한국어 문법 중급편 — 종합 문법 목차 (photographed index)",
+        "page": 23,
+        "reference_type": "index_only"
+      }
+    ],
     "review_status": "editorial_estimate_not_textbook_verified"
   },
   {
@@ -4344,7 +4483,13 @@
         "en": ""
       }
     ],
-    "source_refs": [],
+    "source_refs": [
+      {
+        "file": "TOPIK 한국어 문법 중급편 — 종합 문법 목차 (photographed index)",
+        "page": 330,
+        "reference_type": "index_only"
+      }
+    ],
     "review_status": "editorial_estimate_not_textbook_verified"
   },
   {
@@ -4632,7 +4777,13 @@
         "en": ""
       }
     ],
-    "source_refs": [],
+    "source_refs": [
+      {
+        "file": "TOPIK 한국어 문법 중급편 — 종합 문법 목차 (photographed index)",
+        "page": 426,
+        "reference_type": "index_only"
+      }
+    ],
     "review_status": "editorial_estimate_not_textbook_verified"
   },
   {
@@ -4850,5 +5001,2648 @@
     ],
     "source_refs": [],
     "review_status": "editorial_estimate_not_textbook_verified"
+  },
+  {
+    "id": "GRAM-0164",
+    "canonical": "-아/어서",
+    "aliases": [
+      "아/어서"
+    ],
+    "category": "additional_reviewed_starter",
+    "meanings_en": [
+      "because / so"
+    ],
+    "langsnack_level": null,
+    "topik_level_estimate": 1,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "아/어서"
+    ],
+    "examples": [
+      {
+        "ko": "오늘은 피곤해서 일찍 잘 거예요.",
+        "en": "I am tired today, so I will go to bed early."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_example_level_estimated",
+    "usage_note_en": "Estimated placement; not an official TOPIK classification."
+  },
+  {
+    "id": "GRAM-0165",
+    "canonical": "-아/어요",
+    "aliases": [
+      "아/어요"
+    ],
+    "category": "additional_reviewed_starter",
+    "meanings_en": [
+      "informal polite present ending"
+    ],
+    "langsnack_level": null,
+    "topik_level_estimate": 1,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "아/어요"
+    ],
+    "examples": [
+      {
+        "ko": "저는 매일 책을 읽어요.",
+        "en": "I read a book every day."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_example_level_estimated",
+    "usage_note_en": "Estimated placement; not an official TOPIK classification."
+  },
+  {
+    "id": "GRAM-0166",
+    "canonical": "-았/었어요",
+    "aliases": [
+      "았/었어요"
+    ],
+    "category": "additional_reviewed_starter",
+    "meanings_en": [
+      "informal polite past ending"
+    ],
+    "langsnack_level": null,
+    "topik_level_estimate": 1,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "았/었어요"
+    ],
+    "examples": [
+      {
+        "ko": "어제 친구를 만났어요.",
+        "en": "I met a friend yesterday."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_example_level_estimated",
+    "usage_note_en": "Estimated placement; not an official TOPIK classification."
+  },
+  {
+    "id": "GRAM-0167",
+    "canonical": "-아/어도 되다",
+    "aliases": [
+      "아/어도 되다"
+    ],
+    "category": "additional_reviewed_starter",
+    "meanings_en": [
+      "may / be allowed to"
+    ],
+    "langsnack_level": null,
+    "topik_level_estimate": 2,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "아/어도 되다"
+    ],
+    "examples": [
+      {
+        "ko": "여기에 앉아도 돼요?",
+        "en": "May I sit here?"
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_example_level_estimated",
+    "usage_note_en": "Estimated placement; not an official TOPIK classification."
+  },
+  {
+    "id": "GRAM-0168",
+    "canonical": "-아/어서는 안 되다",
+    "aliases": [
+      "아/어서는 안 되다"
+    ],
+    "category": "additional_reviewed_starter",
+    "meanings_en": [
+      "must not"
+    ],
+    "langsnack_level": null,
+    "topik_level_estimate": 2,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "아/어서는 안 되다"
+    ],
+    "examples": [
+      {
+        "ko": "여기에서 사진을 찍어서는 안 돼요.",
+        "en": "You must not take photos here."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_example_level_estimated",
+    "usage_note_en": "Estimated placement; not an official TOPIK classification."
+  },
+  {
+    "id": "GRAM-0169",
+    "canonical": "-아/어야겠다",
+    "aliases": [
+      "아/어야겠다"
+    ],
+    "category": "additional_reviewed_starter",
+    "meanings_en": [
+      "should / had better"
+    ],
+    "langsnack_level": null,
+    "topik_level_estimate": 2,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "아/어야겠다"
+    ],
+    "examples": [
+      {
+        "ko": "이제 공부해야겠어요.",
+        "en": "I should study now."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_example_level_estimated",
+    "usage_note_en": "Estimated placement; not an official TOPIK classification."
+  },
+  {
+    "id": "GRAM-0170",
+    "canonical": "-는 중이다",
+    "aliases": [
+      "는 중이다"
+    ],
+    "category": "additional_reviewed_starter",
+    "meanings_en": [
+      "be in the middle of doing"
+    ],
+    "langsnack_level": null,
+    "topik_level_estimate": 2,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "는 중이다"
+    ],
+    "examples": [
+      {
+        "ko": "지금 숙제를 하는 중이에요.",
+        "en": "I am doing homework right now."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_example_level_estimated",
+    "usage_note_en": "Estimated placement; not an official TOPIK classification."
+  },
+  {
+    "id": "GRAM-0171",
+    "canonical": "-아/어 놓다",
+    "aliases": [
+      "아/어 놓다"
+    ],
+    "category": "additional_reviewed_starter",
+    "meanings_en": [
+      "do something and leave it in that state"
+    ],
+    "langsnack_level": null,
+    "topik_level_estimate": 3,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "아/어 놓다"
+    ],
+    "examples": [
+      {
+        "ko": "창문을 열어 놓았어요.",
+        "en": "I left the window open."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_example_level_estimated",
+    "usage_note_en": "Estimated placement; not an official TOPIK classification."
+  },
+  {
+    "id": "GRAM-0172",
+    "canonical": "-아/어 두다",
+    "aliases": [
+      "아/어 두다"
+    ],
+    "category": "additional_reviewed_starter",
+    "meanings_en": [
+      "do something in advance and keep it that way"
+    ],
+    "langsnack_level": null,
+    "topik_level_estimate": 3,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "아/어 두다"
+    ],
+    "examples": [
+      {
+        "ko": "미리 표를 사 두었어요.",
+        "en": "I bought the tickets in advance."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_example_level_estimated",
+    "usage_note_en": "Estimated placement; not an official TOPIK classification."
+  },
+  {
+    "id": "GRAM-0173",
+    "canonical": "-더라고요",
+    "aliases": [
+      "더라고요"
+    ],
+    "category": "additional_reviewed_starter",
+    "meanings_en": [
+      "recall or report something personally observed"
+    ],
+    "langsnack_level": null,
+    "topik_level_estimate": 3,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "더라고요"
+    ],
+    "examples": [
+      {
+        "ko": "그 식당 음식이 맛있더라고요.",
+        "en": "I found that restaurant’s food delicious."
+      }
+    ],
+    "source_refs": [
+      {
+        "file": "TOPIK 한국어 문법 중급편 — 종합 문법 목차 (photographed index)",
+        "page": 129,
+        "reference_type": "index_only"
+      }
+    ],
+    "review_status": "original_example_level_estimated",
+    "usage_note_en": "Estimated placement; not an official TOPIK classification."
+  },
+  {
+    "id": "GRAM-0174",
+    "canonical": "-도록",
+    "aliases": [
+      "도록"
+    ],
+    "category": "additional_reviewed_starter",
+    "meanings_en": [
+      "so that / to the extent that"
+    ],
+    "langsnack_level": null,
+    "topik_level_estimate": 3,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "도록"
+    ],
+    "examples": [
+      {
+        "ko": "늦지 않도록 일찍 출발하세요.",
+        "en": "Leave early so you are not late."
+      }
+    ],
+    "source_refs": [
+      {
+        "file": "TOPIK 한국어 문법 중급편 — 종합 문법 목차 (photographed index)",
+        "page": 149,
+        "reference_type": "index_only"
+      }
+    ],
+    "review_status": "original_example_level_estimated",
+    "usage_note_en": "Estimated placement; not an official TOPIK classification."
+  },
+  {
+    "id": "GRAM-0175",
+    "canonical": "-ㄹ/을 뿐만 아니라",
+    "aliases": [
+      "ㄹ/을 뿐만 아니라"
+    ],
+    "category": "additional_reviewed_starter",
+    "meanings_en": [
+      "not only … but also"
+    ],
+    "langsnack_level": null,
+    "topik_level_estimate": 4,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "ㄹ/을 뿐만 아니라"
+    ],
+    "examples": [
+      {
+        "ko": "이 책은 재미있을 뿐만 아니라 유익해요.",
+        "en": "This book is not only interesting but also informative."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_example_level_estimated",
+    "usage_note_en": "Estimated placement; not an official TOPIK classification."
+  },
+  {
+    "id": "GRAM-0176",
+    "canonical": "-는 데 비해",
+    "aliases": [
+      "는 데 비해"
+    ],
+    "category": "additional_reviewed_starter",
+    "meanings_en": [
+      "in comparison with / whereas"
+    ],
+    "langsnack_level": null,
+    "topik_level_estimate": 4,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "는 데 비해"
+    ],
+    "examples": [
+      {
+        "ko": "작년에 비해 올해는 더워요.",
+        "en": "It is hotter this year than last year."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_example_level_estimated",
+    "usage_note_en": "Estimated placement; not an official TOPIK classification."
+  },
+  {
+    "id": "GRAM-INDEX-0001",
+    "canonical": "-거든요",
+    "aliases": [
+      "거든요"
+    ],
+    "category": "reference_index",
+    "meanings_en": [],
+    "langsnack_level": null,
+    "topik_level_estimate": null,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [],
+    "examples": [],
+    "source_refs": [
+      {
+        "file": "TOPIK 한국어 문법 중급편 — 종합 문법 목차 (photographed index)",
+        "page": 5,
+        "reference_type": "index_only"
+      }
+    ],
+    "review_status": "index_transcribed_pending_linguistic_review",
+    "usage_note_en": "Indexed in the reference book. Explanation and TOPIK level have not yet been verified."
+  },
+  {
+    "id": "GRAM-INDEX-0002",
+    "canonical": "-건",
+    "aliases": [
+      "건"
+    ],
+    "category": "reference_index",
+    "meanings_en": [],
+    "langsnack_level": null,
+    "topik_level_estimate": null,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [],
+    "examples": [],
+    "source_refs": [
+      {
+        "file": "TOPIK 한국어 문법 중급편 — 종합 문법 목차 (photographed index)",
+        "page": 312,
+        "reference_type": "index_only"
+      }
+    ],
+    "review_status": "index_transcribed_pending_linguistic_review",
+    "usage_note_en": "Indexed in the reference book. Explanation and TOPIK level have not yet been verified."
+  },
+  {
+    "id": "GRAM-INDEX-0003",
+    "canonical": "-건마는",
+    "aliases": [
+      "건마는"
+    ],
+    "category": "reference_index",
+    "meanings_en": [],
+    "langsnack_level": null,
+    "topik_level_estimate": null,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [],
+    "examples": [],
+    "source_refs": [
+      {
+        "file": "TOPIK 한국어 문법 중급편 — 종합 문법 목차 (photographed index)",
+        "page": 314,
+        "reference_type": "index_only"
+      }
+    ],
+    "review_status": "index_transcribed_pending_linguistic_review",
+    "usage_note_en": "Indexed in the reference book. Explanation and TOPIK level have not yet been verified."
+  },
+  {
+    "id": "GRAM-INDEX-0004",
+    "canonical": "-게 마련이다",
+    "aliases": [
+      "게 마련이다"
+    ],
+    "category": "reference_index",
+    "meanings_en": [],
+    "langsnack_level": null,
+    "topik_level_estimate": null,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [],
+    "examples": [],
+    "source_refs": [
+      {
+        "file": "TOPIK 한국어 문법 중급편 — 종합 문법 목차 (photographed index)",
+        "page": 7,
+        "reference_type": "index_only"
+      }
+    ],
+    "review_status": "index_transcribed_pending_linguistic_review",
+    "usage_note_en": "Indexed in the reference book. Explanation and TOPIK level have not yet been verified."
+  },
+  {
+    "id": "GRAM-INDEX-0005",
+    "canonical": "-게 하다",
+    "aliases": [
+      "게 하다"
+    ],
+    "category": "reference_index",
+    "meanings_en": [],
+    "langsnack_level": null,
+    "topik_level_estimate": null,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [],
+    "examples": [],
+    "source_refs": [
+      {
+        "file": "TOPIK 한국어 문법 중급편 — 종합 문법 목차 (photographed index)",
+        "page": 8,
+        "reference_type": "index_only"
+      }
+    ],
+    "review_status": "index_transcribed_pending_linguistic_review",
+    "usage_note_en": "Indexed in the reference book. Explanation and TOPIK level have not yet been verified."
+  },
+  {
+    "id": "GRAM-INDEX-0006",
+    "canonical": "-겠거니 하다",
+    "aliases": [
+      "겠거니 하다"
+    ],
+    "category": "reference_index",
+    "meanings_en": [],
+    "langsnack_level": null,
+    "topik_level_estimate": null,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [],
+    "examples": [],
+    "source_refs": [
+      {
+        "file": "TOPIK 한국어 문법 중급편 — 종합 문법 목차 (photographed index)",
+        "page": 316,
+        "reference_type": "index_only"
+      }
+    ],
+    "review_status": "index_transcribed_pending_linguistic_review",
+    "usage_note_en": "Indexed in the reference book. Explanation and TOPIK level have not yet been verified."
+  },
+  {
+    "id": "GRAM-INDEX-0007",
+    "canonical": "-고 보니",
+    "aliases": [
+      "고 보니"
+    ],
+    "category": "reference_index",
+    "meanings_en": [],
+    "langsnack_level": null,
+    "topik_level_estimate": null,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [],
+    "examples": [],
+    "source_refs": [
+      {
+        "file": "TOPIK 한국어 문법 중급편 — 종합 문법 목차 (photographed index)",
+        "page": 320,
+        "reference_type": "index_only"
+      }
+    ],
+    "review_status": "index_transcribed_pending_linguistic_review",
+    "usage_note_en": "Indexed in the reference book. Explanation and TOPIK level have not yet been verified."
+  },
+  {
+    "id": "GRAM-INDEX-0008",
+    "canonical": "-고 해서",
+    "aliases": [
+      "고 해서"
+    ],
+    "category": "reference_index",
+    "meanings_en": [],
+    "langsnack_level": null,
+    "topik_level_estimate": null,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [],
+    "examples": [],
+    "source_refs": [
+      {
+        "file": "TOPIK 한국어 문법 중급편 — 종합 문법 목차 (photographed index)",
+        "page": 15,
+        "reference_type": "index_only"
+      }
+    ],
+    "review_status": "index_transcribed_pending_linguistic_review",
+    "usage_note_en": "Indexed in the reference book. Explanation and TOPIK level have not yet been verified."
+  },
+  {
+    "id": "GRAM-INDEX-0009",
+    "canonical": "-고는",
+    "aliases": [
+      "고는"
+    ],
+    "category": "reference_index",
+    "meanings_en": [],
+    "langsnack_level": null,
+    "topik_level_estimate": null,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [],
+    "examples": [],
+    "source_refs": [
+      {
+        "file": "TOPIK 한국어 문법 중급편 — 종합 문법 목차 (photographed index)",
+        "page": 17,
+        "reference_type": "index_only"
+      }
+    ],
+    "review_status": "index_transcribed_pending_linguistic_review",
+    "usage_note_en": "Indexed in the reference book. Explanation and TOPIK level have not yet been verified."
+  },
+  {
+    "id": "GRAM-INDEX-0010",
+    "canonical": "-고말고요",
+    "aliases": [
+      "고말고요"
+    ],
+    "category": "reference_index",
+    "meanings_en": [],
+    "langsnack_level": null,
+    "topik_level_estimate": null,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [],
+    "examples": [],
+    "source_refs": [
+      {
+        "file": "TOPIK 한국어 문법 중급편 — 종합 문법 목차 (photographed index)",
+        "page": 322,
+        "reference_type": "index_only"
+      }
+    ],
+    "review_status": "index_transcribed_pending_linguistic_review",
+    "usage_note_en": "Indexed in the reference book. Explanation and TOPIK level have not yet been verified."
+  },
+  {
+    "id": "GRAM-INDEX-0011",
+    "canonical": "-고서는",
+    "aliases": [
+      "고서는"
+    ],
+    "category": "reference_index",
+    "meanings_en": [],
+    "langsnack_level": null,
+    "topik_level_estimate": null,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [],
+    "examples": [],
+    "source_refs": [
+      {
+        "file": "TOPIK 한국어 문법 중급편 — 종합 문법 목차 (photographed index)",
+        "page": 18,
+        "reference_type": "index_only"
+      }
+    ],
+    "review_status": "index_transcribed_pending_linguistic_review",
+    "usage_note_en": "Indexed in the reference book. Explanation and TOPIK level have not yet been verified."
+  },
+  {
+    "id": "GRAM-INDEX-0012",
+    "canonical": "-기 시작하다",
+    "aliases": [
+      "기 시작하다"
+    ],
+    "category": "reference_index",
+    "meanings_en": [],
+    "langsnack_level": null,
+    "topik_level_estimate": null,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [],
+    "examples": [],
+    "source_refs": [
+      {
+        "file": "TOPIK 한국어 문법 중급편 — 종합 문법 목차 (photographed index)",
+        "page": 42,
+        "reference_type": "index_only"
+      }
+    ],
+    "review_status": "index_transcribed_pending_linguistic_review",
+    "usage_note_en": "Indexed in the reference book. Explanation and TOPIK level have not yet been verified."
+  },
+  {
+    "id": "GRAM-INDEX-0013",
+    "canonical": "-기 짝이 없다",
+    "aliases": [
+      "기 짝이 없다"
+    ],
+    "category": "reference_index",
+    "meanings_en": [],
+    "langsnack_level": null,
+    "topik_level_estimate": null,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [],
+    "examples": [],
+    "source_refs": [
+      {
+        "file": "TOPIK 한국어 문법 중급편 — 종합 문법 목차 (photographed index)",
+        "page": 45,
+        "reference_type": "index_only"
+      }
+    ],
+    "review_status": "index_transcribed_pending_linguistic_review",
+    "usage_note_en": "Indexed in the reference book. Explanation and TOPIK level have not yet been verified."
+  },
+  {
+    "id": "GRAM-INDEX-0014",
+    "canonical": "-기",
+    "aliases": [
+      "기"
+    ],
+    "category": "reference_index",
+    "meanings_en": [],
+    "langsnack_level": null,
+    "topik_level_estimate": null,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [],
+    "examples": [],
+    "source_refs": [
+      {
+        "file": "TOPIK 한국어 문법 중급편 — 종합 문법 목차 (photographed index)",
+        "page": 351,
+        "reference_type": "index_only"
+      }
+    ],
+    "review_status": "index_transcribed_pending_linguistic_review",
+    "usage_note_en": "Indexed in the reference book. Explanation and TOPIK level have not yet been verified."
+  },
+  {
+    "id": "GRAM-INDEX-0015",
+    "canonical": "-기가 무섭게",
+    "aliases": [
+      "기가 무섭게"
+    ],
+    "category": "reference_index",
+    "meanings_en": [],
+    "langsnack_level": null,
+    "topik_level_estimate": null,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [],
+    "examples": [],
+    "source_refs": [
+      {
+        "file": "TOPIK 한국어 문법 중급편 — 종합 문법 목차 (photographed index)",
+        "page": 353,
+        "reference_type": "index_only"
+      }
+    ],
+    "review_status": "index_transcribed_pending_linguistic_review",
+    "usage_note_en": "Indexed in the reference book. Explanation and TOPIK level have not yet been verified."
+  },
+  {
+    "id": "GRAM-INDEX-0016",
+    "canonical": "-기가",
+    "aliases": [
+      "기가"
+    ],
+    "category": "reference_index",
+    "meanings_en": [],
+    "langsnack_level": null,
+    "topik_level_estimate": null,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [],
+    "examples": [],
+    "source_refs": [
+      {
+        "file": "TOPIK 한국어 문법 중급편 — 종합 문법 목차 (photographed index)",
+        "page": 47,
+        "reference_type": "index_only"
+      }
+    ],
+    "review_status": "index_transcribed_pending_linguistic_review",
+    "usage_note_en": "Indexed in the reference book. Explanation and TOPIK level have not yet been verified."
+  },
+  {
+    "id": "GRAM-INDEX-0017",
+    "canonical": "-기는 고사하고",
+    "aliases": [
+      "기는 고사하고"
+    ],
+    "category": "reference_index",
+    "meanings_en": [],
+    "langsnack_level": null,
+    "topik_level_estimate": null,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [],
+    "examples": [],
+    "source_refs": [
+      {
+        "file": "TOPIK 한국어 문법 중급편 — 종합 문법 목차 (photographed index)",
+        "page": 49,
+        "reference_type": "index_only"
+      }
+    ],
+    "review_status": "index_transcribed_pending_linguistic_review",
+    "usage_note_en": "Indexed in the reference book. Explanation and TOPIK level have not yet been verified."
+  },
+  {
+    "id": "GRAM-INDEX-0018",
+    "canonical": "-기도 하다",
+    "aliases": [
+      "기도 하다"
+    ],
+    "category": "reference_index",
+    "meanings_en": [],
+    "langsnack_level": null,
+    "topik_level_estimate": null,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [],
+    "examples": [],
+    "source_refs": [
+      {
+        "file": "TOPIK 한국어 문법 중급편 — 종합 문법 목차 (photographed index)",
+        "page": 54,
+        "reference_type": "index_only"
+      }
+    ],
+    "review_status": "index_transcribed_pending_linguistic_review",
+    "usage_note_en": "Indexed in the reference book. Explanation and TOPIK level have not yet been verified."
+  },
+  {
+    "id": "GRAM-INDEX-0019",
+    "canonical": "-기라도 하면",
+    "aliases": [
+      "기라도 하면"
+    ],
+    "category": "reference_index",
+    "meanings_en": [],
+    "langsnack_level": null,
+    "topik_level_estimate": null,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [],
+    "examples": [],
+    "source_refs": [
+      {
+        "file": "TOPIK 한국어 문법 중급편 — 종합 문법 목차 (photographed index)",
+        "page": 337,
+        "reference_type": "index_only"
+      }
+    ],
+    "review_status": "index_transcribed_pending_linguistic_review",
+    "usage_note_en": "Indexed in the reference book. Explanation and TOPIK level have not yet been verified."
+  },
+  {
+    "id": "GRAM-INDEX-0020",
+    "canonical": "-기란",
+    "aliases": [
+      "기란"
+    ],
+    "category": "reference_index",
+    "meanings_en": [],
+    "langsnack_level": null,
+    "topik_level_estimate": null,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [],
+    "examples": [],
+    "source_refs": [
+      {
+        "file": "TOPIK 한국어 문법 중급편 — 종합 문법 목차 (photographed index)",
+        "page": 339,
+        "reference_type": "index_only"
+      }
+    ],
+    "review_status": "index_transcribed_pending_linguistic_review",
+    "usage_note_en": "Indexed in the reference book. Explanation and TOPIK level have not yet been verified."
+  },
+  {
+    "id": "GRAM-INDEX-0021",
+    "canonical": "-기로서니",
+    "aliases": [
+      "기로서니"
+    ],
+    "category": "reference_index",
+    "meanings_en": [],
+    "langsnack_level": null,
+    "topik_level_estimate": null,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [],
+    "examples": [],
+    "source_refs": [
+      {
+        "file": "TOPIK 한국어 문법 중급편 — 종합 문법 목차 (photographed index)",
+        "page": 342,
+        "reference_type": "index_only"
+      }
+    ],
+    "review_status": "index_transcribed_pending_linguistic_review",
+    "usage_note_en": "Indexed in the reference book. Explanation and TOPIK level have not yet been verified."
+  },
+  {
+    "id": "GRAM-INDEX-0022",
+    "canonical": "-기를 바라다",
+    "aliases": [
+      "기를 바라다"
+    ],
+    "category": "reference_index",
+    "meanings_en": [],
+    "langsnack_level": null,
+    "topik_level_estimate": null,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [],
+    "examples": [],
+    "source_refs": [
+      {
+        "file": "TOPIK 한국어 문법 중급편 — 종합 문법 목차 (photographed index)",
+        "page": 36,
+        "reference_type": "index_only"
+      }
+    ],
+    "review_status": "index_transcribed_pending_linguistic_review",
+    "usage_note_en": "Indexed in the reference book. Explanation and TOPIK level have not yet been verified."
+  },
+  {
+    "id": "GRAM-INDEX-0023",
+    "canonical": "-기야 망정이지",
+    "aliases": [
+      "기야 망정이지"
+    ],
+    "category": "reference_index",
+    "meanings_en": [],
+    "langsnack_level": null,
+    "topik_level_estimate": null,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [],
+    "examples": [],
+    "source_refs": [
+      {
+        "file": "TOPIK 한국어 문법 중급편 — 종합 문법 목차 (photographed index)",
+        "page": 345,
+        "reference_type": "index_only"
+      }
+    ],
+    "review_status": "index_transcribed_pending_linguistic_review",
+    "usage_note_en": "Indexed in the reference book. Explanation and TOPIK level have not yet been verified."
+  },
+  {
+    "id": "GRAM-INDEX-0024",
+    "canonical": "-기에는",
+    "aliases": [
+      "기에는"
+    ],
+    "category": "reference_index",
+    "meanings_en": [],
+    "langsnack_level": null,
+    "topik_level_estimate": null,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [],
+    "examples": [],
+    "source_refs": [
+      {
+        "file": "TOPIK 한국어 문법 중급편 — 종합 문법 목차 (photographed index)",
+        "page": 38,
+        "reference_type": "index_only"
+      }
+    ],
+    "review_status": "index_transcribed_pending_linguistic_review",
+    "usage_note_en": "Indexed in the reference book. Explanation and TOPIK level have not yet been verified."
+  },
+  {
+    "id": "GRAM-INDEX-0025",
+    "canonical": "-길래",
+    "aliases": [
+      "길래"
+    ],
+    "category": "reference_index",
+    "meanings_en": [],
+    "langsnack_level": null,
+    "topik_level_estimate": null,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [],
+    "examples": [],
+    "source_refs": [
+      {
+        "file": "TOPIK 한국어 문법 중급편 — 종합 문법 목차 (photographed index)",
+        "page": 39,
+        "reference_type": "index_only"
+      }
+    ],
+    "review_status": "index_transcribed_pending_linguistic_review",
+    "usage_note_en": "Indexed in the reference book. Explanation and TOPIK level have not yet been verified."
+  },
+  {
+    "id": "GRAM-INDEX-0026",
+    "canonical": "-노라면",
+    "aliases": [
+      "노라면"
+    ],
+    "category": "reference_index",
+    "meanings_en": [],
+    "langsnack_level": null,
+    "topik_level_estimate": null,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [],
+    "examples": [],
+    "source_refs": [
+      {
+        "file": "TOPIK 한국어 문법 중급편 — 종합 문법 목차 (photographed index)",
+        "page": 347,
+        "reference_type": "index_only"
+      }
+    ],
+    "review_status": "index_transcribed_pending_linguistic_review",
+    "usage_note_en": "Indexed in the reference book. Explanation and TOPIK level have not yet been verified."
+  },
+  {
+    "id": "GRAM-INDEX-0027",
+    "canonical": "-느니만큼",
+    "aliases": [
+      "느니만큼"
+    ],
+    "category": "reference_index",
+    "meanings_en": [],
+    "langsnack_level": null,
+    "topik_level_estimate": null,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [],
+    "examples": [],
+    "source_refs": [
+      {
+        "file": "TOPIK 한국어 문법 중급편 — 종합 문법 목차 (photographed index)",
+        "page": 465,
+        "reference_type": "index_only"
+      }
+    ],
+    "review_status": "index_transcribed_pending_linguistic_review",
+    "usage_note_en": "Indexed in the reference book. Explanation and TOPIK level have not yet been verified."
+  },
+  {
+    "id": "GRAM-INDEX-0028",
+    "canonical": "-느라고",
+    "aliases": [
+      "느라고"
+    ],
+    "category": "reference_index",
+    "meanings_en": [],
+    "langsnack_level": null,
+    "topik_level_estimate": null,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [],
+    "examples": [],
+    "source_refs": [
+      {
+        "file": "TOPIK 한국어 문법 중급편 — 종합 문법 목차 (photographed index)",
+        "page": 45,
+        "reference_type": "index_only"
+      }
+    ],
+    "review_status": "index_transcribed_pending_linguistic_review",
+    "usage_note_en": "Indexed in the reference book. Explanation and TOPIK level have not yet been verified."
+  },
+  {
+    "id": "GRAM-INDEX-0029",
+    "canonical": "-는 가운데",
+    "aliases": [
+      "는 가운데"
+    ],
+    "category": "reference_index",
+    "meanings_en": [],
+    "langsnack_level": null,
+    "topik_level_estimate": null,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [],
+    "examples": [],
+    "source_refs": [
+      {
+        "file": "TOPIK 한국어 문법 중급편 — 종합 문법 목차 (photographed index)",
+        "page": 351,
+        "reference_type": "index_only"
+      }
+    ],
+    "review_status": "index_transcribed_pending_linguistic_review",
+    "usage_note_en": "Indexed in the reference book. Explanation and TOPIK level have not yet been verified."
+  },
+  {
+    "id": "GRAM-INDEX-0030",
+    "canonical": "-는 경우에는",
+    "aliases": [
+      "는 경우에는"
+    ],
+    "category": "reference_index",
+    "meanings_en": [],
+    "langsnack_level": null,
+    "topik_level_estimate": null,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [],
+    "examples": [],
+    "source_refs": [
+      {
+        "file": "TOPIK 한국어 문법 중급편 — 종합 문법 목차 (photographed index)",
+        "page": 353,
+        "reference_type": "index_only"
+      }
+    ],
+    "review_status": "index_transcribed_pending_linguistic_review",
+    "usage_note_en": "Indexed in the reference book. Explanation and TOPIK level have not yet been verified."
+  },
+  {
+    "id": "GRAM-INDEX-0031",
+    "canonical": "-는 김에",
+    "aliases": [
+      "는 김에"
+    ],
+    "category": "reference_index",
+    "meanings_en": [],
+    "langsnack_level": null,
+    "topik_level_estimate": null,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [],
+    "examples": [],
+    "source_refs": [
+      {
+        "file": "TOPIK 한국어 문법 중급편 — 종합 문법 목차 (photographed index)",
+        "page": 47,
+        "reference_type": "index_only"
+      }
+    ],
+    "review_status": "index_transcribed_pending_linguistic_review",
+    "usage_note_en": "Indexed in the reference book. Explanation and TOPIK level have not yet been verified."
+  },
+  {
+    "id": "GRAM-INDEX-0032",
+    "canonical": "-는 덕분에",
+    "aliases": [
+      "는 덕분에"
+    ],
+    "category": "reference_index",
+    "meanings_en": [],
+    "langsnack_level": null,
+    "topik_level_estimate": null,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [],
+    "examples": [],
+    "source_refs": [
+      {
+        "file": "TOPIK 한국어 문법 중급편 — 종합 문법 목차 (photographed index)",
+        "page": 49,
+        "reference_type": "index_only"
+      }
+    ],
+    "review_status": "index_transcribed_pending_linguistic_review",
+    "usage_note_en": "Indexed in the reference book. Explanation and TOPIK level have not yet been verified."
+  },
+  {
+    "id": "GRAM-INDEX-0033",
+    "canonical": "-는 대로",
+    "aliases": [
+      "는 대로"
+    ],
+    "category": "reference_index",
+    "meanings_en": [],
+    "langsnack_level": null,
+    "topik_level_estimate": null,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [],
+    "examples": [],
+    "source_refs": [
+      {
+        "file": "TOPIK 한국어 문법 중급편 — 종합 문법 목차 (photographed index)",
+        "page": 52,
+        "reference_type": "index_only"
+      }
+    ],
+    "review_status": "index_transcribed_pending_linguistic_review",
+    "usage_note_en": "Indexed in the reference book. Explanation and TOPIK level have not yet been verified."
+  },
+  {
+    "id": "GRAM-INDEX-0034",
+    "canonical": "-는 대신에",
+    "aliases": [
+      "는 대신에"
+    ],
+    "category": "reference_index",
+    "meanings_en": [],
+    "langsnack_level": null,
+    "topik_level_estimate": null,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [],
+    "examples": [],
+    "source_refs": [
+      {
+        "file": "TOPIK 한국어 문법 중급편 — 종합 문법 목차 (photographed index)",
+        "page": 54,
+        "reference_type": "index_only"
+      }
+    ],
+    "review_status": "index_transcribed_pending_linguistic_review",
+    "usage_note_en": "Indexed in the reference book. Explanation and TOPIK level have not yet been verified."
+  },
+  {
+    "id": "GRAM-INDEX-0035",
+    "canonical": "-는 데 비해서",
+    "aliases": [
+      "는 데 비해서"
+    ],
+    "category": "reference_index",
+    "meanings_en": [],
+    "langsnack_level": null,
+    "topik_level_estimate": null,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [],
+    "examples": [],
+    "source_refs": [
+      {
+        "file": "TOPIK 한국어 문법 중급편 — 종합 문법 목차 (photographed index)",
+        "page": 360,
+        "reference_type": "index_only"
+      }
+    ],
+    "review_status": "index_transcribed_pending_linguistic_review",
+    "usage_note_en": "Indexed in the reference book. Explanation and TOPIK level have not yet been verified."
+  },
+  {
+    "id": "GRAM-INDEX-0036",
+    "canonical": "-는 데 반해서",
+    "aliases": [
+      "는 데 반해서"
+    ],
+    "category": "reference_index",
+    "meanings_en": [],
+    "langsnack_level": null,
+    "topik_level_estimate": null,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [],
+    "examples": [],
+    "source_refs": [
+      {
+        "file": "TOPIK 한국어 문법 중급편 — 종합 문법 목차 (photographed index)",
+        "page": 362,
+        "reference_type": "index_only"
+      }
+    ],
+    "review_status": "index_transcribed_pending_linguistic_review",
+    "usage_note_en": "Indexed in the reference book. Explanation and TOPIK level have not yet been verified."
+  },
+  {
+    "id": "GRAM-INDEX-0037",
+    "canonical": "-는 데다가",
+    "aliases": [
+      "는 데다가"
+    ],
+    "category": "reference_index",
+    "meanings_en": [],
+    "langsnack_level": null,
+    "topik_level_estimate": null,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [],
+    "examples": [],
+    "source_refs": [
+      {
+        "file": "TOPIK 한국어 문법 중급편 — 종합 문법 목차 (photographed index)",
+        "page": 57,
+        "reference_type": "index_only"
+      }
+    ],
+    "review_status": "index_transcribed_pending_linguistic_review",
+    "usage_note_en": "Indexed in the reference book. Explanation and TOPIK level have not yet been verified."
+  },
+  {
+    "id": "GRAM-INDEX-0038",
+    "canonical": "-는 데에",
+    "aliases": [
+      "는 데에"
+    ],
+    "category": "reference_index",
+    "meanings_en": [],
+    "langsnack_level": null,
+    "topik_level_estimate": null,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [],
+    "examples": [],
+    "source_refs": [
+      {
+        "file": "TOPIK 한국어 문법 중급편 — 종합 문법 목차 (photographed index)",
+        "page": 59,
+        "reference_type": "index_only"
+      }
+    ],
+    "review_status": "index_transcribed_pending_linguistic_review",
+    "usage_note_en": "Indexed in the reference book. Explanation and TOPIK level have not yet been verified."
+  },
+  {
+    "id": "GRAM-INDEX-0039",
+    "canonical": "-는 둥 마는 둥 하다",
+    "aliases": [
+      "는 둥 마는 둥 하다"
+    ],
+    "category": "reference_index",
+    "meanings_en": [],
+    "langsnack_level": null,
+    "topik_level_estimate": null,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [],
+    "examples": [],
+    "source_refs": [
+      {
+        "file": "TOPIK 한국어 문법 중급편 — 종합 문법 목차 (photographed index)",
+        "page": 364,
+        "reference_type": "index_only"
+      }
+    ],
+    "review_status": "index_transcribed_pending_linguistic_review",
+    "usage_note_en": "Indexed in the reference book. Explanation and TOPIK level have not yet been verified."
+  },
+  {
+    "id": "GRAM-INDEX-0040",
+    "canonical": "-는 듯싶다",
+    "aliases": [
+      "는 듯싶다"
+    ],
+    "category": "reference_index",
+    "meanings_en": [],
+    "langsnack_level": null,
+    "topik_level_estimate": null,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [],
+    "examples": [],
+    "source_refs": [
+      {
+        "file": "TOPIK 한국어 문법 중급편 — 종합 문법 목차 (photographed index)",
+        "page": 365,
+        "reference_type": "index_only"
+      }
+    ],
+    "review_status": "index_transcribed_pending_linguistic_review",
+    "usage_note_en": "Indexed in the reference book. Explanation and TOPIK level have not yet been verified."
+  },
+  {
+    "id": "GRAM-INDEX-0041",
+    "canonical": "-는 듯하다",
+    "aliases": [
+      "는 듯하다"
+    ],
+    "category": "reference_index",
+    "meanings_en": [],
+    "langsnack_level": null,
+    "topik_level_estimate": null,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [],
+    "examples": [],
+    "source_refs": [
+      {
+        "file": "TOPIK 한국어 문법 중급편 — 종합 문법 목차 (photographed index)",
+        "page": 63,
+        "reference_type": "index_only"
+      }
+    ],
+    "review_status": "index_transcribed_pending_linguistic_review",
+    "usage_note_en": "Indexed in the reference book. Explanation and TOPIK level have not yet been verified."
+  },
+  {
+    "id": "GRAM-INDEX-0042",
+    "canonical": "-는 마당에",
+    "aliases": [
+      "는 마당에"
+    ],
+    "category": "reference_index",
+    "meanings_en": [],
+    "langsnack_level": null,
+    "topik_level_estimate": null,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [],
+    "examples": [],
+    "source_refs": [
+      {
+        "file": "TOPIK 한국어 문법 중급편 — 종합 문법 목차 (photographed index)",
+        "page": 384,
+        "reference_type": "index_only"
+      }
+    ],
+    "review_status": "index_transcribed_pending_linguistic_review",
+    "usage_note_en": "Indexed in the reference book. Explanation and TOPIK level have not yet been verified."
+  },
+  {
+    "id": "GRAM-INDEX-0043",
+    "canonical": "-는 만큼",
+    "aliases": [
+      "는 만큼"
+    ],
+    "category": "reference_index",
+    "meanings_en": [],
+    "langsnack_level": null,
+    "topik_level_estimate": null,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [],
+    "examples": [],
+    "source_refs": [
+      {
+        "file": "TOPIK 한국어 문법 중급편 — 종합 문법 목차 (photographed index)",
+        "page": 386,
+        "reference_type": "index_only"
+      }
+    ],
+    "review_status": "index_transcribed_pending_linguistic_review",
+    "usage_note_en": "Indexed in the reference book. Explanation and TOPIK level have not yet been verified."
+  },
+  {
+    "id": "GRAM-INDEX-0044",
+    "canonical": "-는 모양이다",
+    "aliases": [
+      "는 모양이다"
+    ],
+    "category": "reference_index",
+    "meanings_en": [],
+    "langsnack_level": null,
+    "topik_level_estimate": null,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [],
+    "examples": [],
+    "source_refs": [
+      {
+        "file": "TOPIK 한국어 문법 중급편 — 종합 문법 목차 (photographed index)",
+        "page": 65,
+        "reference_type": "index_only"
+      }
+    ],
+    "review_status": "index_transcribed_pending_linguistic_review",
+    "usage_note_en": "Indexed in the reference book. Explanation and TOPIK level have not yet been verified."
+  },
+  {
+    "id": "GRAM-INDEX-0045",
+    "canonical": "-는 바",
+    "aliases": [
+      "는 바"
+    ],
+    "category": "reference_index",
+    "meanings_en": [],
+    "langsnack_level": null,
+    "topik_level_estimate": null,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [],
+    "examples": [],
+    "source_refs": [
+      {
+        "file": "TOPIK 한국어 문법 중급편 — 종합 문법 목차 (photographed index)",
+        "page": 388,
+        "reference_type": "index_only"
+      }
+    ],
+    "review_status": "index_transcribed_pending_linguistic_review",
+    "usage_note_en": "Indexed in the reference book. Explanation and TOPIK level have not yet been verified."
+  },
+  {
+    "id": "GRAM-INDEX-0046",
+    "canonical": "-는 반면에",
+    "aliases": [
+      "는 반면에"
+    ],
+    "category": "reference_index",
+    "meanings_en": [],
+    "langsnack_level": null,
+    "topik_level_estimate": null,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [],
+    "examples": [],
+    "source_refs": [
+      {
+        "file": "TOPIK 한국어 문법 중급편 — 종합 문법 목차 (photographed index)",
+        "page": 390,
+        "reference_type": "index_only"
+      }
+    ],
+    "review_status": "index_transcribed_pending_linguistic_review",
+    "usage_note_en": "Indexed in the reference book. Explanation and TOPIK level have not yet been verified."
+  },
+  {
+    "id": "GRAM-INDEX-0047",
+    "canonical": "-는 법이다",
+    "aliases": [
+      "는 법이다"
+    ],
+    "category": "reference_index",
+    "meanings_en": [],
+    "langsnack_level": null,
+    "topik_level_estimate": null,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [],
+    "examples": [],
+    "source_refs": [
+      {
+        "file": "TOPIK 한국어 문법 중급편 — 종합 문법 목차 (photographed index)",
+        "page": 392,
+        "reference_type": "index_only"
+      }
+    ],
+    "review_status": "index_transcribed_pending_linguistic_review",
+    "usage_note_en": "Indexed in the reference book. Explanation and TOPIK level have not yet been verified."
+  },
+  {
+    "id": "GRAM-INDEX-0048",
+    "canonical": "-는 사이에",
+    "aliases": [
+      "는 사이에"
+    ],
+    "category": "reference_index",
+    "meanings_en": [],
+    "langsnack_level": null,
+    "topik_level_estimate": null,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [],
+    "examples": [],
+    "source_refs": [
+      {
+        "file": "TOPIK 한국어 문법 중급편 — 종합 문법 목차 (photographed index)",
+        "page": 69,
+        "reference_type": "index_only"
+      }
+    ],
+    "review_status": "index_transcribed_pending_linguistic_review",
+    "usage_note_en": "Indexed in the reference book. Explanation and TOPIK level have not yet been verified."
+  },
+  {
+    "id": "GRAM-INDEX-0049",
+    "canonical": "-는 셈이다",
+    "aliases": [
+      "는 셈이다"
+    ],
+    "category": "reference_index",
+    "meanings_en": [],
+    "langsnack_level": null,
+    "topik_level_estimate": null,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [],
+    "examples": [],
+    "source_refs": [
+      {
+        "file": "TOPIK 한국어 문법 중급편 — 종합 문법 목차 (photographed index)",
+        "page": 71,
+        "reference_type": "index_only"
+      }
+    ],
+    "review_status": "index_transcribed_pending_linguistic_review",
+    "usage_note_en": "Indexed in the reference book. Explanation and TOPIK level have not yet been verified."
+  },
+  {
+    "id": "GRAM-INDEX-0050",
+    "canonical": "-는 셈치고",
+    "aliases": [
+      "는 셈치고"
+    ],
+    "category": "reference_index",
+    "meanings_en": [],
+    "langsnack_level": null,
+    "topik_level_estimate": null,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [],
+    "examples": [],
+    "source_refs": [
+      {
+        "file": "TOPIK 한국어 문법 중급편 — 종합 문법 목차 (photographed index)",
+        "page": 393,
+        "reference_type": "index_only"
+      }
+    ],
+    "review_status": "index_transcribed_pending_linguistic_review",
+    "usage_note_en": "Indexed in the reference book. Explanation and TOPIK level have not yet been verified."
+  },
+  {
+    "id": "GRAM-INDEX-0051",
+    "canonical": "-는 수가 있다",
+    "aliases": [
+      "는 수가 있다"
+    ],
+    "category": "reference_index",
+    "meanings_en": [],
+    "langsnack_level": null,
+    "topik_level_estimate": null,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [],
+    "examples": [],
+    "source_refs": [
+      {
+        "file": "TOPIK 한국어 문법 중급편 — 종합 문법 목차 (photographed index)",
+        "page": 73,
+        "reference_type": "index_only"
+      }
+    ],
+    "review_status": "index_transcribed_pending_linguistic_review",
+    "usage_note_en": "Indexed in the reference book. Explanation and TOPIK level have not yet been verified."
+  },
+  {
+    "id": "GRAM-INDEX-0052",
+    "canonical": "-는 양",
+    "aliases": [
+      "는 양"
+    ],
+    "category": "reference_index",
+    "meanings_en": [],
+    "langsnack_level": null,
+    "topik_level_estimate": null,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [],
+    "examples": [],
+    "source_refs": [
+      {
+        "file": "TOPIK 한국어 문법 중급편 — 종합 문법 목차 (photographed index)",
+        "page": 395,
+        "reference_type": "index_only"
+      }
+    ],
+    "review_status": "index_transcribed_pending_linguistic_review",
+    "usage_note_en": "Indexed in the reference book. Explanation and TOPIK level have not yet been verified."
+  },
+  {
+    "id": "GRAM-INDEX-0053",
+    "canonical": "-는 이상",
+    "aliases": [
+      "는 이상"
+    ],
+    "category": "reference_index",
+    "meanings_en": [],
+    "langsnack_level": null,
+    "topik_level_estimate": null,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [],
+    "examples": [],
+    "source_refs": [
+      {
+        "file": "TOPIK 한국어 문법 중급편 — 종합 문법 목차 (photographed index)",
+        "page": 397,
+        "reference_type": "index_only"
+      }
+    ],
+    "review_status": "index_transcribed_pending_linguistic_review",
+    "usage_note_en": "Indexed in the reference book. Explanation and TOPIK level have not yet been verified."
+  },
+  {
+    "id": "GRAM-INDEX-0054",
+    "canonical": "-는 줄 알다",
+    "aliases": [
+      "는 줄 알다"
+    ],
+    "category": "reference_index",
+    "meanings_en": [],
+    "langsnack_level": null,
+    "topik_level_estimate": null,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [],
+    "examples": [],
+    "source_refs": [
+      {
+        "file": "TOPIK 한국어 문법 중급편 — 종합 문법 목차 (photographed index)",
+        "page": 74,
+        "reference_type": "index_only"
+      }
+    ],
+    "review_status": "index_transcribed_pending_linguistic_review",
+    "usage_note_en": "Indexed in the reference book. Explanation and TOPIK level have not yet been verified."
+  },
+  {
+    "id": "GRAM-INDEX-0055",
+    "canonical": "-는 척하다",
+    "aliases": [
+      "는 척하다"
+    ],
+    "category": "reference_index",
+    "meanings_en": [],
+    "langsnack_level": null,
+    "topik_level_estimate": null,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [],
+    "examples": [],
+    "source_refs": [
+      {
+        "file": "TOPIK 한국어 문법 중급편 — 종합 문법 목차 (photographed index)",
+        "page": 78,
+        "reference_type": "index_only"
+      }
+    ],
+    "review_status": "index_transcribed_pending_linguistic_review",
+    "usage_note_en": "Indexed in the reference book. Explanation and TOPIK level have not yet been verified."
+  },
+  {
+    "id": "GRAM-INDEX-0056",
+    "canonical": "-는 한에",
+    "aliases": [
+      "는 한에"
+    ],
+    "category": "reference_index",
+    "meanings_en": [],
+    "langsnack_level": null,
+    "topik_level_estimate": null,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [],
+    "examples": [],
+    "source_refs": [
+      {
+        "file": "TOPIK 한국어 문법 중급편 — 종합 문법 목차 (photographed index)",
+        "page": 556,
+        "reference_type": "index_only"
+      }
+    ],
+    "review_status": "index_transcribed_pending_linguistic_review",
+    "usage_note_en": "Indexed in the reference book. Explanation and TOPIK level have not yet been verified."
+  },
+  {
+    "id": "GRAM-INDEX-0057",
+    "canonical": "-는 한이 있어도",
+    "aliases": [
+      "는 한이 있어도"
+    ],
+    "category": "reference_index",
+    "meanings_en": [],
+    "langsnack_level": null,
+    "topik_level_estimate": null,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [],
+    "examples": [],
+    "source_refs": [
+      {
+        "file": "TOPIK 한국어 문법 중급편 — 종합 문법 목차 (photographed index)",
+        "page": 401,
+        "reference_type": "index_only"
+      }
+    ],
+    "review_status": "index_transcribed_pending_linguistic_review",
+    "usage_note_en": "Indexed in the reference book. Explanation and TOPIK level have not yet been verified."
+  },
+  {
+    "id": "GRAM-INDEX-0058",
+    "canonical": "-는가 싶다",
+    "aliases": [
+      "는가 싶다"
+    ],
+    "category": "reference_index",
+    "meanings_en": [],
+    "langsnack_level": null,
+    "topik_level_estimate": null,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [],
+    "examples": [],
+    "source_refs": [
+      {
+        "file": "TOPIK 한국어 문법 중급편 — 종합 문법 목차 (photographed index)",
+        "page": 407,
+        "reference_type": "index_only"
+      }
+    ],
+    "review_status": "index_transcribed_pending_linguistic_review",
+    "usage_note_en": "Indexed in the reference book. Explanation and TOPIK level have not yet been verified."
+  },
+  {
+    "id": "GRAM-INDEX-0059",
+    "canonical": "-는가 하면",
+    "aliases": [
+      "는가 하면"
+    ],
+    "category": "reference_index",
+    "meanings_en": [],
+    "langsnack_level": null,
+    "topik_level_estimate": null,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [],
+    "examples": [],
+    "source_refs": [
+      {
+        "file": "TOPIK 한국어 문법 중급편 — 종합 문법 목차 (photographed index)",
+        "page": 409,
+        "reference_type": "index_only"
+      }
+    ],
+    "review_status": "index_transcribed_pending_linguistic_review",
+    "usage_note_en": "Indexed in the reference book. Explanation and TOPIK level have not yet been verified."
+  },
+  {
+    "id": "GRAM-INDEX-0060",
+    "canonical": "-는가?",
+    "aliases": [
+      "는가?"
+    ],
+    "category": "reference_index",
+    "meanings_en": [],
+    "langsnack_level": null,
+    "topik_level_estimate": null,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [],
+    "examples": [],
+    "source_refs": [
+      {
+        "file": "TOPIK 한국어 문법 중급편 — 종합 문법 목차 (photographed index)",
+        "page": 403,
+        "reference_type": "index_only"
+      }
+    ],
+    "review_status": "index_transcribed_pending_linguistic_review",
+    "usage_note_en": "Indexed in the reference book. Explanation and TOPIK level have not yet been verified."
+  },
+  {
+    "id": "GRAM-INDEX-0061",
+    "canonical": "-는걸?",
+    "aliases": [
+      "는걸?"
+    ],
+    "category": "reference_index",
+    "meanings_en": [],
+    "langsnack_level": null,
+    "topik_level_estimate": null,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [],
+    "examples": [],
+    "source_refs": [
+      {
+        "file": "TOPIK 한국어 문법 중급편 — 종합 문법 목차 (photographed index)",
+        "page": 405,
+        "reference_type": "index_only"
+      }
+    ],
+    "review_status": "index_transcribed_pending_linguistic_review",
+    "usage_note_en": "Indexed in the reference book. Explanation and TOPIK level have not yet been verified."
+  },
+  {
+    "id": "GRAM-INDEX-0062",
+    "canonical": "-는걸요",
+    "aliases": [
+      "는걸요"
+    ],
+    "category": "reference_index",
+    "meanings_en": [],
+    "langsnack_level": null,
+    "topik_level_estimate": null,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [],
+    "examples": [],
+    "source_refs": [
+      {
+        "file": "TOPIK 한국어 문법 중급편 — 종합 문법 목차 (photographed index)",
+        "page": 411,
+        "reference_type": "index_only"
+      }
+    ],
+    "review_status": "index_transcribed_pending_linguistic_review",
+    "usage_note_en": "Indexed in the reference book. Explanation and TOPIK level have not yet been verified."
+  },
+  {
+    "id": "GRAM-INDEX-0063",
+    "canonical": "-는다고 보다",
+    "aliases": [
+      "는다고 보다"
+    ],
+    "category": "reference_index",
+    "meanings_en": [],
+    "langsnack_level": null,
+    "topik_level_estimate": null,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [],
+    "examples": [],
+    "source_refs": [
+      {
+        "file": "TOPIK 한국어 문법 중급편 — 종합 문법 목차 (photographed index)",
+        "page": 82,
+        "reference_type": "index_only"
+      }
+    ],
+    "review_status": "index_transcribed_pending_linguistic_review",
+    "usage_note_en": "Indexed in the reference book. Explanation and TOPIK level have not yet been verified."
+  },
+  {
+    "id": "GRAM-INDEX-0064",
+    "canonical": "-는다고 치다",
+    "aliases": [
+      "는다고 치다"
+    ],
+    "category": "reference_index",
+    "meanings_en": [],
+    "langsnack_level": null,
+    "topik_level_estimate": null,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [],
+    "examples": [],
+    "source_refs": [
+      {
+        "file": "TOPIK 한국어 문법 중급편 — 종합 문법 목차 (photographed index)",
+        "page": 415,
+        "reference_type": "index_only"
+      }
+    ],
+    "review_status": "index_transcribed_pending_linguistic_review",
+    "usage_note_en": "Indexed in the reference book. Explanation and TOPIK level have not yet been verified."
+  },
+  {
+    "id": "GRAM-INDEX-0065",
+    "canonical": "-는다고",
+    "aliases": [
+      "는다고"
+    ],
+    "category": "reference_index",
+    "meanings_en": [],
+    "langsnack_level": null,
+    "topik_level_estimate": null,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [],
+    "examples": [],
+    "source_refs": [
+      {
+        "file": "TOPIK 한국어 문법 중급편 — 종합 문법 목차 (photographed index)",
+        "page": 413,
+        "reference_type": "index_only"
+      }
+    ],
+    "review_status": "index_transcribed_pending_linguistic_review",
+    "usage_note_en": "Indexed in the reference book. Explanation and TOPIK level have not yet been verified."
+  },
+  {
+    "id": "GRAM-INDEX-0066",
+    "canonical": "-는다기보다는",
+    "aliases": [
+      "는다기보다는"
+    ],
+    "category": "reference_index",
+    "meanings_en": [],
+    "langsnack_level": null,
+    "topik_level_estimate": null,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [],
+    "examples": [],
+    "source_refs": [
+      {
+        "file": "TOPIK 한국어 문법 중급편 — 종합 문법 목차 (photographed index)",
+        "page": 88,
+        "reference_type": "index_only"
+      }
+    ],
+    "review_status": "index_transcribed_pending_linguistic_review",
+    "usage_note_en": "Indexed in the reference book. Explanation and TOPIK level have not yet been verified."
+  },
+  {
+    "id": "GRAM-INDEX-0067",
+    "canonical": "-는다기에",
+    "aliases": [
+      "는다기에"
+    ],
+    "category": "reference_index",
+    "meanings_en": [],
+    "langsnack_level": null,
+    "topik_level_estimate": null,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [],
+    "examples": [],
+    "source_refs": [
+      {
+        "file": "TOPIK 한국어 문법 중급편 — 종합 문법 목차 (photographed index)",
+        "page": 90,
+        "reference_type": "index_only"
+      }
+    ],
+    "review_status": "index_transcribed_pending_linguistic_review",
+    "usage_note_en": "Indexed in the reference book. Explanation and TOPIK level have not yet been verified."
+  },
+  {
+    "id": "GRAM-INDEX-0068",
+    "canonical": "-는다니까",
+    "aliases": [
+      "는다니까"
+    ],
+    "category": "reference_index",
+    "meanings_en": [],
+    "langsnack_level": null,
+    "topik_level_estimate": null,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [],
+    "examples": [],
+    "source_refs": [
+      {
+        "file": "TOPIK 한국어 문법 중급편 — 종합 문법 목차 (photographed index)",
+        "page": 93,
+        "reference_type": "index_only"
+      }
+    ],
+    "review_status": "index_transcribed_pending_linguistic_review",
+    "usage_note_en": "Indexed in the reference book. Explanation and TOPIK level have not yet been verified."
+  },
+  {
+    "id": "GRAM-INDEX-0069",
+    "canonical": "-는다니까요",
+    "aliases": [
+      "는다니까요"
+    ],
+    "category": "reference_index",
+    "meanings_en": [],
+    "langsnack_level": null,
+    "topik_level_estimate": null,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [],
+    "examples": [],
+    "source_refs": [
+      {
+        "file": "TOPIK 한국어 문법 중급편 — 종합 문법 목차 (photographed index)",
+        "page": 96,
+        "reference_type": "index_only"
+      }
+    ],
+    "review_status": "index_transcribed_pending_linguistic_review",
+    "usage_note_en": "Indexed in the reference book. Explanation and TOPIK level have not yet been verified."
+  },
+  {
+    "id": "GRAM-INDEX-0070",
+    "canonical": "-는다니",
+    "aliases": [
+      "는다니"
+    ],
+    "category": "reference_index",
+    "meanings_en": [],
+    "langsnack_level": null,
+    "topik_level_estimate": null,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [],
+    "examples": [],
+    "source_refs": [
+      {
+        "file": "TOPIK 한국어 문법 중급편 — 종합 문법 목차 (photographed index)",
+        "page": 99,
+        "reference_type": "index_only"
+      }
+    ],
+    "review_status": "index_transcribed_pending_linguistic_review",
+    "usage_note_en": "Indexed in the reference book. Explanation and TOPIK level have not yet been verified."
+  },
+  {
+    "id": "GRAM-INDEX-0071",
+    "canonical": "-는다더니",
+    "aliases": [
+      "는다더니"
+    ],
+    "category": "reference_index",
+    "meanings_en": [],
+    "langsnack_level": null,
+    "topik_level_estimate": null,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [],
+    "examples": [],
+    "source_refs": [
+      {
+        "file": "TOPIK 한국어 문법 중급편 — 종합 문법 목차 (photographed index)",
+        "page": 104,
+        "reference_type": "index_only"
+      }
+    ],
+    "review_status": "index_transcribed_pending_linguistic_review",
+    "usage_note_en": "Indexed in the reference book. Explanation and TOPIK level have not yet been verified."
+  },
+  {
+    "id": "GRAM-INDEX-0072",
+    "canonical": "-는다든지",
+    "aliases": [
+      "는다든지"
+    ],
+    "category": "reference_index",
+    "meanings_en": [],
+    "langsnack_level": null,
+    "topik_level_estimate": null,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [],
+    "examples": [],
+    "source_refs": [
+      {
+        "file": "TOPIK 한국어 문법 중급편 — 종합 문법 목차 (photographed index)",
+        "page": 417,
+        "reference_type": "index_only"
+      }
+    ],
+    "review_status": "index_transcribed_pending_linguistic_review",
+    "usage_note_en": "Indexed in the reference book. Explanation and TOPIK level have not yet been verified."
+  },
+  {
+    "id": "GRAM-INDEX-0073",
+    "canonical": "-는다면서요?",
+    "aliases": [
+      "는다면서요?"
+    ],
+    "category": "reference_index",
+    "meanings_en": [],
+    "langsnack_level": null,
+    "topik_level_estimate": null,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [],
+    "examples": [],
+    "source_refs": [
+      {
+        "file": "TOPIK 한국어 문법 중급편 — 종합 문법 목차 (photographed index)",
+        "page": 110,
+        "reference_type": "index_only"
+      }
+    ],
+    "review_status": "index_transcribed_pending_linguistic_review",
+    "usage_note_en": "Indexed in the reference book. Explanation and TOPIK level have not yet been verified."
+  },
+  {
+    "id": "GRAM-INDEX-0074",
+    "canonical": "-는다손 치더라도",
+    "aliases": [
+      "는다손 치더라도"
+    ],
+    "category": "reference_index",
+    "meanings_en": [],
+    "langsnack_level": null,
+    "topik_level_estimate": null,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [],
+    "examples": [],
+    "source_refs": [
+      {
+        "file": "TOPIK 한국어 문법 중급편 — 종합 문법 목차 (photographed index)",
+        "page": 419,
+        "reference_type": "index_only"
+      }
+    ],
+    "review_status": "index_transcribed_pending_linguistic_review",
+    "usage_note_en": "Indexed in the reference book. Explanation and TOPIK level have not yet been verified."
+  },
+  {
+    "id": "GRAM-INDEX-0075",
+    "canonical": "-는다지요?",
+    "aliases": [
+      "는다지요?"
+    ],
+    "category": "reference_index",
+    "meanings_en": [],
+    "langsnack_level": null,
+    "topik_level_estimate": null,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [],
+    "examples": [],
+    "source_refs": [
+      {
+        "file": "TOPIK 한국어 문법 중급편 — 종합 문법 목차 (photographed index)",
+        "page": 114,
+        "reference_type": "index_only"
+      }
+    ],
+    "review_status": "index_transcribed_pending_linguistic_review",
+    "usage_note_en": "Indexed in the reference book. Explanation and TOPIK level have not yet been verified."
+  },
+  {
+    "id": "GRAM-INDEX-0076",
+    "canonical": "-다 못해",
+    "aliases": [
+      "다 못해"
+    ],
+    "category": "reference_index",
+    "meanings_en": [],
+    "langsnack_level": null,
+    "topik_level_estimate": null,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [],
+    "examples": [],
+    "source_refs": [
+      {
+        "file": "TOPIK 한국어 문법 중급편 — 종합 문법 목차 (photographed index)",
+        "page": 429,
+        "reference_type": "index_only"
+      }
+    ],
+    "review_status": "index_transcribed_pending_linguistic_review",
+    "usage_note_en": "Indexed in the reference book. Explanation and TOPIK level have not yet been verified."
+  },
+  {
+    "id": "GRAM-INDEX-0077",
+    "canonical": "-다 보니까",
+    "aliases": [
+      "다 보니까"
+    ],
+    "category": "reference_index",
+    "meanings_en": [],
+    "langsnack_level": null,
+    "topik_level_estimate": null,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [],
+    "examples": [],
+    "source_refs": [
+      {
+        "file": "TOPIK 한국어 문법 중급편 — 종합 문법 목차 (photographed index)",
+        "page": 126,
+        "reference_type": "index_only"
+      }
+    ],
+    "review_status": "index_transcribed_pending_linguistic_review",
+    "usage_note_en": "Indexed in the reference book. Explanation and TOPIK level have not yet been verified."
+  },
+  {
+    "id": "GRAM-INDEX-0078",
+    "canonical": "-다 보면",
+    "aliases": [
+      "다 보면"
+    ],
+    "category": "reference_index",
+    "meanings_en": [],
+    "langsnack_level": null,
+    "topik_level_estimate": null,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [],
+    "examples": [],
+    "source_refs": [
+      {
+        "file": "TOPIK 한국어 문법 중급편 — 종합 문법 목차 (photographed index)",
+        "page": 129,
+        "reference_type": "index_only"
+      }
+    ],
+    "review_status": "index_transcribed_pending_linguistic_review",
+    "usage_note_en": "Indexed in the reference book. Explanation and TOPIK level have not yet been verified."
+  },
+  {
+    "id": "GRAM-INDEX-0079",
+    "canonical": "-다가는",
+    "aliases": [
+      "다가는"
+    ],
+    "category": "reference_index",
+    "meanings_en": [],
+    "langsnack_level": null,
+    "topik_level_estimate": null,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [],
+    "examples": [],
+    "source_refs": [
+      {
+        "file": "TOPIK 한국어 문법 중급편 — 종합 문법 목차 (photographed index)",
+        "page": 88,
+        "reference_type": "index_only"
+      }
+    ],
+    "review_status": "index_transcribed_pending_linguistic_review",
+    "usage_note_en": "Indexed in the reference book. Explanation and TOPIK level have not yet been verified."
+  },
+  {
+    "id": "GRAM-INDEX-0080",
+    "canonical": "-다가도",
+    "aliases": [
+      "다가도"
+    ],
+    "category": "reference_index",
+    "meanings_en": [],
+    "langsnack_level": null,
+    "topik_level_estimate": null,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [],
+    "examples": [],
+    "source_refs": [
+      {
+        "file": "TOPIK 한국어 문법 중급편 — 종합 문법 목차 (photographed index)",
+        "page": 131,
+        "reference_type": "index_only"
+      }
+    ],
+    "review_status": "index_transcribed_pending_linguistic_review",
+    "usage_note_en": "Indexed in the reference book. Explanation and TOPIK level have not yet been verified."
+  },
+  {
+    "id": "GRAM-INDEX-0081",
+    "canonical": "-다고 보다",
+    "aliases": [
+      "다고 보다"
+    ],
+    "category": "reference_index",
+    "meanings_en": [],
+    "langsnack_level": null,
+    "topik_level_estimate": null,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [],
+    "examples": [],
+    "source_refs": [
+      {
+        "file": "TOPIK 한국어 문법 중급편 — 종합 문법 목차 (photographed index)",
+        "page": 132,
+        "reference_type": "index_only"
+      }
+    ],
+    "review_status": "index_transcribed_pending_linguistic_review",
+    "usage_note_en": "Indexed in the reference book. Explanation and TOPIK level have not yet been verified."
+  },
+  {
+    "id": "GRAM-INDEX-0082",
+    "canonical": "-다고 치다",
+    "aliases": [
+      "다고 치다"
+    ],
+    "category": "reference_index",
+    "meanings_en": [],
+    "langsnack_level": null,
+    "topik_level_estimate": null,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [],
+    "examples": [],
+    "source_refs": [
+      {
+        "file": "TOPIK 한국어 문법 중급편 — 종합 문법 목차 (photographed index)",
+        "page": 415,
+        "reference_type": "index_only"
+      }
+    ],
+    "review_status": "index_transcribed_pending_linguistic_review",
+    "usage_note_en": "Indexed in the reference book. Explanation and TOPIK level have not yet been verified."
+  },
+  {
+    "id": "GRAM-INDEX-0083",
+    "canonical": "-다기에",
+    "aliases": [
+      "다기에"
+    ],
+    "category": "reference_index",
+    "meanings_en": [],
+    "langsnack_level": null,
+    "topik_level_estimate": null,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [],
+    "examples": [],
+    "source_refs": [
+      {
+        "file": "TOPIK 한국어 문법 중급편 — 종합 문법 목차 (photographed index)",
+        "page": 90,
+        "reference_type": "index_only"
+      }
+    ],
+    "review_status": "index_transcribed_pending_linguistic_review",
+    "usage_note_en": "Indexed in the reference book. Explanation and TOPIK level have not yet been verified."
+  },
+  {
+    "id": "GRAM-INDEX-0084",
+    "canonical": "-다니까",
+    "aliases": [
+      "다니까"
+    ],
+    "category": "reference_index",
+    "meanings_en": [],
+    "langsnack_level": null,
+    "topik_level_estimate": null,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [],
+    "examples": [],
+    "source_refs": [
+      {
+        "file": "TOPIK 한국어 문법 중급편 — 종합 문법 목차 (photographed index)",
+        "page": 93,
+        "reference_type": "index_only"
+      }
+    ],
+    "review_status": "index_transcribed_pending_linguistic_review",
+    "usage_note_en": "Indexed in the reference book. Explanation and TOPIK level have not yet been verified."
+  },
+  {
+    "id": "GRAM-INDEX-0085",
+    "canonical": "-다니",
+    "aliases": [
+      "다니"
+    ],
+    "category": "reference_index",
+    "meanings_en": [],
+    "langsnack_level": null,
+    "topik_level_estimate": null,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [],
+    "examples": [],
+    "source_refs": [
+      {
+        "file": "TOPIK 한국어 문법 중급편 — 종합 문법 목차 (photographed index)",
+        "page": 96,
+        "reference_type": "index_only"
+      }
+    ],
+    "review_status": "index_transcribed_pending_linguistic_review",
+    "usage_note_en": "Indexed in the reference book. Explanation and TOPIK level have not yet been verified."
+  },
+  {
+    "id": "GRAM-INDEX-0086",
+    "canonical": "-다더니",
+    "aliases": [
+      "다더니"
+    ],
+    "category": "reference_index",
+    "meanings_en": [],
+    "langsnack_level": null,
+    "topik_level_estimate": null,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [],
+    "examples": [],
+    "source_refs": [
+      {
+        "file": "TOPIK 한국어 문법 중급편 — 종합 문법 목차 (photographed index)",
+        "page": 99,
+        "reference_type": "index_only"
+      }
+    ],
+    "review_status": "index_transcribed_pending_linguistic_review",
+    "usage_note_en": "Indexed in the reference book. Explanation and TOPIK level have not yet been verified."
+  },
+  {
+    "id": "GRAM-INDEX-0087",
+    "canonical": "-다더라고",
+    "aliases": [
+      "다더라고"
+    ],
+    "category": "reference_index",
+    "meanings_en": [],
+    "langsnack_level": null,
+    "topik_level_estimate": null,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [],
+    "examples": [],
+    "source_refs": [
+      {
+        "file": "TOPIK 한국어 문법 중급편 — 종합 문법 목차 (photographed index)",
+        "page": 102,
+        "reference_type": "index_only"
+      }
+    ],
+    "review_status": "index_transcribed_pending_linguistic_review",
+    "usage_note_en": "Indexed in the reference book. Explanation and TOPIK level have not yet been verified."
+  },
+  {
+    "id": "GRAM-INDEX-0088",
+    "canonical": "-다더라",
+    "aliases": [
+      "다더라"
+    ],
+    "category": "reference_index",
+    "meanings_en": [],
+    "langsnack_level": null,
+    "topik_level_estimate": null,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [],
+    "examples": [],
+    "source_refs": [
+      {
+        "file": "TOPIK 한국어 문법 중급편 — 종합 문법 목차 (photographed index)",
+        "page": 104,
+        "reference_type": "index_only"
+      }
+    ],
+    "review_status": "index_transcribed_pending_linguistic_review",
+    "usage_note_en": "Indexed in the reference book. Explanation and TOPIK level have not yet been verified."
+  },
+  {
+    "id": "GRAM-INDEX-0089",
+    "canonical": "-다든지",
+    "aliases": [
+      "다든지"
+    ],
+    "category": "reference_index",
+    "meanings_en": [],
+    "langsnack_level": null,
+    "topik_level_estimate": null,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [],
+    "examples": [],
+    "source_refs": [
+      {
+        "file": "TOPIK 한국어 문법 중급편 — 종합 문법 목차 (photographed index)",
+        "page": 417,
+        "reference_type": "index_only"
+      }
+    ],
+    "review_status": "index_transcribed_pending_linguistic_review",
+    "usage_note_en": "Indexed in the reference book. Explanation and TOPIK level have not yet been verified."
+  },
+  {
+    "id": "GRAM-INDEX-0090",
+    "canonical": "-다면서요?",
+    "aliases": [
+      "다면서요?"
+    ],
+    "category": "reference_index",
+    "meanings_en": [],
+    "langsnack_level": null,
+    "topik_level_estimate": null,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [],
+    "examples": [],
+    "source_refs": [
+      {
+        "file": "TOPIK 한국어 문법 중급편 — 종합 문법 목차 (photographed index)",
+        "page": 110,
+        "reference_type": "index_only"
+      }
+    ],
+    "review_status": "index_transcribed_pending_linguistic_review",
+    "usage_note_en": "Indexed in the reference book. Explanation and TOPIK level have not yet been verified."
+  },
+  {
+    "id": "GRAM-INDEX-0091",
+    "canonical": "-다지요?",
+    "aliases": [
+      "다지요?"
+    ],
+    "category": "reference_index",
+    "meanings_en": [],
+    "langsnack_level": null,
+    "topik_level_estimate": null,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [],
+    "examples": [],
+    "source_refs": [
+      {
+        "file": "TOPIK 한국어 문법 중급편 — 종합 문법 목차 (photographed index)",
+        "page": 114,
+        "reference_type": "index_only"
+      }
+    ],
+    "review_status": "index_transcribed_pending_linguistic_review",
+    "usage_note_en": "Indexed in the reference book. Explanation and TOPIK level have not yet been verified."
+  },
+  {
+    "id": "GRAM-INDEX-0092",
+    "canonical": "-더니",
+    "aliases": [
+      "더니"
+    ],
+    "category": "reference_index",
+    "meanings_en": [],
+    "langsnack_level": null,
+    "topik_level_estimate": null,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [],
+    "examples": [],
+    "source_refs": [
+      {
+        "file": "TOPIK 한국어 문법 중급편 — 종합 문법 목차 (photographed index)",
+        "page": 104,
+        "reference_type": "index_only"
+      }
+    ],
+    "review_status": "index_transcribed_pending_linguistic_review",
+    "usage_note_en": "Indexed in the reference book. Explanation and TOPIK level have not yet been verified."
+  },
+  {
+    "id": "GRAM-INDEX-0093",
+    "canonical": "-더라도",
+    "aliases": [
+      "더라도"
+    ],
+    "category": "reference_index",
+    "meanings_en": [],
+    "langsnack_level": null,
+    "topik_level_estimate": null,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [],
+    "examples": [],
+    "source_refs": [
+      {
+        "file": "TOPIK 한국어 문법 중급편 — 종합 문법 목차 (photographed index)",
+        "page": 131,
+        "reference_type": "index_only"
+      }
+    ],
+    "review_status": "index_transcribed_pending_linguistic_review",
+    "usage_note_en": "Indexed in the reference book. Explanation and TOPIK level have not yet been verified."
+  },
+  {
+    "id": "GRAM-INDEX-0094",
+    "canonical": "-더라면",
+    "aliases": [
+      "더라면"
+    ],
+    "category": "reference_index",
+    "meanings_en": [],
+    "langsnack_level": null,
+    "topik_level_estimate": null,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [],
+    "examples": [],
+    "source_refs": [
+      {
+        "file": "TOPIK 한국어 문법 중급편 — 종합 문법 목차 (photographed index)",
+        "page": 132,
+        "reference_type": "index_only"
+      }
+    ],
+    "review_status": "index_transcribed_pending_linguistic_review",
+    "usage_note_en": "Indexed in the reference book. Explanation and TOPIK level have not yet been verified."
+  },
+  {
+    "id": "GRAM-INDEX-0095",
+    "canonical": "-도록 하다",
+    "aliases": [
+      "도록 하다"
+    ],
+    "category": "reference_index",
+    "meanings_en": [],
+    "langsnack_level": null,
+    "topik_level_estimate": null,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [],
+    "examples": [],
+    "source_refs": [
+      {
+        "file": "TOPIK 한국어 문법 중급편 — 종합 문법 목차 (photographed index)",
+        "page": 151,
+        "reference_type": "index_only"
+      }
+    ],
+    "review_status": "index_transcribed_pending_linguistic_review",
+    "usage_note_en": "Indexed in the reference book. Explanation and TOPIK level have not yet been verified."
   }
 ]

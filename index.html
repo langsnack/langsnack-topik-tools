@@ -35,6 +35,7 @@ label{display:block;margin-bottom:8px;font-size:.82rem;font-weight:900}textarea{
 .timer{min-height:420px;display:flex;flex-direction:column;justify-content:center;align-items:center}.meta{color:var(--muted);font-weight:800}.clock{font-size:clamp(5rem,13vw,9rem);letter-spacing:-.07em;font-weight:900;color:var(--green);font-variant-numeric:tabular-nums;margin:24px 0}
 @media(max-width:850px){.countergrid,.readergrid,.timergrid{grid-template-columns:1fr}.result{min-height:300px}}@media(max-width:620px){.topbar{padding:15px 16px}.topbar p{display:none}.workspace{width:calc(100% - 16px);padding-top:14px}.tabs{grid-template-columns:repeat(4,minmax(0,1fr));gap:4px;padding:5px}.tab{text-align:center;padding:10px 3px;font-size:clamp(.57rem,2.4vw,.85rem);overflow-wrap:anywhere}.head{padding:20px;display:block}.badge{display:inline-block;margin-top:12px}.body{padding:16px}.stats{grid-template-columns:1fr 1fr}.stats .stat:last-child{grid-column:1/-1}.paper{grid-template-columns:repeat(20,28px);grid-auto-rows:28px}.clock{font-size:4.6rem}}
 .sound-option{display:flex;align-items:center;gap:9px;color:var(--muted);font-size:.9rem;margin:0 0 16px}.sound-option input{accent-color:var(--green);width:17px;height:17px}.timerStatus{min-height:22px;color:var(--green);font-weight:800;margin-bottom:10px}.clock{font-variant-numeric:tabular-nums;line-height:1.15;text-align:center}.timer .circle,.timer svg{display:none!important}
+.grammar-controls{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin:15px 0;color:#526553}.grammar-controls select{padding:9px;border:1px solid #c6c9b8;border-radius:8px;background:white;color:#23352c}.grammar-entry{border:1px solid #d6d8cb;border-radius:12px;padding:16px;margin:10px 0;background:#fff}.grammar-entry summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:12px;align-items:center}.grammar-entry summary::-webkit-details-marker{display:none}.grammar-entry summary strong{font-size:1.08rem}.grammar-entry .example{background:#f3f5ed;padding:12px;border-radius:8px;margin-top:10px}.grammar-entry .level-pill{background:#e4eadf;color:#38583e;border-radius:20px;padding:5px 10px;white-space:nowrap;font-size:.8rem}.grammar-entry .details{margin-top:12px}.grammar-entry .muted{font-size:.85rem;color:#69766c}.grammar-entry .usage{margin-top:10px}.grammar-entry .related{display:flex;flex-wrap:wrap;gap:7px;margin-top:12px}.grammar-entry .related button{border:1px solid #b7c5b1;background:#f4f6f1;color:#304a34;border-radius:20px;padding:5px 9px;cursor:pointer}
 </style>
 </head>
 <body>
@@ -74,7 +75,7 @@ label{display:block;margin-bottom:8px;font-size:.82rem;font-weight:900}textarea{
 
 <section class="panel" id="grammar">
 <div class="head"><div><h2 id="grammarTitle">Grammar Level Finder</h2><p id="grammarIntro">Search by any part of a Korean grammar pattern.</p></div><span class="badge">Grammar</span></div>
-<div class="body"><div class="card"><label id="grammarSearchLabel" for="grammarSearch">Search grammar</label><input id="grammarSearch" type="search" placeholder="적, 때문에, 도록…" autocomplete="off" style="width:100%;padding:15px;border:1px solid #c6c9b8;border-radius:10px;font:inherit;background:#fff;color:#23352c;margin:10px 0"><p id="grammarHint" class="tip">Type a fragment to see matching grammar immediately. Levels are estimates, not official TOPIK classifications.</p><div id="grammarResults" aria-live="polite"></div></div></div>
+<div class="body"><div class="card"><label id="grammarSearchLabel" for="grammarSearch">Search grammar</label><input id="grammarSearch" type="search" placeholder="적, 때문에, 도록…" autocomplete="off" style="width:100%;padding:15px;border:1px solid #c6c9b8;border-radius:10px;font:inherit;background:#fff;color:#23352c;margin:10px 0"><p id="grammarHint" class="tip">Type a fragment to see matching grammar immediately. Levels are estimates, not official TOPIK classifications.</p><div class="grammar-controls"><label for="grammarLevelFilter">Estimated level</label><select id="grammarLevelFilter"><option value="all">All levels</option><option value="1">Level 1</option><option value="2">Level 2</option><option value="3">Level 3</option><option value="4">Level 4</option><option value="5">Level 5</option><option value="6">Level 6</option></select><span id="grammarCount"></span></div><div id="grammarResults" aria-live="polite"></div></div></div>
 </section>
 <section class="panel" id="timer">
 <div class="head"><div><h2 data-t="timerTitle">Mock Exam Timer</h2><p data-t="timerIntro">Choose a TOPIK paper and practise without distractions.</p></div><span class="badge" data-t="exam">Exam practice</span></div>
@@ -420,11 +421,32 @@ const grammarLocale={
  'zh-CN':['语法等级查询','输入部分韩语语法即可搜索。','搜索语法','输入片段即可即时搜索。等级为估计值，并非官方TOPIK分类。','输入语法开始搜索。','数据库中没有匹配项。','预估TOPIK等级','尚未分类','参考资料'],
  'zh-TW':['文法等級查詢','輸入部分韓語文法即可搜尋。','搜尋文法','輸入片段即可即時搜尋。等級為估計值，非官方TOPIK分類。','輸入文法開始搜尋。','資料庫中沒有符合項目。','預估TOPIK等級','尚未分類','參考資料']};
 function updateGrammarLocale(){const t=grammarLocale[lang]||grammarLocale.en;['grammarTabLabel','grammarTitle','grammarIntro','grammarSearchLabel','grammarHint'].forEach((id,i)=>document.getElementById(id).textContent=t[i===0?0:i]);renderGrammarResults();}
-function renderGrammarResults(){const t=grammarLocale[lang]||grammarLocale.en;const query=grammarSearchKey(grammarSearchEl.value);if(!query){grammarResultsEl.textContent=t[4];return;}if(!languageDB.ready){grammarResultsEl.textContent='Grammar database unavailable. Check grammar.json.';return;}
- const matches=languageDB.grammar.map(g=>{const terms=[g.canonical,...(g.aliases||[]),...(g.detection_patterns||[])];const keys=terms.map(grammarSearchKey);let score=keys.some(x=>x===query)?0:keys.some(x=>x.startsWith(query))?1:keys.some(x=>x.includes(query))?2:99;return {g,score};}).filter(x=>x.score<99).sort((a,b)=>a.score-b.score||(a.g.topik_level_estimate||9)-(b.g.topik_level_estimate||9)||a.g.canonical.localeCompare(b.g.canonical,'ko')).slice(0,60);
+function renderGrammarResults(){
+ const t=grammarLocale[lang]||grammarLocale.en;
+ const query=grammarSearchKey(grammarSearchEl.value);
+ const filter=document.getElementById('grammarLevelFilter').value;
+ if(!languageDB.ready){grammarResultsEl.textContent='Grammar database unavailable. Check grammar.json.';return;}
+ const matches=languageDB.grammar.map(g=>{
+  const terms=[g.canonical,...(g.aliases||[]),...(g.detection_patterns||[])];
+  const keys=terms.map(grammarSearchKey).filter(Boolean);
+  const score=!query?3:keys.some(x=>x===query)?0:keys.some(x=>x.startsWith(query))?1:keys.some(x=>x.includes(query))?2:99;
+  return {g,score};
+ }).filter(x=>x.score<99&&(filter==='all'||String(x.g.topik_level_estimate)===filter))
+ .sort((a,b)=>a.score-b.score||(a.g.topik_level_estimate||9)-(b.g.topik_level_estimate||9)||a.g.canonical.localeCompare(b.g.canonical,'ko'));
+ document.getElementById('grammarCount').textContent=matches.length+' patterns';
  if(!matches.length){grammarResultsEl.textContent=t[5];return;}
- grammarResultsEl.innerHTML='<p style="opacity:.7">'+matches.length+(matches.length===60?'+':'')+' matching entries</p>'+matches.map(({g})=>{const level=Number(g.topik_level_estimate);const source=(g.source_refs||[]).map(x=>x.file).filter(Boolean).slice(0,2).join(', ');const meaning=(g.meanings_en||[]).join('; ');const example=(g.examples||[])[0]?.ko||'';return '<article style="border-top:1px solid #d6d8cb;padding:15px 0"><div style="display:flex;justify-content:space-between;gap:12px;align-items:center;flex-wrap:wrap"><strong style="font-size:1.12rem">'+safeGrammarText(g.canonical)+'</strong><span style="font-size:.85rem;color:#50684e">'+safeGrammarText(t[6])+' (estimate): '+(level>=1&&level<=6?level:safeGrammarText(t[7]))+'</span></div>'+(meaning?'<p style="margin:8px 0">'+safeGrammarText(meaning)+'</p>':'')+(example?'<p lang="ko" style="margin:8px 0">'+safeGrammarText(example)+'</p>':'')+(source?'<small style="opacity:.7">'+safeGrammarText(t[8])+' (reference listed; page not verified): '+safeGrammarText(source)+'</small>':'')+'</article>';}).join('');}
+ grammarResultsEl.innerHTML=matches.slice(0,100).map(({g},i)=>{
+  const level=Number(g.topik_level_estimate);
+  const meaning=(g.meanings_en||[]).join('; ');
+  const examples=(g.examples||[]).filter(x=>x.ko).slice(0,2).map(x=>'<div class="example"><div lang="ko">'+safeGrammarText(x.ko)+'</div>'+(x.en?'<div class="muted">'+safeGrammarText(x.en)+'</div>':'')+'</div>').join('');
+  const source=(g.source_refs||[]).filter(x=>x.file).slice(0,3).map(x=>x.file+(Number.isInteger(x.page)?' · p. '+x.page+' (index)':'')).join('; ');
+  const related=languageDB.grammar.filter(x=>x.id!==g.id&&x.category===g.category).slice(0,3);
+  return '<details class="grammar-entry" '+(query&&i===0?'open':'')+'><summary><div><strong lang="ko">'+safeGrammarText(g.canonical)+'</strong><div class="muted">'+safeGrammarText(meaning)+'</div></div><span class="level-pill">'+safeGrammarText(t[6])+' '+(level>=1&&level<=6?level:'—')+'</span></summary><div class="details">'+(g.usage_note_en?'<p class="usage">'+safeGrammarText(g.usage_note_en)+'</p>':'')+examples+(g.aliases?.length?'<p class="muted">Search variants: '+safeGrammarText(g.aliases.slice(0,5).join(' · '))+'</p>':'')+(source?'<p class="muted">'+safeGrammarText(t[8])+': '+safeGrammarText(source)+'</p>':'')+'<p class="muted">Levels are estimates, not official TOPIK classifications. '+(g.review_status==='imported_needs_review'?'This entry still needs editorial verification.':g.review_status==='index_transcribed_pending_linguistic_review'?'Index-only reference; level, explanation and example pending verification.':'')+'</p>'+(related.length?'<div class="related"><span class="muted">Related:</span>'+related.map(x=>'<button type="button" data-grammar-query="'+safeGrammarText(x.canonical)+'">'+safeGrammarText(x.canonical)+'</button>').join('')+'</div>':'')+'</div></details>';
+ }).join('')+(matches.length>100?'<p class="muted">Showing first 100 patterns. Type to narrow your search.</p>':'');
+}
 grammarSearchEl.addEventListener('input',renderGrammarResults);
+document.getElementById('grammarLevelFilter').addEventListener('change',renderGrammarResults);
+grammarResultsEl.addEventListener('click',e=>{const b=e.target.closest('[data-grammar-query]');if(b){grammarSearchEl.value=b.dataset.grammarQuery;renderGrammarResults();grammarSearchEl.focus();}});
 
 document.getElementById('lang').addEventListener('change',()=>setTimeout(updateGrammarLocale,0));
 updateGrammarLocale();

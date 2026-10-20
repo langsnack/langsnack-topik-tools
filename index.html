@@ -34,6 +34,7 @@ label{display:block;margin-bottom:8px;font-size:.82rem;font-weight:900}textarea{
 .sections{display:grid;gap:8px;margin-top:16px}.section{border:1px solid var(--line);border-radius:13px;background:#fff;padding:13px;display:flex;justify-content:space-between}.section.active{background:var(--olive);color:var(--green)}
 .timer{min-height:420px;display:flex;flex-direction:column;justify-content:center;align-items:center}.meta{color:var(--muted);font-weight:800}.clock{font-size:clamp(5rem,13vw,9rem);letter-spacing:-.07em;font-weight:900;color:var(--green);font-variant-numeric:tabular-nums;margin:24px 0}
 @media(max-width:850px){.countergrid,.readergrid,.timergrid{grid-template-columns:1fr}.result{min-height:300px}}@media(max-width:620px){.topbar{padding:15px 16px}.topbar p{display:none}.workspace{width:calc(100% - 16px);padding-top:14px}.tabs{grid-template-columns:1fr}.tab{text-align:left}.head{padding:20px;display:block}.badge{display:inline-block;margin-top:12px}.body{padding:16px}.stats{grid-template-columns:1fr 1fr}.stats .stat:last-child{grid-column:1/-1}.paper{grid-template-columns:repeat(20,28px);grid-auto-rows:28px}.clock{font-size:4.6rem}}
+.sound-option{display:flex;align-items:center;gap:9px;color:var(--muted);font-size:.9rem;margin:0 0 16px}.sound-option input{accent-color:var(--green);width:17px;height:17px}.timerStatus{min-height:22px;color:var(--green);font-weight:800;margin-bottom:10px}.clock{font-variant-numeric:tabular-nums;line-height:1.15;text-align:center}.timer .circle,.timer svg{display:none!important}
 </style>
 </head>
 <body>
@@ -74,7 +75,7 @@ label{display:block;margin-bottom:8px;font-size:.82rem;font-weight:900}textarea{
 <div class="head"><div><h2 data-t="timerTitle">Mock Exam Timer</h2><p data-t="timerIntro">Choose a TOPIK paper and practise without distractions.</p></div><span class="badge" data-t="exam">Exam practice</span></div>
 <div class="body"><div class="timergrid">
 <div class="card"><div class="switch"><button class="active" data-exam="I">TOPIK I</button><button data-exam="II">TOPIK II</button></div><div class="sections" id="sections"></div><div class="tip" data-t="timerTip">Keep this tab open while the timer is running.</div></div>
-<div class="card timer"><div class="meta" id="timerLabel">Listening · 듣기</div><div class="clock" id="clock">40:00</div><div class="controls"><button class="primary" id="start" data-t="start">Start</button><button class="secondary" id="pause" data-t="pause">Pause</button><button class="danger" id="reset" data-t="reset">Reset</button></div></div>
+<div class="card timer"><div class="meta" id="timerLabel">Listening · 듣기</div><div class="clock" id="clock">40:00</div><label class="sound-option"><input type="checkbox" id="soundEnabled" checked> <span id="soundLabel">🔔 Sound when finished</span></label><div class="timerStatus" id="timerStatus" role="status" aria-live="polite"></div><div class="controls"><button class="primary" id="start" data-t="start">Start</button><button class="secondary" id="pause" data-t="pause">Pause</button><button class="danger" id="reset" data-t="reset">Reset</button></div></div>
 </div></div>
 </section>
 </main>
@@ -145,8 +146,8 @@ function updateReadingLabels(){
 async function loadLanguageDB(){
  try{
   const [g,v]=await Promise.all([
-   fetch("./data/grammar.json").then(r=>{if(!r.ok)throw new Error("grammar");return r.json()}),
-   fetch("./data/vocabulary.json").then(r=>{if(!r.ok)throw new Error("vocabulary");return r.json()})
+   fetch(new URL("grammar.json", document.baseURI)).then(r=>{if(!r.ok)throw new Error("grammar");return r.json()}),
+   fetch(new URL("vocabulary.json", document.baseURI)).then(r=>{if(!r.ok)throw new Error("vocabulary");return r.json()})
   ]);
   languageDB.grammar=g;
   languageDB.vocabulary=v;
@@ -338,12 +339,22 @@ clear.onclick=()=>{readingText.value="";showLevel(null)};
 loadLanguageDB();
 
 
-const exams={I:[["listening","듣기",40],["readingSkill","읽기",60]],II:[["listening","듣기",60],["writingSkill","쓰기",50],["readingSkill","읽기",70]]};let exam="I",idx=0,left=2400,timerId=null;
-const fmt=s=>String(Math.floor(s/60)).padStart(2,"0")+":"+String(s%60).padStart(2,"0");
-function renderSections(){sections.innerHTML="";exams[exam].forEach((s,i)=>{const b=document.createElement("button");b.className="section"+(i===idx?" active":"");b.innerHTML="<strong>"+T[lang][s[0]]+" · "+s[1]+"</strong><span>"+s[2]+" "+T[lang].min+"</span>";b.onclick=()=>select(i);sections.appendChild(b)});const s=exams[exam][idx];timerLabel.textContent=T[lang][s[0]]+" · "+s[1];clock.textContent=fmt(left)}
-function select(i){clearInterval(timerId);timerId=null;idx=i;left=exams[exam][i][2]*60;renderSections()}
+const exams={I:[["listening","듣기",40],["readingSkill","읽기",60]],II:[["listening","듣기",60],["writingSkill","쓰기",50],["readingSkill","읽기",70]]};
+let exam="I",idx=0,left=2400,timerId=null,deadline=0,audioContext=null;
+const fmt=s=>String(Math.floor(Math.max(0,s)/60)).padStart(2,"0")+":"+String(Math.max(0,s)%60).padStart(2,"0");
+const timerWords=()=>lang==="ko"?{sound:"🔔 종료 알림음",resume:"계속",finished:"시간이 끝났어요!",paused:"일시 정지",running:"진행 중"}:{sound:"🔔 Sound when finished",resume:"Resume",finished:"Time is up!",paused:"Paused",running:"Exam in progress"};
+function updateTimerUI(){soundLabel.textContent=timerWords().sound;start.textContent=timerId?T[lang].start:(left<exams[exam][idx][2]*60&&left>0?timerWords().resume:T[lang].start);start.disabled=!!timerId||left===0;pause.disabled=!timerId;}
+function renderSections(){sections.innerHTML="";exams[exam].forEach((s,i)=>{const b=document.createElement("button");b.className="section"+(i===idx?" active":"");b.innerHTML="<strong>"+T[lang][s[0]]+" · "+s[1]+"</strong><span>"+s[2]+" "+T[lang].min+"</span>";b.onclick=()=>select(i);sections.appendChild(b)});const s=exams[exam][idx];timerLabel.textContent=T[lang][s[0]]+" · "+s[1];clock.textContent=fmt(left);updateTimerUI()}
+function select(i){clearInterval(timerId);timerId=null;idx=i;left=exams[exam][i][2]*60;timerStatus.textContent="";renderSections()}
+function playDing(){if(!soundEnabled.checked)return;try{const C=window.AudioContext||window.webkitAudioContext;if(!C)return;audioContext=audioContext||new C();if(audioContext.state==="suspended")audioContext.resume();const o=audioContext.createOscillator(),g=audioContext.createGain(),t=audioContext.currentTime;o.type="sine";o.frequency.setValueAtTime(880,t);g.gain.setValueAtTime(.0001,t);g.gain.exponentialRampToValueAtTime(.14,t+.025);g.gain.exponentialRampToValueAtTime(.0001,t+.8);o.connect(g);g.connect(audioContext.destination);o.start(t);o.stop(t+.82)}catch(e){console.warn("Sound unavailable",e)}}
+function tick(){left=Math.max(0,Math.ceil((deadline-Date.now())/1000));clock.textContent=fmt(left);if(left===0){clearInterval(timerId);timerId=null;timerStatus.textContent=timerWords().finished;playDing();updateTimerUI()}}
 document.querySelectorAll("[data-exam]").forEach(b=>b.onclick=()=>{exam=b.dataset.exam;document.querySelectorAll("[data-exam]").forEach(x=>x.classList.toggle("active",x===b));select(0)});
-start.onclick=()=>{if(timerId||left<=0)return;timerId=setInterval(()=>{left--;clock.textContent=fmt(left);if(left<=0){clearInterval(timerId);timerId=null;alert(lang==="ko"?"시간이 끝났어요.":"Time is up.")}},1000)};pause.onclick=()=>{clearInterval(timerId);timerId=null};reset.onclick=()=>select(idx);renderSections();updateReadingLabels();
+start.onclick=()=>{if(timerId||left<=0)return;try{const C=window.AudioContext||window.webkitAudioContext;if(soundEnabled.checked&&C){audioContext=audioContext||new C();audioContext.resume()}}catch(e){}deadline=Date.now()+left*1000;timerStatus.textContent=timerWords().running;timerId=setInterval(tick,250);updateTimerUI()};
+pause.onclick=()=>{if(!timerId)return;tick();clearInterval(timerId);timerId=null;if(left>0)timerStatus.textContent=timerWords().paused;updateTimerUI()};
+reset.onclick=()=>select(idx);
+try{soundEnabled.checked=localStorage.getItem("langsnack_timer_sound")!=="off"}catch(e){}
+soundEnabled.onchange=()=>{try{localStorage.setItem("langsnack_timer_sound",soundEnabled.checked?"on":"off")}catch(e){}};
+renderSections();updateReadingLabels();
 </script>
 </body>
 </html>

@@ -18,7 +18,7 @@
     ],
     "examples": [
       {
-        "ko": "택시 비용이 좀 비싼 것 같아요 .",
+        "ko": "택시 비용이 좀 비싼 것 같아요.",
         "en": "I think the taxi's price is a bit expensive."
       }
     ],
@@ -40,8 +40,8 @@
     "meanings_en": [
       "I have not"
     ],
-    "langsnack_level": 1,
-    "topik_level_estimate": 1,
+    "langsnack_level": 2,
+    "topik_level_estimate": 2,
     "formality": null,
     "register": null,
     "detection_patterns": [
@@ -49,7 +49,7 @@
     ],
     "examples": [
       {
-        "ko": "저는 한국에 가본 적이 없어요 .",
+        "ko": "저는 한국에 가본 적이 없어요.",
         "en": "I have not been to Korea."
       }
     ],
@@ -71,8 +71,8 @@
     "meanings_en": [
       "I have"
     ],
-    "langsnack_level": 1,
-    "topik_level_estimate": 1,
+    "langsnack_level": 2,
+    "topik_level_estimate": 2,
     "formality": null,
     "register": null,
     "detection_patterns": [
@@ -80,7 +80,7 @@
     ],
     "examples": [
       {
-        "ko": "이 가게에 와 본 적이 있어요 .",
+        "ko": "이 가게에 와 본 적이 있어요.",
         "en": "I have been to this store."
       }
     ],
@@ -112,11 +112,11 @@
     ],
     "examples": [
       {
-        "ko": "이 가게가 생긴 지 얼마나 됐어요 ?",
+        "ko": "이 가게가 생긴 지 얼마나 됐어요?",
         "en": "How long has it been since this store has opened?"
       },
       {
-        "ko": "한국에 온 지 3일이 지났습니다 .",
+        "ko": "한국에 온 지 3일이 지났습니다.",
         "en": "Three days have passed since I came to Korea."
       }
     ],
@@ -151,7 +151,7 @@
     ],
     "examples": [
       {
-        "ko": "쇼핑한 후에 밥 먹었습니다 .",
+        "ko": "쇼핑한 후에 밥 먹었습니다.",
         "en": "I ate after shopping."
       }
     ],
@@ -183,11 +183,11 @@
     ],
     "examples": [
       {
-        "ko": "역에서 좀 먼데요 ,",
+        "ko": "역에서 좀 먼데요,",
         "en": "Although it is a little far from the station,"
       },
       {
-        "ko": "죄송한데요 , 길 좀 알려줄 수 있어요 ?",
+        "ko": "죄송한데요, 길 좀 알려줄 수 있어요?",
         "en": "Excuse me, but can you tell me the way?"
       }
     ],
@@ -222,7 +222,7 @@
     ],
     "examples": [
       {
-        "ko": "이 화장품은 인기가 많을 것 같아요 .",
+        "ko": "이 화장품은 인기가 많을 것 같아요.",
         "en": "I guess this cosmetic will be popular."
       }
     ],
@@ -253,7 +253,7 @@
     ],
     "examples": [
       {
-        "ko": "여기 식당은 맛있을 거예요 .",
+        "ko": "여기 식당은 맛있을 거예요.",
         "en": "The restaurant here will be delicious."
       }
     ],
@@ -284,8 +284,8 @@
     ],
     "examples": [
       {
-        "ko": "내가 버스타고 있었을 때 잃어버렸어요 .",
-        "en": "I lost it when I was on the bus."
+        "ko": "시간이 있을 때 책을 읽어요.",
+        "en": "I read books when I have time."
       }
     ],
     "source_refs": [
@@ -294,7 +294,7 @@
         "entry_number": 40
       }
     ],
-    "review_status": "imported_needs_review"
+    "review_status": "editorially_adjusted_needs_source_verification"
   },
   {
     "id": "GRAM-0010",
@@ -315,7 +315,7 @@
     ],
     "examples": [
       {
-        "ko": "여기서는 사진을 찍을 수 없어요 .",
+        "ko": "여기서는 사진을 찍을 수 없어요.",
         "en": "You can't take a photo here."
       }
     ],
@@ -346,7 +346,7 @@
     ],
     "examples": [
       {
-        "ko": "저는 한국말 조금 할 수 있어요 .",
+        "ko": "저는 한국말 조금 할 수 있어요.",
         "en": "I can speak Korean a little bit."
       }
     ],
@@ -377,7 +377,7 @@
     ],
     "examples": [
       {
-        "ko": "제가 할게요 .",
+        "ko": "제가 할게요.",
         "en": "I will do it."
       }
     ],
@@ -399,8 +399,8 @@
     "meanings_en": [
       "is / am thinking of"
     ],
-    "langsnack_level": 1,
-    "topik_level_estimate": 1,
+    "langsnack_level": 2,
+    "topik_level_estimate": 2,
     "formality": null,
     "register": null,
     "detection_patterns": [
@@ -408,7 +408,7 @@
     ],
     "examples": [
       {
-        "ko": "명동에 갈까 해요 .",
+        "ko": "명동에 갈까 해요.",
         "en": "I am thinking of going to Myeongdong ."
       }
     ],
@@ -439,7 +439,7 @@
     ],
     "examples": [
       {
-        "ko": "여기서 걸어갈까요 ?",
+        "ko": "여기서 걸어갈까요?",
         "en": "Should we walk from here?"
       }
     ],
@@ -470,7 +470,7 @@
     ],
     "examples": [
       {
-        "ko": "저는 이걸로 할래요 .",
+        "ko": "저는 이걸로 할래요.",
         "en": "I will go with this one."
       }
     ],
@@ -501,7 +501,7 @@
     ],
     "examples": [
       {
-        "ko": "이걸로 계산하실래요 ?",
+        "ko": "이걸로 계산하실래요?",
         "en": "Would you like to pay with this?"
       }
     ],
@@ -532,7 +532,7 @@
     ],
     "examples": [
       {
-        "ko": "달러 밖에 없으니까 환전해야 돼요 .",
+        "ko": "달러 밖에 없으니까 환전해야 돼요.",
         "en": "I need to exchange money because I only have dollars."
       }
     ],
@@ -564,11 +564,11 @@
     ],
     "examples": [
       {
-        "ko": "밥이나 먹으러 가고 싶어요 .",
+        "ko": "밥이나 먹으러 가고 싶어요.",
         "en": "I want to rather go eat."
       },
       {
-        "ko": "쇼핑하는데 열 시간이나 걸렸어요 .",
+        "ko": "쇼핑하는데 열 시간이나 걸렸어요.",
         "en": "It took even ten hours to shop."
       }
     ],
@@ -604,11 +604,11 @@
     ],
     "examples": [
       {
-        "ko": "설렁탕이랑 김밥 주세요 .",
+        "ko": "설렁탕이랑 김밥 주세요.",
         "en": "Please, give me seoulleongtang and kimbap."
       },
       {
-        "ko": "친구랑 같이 왔어요 .",
+        "ko": "친구랑 같이 왔어요.",
         "en": "I came with a friend."
       }
     ],
@@ -643,7 +643,7 @@
     ],
     "examples": [
       {
-        "ko": "한국에 올 때마다 이 가게를 찾아요 .",
+        "ko": "한국에 올 때마다 이 가게를 찾아요.",
         "en": "I visit this shop whenever I come to Korea."
       }
     ],
@@ -674,7 +674,7 @@
     ],
     "examples": [
       {
-        "ko": "강남까지 가고 싶어요 .",
+        "ko": "강남까지 가고 싶어요.",
         "en": "I want to go until Gangnam ."
       }
     ],
@@ -705,7 +705,7 @@
     ],
     "examples": [
       {
-        "ko": "부모님께 드리고 싶어요 .",
+        "ko": "부모님께 드리고 싶어요.",
         "en": "I want to give it to my parents."
       }
     ],
@@ -725,7 +725,7 @@
     ],
     "category": "beginner_core",
     "meanings_en": [
-      "also / as well"
+      "also; too"
     ],
     "langsnack_level": 1,
     "topik_level_estimate": 1,
@@ -736,8 +736,8 @@
     ],
     "examples": [
       {
-        "ko": "내일도 오늘도 비가 와요 .",
-        "en": "It is raining also today and tomorrow."
+        "ko": "저도 한국어를 배워요.",
+        "en": "I am learning Korean too."
       }
     ],
     "source_refs": [
@@ -746,7 +746,7 @@
         "entry_number": 8
       }
     ],
-    "review_status": "imported_needs_review"
+    "review_status": "editorially_adjusted_needs_source_verification"
   },
   {
     "id": "GRAM-0024",
@@ -767,7 +767,7 @@
     ],
     "examples": [
       {
-        "ko": "지금 5000원만 있어요 .",
+        "ko": "지금 5000원만 있어요.",
         "en": "I have only 5000 won now."
       }
     ],
@@ -798,7 +798,7 @@
     ],
     "examples": [
       {
-        "ko": "시간이 한 시간밖에 없어요 .",
+        "ko": "시간이 한 시간밖에 없어요.",
         "en": "There is only one hour of time."
       }
     ],
@@ -829,7 +829,7 @@
     ],
     "examples": [
       {
-        "ko": "이것보다 이게 더 어울려요 .",
+        "ko": "이것보다 이게 더 어울려요.",
         "en": "This goes better than this."
       }
     ],
@@ -860,7 +860,7 @@
     ],
     "examples": [
       {
-        "ko": "지하철은 아침 5시부터 운영해요 .",
+        "ko": "지하철은 아침 5시부터 운영해요.",
         "en": "The subway operates from 5 am in the morning."
       }
     ],
@@ -891,7 +891,7 @@
     ],
     "examples": [
       {
-        "ko": "남대문 시장에 가고 싶어요 .",
+        "ko": "남대문 시장에 가고 싶어요.",
         "en": "I want to go to Namdaemun market."
       }
     ],
@@ -922,7 +922,7 @@
     ],
     "examples": [
       {
-        "ko": "우리 엄마에게 주고 싶어요 .",
+        "ko": "우리 엄마에게 주고 싶어요.",
         "en": "I want to give it to my mother."
       }
     ],
@@ -953,7 +953,7 @@
     ],
     "examples": [
       {
-        "ko": "호텔 직원에게서 받았어요 .",
+        "ko": "호텔 직원에게서 받았어요.",
         "en": "I got it from the hotel staff."
       }
     ],
@@ -984,7 +984,7 @@
     ],
     "examples": [
       {
-        "ko": "공항에서 지하철 타고 왔어요 .",
+        "ko": "공항에서 지하철 타고 왔어요.",
         "en": "I came by subway from the airport."
       }
     ],
@@ -1035,7 +1035,7 @@
     ],
     "category": "particle",
     "meanings_en": [
-      "topic particle"
+      "topic marker"
     ],
     "langsnack_level": 1,
     "topik_level_estimate": 1,
@@ -1046,8 +1046,8 @@
     ],
     "examples": [
       {
-        "ko": "날씨가 좋아요.",
-        "en": ""
+        "ko": "저는 한국어를 공부해요.",
+        "en": "I study Korean."
       }
     ],
     "source_refs": [
@@ -1056,7 +1056,7 @@
         "entry_number": null
       }
     ],
-    "review_status": "imported_needs_review"
+    "review_status": "editorially_adjusted_needs_source_verification"
   },
   {
     "id": "GRAM-0034",
@@ -1139,7 +1139,7 @@
     ],
     "examples": [
       {
-        "ko": "배우처럼 생기셨네요 .",
+        "ko": "배우처럼 생기셨네요.",
         "en": "You look like an actor."
       }
     ],
@@ -1170,7 +1170,7 @@
     ],
     "examples": [
       {
-        "ko": "양념 치킨하고 맥주 주세요 .",
+        "ko": "양념 치킨하고 맥주 주세요.",
         "en": "Please, give me yangnyeom chicken and beer."
       }
     ],
@@ -1201,7 +1201,7 @@
     ],
     "examples": [
       {
-        "ko": "백화점 안내원한테 물어보세요 .",
+        "ko": "백화점 안내원한테 물어보세요.",
         "en": "Please ask it to the department store receptionist."
       }
     ],
@@ -1232,7 +1232,7 @@
     ],
     "examples": [
       {
-        "ko": "이거는 친구한테서 선물로 받은 거예요 .",
+        "ko": "이거는 친구한테서 선물로 받은 거예요.",
         "en": "I got this as a present from my friend."
       }
     ],
@@ -1263,7 +1263,7 @@
     ],
     "examples": [
       {
-        "ko": "순두부를 주문해 봅시다 .",
+        "ko": "순두부를 주문해 봅시다.",
         "en": "Let's order sundubu ."
       }
     ],
@@ -1294,7 +1294,7 @@
     ],
     "examples": [
       {
-        "ko": "한국에 관광하러 갈 거예요 .",
+        "ko": "한국에 관광하러 갈 거예요.",
         "en": "I will go to Korea to travel."
       }
     ],
@@ -1325,7 +1325,7 @@
     ],
     "examples": [
       {
-        "ko": "여기에 예약하러 왔어요 .",
+        "ko": "여기에 예약하러 왔어요.",
         "en": "I came here to make a reservation."
       }
     ],
@@ -1356,7 +1356,7 @@
     ],
     "examples": [
       {
-        "ko": "한국말을 공부하려고 해요 .",
+        "ko": "한국말을 공부하려고 해요.",
         "en": "I am going to study Korean."
       }
     ],
@@ -1387,7 +1387,7 @@
     ],
     "examples": [
       {
-        "ko": "아이돌 콘서트에 가려고요 .",
+        "ko": "아이돌 콘서트에 가려고요.",
         "en": "I am going to go to a singer's concert."
       }
     ],
@@ -1418,7 +1418,7 @@
     ],
     "examples": [
       {
-        "ko": "부산에 가면 뭘 볼 수 있을까요 ?",
+        "ko": "부산에 가면 뭘 볼 수 있을까요?",
         "en": "What can I see if I go to Busan?"
       }
     ],
@@ -1449,7 +1449,7 @@
     ],
     "examples": [
       {
-        "ko": "핸드폰을 보면서 걷지 마세요 .",
+        "ko": "핸드폰을 보면서 걷지 마세요.",
         "en": "Do not walk while watching your phone."
       }
     ],
@@ -1469,10 +1469,10 @@
     ],
     "category": "beginner_core",
     "meanings_en": [
-      "Please"
+      "polite request or instruction"
     ],
-    "langsnack_level": 2,
-    "topik_level_estimate": 2,
+    "langsnack_level": 1,
+    "topik_level_estimate": 1,
     "formality": null,
     "register": null,
     "detection_patterns": [
@@ -1480,8 +1480,8 @@
     ],
     "examples": [
       {
-        "ko": "삼겹살 2인분 주세요 .",
-        "en": "Please, give us 2 servings of samgyeopsal ."
+        "ko": "여기에 앉으세요.",
+        "en": "Please sit here."
       }
     ],
     "source_refs": [
@@ -1490,7 +1490,7 @@
         "entry_number": 56
       }
     ],
-    "review_status": "imported_needs_review"
+    "review_status": "editorially_adjusted_needs_source_verification"
   },
   {
     "id": "GRAM-0048",
@@ -1511,7 +1511,7 @@
     ],
     "examples": [
       {
-        "ko": "또 놀러 오십시오 .",
+        "ko": "또 놀러 오십시오.",
         "en": "Please, visit us again."
       }
     ],
@@ -1542,7 +1542,7 @@
     ],
     "examples": [
       {
-        "ko": "카드로 계산 되지요 ?",
+        "ko": "카드로 계산 되지요?",
         "en": "I can pay with a credit card, right?"
       }
     ],
@@ -1573,7 +1573,7 @@
     ],
     "examples": [
       {
-        "ko": "내일 한국에 갑니다 .",
+        "ko": "내일 한국에 갑니다.",
         "en": "I am going to Korea tomorrow."
       }
     ],
@@ -1604,7 +1604,7 @@
     ],
     "examples": [
       {
-        "ko": "한국에 오게 됐어요 .",
+        "ko": "한국에 오게 됐어요.",
         "en": "I happened to come to Korea."
       }
     ],
@@ -1626,8 +1626,8 @@
     "meanings_en": [
       "want to"
     ],
-    "langsnack_level": 2,
-    "topik_level_estimate": 2,
+    "langsnack_level": 1,
+    "topik_level_estimate": 1,
     "formality": null,
     "register": null,
     "detection_patterns": [
@@ -1635,7 +1635,7 @@
     ],
     "examples": [
       {
-        "ko": "약국에 가고 싶어요 .",
+        "ko": "약국에 가고 싶어요.",
         "en": "I want to go to the pharmacy."
       }
     ],
@@ -1657,8 +1657,8 @@
     "meanings_en": [
       "is / am [v]ing"
     ],
-    "langsnack_level": 2,
-    "topik_level_estimate": 2,
+    "langsnack_level": 1,
+    "topik_level_estimate": 1,
     "formality": null,
     "register": null,
     "detection_patterns": [
@@ -1666,7 +1666,7 @@
     ],
     "examples": [
       {
-        "ko": "지금 무슨 말 할까 생각하고 있어요 .",
+        "ko": "지금 무슨 말 할까 생각하고 있어요.",
         "en": "I am thinking about what to say right now."
       }
     ],
@@ -1686,7 +1686,7 @@
     ],
     "category": "beginner_core",
     "meanings_en": [
-      "right?"
+      "realization or discovery"
     ],
     "langsnack_level": 2,
     "topik_level_estimate": 2,
@@ -1697,8 +1697,8 @@
     ],
     "examples": [
       {
-        "ko": "병원에 가려면 여기 쭉 가면 되는군요 .",
-        "en": "I can go this way straight to go to the hospital, right?"
+        "ko": "생각보다 사람이 많군요.",
+        "en": "Oh, there are more people than I expected."
       }
     ],
     "source_refs": [
@@ -1707,7 +1707,7 @@
         "entry_number": 65
       }
     ],
-    "review_status": "imported_needs_review"
+    "review_status": "editorially_adjusted_needs_source_verification"
   },
   {
     "id": "GRAM-0055",
@@ -1728,7 +1728,7 @@
     ],
     "examples": [
       {
-        "ko": "결제하기 전에 확인하고 싶은 게 있는데요 .",
+        "ko": "결제하기 전에 확인하고 싶은 게 있는데요.",
         "en": "I want to check something before making the payment."
       }
     ],
@@ -1759,7 +1759,7 @@
     ],
     "examples": [
       {
-        "ko": "오늘은 쇼핑하기로 했어요 .",
+        "ko": "오늘은 쇼핑하기로 했어요.",
         "en": "I decided to go shopping today."
       }
     ],
@@ -1779,7 +1779,7 @@
     ],
     "category": "beginner_core",
     "meanings_en": [
-      "right?"
+      "realization or surprise"
     ],
     "langsnack_level": 2,
     "topik_level_estimate": 2,
@@ -1790,8 +1790,8 @@
     ],
     "examples": [
       {
-        "ko": "그럼 다 합쳐서 4000원이네요 .",
-        "en": "So, it is 4000won all together, right?"
+        "ko": "오늘 날씨가 정말 좋네요.",
+        "en": "The weather is really nice today!"
       }
     ],
     "source_refs": [
@@ -1800,7 +1800,7 @@
         "entry_number": 69
       }
     ],
-    "review_status": "imported_needs_review"
+    "review_status": "editorially_adjusted_needs_source_verification"
   },
   {
     "id": "GRAM-0058",
@@ -1821,7 +1821,7 @@
     ],
     "examples": [
       {
-        "ko": "시간이 없으니까 빨리 가는 게 좋겠어요 .",
+        "ko": "시간이 없으니까 빨리 가는 게 좋겠어요.",
         "en": "It is better to hurry since we don't have much time."
       }
     ],
@@ -1852,7 +1852,7 @@
     ],
     "examples": [
       {
-        "ko": "이것도 시식해 보세요 .",
+        "ko": "이것도 시식해 보세요.",
         "en": "Please, try eating this as well."
       }
     ],
@@ -1866,25 +1866,25 @@
   },
   {
     "id": "GRAM-0060",
-    "canonical": "-아/어/여 주다 [v] (",
+    "canonical": "-아/어 주다",
     "aliases": [
-      "아/어/여 주다 [v] ("
+      "-아/어/여 주다"
     ],
     "category": "beginner_core",
     "meanings_en": [
-      "for) me / us"
+      "do something for someone"
     ],
     "langsnack_level": 2,
     "topik_level_estimate": 2,
     "formality": null,
     "register": null,
     "detection_patterns": [
-      "아/어/여 주다 [v] ("
+      "아/어 주다"
     ],
     "examples": [
       {
-        "ko": "알려줘서 고마워요 .",
-        "en": "Thank you for telling me."
+        "ko": "문을 열어 주세요.",
+        "en": "Please open the door for me."
       }
     ],
     "source_refs": [
@@ -1914,7 +1914,7 @@
     ],
     "examples": [
       {
-        "ko": "한국어를 공부해야 돼요 .",
+        "ko": "한국어를 공부해야 돼요.",
         "en": "I need to study Korean."
       }
     ],
@@ -1945,7 +1945,7 @@
     ],
     "examples": [
       {
-        "ko": "차 타고 가야 해요 .",
+        "ko": "차 타고 가야 해요.",
         "en": "I need to ride a car."
       }
     ],
@@ -1976,7 +1976,7 @@
     ],
     "examples": [
       {
-        "ko": "빨리 배달 왔으면 좋겠어요 .",
+        "ko": "빨리 배달 왔으면 좋겠어요.",
         "en": "I hope the delivery arrives soon."
       }
     ],
@@ -2007,7 +2007,7 @@
     ],
     "examples": [
       {
-        "ko": "제 물건이 아니에요 .",
+        "ko": "제 물건이 아니에요.",
         "en": "That is not mine."
       }
     ],
@@ -2038,7 +2038,7 @@
     ],
     "examples": [
       {
-        "ko": "담배 피우지 마세요 .",
+        "ko": "담배 피우지 마세요.",
         "en": "Please, do not smoke."
       }
     ],
@@ -2069,7 +2069,7 @@
     ],
     "examples": [
       {
-        "ko": "도와주지 못 해서 죄송해요 .",
+        "ko": "도와주지 못 해서 죄송해요.",
         "en": "I am sorry that I can't help much."
       }
     ],
@@ -2100,7 +2100,7 @@
     ],
     "examples": [
       {
-        "ko": "지하철 타지 않고 걸어갈게요 .",
+        "ko": "지하철 타지 않고 걸어갈게요.",
         "en": "I will not take a subway and instead I will walk."
       }
     ],
@@ -2120,7 +2120,7 @@
     ],
     "category": "beginner_core",
     "meanings_en": [
-      "make [adj]"
+      "adverbial ending; -ly"
     ],
     "langsnack_level": 2,
     "topik_level_estimate": 2,
@@ -2131,8 +2131,8 @@
     ],
     "examples": [
       {
-        "ko": "싸게 해 주세요 .",
-        "en": "Please, make the price cheaper."
+        "ko": "천천히, 그리고 조심스럽게 걸으세요.",
+        "en": "Walk slowly and carefully."
       }
     ],
     "source_refs": [
@@ -2141,7 +2141,7 @@
         "entry_number": 60
       }
     ],
-    "review_status": "imported_needs_review"
+    "review_status": "editorially_adjusted_needs_source_verification"
   },
   {
     "id": "GRAM-0069",
@@ -2162,7 +2162,7 @@
     ],
     "examples": [
       {
-        "ko": "밥 먹고 자요 .",
+        "ko": "밥 먹고 자요.",
         "en": "I will eat food and sleep."
       }
     ],
@@ -2193,7 +2193,7 @@
     ],
     "examples": [
       {
-        "ko": "오래 전에 주문했지만 요리가 아직 안 왔어요 .",
+        "ko": "오래 전에 주문했지만 요리가 아직 안 왔어요.",
         "en": "We have ordered the dishes a while ago, but they are not here yet."
       }
     ],
@@ -2306,7 +2306,7 @@
     ],
     "category": "condition_hypothesis",
     "meanings_en": [
-      "If (hypothetical)"
+      "if; supposing that"
     ],
     "langsnack_level": 3,
     "topik_level_estimate": 3,
@@ -2317,8 +2317,8 @@
     ],
     "examples": [
       {
-        "ko": "내가 돈이 많다면 여행하고 싶어요.",
-        "en": ""
+        "ko": "시간이 더 있다면 여행을 가고 싶어요.",
+        "en": "If I had more time, I would like to travel."
       }
     ],
     "source_refs": [
@@ -2327,7 +2327,7 @@
         "entry_number": null
       }
     ],
-    "review_status": "imported_needs_review"
+    "review_status": "editorially_adjusted_needs_source_verification"
   },
   {
     "id": "GRAM-0075",
@@ -2337,11 +2337,10 @@
     ],
     "category": "comparison_choice",
     "meanings_en": [
-      "and/or",
-      "A or B"
+      "or (between actions or states)"
     ],
-    "langsnack_level": 3,
-    "topik_level_estimate": 3,
+    "langsnack_level": 2,
+    "topik_level_estimate": 2,
     "formality": null,
     "register": null,
     "detection_patterns": [
@@ -2349,12 +2348,8 @@
     ],
     "examples": [
       {
-        "ko": "시장에 가거나 카페에 가고 싶어요 .",
-        "en": "I want to go to a market or a café."
-      },
-      {
-        "ko": "커피나 차를 마셔요.",
-        "en": ""
+        "ko": "주말에는 집에서 쉬거나 친구를 만나요.",
+        "en": "On weekends I rest at home or meet friends."
       }
     ],
     "source_refs": [
@@ -2367,7 +2362,7 @@
         "entry_number": null
       }
     ],
-    "review_status": "imported_needs_review"
+    "review_status": "editorially_adjusted_needs_source_verification"
   },
   {
     "id": "GRAM-0076",
@@ -2410,8 +2405,8 @@
     "meanings_en": [
       "After doing"
     ],
-    "langsnack_level": 3,
-    "topik_level_estimate": 3,
+    "langsnack_level": 2,
+    "topik_level_estimate": 2,
     "formality": null,
     "register": null,
     "detection_patterns": [
@@ -2563,11 +2558,10 @@
     ],
     "category": "cause_reason",
     "meanings_en": [
-      "because of",
-      "Because"
+      "because; due to"
     ],
-    "langsnack_level": 3,
-    "topik_level_estimate": 3,
+    "langsnack_level": 2,
+    "topik_level_estimate": 2,
     "formality": null,
     "register": null,
     "detection_patterns": [
@@ -2575,12 +2569,8 @@
     ],
     "examples": [
       {
-        "ko": "너무 많이 걸었기 때문에 다리가 아파요 .",
-        "en": "My leg hurts because of walking too much."
-      },
-      {
-        "ko": "피곤하기 때문에 일찍 잤어요.",
-        "en": ""
+        "ko": "비가 많이 오기 때문에 집에 있을 거예요.",
+        "en": "I will stay home because it is raining heavily."
       }
     ],
     "source_refs": [
@@ -2593,7 +2583,7 @@
         "entry_number": null
       }
     ],
-    "review_status": "imported_needs_review"
+    "review_status": "editorially_adjusted_needs_source_verification"
   },
   {
     "id": "GRAM-0083",
@@ -2698,8 +2688,8 @@
     "meanings_en": [
       "Rather than A"
     ],
-    "langsnack_level": 3,
-    "topik_level_estimate": 3,
+    "langsnack_level": 4,
+    "topik_level_estimate": 4,
     "formality": null,
     "register": null,
     "detection_patterns": [
@@ -2727,10 +2717,10 @@
     ],
     "category": "guessing_assumption",
     "meanings_en": [
-      "I think / It seems like"
+      "it seems; I think"
     ],
-    "langsnack_level": 3,
-    "topik_level_estimate": 3,
+    "langsnack_level": 2,
+    "topik_level_estimate": 2,
     "formality": null,
     "register": null,
     "detection_patterns": [
@@ -2739,7 +2729,7 @@
     "examples": [
       {
         "ko": "밖에 비가 오는 것 같아요.",
-        "en": ""
+        "en": "I think it is raining outside."
       }
     ],
     "source_refs": [
@@ -2748,7 +2738,7 @@
         "entry_number": null
       }
     ],
-    "review_status": "imported_needs_review"
+    "review_status": "editorially_adjusted_needs_source_verification"
   },
   {
     "id": "GRAM-0088",
@@ -2956,7 +2946,7 @@
     ],
     "examples": [
       {
-        "ko": "입국심사하는데 별로 많이 안 기다렸어요 .",
+        "ko": "입국심사하는데 별로 많이 안 기다렸어요.",
         "en": "I didn't wait much for immigration."
       },
       {

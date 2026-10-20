@@ -3812,5 +3812,237 @@
       }
     ],
     "review_status": "imported_needs_review"
+  },
+  {
+    "id": "GRAM-REF-002",
+    "canonical": "-(으)ㄹ 바에야",
+    "aliases": [
+      "(으)ㄹ 바에야"
+    ],
+    "category": "advanced_reference",
+    "meanings_en": [
+      "rather than; if one must"
+    ],
+    "langsnack_level": null,
+    "topik_level_estimate": 5,
+    "level_basis": "editorial estimate; not a verified official TOPIK classification",
+    "examples": [
+      {
+        "ko": "기다릴 바에야 먼저 출발하겠어요.",
+        "en": null,
+        "example_status": "original_draft_needs_language_review"
+      }
+    ],
+    "source_refs": [
+      {
+        "file": "Advanced Korean Grammars in Use.pdf",
+        "reference": "table of contents, PDF pages 2–4; selected entries visible on pages 5–29",
+        "verification": "pattern visibly present in source"
+      }
+    ],
+    "review_status": "source_pattern_checked; meaning/example/level_pending_editorial_review"
+  },
+  {
+    "id": "GRAM-REF-003",
+    "canonical": "-건 -건",
+    "aliases": [
+      "건 -건"
+    ],
+    "category": "advanced_reference",
+    "meanings_en": [
+      "whether A or B; regardless"
+    ],
+    "langsnack_level": null,
+    "topik_level_estimate": 5,
+    "level_basis": "editorial estimate; not a verified official TOPIK classification",
+    "examples": [
+      {
+        "ko": "비가 오건 눈이 오건 갈 거예요.",
+        "en": null,
+        "example_status": "original_draft_needs_language_review"
+      }
+    ],
+    "source_refs": [
+      {
+        "file": "Advanced Korean Grammars in Use.pdf",
+        "reference": "table of contents, PDF pages 2–4; selected entries visible on pages 5–29",
+        "verification": "pattern visibly present in source"
+      }
+    ],
+    "review_status": "source_pattern_checked; meaning/example/level_pending_editorial_review"
+  },
+  {
+    "id": "GRAM-REF-004",
+    "canonical": "-(느)ㄴ다기보다는",
+    "aliases": [
+      "(느)ㄴ다기보다는"
+    ],
+    "category": "advanced_reference",
+    "meanings_en": [
+      "rather than saying; more accurately"
+    ],
+    "langsnack_level": null,
+    "topik_level_estimate": 5,
+    "level_basis": "editorial estimate; not a verified official TOPIK classification",
+    "examples": [
+      {
+        "ko": "화가 났다기보다는 조금 실망했어요.",
+        "en": null,
+        "example_status": "original_draft_needs_language_review"
+      }
+    ],
+    "source_refs": [
+      {
+        "file": "Advanced Korean Grammars in Use.pdf",
+        "reference": "table of contents, PDF pages 2–4; selected entries visible on pages 5–29",
+        "verification": "pattern visibly present in source"
+      }
+    ],
+    "review_status": "source_pattern_checked; meaning/example/level_pending_editorial_review"
+  },
+  {
+    "id": "GRAM-REF-005",
+    "canonical": "-보고",
+    "aliases": [
+      "보고"
+    ],
+    "category": "advanced_reference",
+    "meanings_en": [
+      "to; directed at someone"
+    ],
+    "langsnack_level": null,
+    "topik_level_estimate": 4,
+    "level_basis": "editorial estimate; not a verified official TOPIK classification",
+    "examples": [
+      {
+        "ko": "친구보고 먼저 가라고 했어요.",
+        "en": null,
+        "example_status": "original_draft_needs_language_review"
+      }
+    ],
+    "source_refs": [
+      {
+        "file": "Advanced Korean Grammars in Use.pdf",
+        "reference": "table of contents, PDF pages 2–4; selected entries visible on pages 5–29",
+        "verification": "pattern visibly present in source"
+      }
+    ],
+    "review_status": "source_pattern_checked; meaning/example/level_pending_editorial_review"
+  },
+  {
+    "id": "GRAM-REF-006",
+    "canonical": "-(느)ㄴ다니까",
+    "aliases": [
+      "(느)ㄴ다니까"
+    ],
+    "category": "advanced_reference",
+    "meanings_en": [
+      "I said that; since I am telling you"
+    ],
+    "langsnack_level": null,
+    "topik_level_estimate": 4,
+    "level_basis": "editorial estimate; not a verified official TOPIK classification",
+    "examples": [
+      {
+        "ko": "내일 간다니까 왜 자꾸 물어봐요?",
+        "en": null,
+        "example_status": "original_draft_needs_language_review"
+      }
+    ],
+    "source_refs": [
+      {
+        "file": "Advanced Korean Grammars in Use.pdf",
+        "reference": "table of contents, PDF pages 2–4; selected entries visible on pages 5–29",
+        "verification": "pattern visibly present in source"
+      }
+    ],
+    "review_status": "source_pattern_checked; meaning/example/level_pending_editorial_review"
+  },
+  {
+    "id": "GRAM-REF-007",
+    "canonical": "-(느)ㄴ다면서",
+    "aliases": [
+      "(느)ㄴ다면서"
+    ],
+    "category": "advanced_reference",
+    "meanings_en": [
+      "while saying; I heard that"
+    ],
+    "langsnack_level": null,
+    "topik_level_estimate": 4,
+    "level_basis": "editorial estimate; not a verified official TOPIK classification",
+    "examples": [
+      {
+        "ko": "바쁘다면서 어떻게 왔어요?",
+        "en": null,
+        "example_status": "original_draft_needs_language_review"
+      }
+    ],
+    "source_refs": [
+      {
+        "file": "Advanced Korean Grammars in Use.pdf",
+        "reference": "table of contents, PDF pages 2–4; selected entries visible on pages 5–29",
+        "verification": "pattern visibly present in source"
+      }
+    ],
+    "review_status": "source_pattern_checked; meaning/example/level_pending_editorial_review"
+  },
+  {
+    "id": "GRAM-REF-008",
+    "canonical": "-에 의하면",
+    "aliases": [
+      "에 의하면"
+    ],
+    "category": "advanced_reference",
+    "meanings_en": [
+      "according to"
+    ],
+    "langsnack_level": null,
+    "topik_level_estimate": 4,
+    "level_basis": "editorial estimate; not a verified official TOPIK classification",
+    "examples": [
+      {
+        "ko": "일기 예보에 의하면 내일 비가 온대요.",
+        "en": null,
+        "example_status": "original_draft_needs_language_review"
+      }
+    ],
+    "source_refs": [
+      {
+        "file": "Advanced Korean Grammars in Use.pdf",
+        "reference": "table of contents, PDF pages 2–4; selected entries visible on pages 5–29",
+        "verification": "pattern visibly present in source"
+      }
+    ],
+    "review_status": "source_pattern_checked; meaning/example/level_pending_editorial_review"
+  },
+  {
+    "id": "GRAM-REF-009",
+    "canonical": "-(으)로 인해서",
+    "aliases": [
+      "(으)로 인해서"
+    ],
+    "category": "advanced_reference",
+    "meanings_en": [
+      "because of; due to"
+    ],
+    "langsnack_level": null,
+    "topik_level_estimate": 4,
+    "level_basis": "editorial estimate; not a verified official TOPIK classification",
+    "examples": [
+      {
+        "ko": "폭우로 인해서 경기가 취소됐어요.",
+        "en": null,
+        "example_status": "original_draft_needs_language_review"
+      }
+    ],
+    "source_refs": [
+      {
+        "file": "Advanced Korean Grammars in Use.pdf",
+        "reference": "table of contents, PDF pages 2–4; selected entries visible on pages 5–29",
+        "verification": "pattern visibly present in source"
+      }
+    ],
+    "review_status": "source_pattern_checked; meaning/example/level_pending_editorial_review"
   }
 ]

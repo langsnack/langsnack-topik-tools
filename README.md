@@ -39,3 +39,7 @@ Enter the same hostname in GitHub Pages without `https://` and without a trailin
 
 ## Important data limitation
 The bundled vocabulary seed currently has strong TOPIK I coverage. Intermediate and advanced vocabulary extraction is still incomplete because several source PDFs are image-based. The engine architecture is ready for those larger data files when reviewed entries are added.
+
+
+## v6 update
+Added Grammar Level Finder with instant substring search, 129 starter grammar records, and source labels. TOPIK levels are estimates, not official certifications.

@@ -4044,5 +4044,821 @@
       }
     ],
     "review_status": "source_pattern_checked; meaning/example/level_pending_editorial_review"
+  },
+  {
+    "id": "LANG-ADV-001",
+    "canonical": "-기는커녕",
+    "aliases": [
+      "기는커녕"
+    ],
+    "category": "advanced_provisional",
+    "meanings_en": [
+      "far from; let alone"
+    ],
+    "langsnack_level": 5,
+    "topik_level_estimate": 5,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [],
+    "examples": [
+      {
+        "ko": "쉬기는커녕 점심 먹을 시간도 없었어요.",
+        "en": ""
+      }
+    ],
+    "source_refs": [],
+    "review_status": "editorial_estimate_not_textbook_verified"
+  },
+  {
+    "id": "LANG-ADV-002",
+    "canonical": "-(으)ㄹ 뿐더러",
+    "aliases": [
+      "(으)ㄹ 뿐더러"
+    ],
+    "category": "advanced_provisional",
+    "meanings_en": [
+      "not only; furthermore"
+    ],
+    "langsnack_level": 5,
+    "topik_level_estimate": 5,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [],
+    "examples": [
+      {
+        "ko": "이 도시는 교통이 편리할 뿐더러 문화 시설도 많아요.",
+        "en": ""
+      }
+    ],
+    "source_refs": [],
+    "review_status": "editorial_estimate_not_textbook_verified"
+  },
+  {
+    "id": "LANG-ADV-003",
+    "canonical": "-(으)ㄴ/는 셈이다",
+    "aliases": [
+      "(으)ㄴ/는 셈이다"
+    ],
+    "category": "advanced_provisional",
+    "meanings_en": [
+      "it amounts to; practically"
+    ],
+    "langsnack_level": 5,
+    "topik_level_estimate": 5,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [],
+    "examples": [
+      {
+        "ko": "매일 한 시간씩 공부했으니 한 달에 서른 시간을 공부한 셈이에요.",
+        "en": ""
+      }
+    ],
+    "source_refs": [],
+    "review_status": "editorial_estimate_not_textbook_verified"
+  },
+  {
+    "id": "LANG-ADV-004",
+    "canonical": "-(으)ㄴ/는 반면(에)",
+    "aliases": [
+      "(으)ㄴ/는 반면(에)"
+    ],
+    "category": "advanced_provisional",
+    "meanings_en": [
+      "whereas; on the other hand"
+    ],
+    "langsnack_level": 5,
+    "topik_level_estimate": 5,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [],
+    "examples": [
+      {
+        "ko": "도심은 편리한 반면에 생활비가 비싸요.",
+        "en": ""
+      }
+    ],
+    "source_refs": [],
+    "review_status": "editorial_estimate_not_textbook_verified"
+  },
+  {
+    "id": "LANG-ADV-005",
+    "canonical": "-(으)ㄹ 리가 없다",
+    "aliases": [
+      "(으)ㄹ 리가 없다"
+    ],
+    "category": "advanced_provisional",
+    "meanings_en": [
+      "there is no way that"
+    ],
+    "langsnack_level": 5,
+    "topik_level_estimate": 5,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [],
+    "examples": [
+      {
+        "ko": "그렇게 꼼꼼한 사람이 약속을 잊을 리가 없어요.",
+        "en": ""
+      }
+    ],
+    "source_refs": [],
+    "review_status": "editorial_estimate_not_textbook_verified"
+  },
+  {
+    "id": "LANG-ADV-006",
+    "canonical": "-기 마련이다",
+    "aliases": [
+      "기 마련이다"
+    ],
+    "category": "advanced_provisional",
+    "meanings_en": [
+      "be bound to; naturally"
+    ],
+    "langsnack_level": 5,
+    "topik_level_estimate": 5,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [],
+    "examples": [
+      {
+        "ko": "처음 배우는 일은 실수하기 마련이에요.",
+        "en": ""
+      }
+    ],
+    "source_refs": [],
+    "review_status": "editorial_estimate_not_textbook_verified"
+  },
+  {
+    "id": "LANG-ADV-007",
+    "canonical": "-(으)ㄴ/는 데다가",
+    "aliases": [
+      "(으)ㄴ/는 데다가"
+    ],
+    "category": "advanced_provisional",
+    "meanings_en": [
+      "on top of; in addition to"
+    ],
+    "langsnack_level": 5,
+    "topik_level_estimate": 5,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [],
+    "examples": [
+      {
+        "ko": "비가 오는 데다가 바람까지 강하게 불어요.",
+        "en": ""
+      }
+    ],
+    "source_refs": [],
+    "review_status": "editorial_estimate_not_textbook_verified"
+  },
+  {
+    "id": "LANG-ADV-008",
+    "canonical": "-(으)ㄹ수록",
+    "aliases": [
+      "(으)ㄹ수록"
+    ],
+    "category": "advanced_provisional",
+    "meanings_en": [
+      "the more; the more"
+    ],
+    "langsnack_level": 5,
+    "topik_level_estimate": 5,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [],
+    "examples": [
+      {
+        "ko": "연습하면 할수록 발음이 자연스러워져요.",
+        "en": ""
+      }
+    ],
+    "source_refs": [],
+    "review_status": "editorial_estimate_not_textbook_verified"
+  },
+  {
+    "id": "LANG-ADV-009",
+    "canonical": "-(으)ㄹ 지경이다",
+    "aliases": [
+      "(으)ㄹ 지경이다"
+    ],
+    "category": "advanced_provisional",
+    "meanings_en": [
+      "to the point of"
+    ],
+    "langsnack_level": 5,
+    "topik_level_estimate": 5,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [],
+    "examples": [
+      {
+        "ko": "하루 종일 걸어서 쓰러질 지경이었어요.",
+        "en": ""
+      }
+    ],
+    "source_refs": [],
+    "review_status": "editorial_estimate_not_textbook_verified"
+  },
+  {
+    "id": "LANG-ADV-010",
+    "canonical": "-(으)ㄹ 뻔하다",
+    "aliases": [
+      "(으)ㄹ 뻔하다"
+    ],
+    "category": "advanced_provisional",
+    "meanings_en": [
+      "almost; narrowly avoided"
+    ],
+    "langsnack_level": 5,
+    "topik_level_estimate": 5,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [],
+    "examples": [
+      {
+        "ko": "계단에서 미끄러져 넘어질 뻔했어요.",
+        "en": ""
+      }
+    ],
+    "source_refs": [],
+    "review_status": "editorial_estimate_not_textbook_verified"
+  },
+  {
+    "id": "LANG-ADV-011",
+    "canonical": "-(으)ㄴ 채(로)",
+    "aliases": [
+      "(으)ㄴ 채(로)"
+    ],
+    "category": "advanced_provisional",
+    "meanings_en": [
+      "while remaining in a state"
+    ],
+    "langsnack_level": 5,
+    "topik_level_estimate": 5,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [],
+    "examples": [
+      {
+        "ko": "창문을 연 채로 외출했어요.",
+        "en": ""
+      }
+    ],
+    "source_refs": [],
+    "review_status": "editorial_estimate_not_textbook_verified"
+  },
+  {
+    "id": "LANG-ADV-012",
+    "canonical": "-(으)ㄴ/는 탓에",
+    "aliases": [
+      "(으)ㄴ/는 탓에"
+    ],
+    "category": "advanced_provisional",
+    "meanings_en": [
+      "because of; owing to (negative)"
+    ],
+    "langsnack_level": 5,
+    "topik_level_estimate": 5,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [],
+    "examples": [
+      {
+        "ko": "갑자기 눈이 내리는 탓에 도로가 막혔어요.",
+        "en": ""
+      }
+    ],
+    "source_refs": [],
+    "review_status": "editorial_estimate_not_textbook_verified"
+  },
+  {
+    "id": "LANG-ADV-013",
+    "canonical": "-기 나름이다",
+    "aliases": [
+      "기 나름이다"
+    ],
+    "category": "advanced_provisional",
+    "meanings_en": [
+      "depends on how"
+    ],
+    "langsnack_level": 5,
+    "topik_level_estimate": 5,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [],
+    "examples": [
+      {
+        "ko": "같은 경험도 어떻게 받아들이기 나름이에요.",
+        "en": ""
+      }
+    ],
+    "source_refs": [],
+    "review_status": "editorial_estimate_not_textbook_verified"
+  },
+  {
+    "id": "LANG-ADV-014",
+    "canonical": "-(으)ㄹ 만하다",
+    "aliases": [
+      "(으)ㄹ 만하다"
+    ],
+    "category": "advanced_provisional",
+    "meanings_en": [
+      "worth doing; reasonable"
+    ],
+    "langsnack_level": 5,
+    "topik_level_estimate": 5,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [],
+    "examples": [
+      {
+        "ko": "이 책은 두 번 읽을 만해요.",
+        "en": ""
+      }
+    ],
+    "source_refs": [],
+    "review_status": "editorial_estimate_not_textbook_verified"
+  },
+  {
+    "id": "LANG-ADV-015",
+    "canonical": "-(으)ㄴ/는 듯하다",
+    "aliases": [
+      "(으)ㄴ/는 듯하다"
+    ],
+    "category": "advanced_provisional",
+    "meanings_en": [
+      "it seems; appears"
+    ],
+    "langsnack_level": 5,
+    "topik_level_estimate": 5,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [],
+    "examples": [
+      {
+        "ko": "밖에서 누군가 기다리는 듯해요.",
+        "en": ""
+      }
+    ],
+    "source_refs": [],
+    "review_status": "editorial_estimate_not_textbook_verified"
+  },
+  {
+    "id": "LANG-ADV-016",
+    "canonical": "-(으)ㄹ 겸",
+    "aliases": [
+      "(으)ㄹ 겸"
+    ],
+    "category": "advanced_provisional",
+    "meanings_en": [
+      "for the dual purpose of"
+    ],
+    "langsnack_level": 5,
+    "topik_level_estimate": 5,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [],
+    "examples": [
+      {
+        "ko": "산책도 할 겸 가까운 공원에 다녀왔어요.",
+        "en": ""
+      }
+    ],
+    "source_refs": [],
+    "review_status": "editorial_estimate_not_textbook_verified"
+  },
+  {
+    "id": "LANG-ADV-017",
+    "canonical": "-(으)ㄴ/는 이상",
+    "aliases": [
+      "(으)ㄴ/는 이상"
+    ],
+    "category": "advanced_provisional",
+    "meanings_en": [
+      "since; now that"
+    ],
+    "langsnack_level": 5,
+    "topik_level_estimate": 5,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [],
+    "examples": [
+      {
+        "ko": "결정을 내린 이상 책임 있게 끝내야 해요.",
+        "en": ""
+      }
+    ],
+    "source_refs": [],
+    "review_status": "editorial_estimate_not_textbook_verified"
+  },
+  {
+    "id": "LANG-ADV-018",
+    "canonical": "-(으)ㄹ 수밖에 없다",
+    "aliases": [
+      "(으)ㄹ 수밖에 없다"
+    ],
+    "category": "advanced_provisional",
+    "meanings_en": [
+      "have no choice but to"
+    ],
+    "langsnack_level": 5,
+    "topik_level_estimate": 5,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [],
+    "examples": [
+      {
+        "ko": "기차가 끊겨서 택시를 탈 수밖에 없었어요.",
+        "en": ""
+      }
+    ],
+    "source_refs": [],
+    "review_status": "editorial_estimate_not_textbook_verified"
+  },
+  {
+    "id": "LANG-ADV-019",
+    "canonical": "-(으)ㄹ 법하다",
+    "aliases": [
+      "(으)ㄹ 법하다"
+    ],
+    "category": "advanced_provisional",
+    "meanings_en": [
+      "it is understandable or likely"
+    ],
+    "langsnack_level": 5,
+    "topik_level_estimate": 5,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [],
+    "examples": [
+      {
+        "ko": "그런 상황이라면 화가 날 법해요.",
+        "en": ""
+      }
+    ],
+    "source_refs": [],
+    "review_status": "editorial_estimate_not_textbook_verified"
+  },
+  {
+    "id": "LANG-ADV-020",
+    "canonical": "-고도 남다",
+    "aliases": [
+      "고도 남다"
+    ],
+    "category": "advanced_provisional",
+    "meanings_en": [
+      "more than enough to"
+    ],
+    "langsnack_level": 6,
+    "topik_level_estimate": 6,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [],
+    "examples": [
+      {
+        "ko": "그 정도 설명이면 누구나 이해하고도 남아요.",
+        "en": ""
+      }
+    ],
+    "source_refs": [],
+    "review_status": "editorial_estimate_not_textbook_verified"
+  },
+  {
+    "id": "LANG-ADV-021",
+    "canonical": "-(으)ㄹ망정",
+    "aliases": [
+      "(으)ㄹ망정"
+    ],
+    "category": "advanced_provisional",
+    "meanings_en": [
+      "even if; rather than"
+    ],
+    "langsnack_level": 6,
+    "topik_level_estimate": 6,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [],
+    "examples": [
+      {
+        "ko": "손해를 볼망정 원칙을 어기지는 않겠어요.",
+        "en": ""
+      }
+    ],
+    "source_refs": [],
+    "review_status": "editorial_estimate_not_textbook_verified"
+  },
+  {
+    "id": "LANG-ADV-022",
+    "canonical": "-(으)ㄴ들",
+    "aliases": [
+      "(으)ㄴ들"
+    ],
+    "category": "advanced_provisional",
+    "meanings_en": [
+      "even if; what difference would it make"
+    ],
+    "langsnack_level": 6,
+    "topik_level_estimate": 6,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [],
+    "examples": [
+      {
+        "ko": "지금 서두른들 이미 떠난 기차를 잡을 수 없어요.",
+        "en": ""
+      }
+    ],
+    "source_refs": [],
+    "review_status": "editorial_estimate_not_textbook_verified"
+  },
+  {
+    "id": "LANG-ADV-023",
+    "canonical": "-(으)ㄹ지언정",
+    "aliases": [
+      "(으)ㄹ지언정"
+    ],
+    "category": "advanced_provisional",
+    "meanings_en": [
+      "even if; rather than"
+    ],
+    "langsnack_level": 6,
+    "topik_level_estimate": 6,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [],
+    "examples": [
+      {
+        "ko": "시간이 더 걸릴지언정 정확하게 확인하겠어요.",
+        "en": ""
+      }
+    ],
+    "source_refs": [],
+    "review_status": "editorial_estimate_not_textbook_verified"
+  },
+  {
+    "id": "LANG-ADV-024",
+    "canonical": "-다시피 하다",
+    "aliases": [
+      "다시피 하다"
+    ],
+    "category": "advanced_provisional",
+    "meanings_en": [
+      "almost; practically"
+    ],
+    "langsnack_level": 6,
+    "topik_level_estimate": 6,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [],
+    "examples": [
+      {
+        "ko": "시험 기간에는 도서관에서 살다시피 했어요.",
+        "en": ""
+      }
+    ],
+    "source_refs": [],
+    "review_status": "editorial_estimate_not_textbook_verified"
+  },
+  {
+    "id": "LANG-ADV-025",
+    "canonical": "-기 십상이다",
+    "aliases": [
+      "기 십상이다"
+    ],
+    "category": "advanced_provisional",
+    "meanings_en": [
+      "be very likely to (undesirable)"
+    ],
+    "langsnack_level": 6,
+    "topik_level_estimate": 6,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [],
+    "examples": [
+      {
+        "ko": "준비 없이 시작하면 실수하기 십상이에요.",
+        "en": ""
+      }
+    ],
+    "source_refs": [],
+    "review_status": "editorial_estimate_not_textbook_verified"
+  },
+  {
+    "id": "LANG-ADV-026",
+    "canonical": "-(으)ㄹ 따름이다",
+    "aliases": [
+      "(으)ㄹ 따름이다"
+    ],
+    "category": "advanced_provisional",
+    "meanings_en": [
+      "only; merely"
+    ],
+    "langsnack_level": 6,
+    "topik_level_estimate": 6,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [],
+    "examples": [
+      {
+        "ko": "도와주신 분들께 감사할 따름이에요.",
+        "en": ""
+      }
+    ],
+    "source_refs": [],
+    "review_status": "editorial_estimate_not_textbook_verified"
+  },
+  {
+    "id": "LANG-ADV-027",
+    "canonical": "-(으)ㄴ/는 마당에",
+    "aliases": [
+      "(으)ㄴ/는 마당에"
+    ],
+    "category": "advanced_provisional",
+    "meanings_en": [
+      "given the situation; at a time when"
+    ],
+    "langsnack_level": 6,
+    "topik_level_estimate": 6,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [],
+    "examples": [
+      {
+        "ko": "모두가 바쁜 마당에 혼자 쉴 수는 없어요.",
+        "en": ""
+      }
+    ],
+    "source_refs": [],
+    "review_status": "editorial_estimate_not_textbook_verified"
+  },
+  {
+    "id": "LANG-ADV-028",
+    "canonical": "-(으)ㄹ 바에는",
+    "aliases": [
+      "(으)ㄹ 바에는"
+    ],
+    "category": "advanced_provisional",
+    "meanings_en": [
+      "rather than; if one is going to"
+    ],
+    "langsnack_level": 6,
+    "topik_level_estimate": 6,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [],
+    "examples": [
+      {
+        "ko": "대충 할 바에는 처음부터 다시 하는 게 낫겠어요.",
+        "en": ""
+      }
+    ],
+    "source_refs": [],
+    "review_status": "editorial_estimate_not_textbook_verified"
+  },
+  {
+    "id": "LANG-ADV-029",
+    "canonical": "-(으)ㄹ지라도",
+    "aliases": [
+      "(으)ㄹ지라도"
+    ],
+    "category": "advanced_provisional",
+    "meanings_en": [
+      "even though; even if"
+    ],
+    "langsnack_level": 6,
+    "topik_level_estimate": 6,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [],
+    "examples": [
+      {
+        "ko": "결과가 기대에 못 미칠지라도 과정에서 배울 점은 있어요.",
+        "en": ""
+      }
+    ],
+    "source_refs": [],
+    "review_status": "editorial_estimate_not_textbook_verified"
+  },
+  {
+    "id": "LANG-ADV-030",
+    "canonical": "-(으)ㄴ/는 까닭에",
+    "aliases": [
+      "(으)ㄴ/는 까닭에"
+    ],
+    "category": "advanced_provisional",
+    "meanings_en": [
+      "because; owing to"
+    ],
+    "langsnack_level": 6,
+    "topik_level_estimate": 6,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [],
+    "examples": [
+      {
+        "ko": "기온이 급격히 떨어진 까닭에 농작물이 피해를 입었어요.",
+        "en": ""
+      }
+    ],
+    "source_refs": [],
+    "review_status": "editorial_estimate_not_textbook_verified"
+  },
+  {
+    "id": "LANG-ADV-031",
+    "canonical": "-(으)ㄴ/는 바",
+    "aliases": [
+      "(으)ㄴ/는 바"
+    ],
+    "category": "advanced_provisional",
+    "meanings_en": [
+      "as; since; the fact that (formal)"
+    ],
+    "langsnack_level": 6,
+    "topik_level_estimate": 6,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [],
+    "examples": [
+      {
+        "ko": "앞서 말씀드린 바와 같이 일정이 변경되었습니다.",
+        "en": ""
+      }
+    ],
+    "source_refs": [],
+    "review_status": "editorial_estimate_not_textbook_verified"
+  },
+  {
+    "id": "LANG-ADV-032",
+    "canonical": "-(으)ㄴ/는 양",
+    "aliases": [
+      "(으)ㄴ/는 양"
+    ],
+    "category": "advanced_provisional",
+    "meanings_en": [
+      "as if; pretending to"
+    ],
+    "langsnack_level": 6,
+    "topik_level_estimate": 6,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [],
+    "examples": [
+      {
+        "ko": "그는 모든 것을 아는 양 이야기했어요.",
+        "en": ""
+      }
+    ],
+    "source_refs": [],
+    "review_status": "editorial_estimate_not_textbook_verified"
+  },
+  {
+    "id": "LANG-ADV-033",
+    "canonical": "-(으)ㄹ 나위 없다",
+    "aliases": [
+      "(으)ㄹ 나위 없다"
+    ],
+    "category": "advanced_provisional",
+    "meanings_en": [
+      "could not be more; nothing further needed"
+    ],
+    "langsnack_level": 6,
+    "topik_level_estimate": 6,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [],
+    "examples": [
+      {
+        "ko": "친구들이 함께해 준다면 더할 나위 없이 좋겠어요.",
+        "en": ""
+      }
+    ],
+    "source_refs": [],
+    "review_status": "editorial_estimate_not_textbook_verified"
+  },
+  {
+    "id": "LANG-ADV-034",
+    "canonical": "-(으)ㄹ 턱이 없다",
+    "aliases": [
+      "(으)ㄹ 턱이 없다"
+    ],
+    "category": "advanced_provisional",
+    "meanings_en": [
+      "there is no possibility of"
+    ],
+    "langsnack_level": 6,
+    "topik_level_estimate": 6,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [],
+    "examples": [
+      {
+        "ko": "준비도 하지 않았는데 합격할 턱이 없어요.",
+        "en": ""
+      }
+    ],
+    "source_refs": [],
+    "review_status": "editorial_estimate_not_textbook_verified"
   }
 ]

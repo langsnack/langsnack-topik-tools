@@ -5756,13 +5756,22 @@
       "기는 고사하고"
     ],
     "category": "reference_index",
-    "meanings_en": [],
+    "meanings_en": [
+      "let alone; far from"
+    ],
     "langsnack_level": null,
-    "topik_level_estimate": null,
+    "topik_level_estimate": 5,
     "formality": null,
     "register": null,
-    "detection_patterns": [],
-    "examples": [],
+    "detection_patterns": [
+      "기는 고사하고"
+    ],
+    "examples": [
+      {
+        "ko": "여행은 고사하고 주말에도 쉬지 못해요.",
+        "en": "I can't even rest on weekends, let alone travel."
+      }
+    ],
     "source_refs": [
       {
         "file": "TOPIK 한국어 문법 중급편 — 종합 문법 목차 (photographed index)",
@@ -5770,8 +5779,8 @@
         "reference_type": "index_only"
       }
     ],
-    "review_status": "index_transcribed_pending_linguistic_review",
-    "usage_note_en": "Indexed in the reference book. Explanation and TOPIK level have not yet been verified."
+    "review_status": "original_explanation_example_editorial_review_pending",
+    "usage_note_en": "Contrasts an ambitious expectation with a more basic unmet one."
   },
   {
     "id": "GRAM-INDEX-0018",
@@ -6020,13 +6029,22 @@
       "느라고"
     ],
     "category": "reference_index",
-    "meanings_en": [],
+    "meanings_en": [
+      "because one was busy doing"
+    ],
     "langsnack_level": null,
-    "topik_level_estimate": null,
+    "topik_level_estimate": 3,
     "formality": null,
     "register": null,
-    "detection_patterns": [],
-    "examples": [],
+    "detection_patterns": [
+      "느라고"
+    ],
+    "examples": [
+      {
+        "ko": "시험을 준비하느라고 잠을 못 잤어요.",
+        "en": "I couldn't sleep because I was preparing for the exam."
+      }
+    ],
     "source_refs": [
       {
         "file": "TOPIK 한국어 문법 중급편 — 종합 문법 목차 (photographed index)",
@@ -6034,8 +6052,8 @@
         "reference_type": "index_only"
       }
     ],
-    "review_status": "index_transcribed_pending_linguistic_review",
-    "usage_note_en": "Indexed in the reference book. Explanation and TOPIK level have not yet been verified."
+    "review_status": "original_explanation_example_editorial_review_pending",
+    "usage_note_en": "Gives an action as the cause of a usually negative outcome."
   },
   {
     "id": "GRAM-INDEX-0029",
@@ -6092,13 +6110,22 @@
       "는 김에"
     ],
     "category": "reference_index",
-    "meanings_en": [],
+    "meanings_en": [
+      "while one is at it"
+    ],
     "langsnack_level": null,
-    "topik_level_estimate": null,
+    "topik_level_estimate": 3,
     "formality": null,
     "register": null,
-    "detection_patterns": [],
-    "examples": [],
+    "detection_patterns": [
+      "는 김에"
+    ],
+    "examples": [
+      {
+        "ko": "마트에 가는 김에 우유도 사 올게요.",
+        "en": "Since I'm going to the supermarket, I'll buy milk too."
+      }
+    ],
     "source_refs": [
       {
         "file": "TOPIK 한국어 문법 중급편 — 종합 문법 목차 (photographed index)",
@@ -6106,8 +6133,8 @@
         "reference_type": "index_only"
       }
     ],
-    "review_status": "index_transcribed_pending_linguistic_review",
-    "usage_note_en": "Indexed in the reference book. Explanation and TOPIK level have not yet been verified."
+    "review_status": "original_explanation_example_editorial_review_pending",
+    "usage_note_en": "Adds a convenient secondary action to an existing plan."
   },
   {
     "id": "GRAM-INDEX-0032",
@@ -6476,13 +6503,22 @@
       "는 법이다"
     ],
     "category": "reference_index",
-    "meanings_en": [],
+    "meanings_en": [
+      "it is natural that; generally"
+    ],
     "langsnack_level": null,
-    "topik_level_estimate": null,
+    "topik_level_estimate": 4,
     "formality": null,
     "register": null,
-    "detection_patterns": [],
-    "examples": [],
+    "detection_patterns": [
+      "는 법이다"
+    ],
+    "examples": [
+      {
+        "ko": "새로운 일을 시작하면 어려움이 생기는 법이에요.",
+        "en": "Difficulties naturally arise when starting something new."
+      }
+    ],
     "source_refs": [
       {
         "file": "TOPIK 한국어 문법 중급편 — 종합 문법 목차 (photographed index)",
@@ -6490,8 +6526,8 @@
         "reference_type": "index_only"
       }
     ],
-    "review_status": "index_transcribed_pending_linguistic_review",
-    "usage_note_en": "Indexed in the reference book. Explanation and TOPIK level have not yet been verified."
+    "review_status": "original_explanation_example_editorial_review_pending",
+    "usage_note_en": "States a general tendency or principle."
   },
   {
     "id": "GRAM-INDEX-0048",
@@ -7172,13 +7208,22 @@
       "다 못해"
     ],
     "category": "reference_index",
-    "meanings_en": [],
+    "meanings_en": [
+      "to the point that; unable to endure"
+    ],
     "langsnack_level": null,
-    "topik_level_estimate": null,
+    "topik_level_estimate": 5,
     "formality": null,
     "register": null,
-    "detection_patterns": [],
-    "examples": [],
+    "detection_patterns": [
+      "다 못해"
+    ],
+    "examples": [
+      {
+        "ko": "참다 못해 결국 항의했어요.",
+        "en": "I couldn't stand it any longer and finally protested."
+      }
+    ],
     "source_refs": [
       {
         "file": "TOPIK 한국어 문법 중급편 — 종합 문법 목차 (photographed index)",
@@ -7186,8 +7231,8 @@
         "reference_type": "index_only"
       }
     ],
-    "review_status": "index_transcribed_pending_linguistic_review",
-    "usage_note_en": "Indexed in the reference book. Explanation and TOPIK level have not yet been verified."
+    "review_status": "original_explanation_example_editorial_review_pending",
+    "usage_note_en": "Shows an action arising after a state reaches its limit."
   },
   {
     "id": "GRAM-INDEX-0077",
@@ -7244,13 +7289,22 @@
       "다가는"
     ],
     "category": "reference_index",
-    "meanings_en": [],
+    "meanings_en": [
+      "if one keeps doing; otherwise"
+    ],
     "langsnack_level": null,
-    "topik_level_estimate": null,
+    "topik_level_estimate": 4,
     "formality": null,
     "register": null,
-    "detection_patterns": [],
-    "examples": [],
+    "detection_patterns": [
+      "다가는"
+    ],
+    "examples": [
+      {
+        "ko": "계속 늦게 자다가는 건강이 나빠질 거예요.",
+        "en": "If you keep going to bed late, your health will suffer."
+      }
+    ],
     "source_refs": [
       {
         "file": "TOPIK 한국어 문법 중급편 — 종합 문법 목차 (photographed index)",
@@ -7258,8 +7312,8 @@
         "reference_type": "index_only"
       }
     ],
-    "review_status": "index_transcribed_pending_linguistic_review",
-    "usage_note_en": "Indexed in the reference book. Explanation and TOPIK level have not yet been verified."
+    "review_status": "original_explanation_example_editorial_review_pending",
+    "usage_note_en": "Warns of an undesirable consequence if an action continues."
   },
   {
     "id": "GRAM-INDEX-0080",
@@ -7556,13 +7610,22 @@
       "더니"
     ],
     "category": "reference_index",
-    "meanings_en": [],
+    "meanings_en": [
+      "and then; whereas; after observing"
+    ],
     "langsnack_level": null,
-    "topik_level_estimate": null,
+    "topik_level_estimate": 4,
     "formality": null,
     "register": null,
-    "detection_patterns": [],
-    "examples": [],
+    "detection_patterns": [
+      "더니"
+    ],
+    "examples": [
+      {
+        "ko": "아침에는 맑더니 오후에는 비가 왔어요.",
+        "en": "It was clear in the morning, but it rained in the afternoon."
+      }
+    ],
     "source_refs": [
       {
         "file": "TOPIK 한국어 문법 중급편 — 종합 문법 목차 (photographed index)",
@@ -7570,8 +7633,8 @@
         "reference_type": "index_only"
       }
     ],
-    "review_status": "index_transcribed_pending_linguistic_review",
-    "usage_note_en": "Indexed in the reference book. Explanation and TOPIK level have not yet been verified."
+    "review_status": "original_explanation_example_editorial_review_pending",
+    "usage_note_en": "Connects observed circumstances with a later contrast or change."
   },
   {
     "id": "GRAM-INDEX-0093",
@@ -7644,5 +7707,1598 @@
     ],
     "review_status": "index_transcribed_pending_linguistic_review",
     "usage_note_en": "Indexed in the reference book. Explanation and TOPIK level have not yet been verified."
+  },
+  {
+    "id": "GRAM-EXP-0001",
+    "canonical": "-아/어 주세요",
+    "aliases": [
+      "아/어 주세요"
+    ],
+    "category": "expanded_grammar",
+    "meanings_en": [
+      "please do"
+    ],
+    "langsnack_level": null,
+    "topik_level_estimate": 1,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "아/어 주세요"
+    ],
+    "examples": [
+      {
+        "ko": "문을 닫아 주세요.",
+        "en": "Please close the door."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_explanation_example_editorial_review_pending",
+    "usage_note_en": "Polite request for someone to do an action."
+  },
+  {
+    "id": "GRAM-EXP-0002",
+    "canonical": "-아/어 보다",
+    "aliases": [
+      "아/어 보다"
+    ],
+    "category": "expanded_grammar",
+    "meanings_en": [
+      "try doing"
+    ],
+    "langsnack_level": null,
+    "topik_level_estimate": 2,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "아/어 보다"
+    ],
+    "examples": [
+      {
+        "ko": "이 음식을 한번 먹어 보세요.",
+        "en": "Please try this food."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_explanation_example_editorial_review_pending",
+    "usage_note_en": "Expresses trying an action or an experience."
+  },
+  {
+    "id": "GRAM-EXP-0003",
+    "canonical": "-(으)ㄹ 전에",
+    "aliases": [
+      "(으)ㄹ 전에"
+    ],
+    "category": "expanded_grammar",
+    "meanings_en": [
+      "before"
+    ],
+    "langsnack_level": null,
+    "topik_level_estimate": 2,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "(으)ㄹ 전에"
+    ],
+    "examples": [
+      {
+        "ko": "자기 전에 이를 닦아요.",
+        "en": "I brush my teeth before sleeping."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_explanation_example_editorial_review_pending",
+    "usage_note_en": "Indicates an action that precedes another."
+  },
+  {
+    "id": "GRAM-EXP-0004",
+    "canonical": "-아/어야 하다",
+    "aliases": [
+      "아/어야 하다"
+    ],
+    "category": "expanded_grammar",
+    "meanings_en": [
+      "must; have to"
+    ],
+    "langsnack_level": null,
+    "topik_level_estimate": 2,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "아/어야 하다"
+    ],
+    "examples": [
+      {
+        "ko": "내일까지 보고서를 제출해야 해요.",
+        "en": "I have to submit the report by tomorrow."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_explanation_example_editorial_review_pending",
+    "usage_note_en": "Expresses necessity or obligation."
+  },
+  {
+    "id": "GRAM-EXP-0005",
+    "canonical": "-(으)면 좋겠다",
+    "aliases": [
+      "(으)면 좋겠다"
+    ],
+    "category": "expanded_grammar",
+    "meanings_en": [
+      "I wish; it would be nice if"
+    ],
+    "langsnack_level": null,
+    "topik_level_estimate": 2,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "(으)면 좋겠다"
+    ],
+    "examples": [
+      {
+        "ko": "내일 날씨가 좋으면 좋겠어요.",
+        "en": "I hope the weather is good tomorrow."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_explanation_example_editorial_review_pending",
+    "usage_note_en": "Expresses a hope or wish."
+  },
+  {
+    "id": "GRAM-EXP-0006",
+    "canonical": "-지 않아도 되다",
+    "aliases": [
+      "지 않아도 되다"
+    ],
+    "category": "expanded_grammar",
+    "meanings_en": [
+      "do not have to"
+    ],
+    "langsnack_level": null,
+    "topik_level_estimate": 2,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "지 않아도 되다"
+    ],
+    "examples": [
+      {
+        "ko": "오늘은 일찍 오지 않아도 돼요.",
+        "en": "You don't have to come early today."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_explanation_example_editorial_review_pending",
+    "usage_note_en": "Expresses lack of obligation."
+  },
+  {
+    "id": "GRAM-EXP-0007",
+    "canonical": "-(으)ㄹ지도 모르다",
+    "aliases": [
+      "(으)ㄹ지도 모르다"
+    ],
+    "category": "expanded_grammar",
+    "meanings_en": [
+      "might; perhaps"
+    ],
+    "langsnack_level": null,
+    "topik_level_estimate": 3,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "(으)ㄹ지도 모르다"
+    ],
+    "examples": [
+      {
+        "ko": "회의가 늦게 끝날지도 몰라요.",
+        "en": "The meeting might finish late."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_explanation_example_editorial_review_pending",
+    "usage_note_en": "Expresses uncertainty or possibility."
+  },
+  {
+    "id": "GRAM-EXP-0008",
+    "canonical": "-아/어지다",
+    "aliases": [
+      "아/어지다"
+    ],
+    "category": "expanded_grammar",
+    "meanings_en": [
+      "become; get"
+    ],
+    "langsnack_level": null,
+    "topik_level_estimate": 2,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "아/어지다"
+    ],
+    "examples": [
+      {
+        "ko": "날씨가 많이 따뜻해졌어요.",
+        "en": "The weather has become much warmer."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_explanation_example_editorial_review_pending",
+    "usage_note_en": "Expresses a change in state."
+  },
+  {
+    "id": "GRAM-EXP-0009",
+    "canonical": "-(으)ㄴ/는 대신에",
+    "aliases": [
+      "(으)ㄴ/는 대신에"
+    ],
+    "category": "expanded_grammar",
+    "meanings_en": [
+      "instead of; in exchange for"
+    ],
+    "langsnack_level": null,
+    "topik_level_estimate": 3,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "(으)ㄴ/는 대신에"
+    ],
+    "examples": [
+      {
+        "ko": "택시를 타는 대신에 지하철을 탔어요.",
+        "en": "I took the subway instead of a taxi."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_explanation_example_editorial_review_pending",
+    "usage_note_en": "Expresses substitution or compensation."
+  },
+  {
+    "id": "GRAM-EXP-0010",
+    "canonical": "-기는 하지만",
+    "aliases": [
+      "기는 하지만"
+    ],
+    "category": "expanded_grammar",
+    "meanings_en": [
+      "although; it is true that"
+    ],
+    "langsnack_level": null,
+    "topik_level_estimate": 3,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "기는 하지만"
+    ],
+    "examples": [
+      {
+        "ko": "가격이 비싸기는 하지만 품질이 좋아요.",
+        "en": "It is expensive, but the quality is good."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_explanation_example_editorial_review_pending",
+    "usage_note_en": "Acknowledges a fact before adding a contrast."
+  },
+  {
+    "id": "GRAM-EXP-0011",
+    "canonical": "-(으)ㄴ/는 만큼",
+    "aliases": [
+      "(으)ㄴ/는 만큼"
+    ],
+    "category": "expanded_grammar",
+    "meanings_en": [
+      "as much as; since"
+    ],
+    "langsnack_level": null,
+    "topik_level_estimate": 4,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "(으)ㄴ/는 만큼"
+    ],
+    "examples": [
+      {
+        "ko": "노력한 만큼 결과가 나올 거예요.",
+        "en": "You'll get results proportional to your effort."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_explanation_example_editorial_review_pending",
+    "usage_note_en": "Expresses degree or a basis for a judgment."
+  },
+  {
+    "id": "GRAM-EXP-0012",
+    "canonical": "-(으)ㄴ/는 척하다",
+    "aliases": [
+      "(으)ㄴ/는 척하다"
+    ],
+    "category": "expanded_grammar",
+    "meanings_en": [
+      "pretend to"
+    ],
+    "langsnack_level": null,
+    "topik_level_estimate": 3,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "(으)ㄴ/는 척하다"
+    ],
+    "examples": [
+      {
+        "ko": "모르는 척하지 마세요.",
+        "en": "Don't pretend you don't know."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_explanation_example_editorial_review_pending",
+    "usage_note_en": "Describes acting as if something were true."
+  },
+  {
+    "id": "GRAM-EXP-0013",
+    "canonical": "-다 보니",
+    "aliases": [
+      "다 보니"
+    ],
+    "category": "expanded_grammar",
+    "meanings_en": [
+      "as one keeps doing; having done"
+    ],
+    "langsnack_level": null,
+    "topik_level_estimate": 4,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "다 보니"
+    ],
+    "examples": [
+      {
+        "ko": "매일 걷다 보니 체력이 좋아졌어요.",
+        "en": "After walking every day, my stamina improved."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_explanation_example_editorial_review_pending",
+    "usage_note_en": "Describes a result noticed after repeated or continued action."
+  },
+  {
+    "id": "GRAM-EXP-0014",
+    "canonical": "-(으)ㄴ 덕분에",
+    "aliases": [
+      "(으)ㄴ 덕분에"
+    ],
+    "category": "expanded_grammar",
+    "meanings_en": [
+      "thanks to"
+    ],
+    "langsnack_level": null,
+    "topik_level_estimate": 3,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "(으)ㄴ 덕분에"
+    ],
+    "examples": [
+      {
+        "ko": "선생님 덕분에 시험에 합격했어요.",
+        "en": "I passed the exam thanks to my teacher."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_explanation_example_editorial_review_pending",
+    "usage_note_en": "Attributes a positive result to a helpful cause."
+  },
+  {
+    "id": "GRAM-EXP-0015",
+    "canonical": "-(으)ㄴ 탓에",
+    "aliases": [
+      "(으)ㄴ 탓에"
+    ],
+    "category": "expanded_grammar",
+    "meanings_en": [
+      "because of; owing to"
+    ],
+    "langsnack_level": null,
+    "topik_level_estimate": 4,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "(으)ㄴ 탓에"
+    ],
+    "examples": [
+      {
+        "ko": "교통 체증 탓에 늦었어요.",
+        "en": "I was late because of the traffic jam."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_explanation_example_editorial_review_pending",
+    "usage_note_en": "Attributes a usually negative outcome to a cause."
+  },
+  {
+    "id": "GRAM-EXP-0016",
+    "canonical": "-(으)ㄹ 뿐만 아니라",
+    "aliases": [
+      "(으)ㄹ 뿐만 아니라"
+    ],
+    "category": "expanded_grammar",
+    "meanings_en": [
+      "not only ... but also"
+    ],
+    "langsnack_level": null,
+    "topik_level_estimate": 4,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "(으)ㄹ 뿐만 아니라"
+    ],
+    "examples": [
+      {
+        "ko": "이 제품은 가벼울 뿐만 아니라 튼튼해요.",
+        "en": "This product is not only light but also durable."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_explanation_example_editorial_review_pending",
+    "usage_note_en": "Adds a second significant fact."
+  },
+  {
+    "id": "GRAM-EXP-0017",
+    "canonical": "-(으)ㄹ 뿐이다",
+    "aliases": [
+      "(으)ㄹ 뿐이다"
+    ],
+    "category": "expanded_grammar",
+    "meanings_en": [
+      "merely; only"
+    ],
+    "langsnack_level": null,
+    "topik_level_estimate": 4,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "(으)ㄹ 뿐이다"
+    ],
+    "examples": [
+      {
+        "ko": "저는 사실을 말했을 뿐이에요.",
+        "en": "I merely told the truth."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_explanation_example_editorial_review_pending",
+    "usage_note_en": "Limits a statement to one fact or action."
+  },
+  {
+    "id": "GRAM-EXP-0018",
+    "canonical": "-(으)ㄴ 나머지",
+    "aliases": [
+      "(으)ㄴ 나머지"
+    ],
+    "category": "expanded_grammar",
+    "meanings_en": [
+      "so ... that; as a result of excess"
+    ],
+    "langsnack_level": null,
+    "topik_level_estimate": 5,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "(으)ㄴ 나머지"
+    ],
+    "examples": [
+      {
+        "ko": "너무 긴장한 나머지 이름을 잊었어요.",
+        "en": "I was so nervous that I forgot the name."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_explanation_example_editorial_review_pending",
+    "usage_note_en": "Describes a result caused by an excessive state."
+  },
+  {
+    "id": "GRAM-EXP-0019",
+    "canonical": "-기에 망정이지",
+    "aliases": [
+      "기에 망정이지"
+    ],
+    "category": "expanded_grammar",
+    "meanings_en": [
+      "fortunately; it is a good thing that"
+    ],
+    "langsnack_level": null,
+    "topik_level_estimate": 5,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "기에 망정이지"
+    ],
+    "examples": [
+      {
+        "ko": "일찍 출발했기에 망정이지 늦을 뻔했어요.",
+        "en": "It's a good thing we left early, or we'd have been late."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_explanation_example_editorial_review_pending",
+    "usage_note_en": "Expresses relief that a condition prevented a bad outcome."
+  },
+  {
+    "id": "GRAM-EXP-0020",
+    "canonical": "-고자 하다",
+    "aliases": [
+      "고자 하다"
+    ],
+    "category": "expanded_grammar",
+    "meanings_en": [
+      "intend to; in order to"
+    ],
+    "langsnack_level": null,
+    "topik_level_estimate": 5,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "고자 하다"
+    ],
+    "examples": [
+      {
+        "ko": "이번 연구에서는 원인을 밝히고자 합니다.",
+        "en": "This study aims to identify the cause."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_explanation_example_editorial_review_pending",
+    "usage_note_en": "Formal expression of purpose or intention."
+  },
+  {
+    "id": "GRAM-EXP-0021",
+    "canonical": "-(으)므로",
+    "aliases": [
+      "(으)므로"
+    ],
+    "category": "expanded_grammar",
+    "meanings_en": [
+      "because; since"
+    ],
+    "langsnack_level": null,
+    "topik_level_estimate": 5,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "(으)므로"
+    ],
+    "examples": [
+      {
+        "ko": "기상 상황이 좋지 않으므로 운항을 중단합니다.",
+        "en": "Operations are suspended because weather conditions are poor."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_explanation_example_editorial_review_pending",
+    "usage_note_en": "Formal written causal connective."
+  },
+  {
+    "id": "GRAM-EXP-0022",
+    "canonical": "-는 한편",
+    "aliases": [
+      "는 한편"
+    ],
+    "category": "expanded_grammar",
+    "meanings_en": [
+      "while; on the other hand"
+    ],
+    "langsnack_level": null,
+    "topik_level_estimate": 4,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "는 한편"
+    ],
+    "examples": [
+      {
+        "ko": "정부는 지원을 늘리는 한편 규제를 강화했어요.",
+        "en": "The government increased support while strengthening regulations."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_explanation_example_editorial_review_pending",
+    "usage_note_en": "Describes simultaneous actions or contrasting approaches."
+  },
+  {
+    "id": "GRAM-EXP-0023",
+    "canonical": "-(으)ㄹ 여지가 있다",
+    "aliases": [
+      "(으)ㄹ 여지가 있다"
+    ],
+    "category": "expanded_grammar",
+    "meanings_en": [
+      "there is room for; possible"
+    ],
+    "langsnack_level": null,
+    "topik_level_estimate": 5,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "(으)ㄹ 여지가 있다"
+    ],
+    "examples": [
+      {
+        "ko": "이 계획은 개선할 여지가 있어요.",
+        "en": "There is room to improve this plan."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_explanation_example_editorial_review_pending",
+    "usage_note_en": "Formal expression that a possibility remains."
+  },
+  {
+    "id": "GRAM-EXP-0024",
+    "canonical": "-(으)ㄴ 끝에",
+    "aliases": [
+      "(으)ㄴ 끝에"
+    ],
+    "category": "expanded_grammar",
+    "meanings_en": [
+      "after; as a result of"
+    ],
+    "langsnack_level": null,
+    "topik_level_estimate": 5,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "(으)ㄴ 끝에"
+    ],
+    "examples": [
+      {
+        "ko": "오랜 논의 끝에 합의에 도달했어요.",
+        "en": "After a long discussion, we reached an agreement."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_explanation_example_editorial_review_pending",
+    "usage_note_en": "Indicates an outcome following a prolonged process."
+  },
+  {
+    "id": "GRAM-EXP-0025",
+    "canonical": "-는 둥 마는 둥",
+    "aliases": [
+      "는 둥 마는 둥"
+    ],
+    "category": "expanded_grammar",
+    "meanings_en": [
+      "halfheartedly; barely"
+    ],
+    "langsnack_level": null,
+    "topik_level_estimate": 5,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "는 둥 마는 둥"
+    ],
+    "examples": [
+      {
+        "ko": "아침을 먹는 둥 마는 둥 하고 나왔어요.",
+        "en": "I barely ate breakfast before leaving."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_explanation_example_editorial_review_pending",
+    "usage_note_en": "Describes doing an action incompletely or perfunctorily."
+  },
+  {
+    "id": "GRAM-EXP-0026",
+    "canonical": "-거니와",
+    "aliases": [
+      "거니와"
+    ],
+    "category": "expanded_grammar",
+    "meanings_en": [
+      "not only ... but also"
+    ],
+    "langsnack_level": null,
+    "topik_level_estimate": 6,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "거니와"
+    ],
+    "examples": [
+      {
+        "ko": "그는 실력도 뛰어나거니와 경험도 풍부해요.",
+        "en": "He is not only skilled but also highly experienced."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_explanation_example_editorial_review_pending",
+    "usage_note_en": "Formal connective adding a further supporting point."
+  },
+  {
+    "id": "GRAM-EXP-0027",
+    "canonical": "-아/어 봤자",
+    "aliases": [
+      "아/어 봤자"
+    ],
+    "category": "expanded_grammar",
+    "meanings_en": [
+      "even if one does; it's no use"
+    ],
+    "langsnack_level": null,
+    "topik_level_estimate": 4,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "아/어 봤자"
+    ],
+    "examples": [
+      {
+        "ko": "지금 서둘러 봤자 기차를 못 타요.",
+        "en": "Even if we hurry now, we won't catch the train."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_explanation_example_editorial_review_pending",
+    "usage_note_en": "Indicates that an effort will not change the outcome."
+  },
+  {
+    "id": "GRAM-EXP-0028",
+    "canonical": "-(으)ㄹ래야 -(으)ㄹ 수 없다",
+    "aliases": [
+      "(으)ㄹ래야 -(으)ㄹ 수 없다"
+    ],
+    "category": "expanded_grammar",
+    "meanings_en": [
+      "cannot ... even if one wants to"
+    ],
+    "langsnack_level": null,
+    "topik_level_estimate": 5,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "(으)ㄹ래야 -(으)ㄹ 수 없다"
+    ],
+    "examples": [
+      {
+        "ko": "소음이 심해서 잠을 잘래야 잘 수가 없어요.",
+        "en": "It's so noisy that I can't sleep even if I want to."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_explanation_example_editorial_review_pending",
+    "usage_note_en": "Emphasizes inability despite willingness."
+  },
+  {
+    "id": "GRAM-EXP-0029",
+    "canonical": "-다손 치더라도",
+    "aliases": [
+      "다손 치더라도"
+    ],
+    "category": "expanded_grammar",
+    "meanings_en": [
+      "even assuming that"
+    ],
+    "langsnack_level": null,
+    "topik_level_estimate": 6,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "다손 치더라도"
+    ],
+    "examples": [
+      {
+        "ko": "그 말이 사실이다손 치더라도 결론은 달라지지 않아요.",
+        "en": "Even assuming that is true, the conclusion doesn't change."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_explanation_example_editorial_review_pending",
+    "usage_note_en": "Formal concession based on a hypothetical assumption."
+  },
+  {
+    "id": "GRAM-EXP-0030",
+    "canonical": "-기 무섭게",
+    "aliases": [
+      "기 무섭게"
+    ],
+    "category": "expanded_grammar",
+    "meanings_en": [
+      "as soon as"
+    ],
+    "langsnack_level": null,
+    "topik_level_estimate": 5,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "기 무섭게"
+    ],
+    "examples": [
+      {
+        "ko": "수업이 끝나기 무섭게 학생들이 나갔어요.",
+        "en": "The students left as soon as class ended."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_explanation_example_editorial_review_pending",
+    "usage_note_en": "Emphasizes immediate succession."
+  },
+  {
+    "id": "GRAM-EXP-0031",
+    "canonical": "-다시피",
+    "aliases": [
+      "다시피"
+    ],
+    "category": "expanded_grammar",
+    "meanings_en": [
+      "as you know; as you can see"
+    ],
+    "langsnack_level": null,
+    "topik_level_estimate": 4,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "다시피"
+    ],
+    "examples": [
+      {
+        "ko": "아시다시피 일정이 변경됐어요.",
+        "en": "As you know, the schedule has changed."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_explanation_example_editorial_review_pending",
+    "usage_note_en": "Refers to information assumed familiar to the listener."
+  },
+  {
+    "id": "GRAM-EXP-0032",
+    "canonical": "-다가",
+    "aliases": [
+      "다가"
+    ],
+    "category": "expanded_grammar",
+    "meanings_en": [
+      "while doing; then"
+    ],
+    "langsnack_level": null,
+    "topik_level_estimate": 2,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "다가"
+    ],
+    "examples": [
+      {
+        "ko": "책을 읽다가 잠이 들었어요.",
+        "en": "I fell asleep while reading a book."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_explanation_example_editorial_review_pending",
+    "usage_note_en": "Shows interruption or change during an action."
+  },
+  {
+    "id": "GRAM-EXP-0033",
+    "canonical": "-(으)ㄴ/는 데 비해",
+    "aliases": [
+      "(으)ㄴ/는 데 비해"
+    ],
+    "category": "expanded_grammar",
+    "meanings_en": [
+      "compared with; whereas"
+    ],
+    "langsnack_level": null,
+    "topik_level_estimate": 4,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "(으)ㄴ/는 데 비해"
+    ],
+    "examples": [
+      {
+        "ko": "작년에 비해 올해는 매출이 늘었어요.",
+        "en": "Sales increased this year compared with last year."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_explanation_example_editorial_review_pending",
+    "usage_note_en": "Compares one situation with another."
+  },
+  {
+    "id": "GRAM-EXP-0034",
+    "canonical": "-다시 말해",
+    "aliases": [
+      "다시 말해"
+    ],
+    "category": "expanded_grammar",
+    "meanings_en": [
+      "in other words"
+    ],
+    "langsnack_level": null,
+    "topik_level_estimate": 3,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "다시 말해"
+    ],
+    "examples": [
+      {
+        "ko": "다시 말해, 지금 결정해야 한다는 뜻이에요.",
+        "en": "In other words, it means we need to decide now."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_explanation_example_editorial_review_pending",
+    "usage_note_en": "Rephrases an earlier statement for clarity."
+  },
+  {
+    "id": "GRAM-EXP-0035",
+    "canonical": "-에 비추어",
+    "aliases": [
+      "에 비추어"
+    ],
+    "category": "expanded_grammar",
+    "meanings_en": [
+      "in light of; considering"
+    ],
+    "langsnack_level": null,
+    "topik_level_estimate": 5,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "에 비추어"
+    ],
+    "examples": [
+      {
+        "ko": "최근 자료에 비추어 판단해야 합니다.",
+        "en": "We must judge in light of recent data."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_explanation_example_editorial_review_pending",
+    "usage_note_en": "Formal expression of a basis for judgment."
+  },
+  {
+    "id": "GRAM-EXP-0036",
+    "canonical": "-에 따라",
+    "aliases": [
+      "에 따라"
+    ],
+    "category": "expanded_grammar",
+    "meanings_en": [
+      "according to; depending on"
+    ],
+    "langsnack_level": null,
+    "topik_level_estimate": 3,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "에 따라"
+    ],
+    "examples": [
+      {
+        "ko": "상황에 따라 계획을 바꿀 수 있어요.",
+        "en": "We can change the plan depending on the situation."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_explanation_example_editorial_review_pending",
+    "usage_note_en": "Indicates variation or conformity to a standard."
+  },
+  {
+    "id": "GRAM-EXP-0037",
+    "canonical": "-에 반해",
+    "aliases": [
+      "에 반해"
+    ],
+    "category": "expanded_grammar",
+    "meanings_en": [
+      "in contrast to"
+    ],
+    "langsnack_level": null,
+    "topik_level_estimate": 4,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "에 반해"
+    ],
+    "examples": [
+      {
+        "ko": "예상에 반해 결과가 좋았어요.",
+        "en": "Contrary to expectations, the result was good."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_explanation_example_editorial_review_pending",
+    "usage_note_en": "Marks contrast with an expectation or comparison."
+  },
+  {
+    "id": "GRAM-EXP-0038",
+    "canonical": "-에 관해",
+    "aliases": [
+      "에 관해"
+    ],
+    "category": "expanded_grammar",
+    "meanings_en": [
+      "about; concerning"
+    ],
+    "langsnack_level": null,
+    "topik_level_estimate": 3,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "에 관해"
+    ],
+    "examples": [
+      {
+        "ko": "환경 문제에 관해 이야기했어요.",
+        "en": "We talked about environmental issues."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_explanation_example_editorial_review_pending",
+    "usage_note_en": "Introduces the topic of discussion."
+  },
+  {
+    "id": "GRAM-EXP-0039",
+    "canonical": "-을/를 비롯해",
+    "aliases": [
+      "을/를 비롯해"
+    ],
+    "category": "expanded_grammar",
+    "meanings_en": [
+      "including; starting with"
+    ],
+    "langsnack_level": null,
+    "topik_level_estimate": 4,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "을/를 비롯해"
+    ],
+    "examples": [
+      {
+        "ko": "서울을 비롯해 여러 도시에서 행사가 열려요.",
+        "en": "Events are held in several cities, including Seoul."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_explanation_example_editorial_review_pending",
+    "usage_note_en": "Introduces a representative example within a larger group."
+  },
+  {
+    "id": "GRAM-EXP-0040",
+    "canonical": "-을/를 통해",
+    "aliases": [
+      "을/를 통해"
+    ],
+    "category": "expanded_grammar",
+    "meanings_en": [
+      "through; by means of"
+    ],
+    "langsnack_level": null,
+    "topik_level_estimate": 3,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "을/를 통해"
+    ],
+    "examples": [
+      {
+        "ko": "독서를 통해 새로운 표현을 배웠어요.",
+        "en": "I learned new expressions through reading."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_explanation_example_editorial_review_pending",
+    "usage_note_en": "Indicates a means or channel."
+  },
+  {
+    "id": "GRAM-EXP-0041",
+    "canonical": "-에 불과하다",
+    "aliases": [
+      "에 불과하다"
+    ],
+    "category": "expanded_grammar",
+    "meanings_en": [
+      "be nothing more than"
+    ],
+    "langsnack_level": null,
+    "topik_level_estimate": 5,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "에 불과하다"
+    ],
+    "examples": [
+      {
+        "ko": "그것은 전체의 일부에 불과해요.",
+        "en": "That is only a small part of the whole."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_explanation_example_editorial_review_pending",
+    "usage_note_en": "Restricts a quantity or fact to something minor."
+  },
+  {
+    "id": "GRAM-EXP-0042",
+    "canonical": "-에 지나지 않다",
+    "aliases": [
+      "에 지나지 않다"
+    ],
+    "category": "expanded_grammar",
+    "meanings_en": [
+      "be no more than"
+    ],
+    "langsnack_level": null,
+    "topik_level_estimate": 5,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "에 지나지 않다"
+    ],
+    "examples": [
+      {
+        "ko": "이 수치는 추정치에 지나지 않아요.",
+        "en": "This figure is no more than an estimate."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_explanation_example_editorial_review_pending",
+    "usage_note_en": "Formal expression minimizing the significance of something."
+  },
+  {
+    "id": "GRAM-EXP-0043",
+    "canonical": "-에 앞서",
+    "aliases": [
+      "에 앞서"
+    ],
+    "category": "expanded_grammar",
+    "meanings_en": [
+      "before; prior to"
+    ],
+    "langsnack_level": null,
+    "topik_level_estimate": 4,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "에 앞서"
+    ],
+    "examples": [
+      {
+        "ko": "발표에 앞서 감사의 말씀을 드립니다.",
+        "en": "Before the presentation, I'd like to express my thanks."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_explanation_example_editorial_review_pending",
+    "usage_note_en": "Formal expression for something preceding an event."
+  },
+  {
+    "id": "GRAM-EXP-0044",
+    "canonical": "-을/를 계기로",
+    "aliases": [
+      "을/를 계기로"
+    ],
+    "category": "expanded_grammar",
+    "meanings_en": [
+      "on the occasion of; prompted by"
+    ],
+    "langsnack_level": null,
+    "topik_level_estimate": 4,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "을/를 계기로"
+    ],
+    "examples": [
+      {
+        "ko": "이사를 계기로 생활 습관을 바꿨어요.",
+        "en": "Moving house prompted me to change my habits."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_explanation_example_editorial_review_pending",
+    "usage_note_en": "Describes an event as a turning point."
+  },
+  {
+    "id": "GRAM-EXP-0045",
+    "canonical": "-에 걸쳐",
+    "aliases": [
+      "에 걸쳐"
+    ],
+    "category": "expanded_grammar",
+    "meanings_en": [
+      "over; spanning"
+    ],
+    "langsnack_level": null,
+    "topik_level_estimate": 5,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "에 걸쳐"
+    ],
+    "examples": [
+      {
+        "ko": "조사는 세 달에 걸쳐 진행됐어요.",
+        "en": "The survey took place over three months."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_explanation_example_editorial_review_pending",
+    "usage_note_en": "Indicates duration or extent across a period or area."
+  },
+  {
+    "id": "GRAM-EXP-0046",
+    "canonical": "-에 이르다",
+    "aliases": [
+      "에 이르다"
+    ],
+    "category": "expanded_grammar",
+    "meanings_en": [
+      "reach; amount to"
+    ],
+    "langsnack_level": null,
+    "topik_level_estimate": 5,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "에 이르다"
+    ],
+    "examples": [
+      {
+        "ko": "참가자 수가 천 명에 이르렀어요.",
+        "en": "The number of participants reached one thousand."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_explanation_example_editorial_review_pending",
+    "usage_note_en": "Formal expression for reaching a point or amount."
+  },
+  {
+    "id": "GRAM-EXP-0047",
+    "canonical": "-에 해당하다",
+    "aliases": [
+      "에 해당하다"
+    ],
+    "category": "expanded_grammar",
+    "meanings_en": [
+      "correspond to; qualify as"
+    ],
+    "langsnack_level": null,
+    "topik_level_estimate": 4,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "에 해당하다"
+    ],
+    "examples": [
+      {
+        "ko": "이 금액은 전체 예산의 절반에 해당해요.",
+        "en": "This amount corresponds to half the total budget."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_explanation_example_editorial_review_pending",
+    "usage_note_en": "States equivalence or classification."
+  },
+  {
+    "id": "GRAM-EXP-0048",
+    "canonical": "-을/를 막론하고",
+    "aliases": [
+      "을/를 막론하고"
+    ],
+    "category": "expanded_grammar",
+    "meanings_en": [
+      "regardless of"
+    ],
+    "langsnack_level": null,
+    "topik_level_estimate": 5,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "을/를 막론하고"
+    ],
+    "examples": [
+      {
+        "ko": "나이를 막론하고 누구나 참여할 수 있어요.",
+        "en": "Anyone can participate regardless of age."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_explanation_example_editorial_review_pending",
+    "usage_note_en": "Expresses that a distinction does not matter."
+  },
+  {
+    "id": "GRAM-EXP-0049",
+    "canonical": "-을/를 무릅쓰고",
+    "aliases": [
+      "을/를 무릅쓰고"
+    ],
+    "category": "expanded_grammar",
+    "meanings_en": [
+      "despite; at the risk of"
+    ],
+    "langsnack_level": null,
+    "topik_level_estimate": 5,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "을/를 무릅쓰고"
+    ],
+    "examples": [
+      {
+        "ko": "위험을 무릅쓰고 사람들을 구했어요.",
+        "en": "They rescued people despite the danger."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_explanation_example_editorial_review_pending",
+    "usage_note_en": "Describes acting despite a significant risk."
+  },
+  {
+    "id": "GRAM-EXP-0050",
+    "canonical": "-을/를 토대로",
+    "aliases": [
+      "을/를 토대로"
+    ],
+    "category": "expanded_grammar",
+    "meanings_en": [
+      "based on"
+    ],
+    "langsnack_level": null,
+    "topik_level_estimate": 5,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "을/를 토대로"
+    ],
+    "examples": [
+      {
+        "ko": "인터뷰 결과를 토대로 보고서를 썼어요.",
+        "en": "I wrote the report based on the interview results."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_explanation_example_editorial_review_pending",
+    "usage_note_en": "Formal expression for an evidential foundation."
+  },
+  {
+    "id": "GRAM-EXP-0051",
+    "canonical": "-을/를 고려하면",
+    "aliases": [
+      "을/를 고려하면"
+    ],
+    "category": "expanded_grammar",
+    "meanings_en": [
+      "considering"
+    ],
+    "langsnack_level": null,
+    "topik_level_estimate": 4,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "을/를 고려하면"
+    ],
+    "examples": [
+      {
+        "ko": "비용을 고려하면 이 방법이 나아요.",
+        "en": "Considering the cost, this method is better."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_explanation_example_editorial_review_pending",
+    "usage_note_en": "Introduces a factor used in a judgment."
+  },
+  {
+    "id": "GRAM-EXP-0052",
+    "canonical": "-을/를 둘러싸고",
+    "aliases": [
+      "을/를 둘러싸고"
+    ],
+    "category": "expanded_grammar",
+    "meanings_en": [
+      "surrounding; over"
+    ],
+    "langsnack_level": null,
+    "topik_level_estimate": 5,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "을/를 둘러싸고"
+    ],
+    "examples": [
+      {
+        "ko": "새 정책을 둘러싸고 논쟁이 이어지고 있어요.",
+        "en": "Debate continues over the new policy."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_explanation_example_editorial_review_pending",
+    "usage_note_en": "Introduces an issue at the center of discussion or conflict."
+  },
+  {
+    "id": "GRAM-EXP-0053",
+    "canonical": "-을/를 감안하면",
+    "aliases": [
+      "을/를 감안하면"
+    ],
+    "category": "expanded_grammar",
+    "meanings_en": [
+      "taking into account"
+    ],
+    "langsnack_level": null,
+    "topik_level_estimate": 5,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "을/를 감안하면"
+    ],
+    "examples": [
+      {
+        "ko": "날씨를 감안하면 일정을 바꾸는 게 좋겠어요.",
+        "en": "Taking the weather into account, it would be better to change the schedule."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_explanation_example_editorial_review_pending",
+    "usage_note_en": "Formal expression for considering a circumstance."
+  },
+  {
+    "id": "GRAM-EXP-0054",
+    "canonical": "-을/를 전제로",
+    "aliases": [
+      "을/를 전제로"
+    ],
+    "category": "expanded_grammar",
+    "meanings_en": [
+      "on the assumption that"
+    ],
+    "langsnack_level": null,
+    "topik_level_estimate": 5,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "을/를 전제로"
+    ],
+    "examples": [
+      {
+        "ko": "안전을 전제로 계획을 세웠어요.",
+        "en": "We made the plan on the assumption that safety comes first."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_explanation_example_editorial_review_pending",
+    "usage_note_en": "Establishes an underlying condition or assumption."
+  },
+  {
+    "id": "GRAM-EXP-0055",
+    "canonical": "-는 데 그치다",
+    "aliases": [
+      "는 데 그치다"
+    ],
+    "category": "expanded_grammar",
+    "meanings_en": [
+      "stop at; be limited to"
+    ],
+    "langsnack_level": null,
+    "topik_level_estimate": 5,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "는 데 그치다"
+    ],
+    "examples": [
+      {
+        "ko": "논의가 의견 교환에 그쳤어요.",
+        "en": "The discussion was limited to exchanging opinions."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_explanation_example_editorial_review_pending",
+    "usage_note_en": "Indicates that something did not progress beyond a stage."
+  },
+  {
+    "id": "GRAM-EXP-0056",
+    "canonical": "-는 데 주력하다",
+    "aliases": [
+      "는 데 주력하다"
+    ],
+    "category": "expanded_grammar",
+    "meanings_en": [
+      "focus efforts on"
+    ],
+    "langsnack_level": null,
+    "topik_level_estimate": 5,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "는 데 주력하다"
+    ],
+    "examples": [
+      {
+        "ko": "회사는 품질을 높이는 데 주력하고 있어요.",
+        "en": "The company is focusing its efforts on improving quality."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_explanation_example_editorial_review_pending",
+    "usage_note_en": "Formal expression for concentrating effort on a goal."
+  },
+  {
+    "id": "GRAM-EXP-0057",
+    "canonical": "-는 데 기여하다",
+    "aliases": [
+      "는 데 기여하다"
+    ],
+    "category": "expanded_grammar",
+    "meanings_en": [
+      "contribute to"
+    ],
+    "langsnack_level": null,
+    "topik_level_estimate": 5,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "는 데 기여하다"
+    ],
+    "examples": [
+      {
+        "ko": "이 정책은 비용을 줄이는 데 기여했어요.",
+        "en": "This policy contributed to reducing costs."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_explanation_example_editorial_review_pending",
+    "usage_note_en": "Formal expression of making a contribution."
+  },
+  {
+    "id": "GRAM-EXP-0058",
+    "canonical": "-을/를 도모하다",
+    "aliases": [
+      "을/를 도모하다"
+    ],
+    "category": "expanded_grammar",
+    "meanings_en": [
+      "seek; promote"
+    ],
+    "langsnack_level": null,
+    "topik_level_estimate": 5,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "을/를 도모하다"
+    ],
+    "examples": [
+      {
+        "ko": "지역 경제의 발전을 도모해야 해요.",
+        "en": "We should promote the development of the local economy."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_explanation_example_editorial_review_pending",
+    "usage_note_en": "Formal expression for pursuing a desirable outcome."
+  },
+  {
+    "id": "GRAM-EXP-0059",
+    "canonical": "-을/를 초래하다",
+    "aliases": [
+      "을/를 초래하다"
+    ],
+    "category": "expanded_grammar",
+    "meanings_en": [
+      "cause; bring about"
+    ],
+    "langsnack_level": null,
+    "topik_level_estimate": 5,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "을/를 초래하다"
+    ],
+    "examples": [
+      {
+        "ko": "무리한 개발은 환경 문제를 초래할 수 있어요.",
+        "en": "Excessive development can cause environmental problems."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_explanation_example_editorial_review_pending",
+    "usage_note_en": "Formal expression for causing an often negative result."
   }
 ]

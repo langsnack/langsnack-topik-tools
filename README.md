@@ -1,4 +1,3 @@
-LANGSNACK TOPIK Tools v11
+# LANGSNACK TOPIK Tools v12
 
-Upload all files in this ZIP to your GitHub Pages repository root. Preserve CNAME.
-Grammar Finder includes a photographed-book index expansion. See REFERENCE-INDEX-STATUS.md for limits.
+Grammar database expanded to 330 entries. See EXPANSION-REPORT.md for audit and review limitations. Upload all root files to GitHub Pages.

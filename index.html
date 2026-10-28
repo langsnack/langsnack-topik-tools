@@ -307,47 +307,60 @@ const READING_WEIGHTS={vocabulary:.45,grammar:.25,sentence_complexity:.20,formal
 function calibratedReading(text){
  const clean=text.trim(),tokens=koreanTokens(clean);
  if(!tokens.length)return null;
- const unique=[...new Set(tokens)],matches=unique.map(token=>({token,entry:matchVocabulary(token)}));
+ const unique=[...new Set(tokens)];
+ const matches=unique.map(token=>({token,entry:matchVocabulary(token)}));
  const known=matches.filter(x=>x.entry),coverage=known.length/Math.max(1,unique.length);
  const levels=known.map(x=>Number(x.entry.topik_level_estimate||x.entry.langsnack_level||0)).filter(x=>x>=1&&x<=6);
- const advanced=readingOccurrences(clean,READING_ADVANCED);
- const intermediate=readingOccurrences(clean,READING_INTERMEDIATE);
- const ag=readingOccurrences(clean,READING_ADVANCED_GRAMMAR);
- const ig=readingOccurrences(clean,READING_INTERMEDIATE_GRAMMAR);
- const ss=sentenceStats(clean),formal=(clean.match(/(?:습니다|습니까|한다|된다|있다|이다|하였다|되었다|요구된다)(?:[.!?。！？\s]|$)/g)||[]).length;
- const nominal=(clean.match(/(?:성|화|적|률|율|력|체계|구조|관점|측면|차원|기반|정책|제도|효과|현상)/g)||[]).length;
- // Normalize by passage length. Saturate evidence instead of summing unlimited hits.
+ const ss=sentenceStats(clean);
+ // v14: distinct lexical concepts and clause structures, not raw keyword totals.
+ // These are editorial difficulty cues, NOT official TOPIK word classifications.
+ const academic=["제도적","구조적","불균형","형평성","정당성","실효성","이분법적","상충","도출","공감대","투명성","책임성","이해관계","집행","첨예","합리성","개혁","장기적","축적","근거","검증","신뢰성","맥락","모순","비판적","의사 결정","종합적","유통","배척","수용","정보 활용","생산성","격차","기반 시설","접근성","균형 발전","정책","공공서비스","불평등","영향","확산","원격 근무","디지털","산업","혁신","노동 시장","경쟁력","배분","안전망","효율성","사회적 합의","구성원","재편","심화","종합적으로","논의","관점","추진","정책적","전반","변동","현상","검토","요구","수반","초래","제시된","판단 능력"];
+ const mid=["공공도서관","문화 활동","주민","강좌","독서 모임","운영","프로그램","교류","지역","시설","특성","방안","음식물 쓰레기","식재료","보관","협조","절약","적절","구입","대여","이용 조건","고려","활용","자원","비용","경제적","선택","실천","변화","목적","기간","최근","환경","도움","방법","중요","참여","마련","문제","해결","필요","상황","경우"];
+ function uniqueSignals(words){return [...new Set(words.filter(w=>clean.includes(w)))];}
+ const academicHits=uniqueSignals(academic),midHits=uniqueSignals(mid);
+ const advancedGrammar=[/는\s*데\s*그치지\s*않/g,/에\s*국한되지\s*않/g,/을\s*뿐만\s*아니라/g,/기보다/g,/에\s*따른/g,/에\s*대한/g,/을\s*비롯/g,/ㄹ지언정/g,/느니만큼/g,/다시피/g,/기에\s*앞서/g,/으?ㄹ\s*수밖에\s*없/g,/다는\s*점/g,/에\s*초점을\s*맞추/g,/과\s*무관하게/g,/에\s*그치지\s*않/g];
+ const midGrammar=[/뿐만\s*아니라/g,/에\s*따라/g,/을\s*위해/g,/기\s*위해/g,/도록/g,/더라도/g,/을\s*경우/g,/는\s*경우/g,/기\s*전에/g,/을\s*때/g,/기보다/g,/다면/g,/면서/g,/지만/g,/는데/g,/에\s*따르면/g,/는\s*반면/g,/을\s*수\s*있/g,/기\s*때문/g];
+ const ag=readingOccurrences(clean,advancedGrammar),ig=readingOccurrences(clean,midGrammar);
+ const sentenceParts=clean.split(/[.!?。！？\n]+/).map(s=>s.trim()).filter(Boolean);
+ const longSentences=sentenceParts.filter(s=>koreanTokens(s).length>=15).length;
+ const clauseCues=(clean.match(/(?:면서|으나|지만|는데|으며|으므로|으면서|더라도|기보다|뿐만\s*아니라|에\s*따라|을\s*경우|는\s*경우|기\s*위해|에\s*대한|는\s*데|에\s*있어|함으로써|ㄹ수록|일수록)/g)||[]).length;
+ const nominal=(clean.match(/(?:성|화|적|률|율|력|체계|구조|관점|측면|차원|기반|정책|제도|효과|현상|방안|과정|사회|문제|정보|근거|판단)/g)||[]).length;
+ const formal=(clean.match(/(?:한다|된다|있다|이다|하였다|되었다|필요하다|요구된다|중요하다|수\s*있다)(?:[.!?。！？\s]|$)/g)||[]).length;
  const per100=100/Math.max(45,tokens.length);
- const midDensity=Math.min(1,intermediate.labels.length*per100/8);
- const advancedDensity=Math.min(1,advanced.labels.length*per100/5);
- const intermediateGrammar=Math.min(1,ig.labels.length*per100/4);
- const advancedGrammar=Math.min(1,ag.labels.length*per100/3);
- const highRatio=levels.length>=8?levels.filter(n=>n>=5).length/levels.length:0;
- const vocabScore=Math.min(6,1.4+1.4*midDensity+2.6*advancedDensity+Math.min(.6,highRatio*1.2));
- const grammarScore=Math.min(6,1.5+1.6*intermediateGrammar+2.5*advancedGrammar);
- const structureScore=Math.min(6,1.4+Math.max(0,ss.avg-5)*.20+Math.min(.6,ss.connectorHits/Math.max(1,ss.sentences)*.22));
- const formalityScore=Math.min(6,1.5+Math.min(1.1,formal/Math.max(1,ss.sentences)*.75)+Math.min(1.1,nominal/Math.max(1,tokens.length)*7));
+ const academicDensity=Math.min(1,academicHits.length*per100/11);
+ const midDensity=Math.min(1,midHits.length*per100/11);
+ const advancedGrammarDensity=Math.min(1,ag.labels.length*per100/4);
+ const midGrammarDensity=Math.min(1,ig.labels.length*per100/6);
+ const upperKnown=levels.length>=8?levels.filter(x=>x>=4).length/levels.length:0;
+ const vocabScore=Math.min(6,1.2+1.1*midDensity+3.5*academicDensity+Math.min(.35,upperKnown*.7));
+ const grammarScore=Math.min(6,1.25+1.5*midGrammarDensity+2.9*advancedGrammarDensity);
+ const structureScore=Math.min(6,1.3+Math.min(2.3,Math.max(0,ss.avg-5)*.25)+Math.min(1.4,clauseCues/Math.max(1,ss.sentences)*.45)+Math.min(.6,longSentences/Math.max(1,ss.sentences)*.6));
+ const formalityScore=Math.min(6,1.2+Math.min(1.4,formal/Math.max(1,ss.sentences)*.8)+Math.min(2.1,nominal/Math.max(1,tokens.length)*9));
  const componentScores={vocabulary:vocabScore,grammar:grammarScore,sentence_complexity:structureScore,formality:formalityScore};
- let weighted=Object.keys(READING_WEIGHTS).reduce((sum,key)=>sum+READING_WEIGHTS[key]*componentScores[key],0);
- // Advanced levels need independent lexical AND structural evidence; formal tone alone is insufficient.
- const hasAdvancedEvidence=advanced.labels.length>=2 || (ag.labels.length>=1 && advanced.labels.length>=1);
- if(!hasAdvancedEvidence)weighted=Math.min(weighted,4.44);
- if(tokens.length<12)weighted=Math.min(weighted,3.4);
- else if(tokens.length<22&&!hasAdvancedEvidence)weighted=Math.min(weighted,4.4);
+ const weights={vocabulary:.40,grammar:.30,sentence_complexity:.20,formality:.10};
+ let weighted=Object.keys(weights).reduce((sum,key)=>sum+weights[key]*componentScores[key],0);
+ // Recognize sustained abstract argumentation; don't penalize missing database matches.
+ const sustainedAcademic=academicHits.length>=5 && (ss.avg>=11 || clauseCues>=3);
+ const denseAcademic=academicHits.length>=9 && ss.avg>=15 && clauseCues>=4;
+ const ordinaryIntermediate=midHits.length>=4 && (ig.labels.length>=1 || clauseCues>=2);
+ if(ordinaryIntermediate)weighted=Math.max(weighted,3.52);
+ if(sustainedAcademic)weighted=Math.max(weighted,4.58);
+ if(denseAcademic)weighted=Math.max(weighted,5.55);
+ // Short passages have insufficient evidence for confident advanced levels.
+ if(tokens.length<12)weighted=Math.min(weighted,3.3);
+ else if(tokens.length<22&&!sustainedAcademic)weighted=Math.min(weighted,4.4);
  const level=Math.max(1,Math.min(6,Math.round(weighted)));
- const evidence=intermediate.labels.length+advanced.labels.length+ig.labels.length+ag.labels.length;
- const confidence=tokens.length>=90&&evidence>=6?"high":tokens.length>=35&&evidence>=3?"medium":"low";
+ const evidence=academicHits.length+midHits.length+ig.labels.length+ag.labels.length;
+ const confidence=tokens.length>=90&&evidence>=8?"high":tokens.length>=35&&evidence>=4?"medium":"low";
  const reasons=[];
- if(ag.labels.length)reasons.push({type:"grammar",label:"Advanced constructions",items:ag.labels.slice(0,4)});
- if(advanced.labels.length)reasons.push({type:"vocabulary",label:"Abstract / academic expressions",items:advanced.labels.slice(0,5)});
- if(ig.labels.length)reasons.push({type:"grammar",label:"Intermediate constructions",items:ig.labels.slice(0,4)});
- if(intermediate.labels.length)reasons.push({type:"vocabulary",label:"Intermediate expressions",items:intermediate.labels.slice(0,5)});
- if(ss.avg>=10)reasons.push({type:"structure",label:"Longer sentences",items:[Math.round(ss.avg)+" words per sentence (average)"]});
- reasons.push({type:"method",label:"Component scores (1–6; provisional)",items:Object.entries(componentScores).map(([key,value])=>key.replace('_',' ')+": "+value.toFixed(1))});
- return {level,wordCount:tokens.length,uniqueWords:unique.length,coverage,grammarCount:ag.count+ig.count,confidence,reasons,
- scores:{heuristic:weighted,components:componentScores,weights:READING_WEIGHTS,advancedSignals:advanced.labels.length,intermediateSignals:intermediate.labels.length},grammarHits:[]};
+ if(academicHits.length)reasons.push({type:"vocabulary",label:"Academic / abstract expressions (editorial cues)",items:academicHits.slice(0,8)});
+ if(midHits.length)reasons.push({type:"vocabulary",label:"Intermediate topic expressions",items:midHits.slice(0,6)});
+ if(ag.labels.length)reasons.push({type:"grammar",label:"Complex constructions",items:ag.labels.slice(0,5)});
+ if(ig.labels.length)reasons.push({type:"grammar",label:"Connected constructions",items:ig.labels.slice(0,5)});
+ if(ss.avg>=10)reasons.push({type:"structure",label:"Sentence structure",items:[Math.round(ss.avg)+" Korean tokens per sentence (average)",clauseCues+" connective / clause cues"]});
+ reasons.push({type:"method",label:"Component scores (1–6; experimental)",items:Object.entries(componentScores).map(([key,value])=>key.replaceAll('_',' ')+": "+value.toFixed(1))});
+ return {level,wordCount:tokens.length,uniqueWords:unique.length,coverage,grammarCount:ag.count+ig.count,confidence,reasons,scores:{heuristic:weighted,components:componentScores,weights,advancedSignals:academicHits.length,intermediateSignals:midHits.length},grammarHits:[]};
 }
-
 function estimateDetailed(text){return calibratedReading(text);}
 
 function showLevel(result){

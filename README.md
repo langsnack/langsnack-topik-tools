@@ -1,1 +1,1 @@
-LANGSNACK TOPIK Tools v13 — reading scoring patch. Deploy all files to GitHub Pages root. See READING-V13-CHANGELOG.md.
+LANGSNACK TOPIK Tools v14 beta. Deploy all root files to GitHub Pages. See READING-V14-CHANGELOG.md.

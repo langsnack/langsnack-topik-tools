@@ -1,15 +1,19 @@
 {
-  "version": "0.3.0-beta",
+  "version": "15.0.0-beta",
+  "engine": "reading-engine.js",
+  "thresholds": [
+    1.55,
+    2.45,
+    3.35,
+    4.35,
+    5.45
+  ],
   "weights": {
-    "vocabulary": 0.4,
-    "grammar": 0.3,
-    "sentence_complexity": 0.2,
-    "formality": 0.1
+    "vocabulary": 0.38,
+    "grammar": 0.25,
+    "structure": 0.22,
+    "register": 0.15
   },
-  "status": "experimental; hardcoded mirror in index.html",
-  "limitations": [
-    "Editorial lexical cues are not official TOPIK levels",
-    "Not calibrated on independently rated corpus",
-    "Confidence measures evidence amount, not correctness probability"
-  ]
+  "status": "experimental, not validated on official TOPIK grade corpus",
+  "note": "Source of truth is reading-engine.js; thresholds mirrored here for auditing."
 }

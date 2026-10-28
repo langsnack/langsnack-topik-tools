@@ -1,5 +1,5 @@
 {
-  "version": "0.1.0",
+  "version": "0.2.0",
   "minimum_korean_words": 30,
   "confidence_thresholds": {
     "low": [
@@ -22,7 +22,8 @@
     "formality": 0.1
   },
   "notes": [
-    "These weights are provisional and must be calibrated against graded passages.",
-    "Vocabulary entries marked imported_needs_review should not yet be treated as final six-level assignments."
+    "Weights now match READING_WEIGHTS in index.html. This is a transparent bounded heuristic, not a trained or officially validated TOPIK classifier.",
+    "Level 5+ requires independent advanced lexical or grammar evidence.",
+    "Vocabulary imported_needs_review requires manual validation."
   ]
 }

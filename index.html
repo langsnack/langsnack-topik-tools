@@ -282,11 +282,12 @@ const READING_INTERMEDIATE=[
 ];
 const READING_ADVANCED_GRAMMAR=[
  /(?:기는커녕|ㄹ지언정|을지언정|느니만큼|다시피|기\s*십상이다|을\s*따름이다|ㄹ\s*따름이다)/g,
- /(?:는\s*반면|은\s*반면|ㄴ\s*반면|기보다는|뿐만\s*아니라|으로\s*인해|로\s*인해)/g,
- /(?:는\s*바|은\s*바|ㄴ\s*바|에\s*따라|는\s*한편|에\s*있어|을\s*비롯하여)/g,
+ /(?:으로\s*인해|로\s*인해)/g,
+ /(?:는\s*바|은\s*바|ㄴ\s*바|에\s*있어|을\s*비롯하여)/g,
  /(?:게\s*마련이다|기\s*나름이다|을\s*수밖에\s*없다|ㄹ\s*수밖에\s*없다)/g
 ];
 const READING_INTERMEDIATE_GRAMMAR=[
+ /(?:는\s*반면|은\s*반면|ㄴ\s*반면|기보다는|뿐만\s*아니라|에\s*따라|는\s*한편)/g,
  /(?:기\s*위해서는|기\s*위해|기\s*때문에|기\s*전에|는\s*것이|는\s*것도)/g,
  /(?:려고|으려고|지만|는데|더라도|도록|으면|다면|면서|자마자)/g,
  /(?:고\s*있다|고\s*있어요|게\s*되다|게\s*된다|게\s*되었다|을\s*수\s*있다|ㄹ\s*수\s*있다)/g
@@ -300,53 +301,51 @@ function readingOccurrences(text,patterns){
  }
  return {count,labels:[...new Set(labels)]};
 }
+// v13: component-normalized estimate. Each family has a bounded contribution,
+// so a common word repeated throughout a passage cannot masquerade as advanced prose.
+const READING_WEIGHTS={vocabulary:.45,grammar:.25,sentence_complexity:.20,formality:.10};
 function calibratedReading(text){
  const clean=text.trim(),tokens=koreanTokens(clean);
  if(!tokens.length)return null;
  const unique=[...new Set(tokens)],matches=unique.map(token=>({token,entry:matchVocabulary(token)}));
- const known=matches.filter(x=>x.entry);
- const coverage=known.length/Math.max(1,unique.length);
- const knownLevels=known.map(x=>Number(x.entry.topik_level_estimate||x.entry.langsnack_level||1)).filter(n=>n>=1&&n<=6);
- const highKnown=knownLevels.filter(n=>n>=4).length;
+ const known=matches.filter(x=>x.entry),coverage=known.length/Math.max(1,unique.length);
+ const levels=known.map(x=>Number(x.entry.topik_level_estimate||x.entry.langsnack_level||0)).filter(x=>x>=1&&x<=6);
  const advanced=readingOccurrences(clean,READING_ADVANCED);
  const intermediate=readingOccurrences(clean,READING_INTERMEDIATE);
  const ag=readingOccurrences(clean,READING_ADVANCED_GRAMMAR);
  const ig=readingOccurrences(clean,READING_INTERMEDIATE_GRAMMAR);
- const ss=sentenceStats(clean);
- const hangulChars=(clean.match(/[가-힣]/g)||[]).length;
- const avgTokenLength=hangulChars/Math.max(1,tokens.length);
- const longer=tokens.filter(w=>w.length>=5).length/Math.max(1,tokens.length);
- const formal=(clean.match(/(?:습니다|습니까|한다|된다|있다|이다|하였다|되었다|요구된다)(?:[.!?。！？\s]|$)/g)||[]).length;
+ const ss=sentenceStats(clean),formal=(clean.match(/(?:습니다|습니까|한다|된다|있다|이다|하였다|되었다|요구된다)(?:[.!?。！？\s]|$)/g)||[]).length;
  const nominal=(clean.match(/(?:성|화|적|률|율|력|체계|구조|관점|측면|차원|기반|정책|제도|효과|현상)/g)||[]).length;
- // Independent evidence matters more than a small, beginner-heavy word list.
- let score=1.20;
- score+=Math.min(1.40,intermediate.count*.17);
- score+=Math.min(1.60,advanced.count*.22);
- score+=Math.min(.90,ig.count*.22);
- score+=Math.min(1.25,ag.count*.32);
- score+=Math.min(.72,Math.max(0,ss.avg-5)*.065);
- score+=Math.min(.45,ss.connectorHits/Math.max(2,ss.sentences)*.12);
- score+=Math.min(.55,nominal/Math.max(1,tokens.length)*1.6);
- score+=Math.min(.42,longer*1.6);
- score+=Math.min(.24,Math.max(0,avgTokenLength-2.7)*.22);
- if(formal>=2 && (intermediate.count+advanced.count>=3))score+=.18;
- if(highKnown>=2)score+=Math.min(.35,highKnown*.07);
- // For very short excerpts, avoid false precision in the top bands.
- if(tokens.length<12)score=Math.min(score,3.4);
- else if(tokens.length<22 && advanced.count<3)score=Math.min(score,4.4);
- const level=Math.max(1,Math.min(6,Math.round(score)));
- const evidence=intermediate.count+advanced.count+ig.count+ag.count;
+ // Normalize by passage length. Saturate evidence instead of summing unlimited hits.
+ const per100=100/Math.max(45,tokens.length);
+ const midDensity=Math.min(1,intermediate.labels.length*per100/8);
+ const advancedDensity=Math.min(1,advanced.labels.length*per100/5);
+ const intermediateGrammar=Math.min(1,ig.labels.length*per100/4);
+ const advancedGrammar=Math.min(1,ag.labels.length*per100/3);
+ const highRatio=levels.length>=8?levels.filter(n=>n>=5).length/levels.length:0;
+ const vocabScore=Math.min(6,1.4+1.4*midDensity+2.6*advancedDensity+Math.min(.6,highRatio*1.2));
+ const grammarScore=Math.min(6,1.5+1.6*intermediateGrammar+2.5*advancedGrammar);
+ const structureScore=Math.min(6,1.4+Math.max(0,ss.avg-5)*.20+Math.min(.6,ss.connectorHits/Math.max(1,ss.sentences)*.22));
+ const formalityScore=Math.min(6,1.5+Math.min(1.1,formal/Math.max(1,ss.sentences)*.75)+Math.min(1.1,nominal/Math.max(1,tokens.length)*7));
+ const componentScores={vocabulary:vocabScore,grammar:grammarScore,sentence_complexity:structureScore,formality:formalityScore};
+ let weighted=Object.keys(READING_WEIGHTS).reduce((sum,key)=>sum+READING_WEIGHTS[key]*componentScores[key],0);
+ // Advanced levels need independent lexical AND structural evidence; formal tone alone is insufficient.
+ const hasAdvancedEvidence=advanced.labels.length>=2 || (ag.labels.length>=1 && advanced.labels.length>=1);
+ if(!hasAdvancedEvidence)weighted=Math.min(weighted,4.44);
+ if(tokens.length<12)weighted=Math.min(weighted,3.4);
+ else if(tokens.length<22&&!hasAdvancedEvidence)weighted=Math.min(weighted,4.4);
+ const level=Math.max(1,Math.min(6,Math.round(weighted)));
+ const evidence=intermediate.labels.length+advanced.labels.length+ig.labels.length+ag.labels.length;
  const confidence=tokens.length>=90&&evidence>=6?"high":tokens.length>=35&&evidence>=3?"medium":"low";
  const reasons=[];
- if(ag.count)reasons.push({type:"grammar",label:"Advanced constructions",items:ag.labels.slice(0,4)});
- if(advanced.count)reasons.push({type:"vocabulary",label:"Abstract / academic expressions",items:advanced.labels.slice(0,5)});
- if(ig.count)reasons.push({type:"grammar",label:"Intermediate constructions",items:ig.labels.slice(0,4)});
- if(intermediate.count)reasons.push({type:"vocabulary",label:"Intermediate expressions",items:intermediate.labels.slice(0,5)});
+ if(ag.labels.length)reasons.push({type:"grammar",label:"Advanced constructions",items:ag.labels.slice(0,4)});
+ if(advanced.labels.length)reasons.push({type:"vocabulary",label:"Abstract / academic expressions",items:advanced.labels.slice(0,5)});
+ if(ig.labels.length)reasons.push({type:"grammar",label:"Intermediate constructions",items:ig.labels.slice(0,4)});
+ if(intermediate.labels.length)reasons.push({type:"vocabulary",label:"Intermediate expressions",items:intermediate.labels.slice(0,5)});
  if(ss.avg>=10)reasons.push({type:"structure",label:"Longer sentences",items:[Math.round(ss.avg)+" words per sentence (average)"]});
- return {level,wordCount:tokens.length,uniqueWords:unique.length,coverage,
-  grammarCount:ag.count+ig.count,confidence,reasons,
-  scores:{heuristic:score,advancedSignals:advanced.count,intermediateSignals:intermediate.count},
-  grammarHits:[]};
+ reasons.push({type:"method",label:"Component scores (1–6; provisional)",items:Object.entries(componentScores).map(([key,value])=>key.replace('_',' ')+": "+value.toFixed(1))});
+ return {level,wordCount:tokens.length,uniqueWords:unique.length,coverage,grammarCount:ag.count+ig.count,confidence,reasons,
+ scores:{heuristic:weighted,components:componentScores,weights:READING_WEIGHTS,advancedSignals:advanced.labels.length,intermediateSignals:intermediate.labels.length},grammarHits:[]};
 }
 
 function estimateDetailed(text){return calibratedReading(text);}

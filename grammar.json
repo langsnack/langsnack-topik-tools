@@ -9300,5 +9300,2138 @@
     "source_refs": [],
     "review_status": "original_explanation_example_editorial_review_pending",
     "usage_note_en": "Formal expression for causing an often negative result."
+  },
+  {
+    "id": "GRAM-0331",
+    "canonical": "-아/어 가다",
+    "aliases": [
+      "아/어 가다"
+    ],
+    "category": "editorial_expansion",
+    "meanings_en": [
+      "continue changing as time passes"
+    ],
+    "langsnack_level": 3,
+    "topik_level_estimate": 3,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "아/어 가다"
+    ],
+    "examples": [
+      {
+        "ko": "날씨가 점점 따뜻해져 가요.",
+        "en": "The weather is gradually getting warmer."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_editorial_draft",
+    "usage_note_en": "Illustrative difficulty band; grammar levels are not official TOPIK classifications."
+  },
+  {
+    "id": "GRAM-0332",
+    "canonical": "-아/어 오다",
+    "aliases": [
+      "아/어 오다"
+    ],
+    "category": "editorial_expansion",
+    "meanings_en": [
+      "continue from the past until now"
+    ],
+    "langsnack_level": 3,
+    "topik_level_estimate": 3,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "아/어 오다"
+    ],
+    "examples": [
+      {
+        "ko": "오랫동안 한국어를 공부해 왔어요.",
+        "en": "I have studied Korean for a long time."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_editorial_draft",
+    "usage_note_en": "Illustrative difficulty band; grammar levels are not official TOPIK classifications."
+  },
+  {
+    "id": "GRAM-0333",
+    "canonical": "-아/어 내다",
+    "aliases": [
+      "아/어 내다"
+    ],
+    "category": "editorial_expansion",
+    "meanings_en": [
+      "manage to accomplish"
+    ],
+    "langsnack_level": 4,
+    "topik_level_estimate": 4,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "아/어 내다"
+    ],
+    "examples": [
+      {
+        "ko": "마침내 문제를 해결해 냈어요.",
+        "en": "I finally managed to solve the problem."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_editorial_draft",
+    "usage_note_en": "Illustrative difficulty band; grammar levels are not official TOPIK classifications."
+  },
+  {
+    "id": "GRAM-0334",
+    "canonical": "-아/어야지요",
+    "aliases": [
+      "아/어야지요"
+    ],
+    "category": "editorial_expansion",
+    "meanings_en": [
+      "express a firm intention or expectation"
+    ],
+    "langsnack_level": 3,
+    "topik_level_estimate": 3,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "아/어야지요"
+    ],
+    "examples": [
+      {
+        "ko": "약속은 지켜야지요.",
+        "en": "You should keep your promises."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_editorial_draft",
+    "usage_note_en": "Illustrative difficulty band; grammar levels are not official TOPIK classifications."
+  },
+  {
+    "id": "GRAM-0335",
+    "canonical": "-아/어도 괜찮다",
+    "aliases": [
+      "아/어도 괜찮다"
+    ],
+    "category": "editorial_expansion",
+    "meanings_en": [
+      "it is fine even if"
+    ],
+    "langsnack_level": 2,
+    "topik_level_estimate": 2,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "아/어도 괜찮다"
+    ],
+    "examples": [
+      {
+        "ko": "조금 늦어도 괜찮아요.",
+        "en": "It's fine if you're a little late."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_editorial_draft",
+    "usage_note_en": "Illustrative difficulty band; grammar levels are not official TOPIK classifications."
+  },
+  {
+    "id": "GRAM-0336",
+    "canonical": "-아/어 봐야",
+    "aliases": [
+      "아/어 봐야"
+    ],
+    "category": "editorial_expansion",
+    "meanings_en": [
+      "even if one does something"
+    ],
+    "langsnack_level": 4,
+    "topik_level_estimate": 4,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "아/어 봐야"
+    ],
+    "examples": [
+      {
+        "ko": "직접 가 봐야 알 수 있어요.",
+        "en": "You can only know by going yourself."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_editorial_draft",
+    "usage_note_en": "Illustrative difficulty band; grammar levels are not official TOPIK classifications."
+  },
+  {
+    "id": "GRAM-0337",
+    "canonical": "-아/어 가지고",
+    "aliases": [
+      "아/어 가지고"
+    ],
+    "category": "editorial_expansion",
+    "meanings_en": [
+      "having done something, then"
+    ],
+    "langsnack_level": 3,
+    "topik_level_estimate": 3,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "아/어 가지고"
+    ],
+    "examples": [
+      {
+        "ko": "돈을 모아 가지고 여행을 갔어요.",
+        "en": "I saved money and then went traveling."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_editorial_draft",
+    "usage_note_en": "Illustrative difficulty band; grammar levels are not official TOPIK classifications."
+  },
+  {
+    "id": "GRAM-0338",
+    "canonical": "-아/어 죽겠다",
+    "aliases": [
+      "아/어 죽겠다"
+    ],
+    "category": "editorial_expansion",
+    "meanings_en": [
+      "feel something extremely strongly"
+    ],
+    "langsnack_level": 3,
+    "topik_level_estimate": 3,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "아/어 죽겠다"
+    ],
+    "examples": [
+      {
+        "ko": "오늘은 피곤해 죽겠어요.",
+        "en": "I'm extremely tired today."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_editorial_draft",
+    "usage_note_en": "Illustrative difficulty band; grammar levels are not official TOPIK classifications."
+  },
+  {
+    "id": "GRAM-0339",
+    "canonical": "-고야 말다",
+    "aliases": [
+      "고야 말다"
+    ],
+    "category": "editorial_expansion",
+    "meanings_en": [
+      "be determined to do something"
+    ],
+    "langsnack_level": 5,
+    "topik_level_estimate": 5,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "고야 말다"
+    ],
+    "examples": [
+      {
+        "ko": "반드시 성공하고야 말겠어요.",
+        "en": "I am determined to succeed."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_editorial_draft",
+    "usage_note_en": "Illustrative difficulty band; grammar levels are not official TOPIK classifications."
+  },
+  {
+    "id": "GRAM-0340",
+    "canonical": "-고 나니",
+    "aliases": [
+      "고 나니"
+    ],
+    "category": "editorial_expansion",
+    "meanings_en": [
+      "after doing something, realize"
+    ],
+    "langsnack_level": 3,
+    "topik_level_estimate": 3,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "고 나니"
+    ],
+    "examples": [
+      {
+        "ko": "운동하고 나니 기분이 좋아졌어요.",
+        "en": "I felt better after exercising."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_editorial_draft",
+    "usage_note_en": "Illustrative difficulty band; grammar levels are not official TOPIK classifications."
+  },
+  {
+    "id": "GRAM-0341",
+    "canonical": "-고 나면",
+    "aliases": [
+      "고 나면"
+    ],
+    "category": "editorial_expansion",
+    "meanings_en": [
+      "once something is done"
+    ],
+    "langsnack_level": 3,
+    "topik_level_estimate": 3,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "고 나면"
+    ],
+    "examples": [
+      {
+        "ko": "수업이 끝나고 나면 전화할게요.",
+        "en": "I'll call once class ends."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_editorial_draft",
+    "usage_note_en": "Illustrative difficulty band; grammar levels are not official TOPIK classifications."
+  },
+  {
+    "id": "GRAM-0342",
+    "canonical": "-고 보면",
+    "aliases": [
+      "고 보면"
+    ],
+    "category": "editorial_expansion",
+    "meanings_en": [
+      "when you think about it"
+    ],
+    "langsnack_level": 4,
+    "topik_level_estimate": 4,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "고 보면"
+    ],
+    "examples": [
+      {
+        "ko": "알고 보면 쉬운 문제예요.",
+        "en": "It's an easy problem once you understand it."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_editorial_draft",
+    "usage_note_en": "Illustrative difficulty band; grammar levels are not official TOPIK classifications."
+  },
+  {
+    "id": "GRAM-0343",
+    "canonical": "-기 그지없다",
+    "aliases": [
+      "기 그지없다"
+    ],
+    "category": "editorial_expansion",
+    "meanings_en": [
+      "be extremely, in a formal style"
+    ],
+    "langsnack_level": 6,
+    "topik_level_estimate": 6,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "기 그지없다"
+    ],
+    "examples": [
+      {
+        "ko": "도와주셔서 감사하기 그지없어요.",
+        "en": "I am immensely grateful for your help."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_editorial_draft",
+    "usage_note_en": "Illustrative difficulty band; grammar levels are not official TOPIK classifications."
+  },
+  {
+    "id": "GRAM-0344",
+    "canonical": "-기만 하면",
+    "aliases": [
+      "기만 하면"
+    ],
+    "category": "editorial_expansion",
+    "meanings_en": [
+      "whenever one does something"
+    ],
+    "langsnack_level": 3,
+    "topik_level_estimate": 3,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "기만 하면"
+    ],
+    "examples": [
+      {
+        "ko": "비가 오기만 하면 길이 막혀요.",
+        "en": "Whenever it rains, traffic gets congested."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_editorial_draft",
+    "usage_note_en": "Illustrative difficulty band; grammar levels are not official TOPIK classifications."
+  },
+  {
+    "id": "GRAM-0345",
+    "canonical": "-기만 해도",
+    "aliases": [
+      "기만 해도"
+    ],
+    "category": "editorial_expansion",
+    "meanings_en": [
+      "even just doing something"
+    ],
+    "langsnack_level": 4,
+    "topik_level_estimate": 4,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "기만 해도"
+    ],
+    "examples": [
+      {
+        "ko": "생각하기만 해도 웃음이 나요.",
+        "en": "Just thinking about it makes me smile."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_editorial_draft",
+    "usage_note_en": "Illustrative difficulty band; grammar levels are not official TOPIK classifications."
+  },
+  {
+    "id": "GRAM-0346",
+    "canonical": "-기보다는",
+    "aliases": [
+      "기보다는"
+    ],
+    "category": "editorial_expansion",
+    "meanings_en": [
+      "rather than"
+    ],
+    "langsnack_level": 4,
+    "topik_level_estimate": 4,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "기보다는"
+    ],
+    "examples": [
+      {
+        "ko": "비판하기보다는 대안을 제시해 주세요.",
+        "en": "Please suggest an alternative rather than criticize."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_editorial_draft",
+    "usage_note_en": "Illustrative difficulty band; grammar levels are not official TOPIK classifications."
+  },
+  {
+    "id": "GRAM-0347",
+    "canonical": "-느니 차라리",
+    "aliases": [
+      "느니 차라리"
+    ],
+    "category": "editorial_expansion",
+    "meanings_en": [
+      "rather than, I would prefer"
+    ],
+    "langsnack_level": 5,
+    "topik_level_estimate": 5,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "느니 차라리"
+    ],
+    "examples": [
+      {
+        "ko": "포기하느니 차라리 다시 도전하겠어요.",
+        "en": "I'd rather try again than give up."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_editorial_draft",
+    "usage_note_en": "Illustrative difficulty band; grammar levels are not official TOPIK classifications."
+  },
+  {
+    "id": "GRAM-0348",
+    "canonical": "-느라",
+    "aliases": [
+      "느라"
+    ],
+    "category": "editorial_expansion",
+    "meanings_en": [
+      "because one was occupied doing something"
+    ],
+    "langsnack_level": 3,
+    "topik_level_estimate": 3,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "느라"
+    ],
+    "examples": [
+      {
+        "ko": "일하느라 전화를 못 받았어요.",
+        "en": "I couldn't answer because I was working."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_editorial_draft",
+    "usage_note_en": "Illustrative difficulty band; grammar levels are not official TOPIK classifications."
+  },
+  {
+    "id": "GRAM-0349",
+    "canonical": "-는 동안에",
+    "aliases": [
+      "는 동안에"
+    ],
+    "category": "editorial_expansion",
+    "meanings_en": [
+      "while, during"
+    ],
+    "langsnack_level": 2,
+    "topik_level_estimate": 2,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "는 동안에"
+    ],
+    "examples": [
+      {
+        "ko": "기다리는 동안에 책을 읽었어요.",
+        "en": "I read a book while waiting."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_editorial_draft",
+    "usage_note_en": "Illustrative difficulty band; grammar levels are not official TOPIK classifications."
+  },
+  {
+    "id": "GRAM-0350",
+    "canonical": "-는 데 반해",
+    "aliases": [
+      "는 데 반해"
+    ],
+    "category": "editorial_expansion",
+    "meanings_en": [
+      "whereas, in contrast"
+    ],
+    "langsnack_level": 4,
+    "topik_level_estimate": 4,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "는 데 반해"
+    ],
+    "examples": [
+      {
+        "ko": "도시는 편리한 데 반해 생활비가 비싸요.",
+        "en": "Cities are convenient, whereas living costs are high."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_editorial_draft",
+    "usage_note_en": "Illustrative difficulty band; grammar levels are not official TOPIK classifications."
+  },
+  {
+    "id": "GRAM-0351",
+    "canonical": "-다시피 해서",
+    "aliases": [
+      "다시피 해서"
+    ],
+    "category": "editorial_expansion",
+    "meanings_en": [
+      "almost to the extent of"
+    ],
+    "langsnack_level": 5,
+    "topik_level_estimate": 5,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "다시피 해서"
+    ],
+    "examples": [
+      {
+        "ko": "뛰다시피 해서 겨우 도착했어요.",
+        "en": "I practically ran and barely arrived."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_editorial_draft",
+    "usage_note_en": "Illustrative difficulty band; grammar levels are not official TOPIK classifications."
+  },
+  {
+    "id": "GRAM-0352",
+    "canonical": "-던 차에",
+    "aliases": [
+      "던 차에"
+    ],
+    "category": "editorial_expansion",
+    "meanings_en": [
+      "just when one was about to"
+    ],
+    "langsnack_level": 5,
+    "topik_level_estimate": 5,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "던 차에"
+    ],
+    "examples": [
+      {
+        "ko": "연락하려던 차에 전화가 왔어요.",
+        "en": "I got a call just as I was about to reach out."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_editorial_draft",
+    "usage_note_en": "Illustrative difficulty band; grammar levels are not official TOPIK classifications."
+  },
+  {
+    "id": "GRAM-0353",
+    "canonical": "-던 참에",
+    "aliases": [
+      "던 참에"
+    ],
+    "category": "editorial_expansion",
+    "meanings_en": [
+      "just when one was about to"
+    ],
+    "langsnack_level": 4,
+    "topik_level_estimate": 4,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "던 참에"
+    ],
+    "examples": [
+      {
+        "ko": "나가려던 참에 비가 왔어요.",
+        "en": "It started raining just as I was leaving."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_editorial_draft",
+    "usage_note_en": "Illustrative difficulty band; grammar levels are not official TOPIK classifications."
+  },
+  {
+    "id": "GRAM-0354",
+    "canonical": "-던 끝에",
+    "aliases": [
+      "던 끝에"
+    ],
+    "category": "editorial_expansion",
+    "meanings_en": [
+      "after a prolonged process"
+    ],
+    "langsnack_level": 5,
+    "topik_level_estimate": 5,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "던 끝에"
+    ],
+    "examples": [
+      {
+        "ko": "오랫동안 고민하던 끝에 결정했어요.",
+        "en": "I decided after thinking for a long time."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_editorial_draft",
+    "usage_note_en": "Illustrative difficulty band; grammar levels are not official TOPIK classifications."
+  },
+  {
+    "id": "GRAM-0355",
+    "canonical": "-던데요",
+    "aliases": [
+      "던데요"
+    ],
+    "category": "editorial_expansion",
+    "meanings_en": [
+      "report an observation or experience"
+    ],
+    "langsnack_level": 3,
+    "topik_level_estimate": 3,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "던데요"
+    ],
+    "examples": [
+      {
+        "ko": "그 식당 음식이 맛있던데요.",
+        "en": "I found that restaurant's food tasty."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_editorial_draft",
+    "usage_note_en": "Illustrative difficulty band; grammar levels are not official TOPIK classifications."
+  },
+  {
+    "id": "GRAM-0356",
+    "canonical": "-도록 되어 있다",
+    "aliases": [
+      "도록 되어 있다"
+    ],
+    "category": "editorial_expansion",
+    "meanings_en": [
+      "be arranged or designed to"
+    ],
+    "langsnack_level": 4,
+    "topik_level_estimate": 4,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "도록 되어 있다"
+    ],
+    "examples": [
+      {
+        "ko": "문은 자동으로 닫히도록 되어 있어요.",
+        "en": "The door is designed to close automatically."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_editorial_draft",
+    "usage_note_en": "Illustrative difficulty band; grammar levels are not official TOPIK classifications."
+  },
+  {
+    "id": "GRAM-0357",
+    "canonical": "-도록 만들다",
+    "aliases": [
+      "도록 만들다"
+    ],
+    "category": "editorial_expansion",
+    "meanings_en": [
+      "cause something to happen"
+    ],
+    "langsnack_level": 3,
+    "topik_level_estimate": 3,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "도록 만들다"
+    ],
+    "examples": [
+      {
+        "ko": "설명이 이해하기 쉽도록 만들었어요.",
+        "en": "I made the explanation easy to understand."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_editorial_draft",
+    "usage_note_en": "Illustrative difficulty band; grammar levels are not official TOPIK classifications."
+  },
+  {
+    "id": "GRAM-0358",
+    "canonical": "-려던 참이다",
+    "aliases": [
+      "려던 참이다"
+    ],
+    "category": "editorial_expansion",
+    "meanings_en": [
+      "be just about to"
+    ],
+    "langsnack_level": 4,
+    "topik_level_estimate": 4,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "려던 참이다"
+    ],
+    "examples": [
+      {
+        "ko": "지금 출발하려던 참이에요.",
+        "en": "I was just about to leave."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_editorial_draft",
+    "usage_note_en": "Illustrative difficulty band; grammar levels are not official TOPIK classifications."
+  },
+  {
+    "id": "GRAM-0359",
+    "canonical": "-려다가",
+    "aliases": [
+      "려다가"
+    ],
+    "category": "editorial_expansion",
+    "meanings_en": [
+      "intend to but change course"
+    ],
+    "langsnack_level": 3,
+    "topik_level_estimate": 3,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "려다가"
+    ],
+    "examples": [
+      {
+        "ko": "산책하려다가 비가 와서 집에 있었어요.",
+        "en": "I planned to walk but stayed home because of rain."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_editorial_draft",
+    "usage_note_en": "Illustrative difficulty band; grammar levels are not official TOPIK classifications."
+  },
+  {
+    "id": "GRAM-0360",
+    "canonical": "-려면",
+    "aliases": [
+      "려면"
+    ],
+    "category": "editorial_expansion",
+    "meanings_en": [
+      "if one wants to"
+    ],
+    "langsnack_level": 2,
+    "topik_level_estimate": 2,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "려면"
+    ],
+    "examples": [
+      {
+        "ko": "한국어를 잘하려면 꾸준히 연습하세요.",
+        "en": "If you want to speak Korean well, practice consistently."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_editorial_draft",
+    "usage_note_en": "Illustrative difficulty band; grammar levels are not official TOPIK classifications."
+  },
+  {
+    "id": "GRAM-0361",
+    "canonical": "-려는 듯하다",
+    "aliases": [
+      "려는 듯하다"
+    ],
+    "category": "editorial_expansion",
+    "meanings_en": [
+      "seem about to"
+    ],
+    "langsnack_level": 5,
+    "topik_level_estimate": 5,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "려는 듯하다"
+    ],
+    "examples": [
+      {
+        "ko": "비가 오려는 듯해요.",
+        "en": "It looks as though it's about to rain."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_editorial_draft",
+    "usage_note_en": "Illustrative difficulty band; grammar levels are not official TOPIK classifications."
+  },
+  {
+    "id": "GRAM-0362",
+    "canonical": "-ㄹ 리가 없다",
+    "aliases": [
+      "ㄹ 리가 없다"
+    ],
+    "category": "editorial_expansion",
+    "meanings_en": [
+      "there is no way that"
+    ],
+    "langsnack_level": 3,
+    "topik_level_estimate": 3,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "ㄹ 리가 없다"
+    ],
+    "examples": [
+      {
+        "ko": "그 사람이 거짓말할 리가 없어요.",
+        "en": "There's no way that person would lie."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_editorial_draft",
+    "usage_note_en": "Illustrative difficulty band; grammar levels are not official TOPIK classifications."
+  },
+  {
+    "id": "GRAM-0363",
+    "canonical": "-ㄹ 뻔하다",
+    "aliases": [
+      "ㄹ 뻔하다"
+    ],
+    "category": "editorial_expansion",
+    "meanings_en": [
+      "almost did something"
+    ],
+    "langsnack_level": 3,
+    "topik_level_estimate": 3,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "ㄹ 뻔하다"
+    ],
+    "examples": [
+      {
+        "ko": "계단에서 넘어질 뻔했어요.",
+        "en": "I almost fell on the stairs."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_editorial_draft",
+    "usage_note_en": "Illustrative difficulty band; grammar levels are not official TOPIK classifications."
+  },
+  {
+    "id": "GRAM-0364",
+    "canonical": "-ㄹ 따름이다",
+    "aliases": [
+      "ㄹ 따름이다"
+    ],
+    "category": "editorial_expansion",
+    "meanings_en": [
+      "can only, nothing more"
+    ],
+    "langsnack_level": 5,
+    "topik_level_estimate": 5,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "ㄹ 따름이다"
+    ],
+    "examples": [
+      {
+        "ko": "결과를 기다릴 따름이에요.",
+        "en": "All we can do is wait for the result."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_editorial_draft",
+    "usage_note_en": "Illustrative difficulty band; grammar levels are not official TOPIK classifications."
+  },
+  {
+    "id": "GRAM-0365",
+    "canonical": "-ㄹ 뿐이다",
+    "aliases": [
+      "ㄹ 뿐이다"
+    ],
+    "category": "editorial_expansion",
+    "meanings_en": [
+      "only, merely"
+    ],
+    "langsnack_level": 4,
+    "topik_level_estimate": 4,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "ㄹ 뿐이다"
+    ],
+    "examples": [
+      {
+        "ko": "저는 사실을 말했을 뿐이에요.",
+        "en": "I only stated the facts."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_editorial_draft",
+    "usage_note_en": "Illustrative difficulty band; grammar levels are not official TOPIK classifications."
+  },
+  {
+    "id": "GRAM-0366",
+    "canonical": "-ㄹ 뿐더러",
+    "aliases": [
+      "ㄹ 뿐더러"
+    ],
+    "category": "editorial_expansion",
+    "meanings_en": [
+      "not only but also"
+    ],
+    "langsnack_level": 5,
+    "topik_level_estimate": 5,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "ㄹ 뿐더러"
+    ],
+    "examples": [
+      {
+        "ko": "이 제품은 저렴할 뿐더러 사용하기도 편해요.",
+        "en": "This product is inexpensive and easy to use."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_editorial_draft",
+    "usage_note_en": "Illustrative difficulty band; grammar levels are not official TOPIK classifications."
+  },
+  {
+    "id": "GRAM-0367",
+    "canonical": "-ㄹ지라도",
+    "aliases": [
+      "ㄹ지라도"
+    ],
+    "category": "editorial_expansion",
+    "meanings_en": [
+      "even if, formal"
+    ],
+    "langsnack_level": 5,
+    "topik_level_estimate": 5,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "ㄹ지라도"
+    ],
+    "examples": [
+      {
+        "ko": "실패할지라도 다시 도전하겠어요.",
+        "en": "Even if I fail, I'll try again."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_editorial_draft",
+    "usage_note_en": "Illustrative difficulty band; grammar levels are not official TOPIK classifications."
+  },
+  {
+    "id": "GRAM-0368",
+    "canonical": "-ㄹ지언정",
+    "aliases": [
+      "ㄹ지언정"
+    ],
+    "category": "editorial_expansion",
+    "meanings_en": [
+      "even if, rather than compromising"
+    ],
+    "langsnack_level": 6,
+    "topik_level_estimate": 6,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "ㄹ지언정"
+    ],
+    "examples": [
+      {
+        "ko": "손해를 볼지언정 원칙은 지키겠어요.",
+        "en": "Even at a loss, I'll uphold the principle."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_editorial_draft",
+    "usage_note_en": "Illustrative difficulty band; grammar levels are not official TOPIK classifications."
+  },
+  {
+    "id": "GRAM-0369",
+    "canonical": "-ㄹ지 모른다",
+    "aliases": [
+      "ㄹ지 모른다"
+    ],
+    "category": "editorial_expansion",
+    "meanings_en": [
+      "might, may"
+    ],
+    "langsnack_level": 3,
+    "topik_level_estimate": 3,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "ㄹ지 모른다"
+    ],
+    "examples": [
+      {
+        "ko": "내일 비가 올지 몰라요.",
+        "en": "It might rain tomorrow."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_editorial_draft",
+    "usage_note_en": "Illustrative difficulty band; grammar levels are not official TOPIK classifications."
+  },
+  {
+    "id": "GRAM-0370",
+    "canonical": "-ㄹ까 봐",
+    "aliases": [
+      "ㄹ까 봐"
+    ],
+    "category": "editorial_expansion",
+    "meanings_en": [
+      "for fear that"
+    ],
+    "langsnack_level": 2,
+    "topik_level_estimate": 2,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "ㄹ까 봐"
+    ],
+    "examples": [
+      {
+        "ko": "늦을까 봐 일찍 나왔어요.",
+        "en": "I left early because I was afraid of being late."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_editorial_draft",
+    "usage_note_en": "Illustrative difficulty band; grammar levels are not official TOPIK classifications."
+  },
+  {
+    "id": "GRAM-0371",
+    "canonical": "-ㄹ까 하다",
+    "aliases": [
+      "ㄹ까 하다"
+    ],
+    "category": "editorial_expansion",
+    "meanings_en": [
+      "be thinking of doing"
+    ],
+    "langsnack_level": 3,
+    "topik_level_estimate": 3,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "ㄹ까 하다"
+    ],
+    "examples": [
+      {
+        "ko": "주말에 영화를 볼까 해요.",
+        "en": "I'm thinking of watching a movie this weekend."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_editorial_draft",
+    "usage_note_en": "Illustrative difficulty band; grammar levels are not official TOPIK classifications."
+  },
+  {
+    "id": "GRAM-0372",
+    "canonical": "-ㄹ까 말까 하다",
+    "aliases": [
+      "ㄹ까 말까 하다"
+    ],
+    "category": "editorial_expansion",
+    "meanings_en": [
+      "be undecided about doing"
+    ],
+    "langsnack_level": 3,
+    "topik_level_estimate": 3,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "ㄹ까 말까 하다"
+    ],
+    "examples": [
+      {
+        "ko": "신청할까 말까 고민하고 있어요.",
+        "en": "I'm debating whether to apply."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_editorial_draft",
+    "usage_note_en": "Illustrative difficulty band; grammar levels are not official TOPIK classifications."
+  },
+  {
+    "id": "GRAM-0373",
+    "canonical": "-ㄹ 겸",
+    "aliases": [
+      "ㄹ 겸"
+    ],
+    "category": "editorial_expansion",
+    "meanings_en": [
+      "with the additional purpose of"
+    ],
+    "langsnack_level": 4,
+    "topik_level_estimate": 4,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "ㄹ 겸"
+    ],
+    "examples": [
+      {
+        "ko": "운동도 할 겸 공원에 갔어요.",
+        "en": "I went to the park to get some exercise too."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_editorial_draft",
+    "usage_note_en": "Illustrative difficulty band; grammar levels are not official TOPIK classifications."
+  },
+  {
+    "id": "GRAM-0374",
+    "canonical": "-ㄹ 법하다",
+    "aliases": [
+      "ㄹ 법하다"
+    ],
+    "category": "editorial_expansion",
+    "meanings_en": [
+      "be likely or reasonable"
+    ],
+    "langsnack_level": 4,
+    "topik_level_estimate": 4,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "ㄹ 법하다"
+    ],
+    "examples": [
+      {
+        "ko": "이제 도착할 법한 시간이네요.",
+        "en": "It's about time they arrived."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_editorial_draft",
+    "usage_note_en": "Illustrative difficulty band; grammar levels are not official TOPIK classifications."
+  },
+  {
+    "id": "GRAM-0375",
+    "canonical": "-ㄹ 턱이 없다",
+    "aliases": [
+      "ㄹ 턱이 없다"
+    ],
+    "category": "editorial_expansion",
+    "meanings_en": [
+      "there is no possibility"
+    ],
+    "langsnack_level": 6,
+    "topik_level_estimate": 6,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "ㄹ 턱이 없다"
+    ],
+    "examples": [
+      {
+        "ko": "그가 모를 턱이 없어요.",
+        "en": "There's no way he doesn't know."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_editorial_draft",
+    "usage_note_en": "Illustrative difficulty band; grammar levels are not official TOPIK classifications."
+  },
+  {
+    "id": "GRAM-0376",
+    "canonical": "-ㄹ 수밖에 없다",
+    "aliases": [
+      "ㄹ 수밖에 없다"
+    ],
+    "category": "editorial_expansion",
+    "meanings_en": [
+      "have no choice but to"
+    ],
+    "langsnack_level": 4,
+    "topik_level_estimate": 4,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "ㄹ 수밖에 없다"
+    ],
+    "examples": [
+      {
+        "ko": "시간이 없어서 서두를 수밖에 없어요.",
+        "en": "We have no choice but to hurry."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_editorial_draft",
+    "usage_note_en": "Illustrative difficulty band; grammar levels are not official TOPIK classifications."
+  },
+  {
+    "id": "GRAM-0377",
+    "canonical": "-ㄹ수록",
+    "aliases": [
+      "ㄹ수록"
+    ],
+    "category": "editorial_expansion",
+    "meanings_en": [
+      "the more, the more"
+    ],
+    "langsnack_level": 3,
+    "topik_level_estimate": 3,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "ㄹ수록"
+    ],
+    "examples": [
+      {
+        "ko": "연습할수록 실력이 늘어요.",
+        "en": "The more you practice, the better you get."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_editorial_draft",
+    "usage_note_en": "Illustrative difficulty band; grammar levels are not official TOPIK classifications."
+  },
+  {
+    "id": "GRAM-0378",
+    "canonical": "-ㄹ 바에야",
+    "aliases": [
+      "ㄹ 바에야"
+    ],
+    "category": "editorial_expansion",
+    "meanings_en": [
+      "rather than, if one is going to"
+    ],
+    "langsnack_level": 5,
+    "topik_level_estimate": 5,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "ㄹ 바에야"
+    ],
+    "examples": [
+      {
+        "ko": "포기할 바에야 다시 시작하겠어요.",
+        "en": "I'd rather start over than give up."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_editorial_draft",
+    "usage_note_en": "Illustrative difficulty band; grammar levels are not official TOPIK classifications."
+  },
+  {
+    "id": "GRAM-0379",
+    "canonical": "-ㅁ으로써",
+    "aliases": [
+      "ㅁ으로써"
+    ],
+    "category": "editorial_expansion",
+    "meanings_en": [
+      "by doing something, formal means"
+    ],
+    "langsnack_level": 5,
+    "topik_level_estimate": 5,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "ㅁ으로써"
+    ],
+    "examples": [
+      {
+        "ko": "자료를 공개함으로써 신뢰를 높였어요.",
+        "en": "They increased trust by releasing the data."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_editorial_draft",
+    "usage_note_en": "Illustrative difficulty band; grammar levels are not official TOPIK classifications."
+  },
+  {
+    "id": "GRAM-0380",
+    "canonical": "-ㅁ에도 불구하고",
+    "aliases": [
+      "ㅁ에도 불구하고"
+    ],
+    "category": "editorial_expansion",
+    "meanings_en": [
+      "despite the fact that"
+    ],
+    "langsnack_level": 5,
+    "topik_level_estimate": 5,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "ㅁ에도 불구하고"
+    ],
+    "examples": [
+      {
+        "ko": "비가 옴에도 불구하고 행사는 열렸어요.",
+        "en": "The event went ahead despite the rain."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_editorial_draft",
+    "usage_note_en": "Illustrative difficulty band; grammar levels are not official TOPIK classifications."
+  },
+  {
+    "id": "GRAM-0381",
+    "canonical": "-ㅁ은 물론이다",
+    "aliases": [
+      "ㅁ은 물론이다"
+    ],
+    "category": "editorial_expansion",
+    "meanings_en": [
+      "not to mention"
+    ],
+    "langsnack_level": 5,
+    "topik_level_estimate": 5,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "ㅁ은 물론이다"
+    ],
+    "examples": [
+      {
+        "ko": "비용을 줄임은 물론이고 시간도 아꼈어요.",
+        "en": "It saved time as well as money."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_editorial_draft",
+    "usage_note_en": "Illustrative difficulty band; grammar levels are not official TOPIK classifications."
+  },
+  {
+    "id": "GRAM-0382",
+    "canonical": "-에 의해서",
+    "aliases": [
+      "에 의해서"
+    ],
+    "category": "editorial_expansion",
+    "meanings_en": [
+      "by means of, through"
+    ],
+    "langsnack_level": 4,
+    "topik_level_estimate": 4,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "에 의해서"
+    ],
+    "examples": [
+      {
+        "ko": "결과는 여러 요인에 의해서 달라져요.",
+        "en": "Results vary due to several factors."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_editorial_draft",
+    "usage_note_en": "Illustrative difficulty band; grammar levels are not official TOPIK classifications."
+  },
+  {
+    "id": "GRAM-0383",
+    "canonical": "-에 있어서",
+    "aliases": [
+      "에 있어서"
+    ],
+    "category": "editorial_expansion",
+    "meanings_en": [
+      "when it comes to"
+    ],
+    "langsnack_level": 4,
+    "topik_level_estimate": 4,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "에 있어서"
+    ],
+    "examples": [
+      {
+        "ko": "교육에 있어서 신뢰는 중요해요.",
+        "en": "Trust is important in education."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_editorial_draft",
+    "usage_note_en": "Illustrative difficulty band; grammar levels are not official TOPIK classifications."
+  },
+  {
+    "id": "GRAM-0384",
+    "canonical": "-에 있어서만큼은",
+    "aliases": [
+      "에 있어서만큼은"
+    ],
+    "category": "editorial_expansion",
+    "meanings_en": [
+      "at least in regard to"
+    ],
+    "langsnack_level": 5,
+    "topik_level_estimate": 5,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "에 있어서만큼은"
+    ],
+    "examples": [
+      {
+        "ko": "안전에 있어서만큼은 타협할 수 없어요.",
+        "en": "We cannot compromise when it comes to safety."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_editorial_draft",
+    "usage_note_en": "Illustrative difficulty band; grammar levels are not official TOPIK classifications."
+  },
+  {
+    "id": "GRAM-0385",
+    "canonical": "-에 이어",
+    "aliases": [
+      "에 이어"
+    ],
+    "category": "editorial_expansion",
+    "meanings_en": [
+      "following, in succession"
+    ],
+    "langsnack_level": 4,
+    "topik_level_estimate": 4,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "에 이어"
+    ],
+    "examples": [
+      {
+        "ko": "발표에 이어 토론이 진행됐어요.",
+        "en": "A discussion followed the presentation."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_editorial_draft",
+    "usage_note_en": "Illustrative difficulty band; grammar levels are not official TOPIK classifications."
+  },
+  {
+    "id": "GRAM-0386",
+    "canonical": "-에 이르기까지",
+    "aliases": [
+      "에 이르기까지"
+    ],
+    "category": "editorial_expansion",
+    "meanings_en": [
+      "all the way up to"
+    ],
+    "langsnack_level": 5,
+    "topik_level_estimate": 5,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "에 이르기까지"
+    ],
+    "examples": [
+      {
+        "ko": "기획부터 실행에 이르기까지 참여했어요.",
+        "en": "I participated from planning through execution."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_editorial_draft",
+    "usage_note_en": "Illustrative difficulty band; grammar levels are not official TOPIK classifications."
+  },
+  {
+    "id": "GRAM-0387",
+    "canonical": "-에 이르러",
+    "aliases": [
+      "에 이르러"
+    ],
+    "category": "editorial_expansion",
+    "meanings_en": [
+      "upon reaching a stage"
+    ],
+    "langsnack_level": 5,
+    "topik_level_estimate": 5,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "에 이르러"
+    ],
+    "examples": [
+      {
+        "ko": "마지막 단계에 이르러 문제가 생겼어요.",
+        "en": "A problem arose at the final stage."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_editorial_draft",
+    "usage_note_en": "Illustrative difficulty band; grammar levels are not official TOPIK classifications."
+  },
+  {
+    "id": "GRAM-0388",
+    "canonical": "-에 걸맞다",
+    "aliases": [
+      "에 걸맞다"
+    ],
+    "category": "editorial_expansion",
+    "meanings_en": [
+      "be fitting or appropriate for"
+    ],
+    "langsnack_level": 5,
+    "topik_level_estimate": 5,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "에 걸맞다"
+    ],
+    "examples": [
+      {
+        "ko": "역할에 걸맞은 책임이 필요해요.",
+        "en": "Responsibility appropriate to the role is needed."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_editorial_draft",
+    "usage_note_en": "Illustrative difficulty band; grammar levels are not official TOPIK classifications."
+  },
+  {
+    "id": "GRAM-0389",
+    "canonical": "-에 못지않다",
+    "aliases": [
+      "에 못지않다"
+    ],
+    "category": "editorial_expansion",
+    "meanings_en": [
+      "be no less than"
+    ],
+    "langsnack_level": 4,
+    "topik_level_estimate": 4,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "에 못지않다"
+    ],
+    "examples": [
+      {
+        "ko": "그의 노력은 전문가에 못지않아요.",
+        "en": "His effort is no less than a professional's."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_editorial_draft",
+    "usage_note_en": "Illustrative difficulty band; grammar levels are not official TOPIK classifications."
+  },
+  {
+    "id": "GRAM-0390",
+    "canonical": "-에 반하여",
+    "aliases": [
+      "에 반하여"
+    ],
+    "category": "editorial_expansion",
+    "meanings_en": [
+      "contrary to"
+    ],
+    "langsnack_level": 5,
+    "topik_level_estimate": 5,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "에 반하여"
+    ],
+    "examples": [
+      {
+        "ko": "예상에 반하여 결과가 좋았어요.",
+        "en": "Contrary to expectations, the result was good."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_editorial_draft",
+    "usage_note_en": "Illustrative difficulty band; grammar levels are not official TOPIK classifications."
+  },
+  {
+    "id": "GRAM-0391",
+    "canonical": "-에 비례하다",
+    "aliases": [
+      "에 비례하다"
+    ],
+    "category": "editorial_expansion",
+    "meanings_en": [
+      "be proportional to"
+    ],
+    "langsnack_level": 5,
+    "topik_level_estimate": 5,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "에 비례하다"
+    ],
+    "examples": [
+      {
+        "ko": "수요에 비례해 가격이 오를 수 있어요.",
+        "en": "Prices may rise in proportion to demand."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_editorial_draft",
+    "usage_note_en": "Illustrative difficulty band; grammar levels are not official TOPIK classifications."
+  },
+  {
+    "id": "GRAM-0392",
+    "canonical": "-에 상관없이",
+    "aliases": [
+      "에 상관없이"
+    ],
+    "category": "editorial_expansion",
+    "meanings_en": [
+      "regardless of"
+    ],
+    "langsnack_level": 3,
+    "topik_level_estimate": 3,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "에 상관없이"
+    ],
+    "examples": [
+      {
+        "ko": "날씨에 상관없이 운동해요.",
+        "en": "I exercise regardless of the weather."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_editorial_draft",
+    "usage_note_en": "Illustrative difficulty band; grammar levels are not official TOPIK classifications."
+  },
+  {
+    "id": "GRAM-0393",
+    "canonical": "-에 관계없이",
+    "aliases": [
+      "에 관계없이"
+    ],
+    "category": "editorial_expansion",
+    "meanings_en": [
+      "regardless of"
+    ],
+    "langsnack_level": 3,
+    "topik_level_estimate": 3,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "에 관계없이"
+    ],
+    "examples": [
+      {
+        "ko": "나이에 관계없이 참여할 수 있어요.",
+        "en": "You can participate regardless of age."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_editorial_draft",
+    "usage_note_en": "Illustrative difficulty band; grammar levels are not official TOPIK classifications."
+  },
+  {
+    "id": "GRAM-0394",
+    "canonical": "-에 한하여",
+    "aliases": [
+      "에 한하여"
+    ],
+    "category": "editorial_expansion",
+    "meanings_en": [
+      "limited to"
+    ],
+    "langsnack_level": 5,
+    "topik_level_estimate": 5,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "에 한하여"
+    ],
+    "examples": [
+      {
+        "ko": "신청자에 한하여 안내를 보내요.",
+        "en": "Information is sent only to applicants."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_editorial_draft",
+    "usage_note_en": "Illustrative difficulty band; grammar levels are not official TOPIK classifications."
+  },
+  {
+    "id": "GRAM-0395",
+    "canonical": "-에 한해서",
+    "aliases": [
+      "에 한해서"
+    ],
+    "category": "editorial_expansion",
+    "meanings_en": [
+      "only for, limited to"
+    ],
+    "langsnack_level": 4,
+    "topik_level_estimate": 4,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "에 한해서"
+    ],
+    "examples": [
+      {
+        "ko": "회원에 한해서 할인해 드려요.",
+        "en": "We offer discounts to members only."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_editorial_draft",
+    "usage_note_en": "Illustrative difficulty band; grammar levels are not official TOPIK classifications."
+  },
+  {
+    "id": "GRAM-0396",
+    "canonical": "-에 준하다",
+    "aliases": [
+      "에 준하다"
+    ],
+    "category": "editorial_expansion",
+    "meanings_en": [
+      "be equivalent to, correspond to"
+    ],
+    "langsnack_level": 6,
+    "topik_level_estimate": 6,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "에 준하다"
+    ],
+    "examples": [
+      {
+        "ko": "그 행위는 위반에 준하는 것으로 봐요.",
+        "en": "That act is considered equivalent to a violation."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_editorial_draft",
+    "usage_note_en": "Illustrative difficulty band; grammar levels are not official TOPIK classifications."
+  },
+  {
+    "id": "GRAM-0397",
+    "canonical": "-에 입각하여",
+    "aliases": [
+      "에 입각하여"
+    ],
+    "category": "editorial_expansion",
+    "meanings_en": [
+      "based on, grounded in"
+    ],
+    "langsnack_level": 6,
+    "topik_level_estimate": 6,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "에 입각하여"
+    ],
+    "examples": [
+      {
+        "ko": "객관적인 자료에 입각하여 판단해야 해요.",
+        "en": "We should judge based on objective data."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_editorial_draft",
+    "usage_note_en": "Illustrative difficulty band; grammar levels are not official TOPIK classifications."
+  },
+  {
+    "id": "GRAM-0398",
+    "canonical": "-을/를 감안하여",
+    "aliases": [
+      "을/를 감안하여"
+    ],
+    "category": "editorial_expansion",
+    "meanings_en": [
+      "taking into account"
+    ],
+    "langsnack_level": 5,
+    "topik_level_estimate": 5,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "을/를 감안하여"
+    ],
+    "examples": [
+      {
+        "ko": "예산을 감안하여 계획을 세웠어요.",
+        "en": "We made the plan considering the budget."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_editorial_draft",
+    "usage_note_en": "Illustrative difficulty band; grammar levels are not official TOPIK classifications."
+  },
+  {
+    "id": "GRAM-0399",
+    "canonical": "-을/를 비롯하여",
+    "aliases": [
+      "을/를 비롯하여"
+    ],
+    "category": "editorial_expansion",
+    "meanings_en": [
+      "including, beginning with"
+    ],
+    "langsnack_level": 4,
+    "topik_level_estimate": 4,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "을/를 비롯하여"
+    ],
+    "examples": [
+      {
+        "ko": "서울을 비롯하여 여러 지역에서 열려요.",
+        "en": "It is held in several regions, including Seoul."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_editorial_draft",
+    "usage_note_en": "Illustrative difficulty band; grammar levels are not official TOPIK classifications."
+  },
+  {
+    "id": "GRAM-0400",
+    "canonical": "-을/를 통해서",
+    "aliases": [
+      "을/를 통해서"
+    ],
+    "category": "editorial_expansion",
+    "meanings_en": [
+      "through, by means of"
+    ],
+    "langsnack_level": 3,
+    "topik_level_estimate": 3,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "을/를 통해서"
+    ],
+    "examples": [
+      {
+        "ko": "수업을 통해서 많이 배웠어요.",
+        "en": "I learned a lot through the class."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_editorial_draft",
+    "usage_note_en": "Illustrative difficulty band; grammar levels are not official TOPIK classifications."
+  },
+  {
+    "id": "GRAM-0401",
+    "canonical": "-을/를 고려할 때",
+    "aliases": [
+      "을/를 고려할 때"
+    ],
+    "category": "editorial_expansion",
+    "meanings_en": [
+      "considering"
+    ],
+    "langsnack_level": 4,
+    "topik_level_estimate": 4,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "을/를 고려할 때"
+    ],
+    "examples": [
+      {
+        "ko": "비용을 고려할 때 좋은 선택이에요.",
+        "en": "Considering the cost, it's a good choice."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_editorial_draft",
+    "usage_note_en": "Illustrative difficulty band; grammar levels are not official TOPIK classifications."
+  },
+  {
+    "id": "GRAM-0402",
+    "canonical": "-을/를 제외하고",
+    "aliases": [
+      "을/를 제외하고"
+    ],
+    "category": "editorial_expansion",
+    "meanings_en": [
+      "excluding"
+    ],
+    "langsnack_level": 3,
+    "topik_level_estimate": 3,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "을/를 제외하고"
+    ],
+    "examples": [
+      {
+        "ko": "주말을 제외하고 매일 열어요.",
+        "en": "It's open every day except weekends."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_editorial_draft",
+    "usage_note_en": "Illustrative difficulty band; grammar levels are not official TOPIK classifications."
+  },
+  {
+    "id": "GRAM-0403",
+    "canonical": "-을/를 불문하고",
+    "aliases": [
+      "을/를 불문하고"
+    ],
+    "category": "editorial_expansion",
+    "meanings_en": [
+      "regardless of"
+    ],
+    "langsnack_level": 5,
+    "topik_level_estimate": 5,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "을/를 불문하고"
+    ],
+    "examples": [
+      {
+        "ko": "경력을 불문하고 지원할 수 있어요.",
+        "en": "You may apply regardless of experience."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_editorial_draft",
+    "usage_note_en": "Illustrative difficulty band; grammar levels are not official TOPIK classifications."
+  },
+  {
+    "id": "GRAM-0404",
+    "canonical": "-을/를 대상으로",
+    "aliases": [
+      "을/를 대상으로"
+    ],
+    "category": "editorial_expansion",
+    "meanings_en": [
+      "targeting, intended for"
+    ],
+    "langsnack_level": 4,
+    "topik_level_estimate": 4,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "을/를 대상으로"
+    ],
+    "examples": [
+      {
+        "ko": "학생을 대상으로 설문을 진행했어요.",
+        "en": "We surveyed students."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_editorial_draft",
+    "usage_note_en": "Illustrative difficulty band; grammar levels are not official TOPIK classifications."
+  },
+  {
+    "id": "GRAM-0405",
+    "canonical": "-을/를 중심으로",
+    "aliases": [
+      "을/를 중심으로"
+    ],
+    "category": "editorial_expansion",
+    "meanings_en": [
+      "centered on"
+    ],
+    "langsnack_level": 4,
+    "topik_level_estimate": 4,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "을/를 중심으로"
+    ],
+    "examples": [
+      {
+        "ko": "지역 주민을 중심으로 모임이 만들어졌어요.",
+        "en": "The group formed around local residents."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_editorial_draft",
+    "usage_note_en": "Illustrative difficulty band; grammar levels are not official TOPIK classifications."
+  },
+  {
+    "id": "GRAM-0406",
+    "canonical": "-을/를 바탕으로",
+    "aliases": [
+      "을/를 바탕으로"
+    ],
+    "category": "editorial_expansion",
+    "meanings_en": [
+      "based on"
+    ],
+    "langsnack_level": 4,
+    "topik_level_estimate": 4,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "을/를 바탕으로"
+    ],
+    "examples": [
+      {
+        "ko": "경험을 바탕으로 조언했어요.",
+        "en": "I gave advice based on experience."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_editorial_draft",
+    "usage_note_en": "Illustrative difficulty band; grammar levels are not official TOPIK classifications."
+  },
+  {
+    "id": "GRAM-0407",
+    "canonical": "-을/를 대신하여",
+    "aliases": [
+      "을/를 대신하여"
+    ],
+    "category": "editorial_expansion",
+    "meanings_en": [
+      "in place of"
+    ],
+    "langsnack_level": 4,
+    "topik_level_estimate": 4,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "을/를 대신하여"
+    ],
+    "examples": [
+      {
+        "ko": "동료를 대신하여 회의에 참석했어요.",
+        "en": "I attended the meeting in place of a colleague."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_editorial_draft",
+    "usage_note_en": "Illustrative difficulty band; grammar levels are not official TOPIK classifications."
+  },
+  {
+    "id": "GRAM-0408",
+    "canonical": "-을/를 위해서라면",
+    "aliases": [
+      "을/를 위해서라면"
+    ],
+    "category": "editorial_expansion",
+    "meanings_en": [
+      "if it is for the sake of"
+    ],
+    "langsnack_level": 4,
+    "topik_level_estimate": 4,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "을/를 위해서라면"
+    ],
+    "examples": [
+      {
+        "ko": "건강을 위해서라면 시간을 낼게요.",
+        "en": "I'll make time if it's for my health."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_editorial_draft",
+    "usage_note_en": "Illustrative difficulty band; grammar levels are not official TOPIK classifications."
+  },
+  {
+    "id": "GRAM-0409",
+    "canonical": "-을/를 목적으로",
+    "aliases": [
+      "을/를 목적으로"
+    ],
+    "category": "editorial_expansion",
+    "meanings_en": [
+      "for the purpose of"
+    ],
+    "langsnack_level": 4,
+    "topik_level_estimate": 4,
+    "formality": null,
+    "register": null,
+    "detection_patterns": [
+      "을/를 목적으로"
+    ],
+    "examples": [
+      {
+        "ko": "연구를 목적으로 자료를 모았어요.",
+        "en": "We gathered data for research."
+      }
+    ],
+    "source_refs": [],
+    "review_status": "original_editorial_draft",
+    "usage_note_en": "Illustrative difficulty band; grammar levels are not official TOPIK classifications."
   }
 ]

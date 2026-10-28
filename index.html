@@ -315,6 +315,19 @@ function calibratedReading(text){
  // v14: distinct lexical concepts and clause structures, not raw keyword totals.
  // These are editorial difficulty cues, NOT official TOPIK word classifications.
  const academic=["제도적","구조적","불균형","형평성","정당성","실효성","이분법적","상충","도출","공감대","투명성","책임성","이해관계","집행","첨예","합리성","개혁","장기적","축적","근거","검증","신뢰성","맥락","모순","비판적","의사 결정","종합적","유통","배척","수용","정보 활용","생산성","격차","기반 시설","접근성","균형 발전","정책","공공서비스","불평등","영향","확산","원격 근무","디지털","산업","혁신","노동 시장","경쟁력","배분","안전망","효율성","사회적 합의","구성원","재편","심화","종합적으로","논의","관점","추진","정책적","전반","변동","현상","검토","요구","수반","초래","제시된","판단 능력"];
+ // v14.1: specialized concepts must be supported by several distinct domains/structures.
+ // These are transparent editorial cues, not official TOPIK word-level labels.
+ const specializedGroups={
+  evaluation:["계량화","지표","환원","배제","평가 기준","실질적인 성과","다층적","파급 효과","정책 수행"],
+  governance:["책임성","정당성","의사 결정","제도적 선택","제도적 기반","행정","투명성","공감대","집행"],
+  distribution:["가치중립적","이해관계","후생","불균등","배분","분배","형평성","사회적 가치"],
+  epistemic:["검증","신뢰성","근거","맥락","비판적 사고","모순","판단 능력","인식","가치관"],
+  qualification:["반드시","단정하기","그 자체로","만으로","그 이면","뿐 아니라","가능성을 배제","~에 국한"]
+ };
+ const specializedByGroup=Object.fromEntries(Object.entries(specializedGroups).map(([k,terms])=>[k,[...new Set(terms.filter(t=>clean.includes(t)))] ]));
+ const specializedHits=[...new Set(Object.values(specializedByGroup).flat())];
+ const specializedDomains=Object.entries(specializedByGroup).filter(([k,v])=>k!=="qualification"&&v.length>=2).length;
+ const qualifyingCues=specializedByGroup.qualification.length;
  const mid=["공공도서관","문화 활동","주민","강좌","독서 모임","운영","프로그램","교류","지역","시설","특성","방안","음식물 쓰레기","식재료","보관","협조","절약","적절","구입","대여","이용 조건","고려","활용","자원","비용","경제적","선택","실천","변화","목적","기간","최근","환경","도움","방법","중요","참여","마련","문제","해결","필요","상황","경우"];
  function uniqueSignals(words){return [...new Set(words.filter(w=>clean.includes(w)))];}
  const academicHits=uniqueSignals(academic),midHits=uniqueSignals(mid);
@@ -346,6 +359,16 @@ function calibratedReading(text){
  if(ordinaryIntermediate)weighted=Math.max(weighted,3.52);
  if(sustainedAcademic)weighted=Math.max(weighted,4.58);
  if(denseAcademic)weighted=Math.max(weighted,5.55);
+ // v14.1: evidence-based upper-level distinction. Require multiple specialized
+ // concepts, dense connected prose, and independent abstract-language evidence.
+ // Never globally boost every Level 4/5 text or rely on length alone.
+ const highAcademicEvidence=specializedHits.length>=5 && specializedDomains>=1 &&
+   academicHits.length>=5 && clauseCues>=3 && ss.avg>=12 && tokens.length>=55;
+ const veryHighAcademicEvidence=highAcademicEvidence &&
+   specializedHits.length>=8 && (specializedDomains>=2 || qualifyingCues>=2) &&
+   (nominal>=12 || clauseCues>=5);
+ if(veryHighAcademicEvidence)weighted=Math.max(weighted,5.53);
+ else if(highAcademicEvidence)weighted=Math.max(weighted,4.56);
  // Short passages have insufficient evidence for confident advanced levels.
  if(tokens.length<12)weighted=Math.min(weighted,3.3);
  else if(tokens.length<22&&!sustainedAcademic)weighted=Math.min(weighted,4.4);
@@ -354,12 +377,13 @@ function calibratedReading(text){
  const confidence=tokens.length>=90&&evidence>=8?"high":tokens.length>=35&&evidence>=4?"medium":"low";
  const reasons=[];
  if(academicHits.length)reasons.push({type:"vocabulary",label:"Academic / abstract expressions (editorial cues)",items:academicHits.slice(0,8)});
+ if(specializedHits.length)reasons.push({type:"vocabulary",label:"Specialized concepts (editorial cues)",items:specializedHits.slice(0,8)});
  if(midHits.length)reasons.push({type:"vocabulary",label:"Intermediate topic expressions",items:midHits.slice(0,6)});
  if(ag.labels.length)reasons.push({type:"grammar",label:"Complex constructions",items:ag.labels.slice(0,5)});
  if(ig.labels.length)reasons.push({type:"grammar",label:"Connected constructions",items:ig.labels.slice(0,5)});
  if(ss.avg>=10)reasons.push({type:"structure",label:"Sentence structure",items:[Math.round(ss.avg)+" Korean tokens per sentence (average)",clauseCues+" connective / clause cues"]});
  reasons.push({type:"method",label:"Component scores (1–6; experimental)",items:Object.entries(componentScores).map(([key,value])=>key.replaceAll('_',' ')+": "+value.toFixed(1))});
- return {level,wordCount:tokens.length,uniqueWords:unique.length,coverage,grammarCount:ag.count+ig.count,confidence,reasons,scores:{heuristic:weighted,components:componentScores,weights,advancedSignals:academicHits.length,intermediateSignals:midHits.length},grammarHits:[]};
+ return {level,wordCount:tokens.length,uniqueWords:unique.length,coverage,grammarCount:ag.count+ig.count,confidence,reasons,scores:{heuristic:weighted,components:componentScores,weights,advancedSignals:academicHits.length,specializedSignals:specializedHits.length,specializedDomains,highAcademicEvidence,veryHighAcademicEvidence,intermediateSignals:midHits.length},grammarHits:[]};
 }
 function estimateDetailed(text){return calibratedReading(text);}
 
